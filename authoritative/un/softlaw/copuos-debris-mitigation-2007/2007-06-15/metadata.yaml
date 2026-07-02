@@ -1,0 +1,53 @@
+corpus_id: un/softlaw/copuos-debris-mitigation-2007
+version_id: '2007-06-15'
+title: Space Debris Mitigation Guidelines of the Committee on the Peaceful Uses of Outer Space
+short_title: COPUOS Space Debris Mitigation Guidelines
+jurisdiction: international/UN
+document_type: soft_law_guideline
+official_citation: A/62/20, paras. 118-119 and annex (2007); endorsed by UNGA Res 62/217 of 22 December
+  2007; UN publication ST/SPACE/49 (2010)
+authentic_languages:
+- ar
+- zh
+- en
+- fr
+- ru
+- es
+adoption_date: '2007-06-15'
+source_url: https://www.unoosa.org/pdf/publications/st_space_49E.pdf
+source_publisher: UNOOSA - ST/SPACE/49 (Space Debris Mitigation Guidelines of the Committee on the Peaceful
+  Uses of Outer Space, 2010)
+source_is_official: true
+retrieval_date: '2026-07-03'
+retrieved_by: 'corpus ingest v0.1; official UN PDF supplied by operator (Dan) from UNOOSA, text-extracted
+  with pdftotext; operator: Dan + Claude'
+original_format: pdf
+original_filename: original.pdf
+content_hash: sha256:cde29f11ef637a426c8b18e3db22748d18c70924363ac0b9c19f4d13d8e59790
+original_sha256: sha256:8587ba4b9efd0a1a59f5ae6c7afb3108cd5025cc8bc74d477f22ae2b1c986177
+text_sha256: sha256:cde29f11ef637a426c8b18e3db22748d18c70924363ac0b9c19f4d13d8e59790
+text_fidelity: extracted_unverified
+language: en
+authoritative_status: authentic_text
+license: UN-materials-terms
+rights_note: UN COPUOS guidelines; official UN publication, freely reproducible with attribution.
+capture_history:
+- date: '2026-07-03'
+  source_url: https://www.unoosa.org/pdf/publications/st_space_49E.pdf
+  original_sha256: sha256:8587ba4b9efd0a1a59f5ae6c7afb3108cd5025cc8bc74d477f22ae2b1c986177
+  note: Official UNOOSA PDF (ST/SPACE/49) supplied by the operator because the automated fetcher could
+    not retrieve UNOOSA's PDFs; stored byte-for-byte as original.pdf.
+supersedes: null
+superseded_by: null
+related_documents:
+- A/62/20
+- UNGA Res 62/217 (2007)
+- IADC Space Debris Mitigation Guidelines (technical basis)
+provenance_note: 'English text of the Space Debris Mitigation Guidelines of the Committee on the Peaceful
+  Uses of Outer Space (sections 1-6: Background, Rationale, Application, the seven Guidelines, Updates,
+  Reference), adopted by COPUOS in 2007 (A/62/20) and endorsed by UNGA resolution 62/217. SOURCE: the
+  official UN publication ST/SPACE/49 (2010). Because the automated fetcher could not retrieve UNOOSA''s
+  PDFs, the byte-for-byte official PDF was supplied by the operator and is stored as original.pdf (original_sha256
+  fingerprints the authentic UN file). text.txt is extracted with pdftotext and cleaned (running headers,
+  page numbers, footnote markers removed; soft hyphenation rejoined; page-break-split sentences rejoined).
+  FIDELITY: extracted_unverified pending a line-by-line human check against original.pdf.'
