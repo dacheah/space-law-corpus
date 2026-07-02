@@ -88,3 +88,14 @@ Mechanical passes (structure extraction, first-pass tagging, draft translations)
 - Want help navigating it? Read `derived/...` — knowing everything there is unofficial and traceable back to a specific authoritative version.
 
 The wall means a reader is never in doubt about which of these they are looking at.
+
+---
+
+## Phase E refinement (2026-07-02, recorded per doc 02)
+
+When the derived layer was first built, two small, backward-compatible refinements were made to the derived-metadata format (the authoritative schema and the two-layer wall are unchanged):
+
+1. **`derived-metadata.yaml` holds a LIST of artifact records**, one per artifact (e.g., `structure.json`, `concepts.json`), each with an `artifact_file` field — so multiple derived artifacts can coexist in one version folder with independent provenance.
+2. **`generation_method` accepts `rule_based`** (in addition to `model`, `human`, `hybrid`) for deterministic, non-model passes. The first structure-extraction and concept-tagging passes are `rule_based` and `review_status: unreviewed` — mechanical first drafts explicitly awaiting human/model review.
+
+Both are reflected in `schema/derived-metadata.schema.json`.
