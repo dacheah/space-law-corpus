@@ -1,0 +1,28 @@
+# Space Law Corpus — .gitignore
+# We deliberately keep this list SHORT. The corpus is meant to be self-contained
+# and durable, so most artifacts (including original source files) are tracked,
+# not ignored. Only transient/local junk is excluded.
+
+# OS / editor cruft
+.DS_Store
+Thumbs.db
+*~
+*.swp
+.idea/
+.vscode/
+
+# Python tooling (scripts/)
+__pycache__/
+*.pyc
+.venv/
+venv/
+.env
+
+# Local scratch
+scratch/
+*.tmp
+*.log
+
+# NOTE: We do NOT ignore PDFs or other source artifacts. Storing originals
+# byte-for-byte is a provenance requirement (see docs/design/01 and 04).
+# If large binaries become an issue, we adopt Git LFS rather than ignoring them.

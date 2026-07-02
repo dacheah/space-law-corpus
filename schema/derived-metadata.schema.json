@@ -1,0 +1,40 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://space-law-corpus/schema/derived-metadata.schema.json",
+  "title": "Derived artifact metadata",
+  "description": "Provenance of a single derived artifact (translation, summary, structure, or concept tags). See docs/design/06-two-layer-separation.md. Every derived artifact must trace back to a specific authoritative version.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "derived_id",
+    "derived_type",
+    "source_corpus_id",
+    "source_version_id",
+    "source_text_sha256",
+    "generation_method",
+    "generator",
+    "generation_date",
+    "review_status",
+    "license",
+    "disclaimer"
+  ],
+  "properties": {
+    "derived_id": { "type": "string" },
+    "derived_type": {
+      "type": "string",
+      "enum": ["translation", "summary", "structure_extraction", "concept_tags"]
+    },
+    "source_corpus_id": { "type": "string", "description": "corpus_id of the authoritative source" },
+    "source_version_id": { "type": "string", "description": "version_id of the authoritative source" },
+    "source_text_sha256": { "type": "string", "pattern": "^sha256:", "description": "Hash of the exact authoritative text this was generated from; used for staleness detection" },
+    "generation_method": { "type": "string", "enum": ["model", "human", "hybrid"] },
+    "generator": { "type": "string", "description": "Model name+version, or human name" },
+    "generation_date": { "type": "string", "format": "date" },
+    "model_params": { "type": "object" },
+    "review_status": { "type": "string", "enum": ["unreviewed", "machine_only", "human_reviewed"] },
+    "reviewed_by": { "type": ["string", "null"] },
+    "license": { "type": "string", "const": "CC-BY-4.0" },
+    "confidence_note": { "type": "string" },
+    "disclaimer": { "type": "string", "minLength": 1 }
+  }
+}
