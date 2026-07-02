@@ -1,0 +1,52 @@
+corpus_id: un/treaty/ost-1967
+version_id: '1967-01-27'
+title: Treaty on Principles Governing the Activities of States in the Exploration and Use of Outer Space,
+  including the Moon and Other Celestial Bodies
+short_title: Outer Space Treaty
+jurisdiction: international/UN
+document_type: treaty
+official_citation: 610 UNTS 205; UNGA Res 2222 (XXI); done at London, Moscow and Washington, 27 January
+  1967
+authentic_languages:
+- en
+- ru
+- fr
+- es
+- zh
+adoption_date: '1966-12-19'
+entry_into_force_date: '1967-10-10'
+source_url: https://www.unoosa.org/oosa/en/ourwork/spacelaw/treaties/outerspacetreaty.html
+source_publisher: UNOOSA (United Nations Office for Outer Space Affairs)
+source_is_official: true
+retrieval_date: '2026-07-02'
+retrieved_by: 'corpus ingest v0.1 via automated web-fetch tool; operator: Dan + Claude'
+original_format: txt
+original_filename: original.txt
+content_hash: sha256:0e4f8a0d00f22e19686dadd666435072a040bd2d64b82cdf6c51e37974f778eb
+original_sha256: sha256:b2768f682bbfae9f84701751b2ffd0b9b93ac8877b2d7b71177bedacf3ec4709
+text_sha256: sha256:0e4f8a0d00f22e19686dadd666435072a040bd2d64b82cdf6c51e37974f778eb
+text_fidelity: extracted_unverified
+language: en
+authoritative_status: authentic_text
+license: UN-materials-terms
+rights_note: Treaty text is a UN legal instrument, freely reproducible with attribution. Reproduced from
+  UNOOSA. The UN asserts copyright over its website and compilations, not over the treaty text itself.
+capture_history:
+- date: '2026-07-02'
+  source_url: https://www.unoosa.org/oosa/en/ourwork/spacelaw/treaties/outerspacetreaty.html
+  original_sha256: sha256:b2768f682bbfae9f84701751b2ffd0b9b93ac8877b2d7b71177bedacf3ec4709
+  note: Initial capture from the UNOOSA treaties page via automated web-fetch, which returns a text rendering
+    of the HTML page (not raw HTML or the UNTS certified PDF).
+supersedes: null
+superseded_by: null
+related_documents:
+- un/ga/res-2222-XXI (adopting/annexing resolution)
+provenance_note: 'English authentic text of the Outer Space Treaty. SOURCE: the UNOOSA ''Outer Space Treaty''
+  HTML page, which reproduces UNGA resolution 2222 (XXI) with the Treaty as its Annex. RETRIEVAL: fetched
+  2026-07-02 via an automated web-fetch tool that returns a text rendering of the page, not byte-identical
+  raw HTML and not the UN Treaty Series certified PDF (610 UNTS 205). original.txt is the FULL page capture
+  as returned by the tool (including site navigation); text.txt is the extracted authentic Treaty text
+  (the Annex), programmatically sliced and stripped of markdown, spanning the preamble through the final
+  clause done 27 January 1967. Article XVII confirms the English, Russian, French, Spanish and Chinese
+  texts are equally authentic (see JC-3). FIDELITY: text_fidelity is extracted_unverified pending human
+  verification against the UNTS certified text; a byte-exact certified-PDF capture is a tracked follow-on.'

@@ -1,13 +1,37 @@
 # Scripts
 
-**Status:** placeholder — tooling is built in Phase D onward.
+Portable Python tooling for the corpus. Dependencies are minimal and mainstream
+(`PyYAML`, `jsonschema`) — see `requirements.txt`. Install once with:
 
-Planned tools (all in open, portable languages — Python by default):
+```
+pip install -r requirements.txt
+```
 
-- `ingest.py` — fetch a source, store `original.<ext>`, compute hashes, write `metadata.yaml`, place into the authoritative layer.
-- `hash.py` — compute/verify SHA-256 content hashes.
-- `validate.py` — validate every `metadata.yaml` / `derived-metadata.yaml` against the JSON Schemas in `../schema/`, and check that on-disk file hashes match recorded hashes.
-- `extract_structure.py`, `tag_concepts.py`, `draft_translation.py` — derived-layer passes (Phase E), using cheaper/free models, output quarantined in `../derived/`.
-- `check_layers.py` — enforce the two-layer wall (no model content in authoritative/; every derived artifact traces to an authoritative version; flag stale derived artifacts).
+## Implemented (Phase D)
 
-Nothing is implemented yet.
+- **`hashing.py`** — SHA-256 helpers and the canonical text-byte normalisation
+  (UTF-8, LF, no BOM) that makes `text_sha256` reproducible on any machine.
+- **`ingest.py`** — deterministic, offline packager. Given a captured original
+  (and optional cleaned authentic text) plus a manifest of metadata fields, it
+  writes an authoritative version folder (`original.*`, `text.txt`,
+  `metadata.yaml`), computes hashes, and validates the result. It **refuses to
+  overwrite** an existing version (append-only). Capture (fetching bytes from a
+  source) is deliberately a separate step, so the retrieval boundary is explicit.
+  Run: `python3 ingest.py --manifest path/to/manifest.json`
+- **`validate_corpus.py`** — the integrity/structure checker: schema validation,
+  hash verification (detects any silent alteration), text-presence rules, the
+  two-layer wall, and derived-artifact staleness. Run: `python3 validate_corpus.py`
+  (add `--path <subdir>` to scope it). Exit code 0 = OK, 1 = failures.
+
+## Planned (later phases)
+
+- `extract_structure.py`, `tag_concepts.py`, `draft_translation.py` — derived-layer
+  passes (Phase E), using cheaper/free models, output quarantined in `../derived/`.
+- `watch_sources.py` — source monitoring for the Phase F GitHub Actions.
+
+## Proven so far
+
+The pipeline has been exercised end-to-end: a throwaway self-test (ingest +
+append-only guard + tamper detection), then the first real document — the Outer
+Space Treaty English authentic text at
+`authoritative/un/treaty/ost-1967/1967-01-27/`.
