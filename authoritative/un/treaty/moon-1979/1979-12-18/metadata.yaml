@@ -1,0 +1,49 @@
+corpus_id: un/treaty/moon-1979
+version_id: '1979-12-18'
+title: Agreement Governing the Activities of States on the Moon and Other Celestial Bodies
+short_title: Moon Agreement
+jurisdiction: international/UN
+document_type: treaty
+official_citation: 1363 UNTS 3; UNGA Res 34/68; opened for signature at New York, 18 December 1979
+authentic_languages:
+- ar
+- zh
+- en
+- fr
+- ru
+- es
+adoption_date: '1979-12-05'
+entry_into_force_date: '1984-07-11'
+source_url: https://www.unoosa.org/oosa/en/ourwork/spacelaw/treaties/moon-agreement.html
+source_publisher: UNOOSA (United Nations Office for Outer Space Affairs)
+source_is_official: true
+retrieval_date: '2026-07-02'
+retrieved_by: 'corpus ingest v0.1 via automated web-fetch tool; operator: Dan + Claude'
+original_format: txt
+original_filename: original.txt
+content_hash: sha256:5235b365d7006311a10fd22f2b482d7268094790145d5f0bfead97e021ef6d14
+original_sha256: sha256:de53ee7c171b33c3d567928f75ea6e4a8a2b45526f6edc549bb5571c7443ac53
+text_sha256: sha256:5235b365d7006311a10fd22f2b482d7268094790145d5f0bfead97e021ef6d14
+text_fidelity: extracted_unverified
+language: en
+authoritative_status: authentic_text
+license: UN-materials-terms
+rights_note: Treaty text is a UN legal instrument, freely reproducible with attribution. Reproduced from
+  UNOOSA. The UN asserts copyright over its website and compilations, not over the treaty text itself.
+capture_history:
+- date: '2026-07-02'
+  source_url: https://www.unoosa.org/oosa/en/ourwork/spacelaw/treaties/moon-agreement.html
+  original_sha256: sha256:de53ee7c171b33c3d567928f75ea6e4a8a2b45526f6edc549bb5571c7443ac53
+  note: Capture from the UNOOSA treaty page via automated web-fetch (text rendering of the HTML page,
+    not raw HTML or the UNTS certified PDF).
+supersedes: null
+superseded_by: null
+related_documents:
+- un/ga/res-34-68 (adopting/annexing resolution)
+provenance_note: 'English authentic text of the Moon Agreement. SOURCE: the UNOOSA page, which reproduces
+  the adopting UN General Assembly resolution with the treaty as its Annex. RETRIEVAL: fetched 2026-07-02
+  via an automated web-fetch tool that returns a text rendering of the page (not byte-identical raw HTML
+  and not the UN Treaty Series certified PDF). original.txt is the page capture as returned by the tool;
+  text.txt is the extracted authentic treaty text (the Annex), programmatically sliced and stripped of
+  markdown. FIDELITY: extracted_unverified pending human verification against the UNTS certified text;
+  a byte-exact certified-PDF capture is a tracked follow-on.'
