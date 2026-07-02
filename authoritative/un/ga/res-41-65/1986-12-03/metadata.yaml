@@ -1,0 +1,50 @@
+corpus_id: un/ga/res-41-65
+version_id: '1986-12-03'
+title: Principles Relating to Remote Sensing of the Earth from Outer Space
+short_title: Remote Sensing Principles
+jurisdiction: international/UN
+document_type: ga_resolution
+official_citation: UNGA Res 41/65 of 3 December 1986; reproduced in ST/SPACE/61/Rev.3
+authentic_languages:
+- ar
+- zh
+- en
+- fr
+- ru
+- es
+adoption_date: '1986-12-03'
+source_url: https://www.unoosa.org/res/oosadoc/data/documents/2025/stspace/stspace61rev_3_0_html/st_space_61rev03E.pdf
+source_publisher: 'UNOOSA - ST/SPACE/61/Rev.3, ''International Space Law: United Nations Instruments''
+  (2025)'
+source_is_official: true
+retrieval_date: '2026-07-02'
+retrieved_by: 'corpus ingest v0.1 via automated web-fetch (PDF text extraction); operator: Dan + Claude'
+original_format: txt
+original_filename: original.txt
+content_hash: sha256:832fa8a80313592ad4e1acec0635264a98e7c3b0ff10b886d49130301834a557
+original_sha256: sha256:054bf4a3b5886504f0e9d9d39773438e394af4940d0e810f833f8f25758db122
+text_sha256: sha256:832fa8a80313592ad4e1acec0635264a98e7c3b0ff10b886d49130301834a557
+text_fidelity: extracted_unverified
+language: en
+authoritative_status: authentic_text
+license: UN-materials-terms
+rights_note: UN General Assembly resolution; official UN document, freely reproducible with attribution.
+  Reproduced from the UNOOSA ST/SPACE/61 compilation.
+capture_history:
+- date: '2026-07-02'
+  source_url: https://www.unoosa.org/res/oosadoc/data/documents/2025/stspace/stspace61rev_3_0_html/st_space_61rev03E.pdf
+  original_sha256: sha256:054bf4a3b5886504f0e9d9d39773438e394af4940d0e810f833f8f25758db122
+  note: Extracted from the UNOOSA ST/SPACE/61/Rev.3 consolidated PDF via web-fetch text extraction.
+supersedes: null
+superseded_by: null
+related_documents: []
+provenance_note: 'English text of the Principles Relating to Remote Sensing of the Earth from Outer Space,
+  adopted by UN General Assembly resolution 41/65 of 3 December 1986. SOURCE: UNOOSA consolidated official
+  publication ''International Space Law: United Nations Instruments'' (ST/SPACE/61/Rev.3, 2025), retrieved
+  2026-07-02 as a PDF and text-extracted by the fetch tool because the individual UNOOSA principle HTML
+  pages were unfetchable. UN General Assembly resolutions are issued in the six official UN languages
+  (Arabic, Chinese, English, French, Russian, Spanish), all equally authoritative; the English text is
+  stored. original.txt is the raw PDF-extracted text for this instrument''s pages; text.txt is cleaned
+  (page numbers and footnote markers removed, soft hyphenation rejoined, paragraphs reflowed). FIDELITY:
+  extracted_unverified - PDF extraction may carry minor spacing artifacts; verification against the official
+  text is a tracked follow-on.'
