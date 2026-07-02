@@ -58,7 +58,7 @@ monitoring/       watched-source list + latest monitor report
 
 ## Start here
 
-Read the design lock in [`docs/design/`](docs/design/00-design-lock-index.md). Those six documents govern everything in this repository.
+Read the design lock in [`docs/design/`](docs/design/00-design-lock-index.md). Those six documents govern everything in this repository. For where the project is heading, see [`ROADMAP.md`](ROADMAP.md).
 
 ## Licensing (summary)
 

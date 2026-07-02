@@ -1,0 +1,48 @@
+corpus_id: un/softlaw/lts-guidelines-2019
+version_id: '2019-06-21'
+title: Guidelines for the Long-term Sustainability of Outer Space Activities
+short_title: LTS Guidelines
+jurisdiction: international/UN
+document_type: soft_law_guideline
+official_citation: A/74/20, annex II (2019); welcomed by UNGA Res 74/82 of 26 December 2019
+authentic_languages:
+- ar
+- zh
+- en
+- fr
+- ru
+- es
+adoption_date: '2019-06-21'
+source_url: https://www.unoosa.org/documents/pdf/PromotingSpaceSustainability/Publication_Final_English_June2021.pdf
+source_publisher: UNOOSA (2021 publication reproducing A/74/20, annex II)
+source_is_official: true
+retrieval_date: '2026-07-03'
+retrieved_by: 'corpus ingest v0.1 via automated web-fetch (PDF text extraction); operator: Dan + Claude'
+original_format: txt
+original_filename: original.txt
+content_hash: sha256:185827e28e18b7f0a71fbd9f9aeed576a927a75d85685553120e18dd732643e5
+original_sha256: sha256:a6ff1dea13fa3dbe1a1715972ddfdd8cbfad66803c2def3320e9728f71ab9c85
+text_sha256: sha256:185827e28e18b7f0a71fbd9f9aeed576a927a75d85685553120e18dd732643e5
+text_fidelity: extracted_unverified
+language: en
+authoritative_status: authentic_text
+license: UN-materials-terms
+rights_note: UN COPUOS guidelines; official UN document, freely reproducible with attribution.
+capture_history:
+- date: '2026-07-03'
+  source_url: https://www.unoosa.org/documents/pdf/PromotingSpaceSustainability/Publication_Final_English_June2021.pdf
+  original_sha256: sha256:a6ff1dea13fa3dbe1a1715972ddfdd8cbfad66803c2def3320e9728f71ab9c85
+  note: Extracted from the UNOOSA 2021 publication of the Guidelines (reproducing A/74/20 annex II) via
+    web-fetch PDF text extraction.
+supersedes: null
+superseded_by: null
+related_documents:
+- A/74/20 annex II
+- UNGA Res 74/82 (2019)
+provenance_note: 'English text of the COPUOS Guidelines for the Long-term Sustainability of Outer Space
+  Activities (preamble/context and 21 guidelines A.1-D.2), adopted by the Committee on the Peaceful Uses
+  of Outer Space in 2019 (A/74/20, annex II) and welcomed by UNGA resolution 74/82. SOURCE: UNOOSA''s
+  2021 official publication of the Guidelines, retrieved 2026-07-03 and text-extracted from PDF. original.txt
+  is the raw extract; text.txt is cleaned (page numbers, inserted hyperlinks and doc numbers removed,
+  soft hyphenation rejoined, spacing normalised, paragraphs reflowed). FIDELITY: extracted_unverified
+  pending a cross-check against A/74/20 annex II.'
