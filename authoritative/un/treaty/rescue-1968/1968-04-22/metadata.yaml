@@ -5,69 +5,72 @@ title: Agreement on the Rescue of Astronauts, the Return of Astronauts and the R
 short_title: Rescue Agreement
 jurisdiction: international/UN
 document_type: treaty
-official_citation: 672 UNTS 119; UNGA Res 2345 (XXII); Australian Treaty Series 1986 No. 8; done at London,
-  Moscow and Washington, 22 April 1968
+official_citation: 672 UNTS 119; UNGA Res 2345 (XXII); done at London, Moscow and Washington, 22 April
+  1968; reproduced in ST/SPACE/61/Rev.3
 authentic_languages:
-- en
-- ru
-- fr
-- es
 - zh
+- en
+- fr
+- ru
+- es
 adoption_date: '1967-12-19'
 entry_into_force_date: '1968-12-03'
-source_url: https://www.austlii.edu.au/cgi-bin/viewdoc/au/other/dfat/treaties/1986/8.html
-source_publisher: Australian Treaty Series 1986 No. 8 (Australian Government), via AustLII
-source_is_official: false
+source_url: https://www.unoosa.org/res/oosadoc/data/documents/2025/stspace/stspace61rev_3_0_html/st_space_61rev03E.pdf
+source_publisher: 'UNOOSA - ST/SPACE/61/Rev.3, ''International Space Law: United Nations Instruments''
+  (2025)'
+source_is_official: true
 retrieval_date: '2026-07-02'
 retrieved_by: 'corpus ingest v0.1 via automated web-fetch tool; operator: Dan + Claude'
 original_format: txt
 original_filename: original.txt
-content_hash: sha256:fd87ebe4467e5fc8ec04fbcf80d47a886639e8ca71d0b38b52614b78d171659a
-original_sha256: sha256:08a6441aaae8ee6fb76f8fd9d5752217cd141f8d22ea502a85bbf1e74bf74326
-text_sha256: sha256:fd87ebe4467e5fc8ec04fbcf80d47a886639e8ca71d0b38b52614b78d171659a
+content_hash: sha256:9da1b34c735c1424b591019c40f41bbc3dd55f3fb1c0c4ddb39e8ec15ed9fc31
+original_sha256: sha256:63147c6dc6963d2069c6f5be4d8cd156d582fd0a02d05d9289f0ceba89bbe6b4
+text_sha256: sha256:9da1b34c735c1424b591019c40f41bbc3dd55f3fb1c0c4ddb39e8ec15ed9fc31
 text_fidelity: extracted_verified
 language: en
 authoritative_status: authentic_text
 license: UN-materials-terms
-rights_note: The treaty text is a UN legal instrument, freely reproducible with attribution. The Australian
-  Treaty Series volume is (c) Commonwealth of Australia; only the treaty text (the international instrument)
-  is reproduced here, not the ATS editorial annotations.
+rights_note: UN General Assembly instrument; official UN document, freely reproducible with attribution.
+  Reproduced from the UNOOSA ST/SPACE/61 compilation.
 capture_history:
 - date: '2026-07-02'
   source_url: https://www.austlii.edu.au/cgi-bin/viewdoc/au/other/dfat/treaties/1986/8.html
   original_sha256: sha256:08a6441aaae8ee6fb76f8fd9d5752217cd141f8d22ea502a85bbf1e74bf74326
   note: Capture from the Australian Treaty Series (AustLII) via automated web-fetch; used because UNOOSA/UN
     sources for this treaty were repeatedly unfetchable.
+- date: '2026-07-02'
+  source_url: https://www.unoosa.org/res/oosadoc/data/documents/2025/stspace/stspace61rev_3_0_html/st_space_61rev03E.pdf
+  original_sha256: sha256:63147c6dc6963d2069c6f5be4d8cd156d582fd0a02d05d9289f0ceba89bbe6b4
+  note: Re-sourced from UNOOSA ST/SPACE/61/Rev.3 compilation, replacing the Australian Treaty Series interim
+    source.
 supersedes: null
 superseded_by: null
 related_documents:
 - un/ga/res-2345-XXII (adopting/annexing resolution)
-provenance_note: 'English authentic text of the Rescue Agreement. SOURCE OF RECORD ISSUE: the UNOOSA Rescue
-  text page was unfetchable on five attempts (2026-07-02) and the only other readily-fetchable full copy
-  (JAXA space-law library) contained transcription errors (e.g. ''Nothing'' for ''Noting''), so it was
-  rejected. This text is instead taken from the Australian Treaty Series 1986 No. 8 via AustLII -- an
-  official government treaty-series reproduction of the authentic English text (Article 10 confirms the
-  English, Russian, French, Spanish and Chinese texts are equally authentic). original.txt is the ATS
-  document capture; text.txt is the extracted treaty text (preamble through the final clause done 22 April
-  1968), with ATS footnotes, the ''signatures not reproduced'' note, and markdown removed, and hard-wrapped
-  lines rejoined. FIDELITY: extracted_unverified; the ATS reproduction may carry minor orthographic variants
-  (e.g. ''authorised''); re-capture and verification against the UN Treaty Series certified English text
-  (672 UNTS 119) is a tracked follow-on.'
+provenance_note: 'English authentic text of the Rescue Agreement, RE-SOURCED 2026-07-02 from UNOOSA''s
+  official consolidated publication ST/SPACE/61/Rev.3 (International Space Law: United Nations Instruments,
+  2025), replacing the earlier base text taken from the Australian Treaty Series (AustLII). The Australian
+  reproduction was an interim source (UNOOSA''s own Rescue page was unfetchable at ingestion) and, on
+  verification, deviated from the authentic UN text in orthography and in the ordering of the depositary
+  Governments and authentic languages. Article 10 confirms the Chinese, English, French, Russian and Spanish
+  texts are equally authentic. original.txt is the raw ST/SPACE/61 Rescue-region extract; text.txt is
+  the cleaned authentic text (page furniture, footnote superscripts and soft hyphenation removed, paragraphs
+  reflowed). The prior Australian-sourced text and its interim corrections are preserved in Git history.'
 corrections:
 - date: '2026-07-02'
-  change: 'Preamble: ''to the following'' -> authentic ''on the following'''
-  reference: 'UNOOSA ST/SPACE/61/Rev.3 (International Space Law: United Nations Instruments, 2025)'
-- date: '2026-07-02'
-  change: 'Article 5(4): ''of the Article'' -> authentic ''of this Article'''
-  reference: 'UNOOSA ST/SPACE/61/Rev.3 (International Space Law: United Nations Instruments, 2025)'
-- date: '2026-07-02'
-  change: 'Article 10: ''authorised'' -> authentic ''authorized'''
-  reference: 'UNOOSA ST/SPACE/61/Rev.3 (International Space Law: United Nations Instruments, 2025)'
+  change: Base text re-sourced from UNOOSA ST/SPACE/61/Rev.3, replacing the interim Australian Treaty
+    Series text. Adopts authentic orthography (authorized, cooperation, intergovernmental), 'on the following',
+    'of this Article', and the authentic ordering of the depositary Governments (USSR, UK, USA) and of
+    the authentic languages.
+  reference: ST/SPACE/61/Rev.3
+  note: Supersedes the same-day interim spot-corrections to the Australian-sourced text; prior states
+    preserved in Git history.
 verification:
   status: verified
-  method: Independent word-for-word cross-check against ST/SPACE/61/Rev.3 (treaty was ingested from a
-    different source).
-  reference: 'UNOOSA ST/SPACE/61/Rev.3 (International Space Law: United Nations Instruments, 2025)'
+  method: Re-sourced from and matches the official UN compilation (source of record); cross-checked against
+    the prior corrected Australian text.
+  reference: ST/SPACE/61/Rev.3
   verified_by: Dan + Claude (see docs/verification-2026-07.md)
   verified_date: '2026-07-02'
-  note: Confirmed defects corrected against the compilation; re-verified word-for-word.
+  note: Base text is now the authentic UN compilation rendering; the earlier Australian-sourced base is
+    preserved in Git history.

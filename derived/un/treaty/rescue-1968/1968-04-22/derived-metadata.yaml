@@ -3,7 +3,7 @@
   artifact_file: structure.json
   source_corpus_id: un/treaty/rescue-1968
   source_version_id: '1968-04-22'
-  source_text_sha256: sha256:fd87ebe4467e5fc8ec04fbcf80d47a886639e8ca71d0b38b52614b78d171659a
+  source_text_sha256: sha256:9da1b34c735c1424b591019c40f41bbc3dd55f3fb1c0c4ddb39e8ec15ed9fc31
   generation_method: rule_based
   generator: build_derived.py v0.1 (structure)
   generation_date: '2026-07-02'
@@ -19,7 +19,7 @@
   artifact_file: concepts.json
   source_corpus_id: un/treaty/rescue-1968
   source_version_id: '1968-04-22'
-  source_text_sha256: sha256:fd87ebe4467e5fc8ec04fbcf80d47a886639e8ca71d0b38b52614b78d171659a
+  source_text_sha256: sha256:9da1b34c735c1424b591019c40f41bbc3dd55f3fb1c0c4ddb39e8ec15ed9fc31
   generation_method: rule_based
   generator: build_derived.py v0.1 (concepts)
   generation_date: '2026-07-02'

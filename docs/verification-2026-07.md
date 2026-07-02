@@ -58,4 +58,8 @@ Per JC-8 (spot-correct), the confirmed defects were corrected against the compil
 
 All ten instruments were then set to `text_fidelity: extracted_verified`, with a `verification` object added to each record (the text and its hashes remain the source of truth; Git preserves every prior state). The derived layer was regenerated so no artifact is stale, and the corpus validates clean.
 
-**Residual follow-ons:** independent (non-compilation) corroboration of the five principles; and, if desired, a UN-sourced re-capture of the Rescue Agreement to replace the corrected Australian Treaty Series base text.
+**Residual follow-on:** independent (non-compilation) corroboration of the five principles.
+
+## Rescue re-source (2026-07-02)
+
+The Rescue Agreement base text was subsequently **re-sourced from UNOOSA's official compilation ST/SPACE/61/Rev.3**, replacing the interim Australian Treaty Series text. Beyond the three spot-corrections, the Australian reproduction was found to carry non-authentic **ordering** of the depositary Governments (it listed the United Kingdom first; the authentic UN text lists the Union of Soviet Socialist Republics first) and of the authentic languages, plus British orthography (`co-operation`, `inter-governmental`). The record now carries the authentic UN text (`source_is_official: true`), with the re-source documented in its `corrections`/`provenance_note` and the prior state preserved in Git history.
