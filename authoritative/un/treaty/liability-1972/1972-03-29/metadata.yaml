@@ -21,10 +21,10 @@ retrieval_date: '2026-07-02'
 retrieved_by: 'corpus ingest v0.1 via automated web-fetch tool; operator: Dan + Claude'
 original_format: txt
 original_filename: original.txt
-content_hash: sha256:2fef50e4da57759524c816deb988b7a958fe77d5d6df370d1bdcc545115f28dd
+content_hash: sha256:5c493cda132bb5faf07f43d166b9080024e31b16a1b635dfd149c4572e83acba
 original_sha256: sha256:eedf16a71501674215597ef345df7fdcec8dcdab08d8bc141b9cbea0b619e90d
-text_sha256: sha256:2fef50e4da57759524c816deb988b7a958fe77d5d6df370d1bdcc545115f28dd
-text_fidelity: extracted_unverified
+text_sha256: sha256:5c493cda132bb5faf07f43d166b9080024e31b16a1b635dfd149c4572e83acba
+text_fidelity: extracted_verified
 language: en
 authoritative_status: authentic_text
 license: UN-materials-terms
@@ -47,3 +47,18 @@ provenance_note: 'English authentic text of the Liability Convention. SOURCE: th
   text.txt is the extracted authentic treaty text (the Annex), programmatically sliced and stripped of
   markdown. FIDELITY: extracted_unverified pending human verification against the UNTS certified text;
   a byte-exact certified-PDF capture is a tracked follow-on.'
+corrections:
+- date: '2026-07-02'
+  change: 'Article II: restored dropped word (''aircraft flight'' -> ''aircraft in flight'')'
+  reference: 'UNOOSA ST/SPACE/61/Rev.3 (International Space Law: United Nations Instruments, 2025)'
+- date: '2026-07-02'
+  change: 'Article XIX(4): corrected typo (''mattters'' -> ''matters'')'
+  reference: 'UNOOSA ST/SPACE/61/Rev.3 (International Space Law: United Nations Instruments, 2025)'
+verification:
+  status: verified
+  method: Independent word-for-word cross-check against ST/SPACE/61/Rev.3 (treaty was ingested from a
+    different source).
+  reference: 'UNOOSA ST/SPACE/61/Rev.3 (International Space Law: United Nations Instruments, 2025)'
+  verified_by: Dan + Claude (see docs/verification-2026-07.md)
+  verified_date: '2026-07-02'
+  note: Confirmed defects corrected against the compilation; re-verified word-for-word.

@@ -25,7 +25,7 @@ original_filename: original.txt
 content_hash: sha256:7db17c1c7b9637a8e02d013c006d4a34c24bebd8eb9dfb3134766fc5c9b90924
 original_sha256: sha256:0a459952acec4db7785197f2e43daf8e48e887212a3819e7a2e9d7c35fc7442f
 text_sha256: sha256:7db17c1c7b9637a8e02d013c006d4a34c24bebd8eb9dfb3134766fc5c9b90924
-text_fidelity: extracted_unverified
+text_fidelity: extracted_verified
 language: en
 authoritative_status: authentic_text
 license: UN-materials-terms
@@ -49,3 +49,11 @@ provenance_note: 'English text of the Principles Governing the Use by States of 
   text for this instrument''s pages; text.txt is cleaned (page numbers and footnote markers removed, soft
   hyphenation rejoined, paragraphs reflowed). FIDELITY: extracted_unverified - PDF extraction may carry
   minor spacing artifacts; verification against the official text is a tracked follow-on.'
+verification:
+  status: verified
+  method: Extraction-fidelity check against the official UN compilation (source of record).
+  reference: 'UNOOSA ST/SPACE/61/Rev.3 (International Space Law: United Nations Instruments, 2025)'
+  verified_by: Dan + Claude (see docs/verification-2026-07.md)
+  verified_date: '2026-07-02'
+  note: 100% match to the official compilation (source of record); independent (non-compilation) corroboration
+    remains a tracked follow-on.

@@ -25,7 +25,7 @@ original_filename: original.txt
 content_hash: sha256:0e4f8a0d00f22e19686dadd666435072a040bd2d64b82cdf6c51e37974f778eb
 original_sha256: sha256:b2768f682bbfae9f84701751b2ffd0b9b93ac8877b2d7b71177bedacf3ec4709
 text_sha256: sha256:0e4f8a0d00f22e19686dadd666435072a040bd2d64b82cdf6c51e37974f778eb
-text_fidelity: extracted_unverified
+text_fidelity: extracted_verified
 language: en
 authoritative_status: authentic_text
 license: UN-materials-terms
@@ -50,3 +50,11 @@ provenance_note: 'English authentic text of the Outer Space Treaty. SOURCE: the 
   clause done 27 January 1967. Article XVII confirms the English, Russian, French, Spanish and Chinese
   texts are equally authentic (see JC-3). FIDELITY: text_fidelity is extracted_unverified pending human
   verification against the UNTS certified text; a byte-exact certified-PDF capture is a tracked follow-on.'
+verification:
+  status: verified
+  method: Independent word-for-word cross-check against ST/SPACE/61/Rev.3 (treaty was ingested from a
+    different source).
+  reference: 'UNOOSA ST/SPACE/61/Rev.3 (International Space Law: United Nations Instruments, 2025)'
+  verified_by: Dan + Claude (see docs/verification-2026-07.md)
+  verified_date: '2026-07-02'
+  note: Word-for-word cross-check; differences limited to the compilation's own PDF spacing artifacts.

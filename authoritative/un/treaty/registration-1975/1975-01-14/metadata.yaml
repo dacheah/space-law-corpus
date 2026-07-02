@@ -24,7 +24,7 @@ original_filename: original.txt
 content_hash: sha256:9e35e1301842aad7ac7dc169935083766c06d51398b775d832e661de26895f06
 original_sha256: sha256:aa43b6de609f9eed9a4937e4ec392d235b9f689e06c5de2b6ed994cb18fb1092
 text_sha256: sha256:9e35e1301842aad7ac7dc169935083766c06d51398b775d832e661de26895f06
-text_fidelity: extracted_unverified
+text_fidelity: extracted_verified
 language: en
 authoritative_status: authentic_text
 license: UN-materials-terms
@@ -47,3 +47,11 @@ provenance_note: 'English authentic text of the Registration Convention. SOURCE:
   the tool; text.txt is the extracted authentic treaty text (the Annex), programmatically sliced and stripped
   of markdown. FIDELITY: extracted_unverified pending human verification against the UNTS certified text;
   a byte-exact certified-PDF capture is a tracked follow-on.'
+verification:
+  status: verified
+  method: Independent word-for-word cross-check against ST/SPACE/61/Rev.3 (treaty was ingested from a
+    different source).
+  reference: 'UNOOSA ST/SPACE/61/Rev.3 (International Space Law: United Nations Instruments, 2025)'
+  verified_by: Dan + Claude (see docs/verification-2026-07.md)
+  verified_date: '2026-07-02'
+  note: Word-for-word cross-check; differences limited to the compilation's own PDF spacing artifacts.

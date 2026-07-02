@@ -25,7 +25,7 @@ original_filename: original.txt
 content_hash: sha256:7ac1923e7ecc925305e103203e0e1b8302f2bfcb0c1f4e3b782c9e8b216e1e58
 original_sha256: sha256:1d4fed620c1ceae6361553a8932659898e62b970ff7b8b1be18e4e5d579e985e
 text_sha256: sha256:7ac1923e7ecc925305e103203e0e1b8302f2bfcb0c1f4e3b782c9e8b216e1e58
-text_fidelity: extracted_unverified
+text_fidelity: extracted_verified
 language: en
 authoritative_status: authentic_text
 license: UN-materials-terms
@@ -50,3 +50,11 @@ provenance_note: 'English text of the Declaration on International Cooperation i
   text.txt is cleaned (page numbers and footnote markers removed, soft hyphenation rejoined, paragraphs
   reflowed). FIDELITY: extracted_unverified - PDF extraction may carry minor spacing artifacts; verification
   against the official text is a tracked follow-on.'
+verification:
+  status: verified
+  method: Extraction-fidelity check against the official UN compilation (source of record).
+  reference: 'UNOOSA ST/SPACE/61/Rev.3 (International Space Law: United Nations Instruments, 2025)'
+  verified_by: Dan + Claude (see docs/verification-2026-07.md)
+  verified_date: '2026-07-02'
+  note: 100% match to the official compilation (source of record); independent (non-compilation) corroboration
+    remains a tracked follow-on.

@@ -10,7 +10,7 @@ WISHING to promote international co-operation in the peaceful exploration and us
 
 PROMPTED by sentiments of humanity,
 
-HAVE AGREED to the following:-
+HAVE AGREED on the following:
 
 Article 1
 
@@ -40,7 +40,7 @@ Article 5
 
 3. Upon request of the launching authority, objects launched into outer space or their component parts found beyond the territorial limits of the launching authority shall be returned to or held at the disposal of representatives of the launching authority, which shall, upon request, furnish identifying data prior to their return.
 
-4. Notwithstanding paragraphs 2 and 3 of the Article, a Contracting Party which has reason to believe that a space object or its component parts discovered in territory under its jurisdiction, or recovered by it elsewhere, is of a hazardous or deleterious nature may so notify the launching authority, which shall immediately take effective steps, under the direction and control of the said Contracting Party, to eliminate possible danger of harm.
+4. Notwithstanding paragraphs 2 and 3 of this Article, a Contracting Party which has reason to believe that a space object or its component parts discovered in territory under its jurisdiction, or recovered by it elsewhere, is of a hazardous or deleterious nature may so notify the launching authority, which shall immediately take effective steps, under the direction and control of the said Contracting Party, to eliminate possible danger of harm.
 
 5. Expenses incurred in fulfilling obligations to recover and return a space object or its component parts under paragraphs 2 and 3 of this Article shall be borne by the launching authority.
 
@@ -74,6 +74,6 @@ Article 10
 
 This Agreement, of which the English, Russian, French, Spanish and Chinese texts are equally authentic, shall be deposited in the archives of the Depositary Governments. Duly certified copies of the Agreement shall be transmitted by the Depositary Governments to the Governments of the signatory and acceding States.
 
-IN WITNESS WHEREOF the undersigned, duly authorised, have signed this Agreement.
+IN WITNESS WHEREOF the undersigned, duly authorized, have signed this Agreement.
 
 DONE in triplicate, at the cities of London, Moscow and Washington, the twenty-second day of April, one thousand nine hundred and sixty-eight.

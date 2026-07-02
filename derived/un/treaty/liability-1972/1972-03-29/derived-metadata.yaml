@@ -3,7 +3,7 @@
   artifact_file: structure.json
   source_corpus_id: un/treaty/liability-1972
   source_version_id: '1972-03-29'
-  source_text_sha256: sha256:2fef50e4da57759524c816deb988b7a958fe77d5d6df370d1bdcc545115f28dd
+  source_text_sha256: sha256:5c493cda132bb5faf07f43d166b9080024e31b16a1b635dfd149c4572e83acba
   generation_method: rule_based
   generator: build_derived.py v0.1 (structure)
   generation_date: '2026-07-02'
@@ -19,7 +19,7 @@
   artifact_file: concepts.json
   source_corpus_id: un/treaty/liability-1972
   source_version_id: '1972-03-29'
-  source_text_sha256: sha256:2fef50e4da57759524c816deb988b7a958fe77d5d6df370d1bdcc545115f28dd
+  source_text_sha256: sha256:5c493cda132bb5faf07f43d166b9080024e31b16a1b635dfd149c4572e83acba
   generation_method: rule_based
   generator: build_derived.py v0.1 (concepts)
   generation_date: '2026-07-02'

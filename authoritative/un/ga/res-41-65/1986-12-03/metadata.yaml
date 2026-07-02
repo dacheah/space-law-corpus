@@ -24,7 +24,7 @@ original_filename: original.txt
 content_hash: sha256:832fa8a80313592ad4e1acec0635264a98e7c3b0ff10b886d49130301834a557
 original_sha256: sha256:054bf4a3b5886504f0e9d9d39773438e394af4940d0e810f833f8f25758db122
 text_sha256: sha256:832fa8a80313592ad4e1acec0635264a98e7c3b0ff10b886d49130301834a557
-text_fidelity: extracted_unverified
+text_fidelity: extracted_verified
 language: en
 authoritative_status: authentic_text
 license: UN-materials-terms
@@ -48,3 +48,11 @@ provenance_note: 'English text of the Principles Relating to Remote Sensing of t
   (page numbers and footnote markers removed, soft hyphenation rejoined, paragraphs reflowed). FIDELITY:
   extracted_unverified - PDF extraction may carry minor spacing artifacts; verification against the official
   text is a tracked follow-on.'
+verification:
+  status: verified
+  method: Extraction-fidelity check against the official UN compilation (source of record).
+  reference: 'UNOOSA ST/SPACE/61/Rev.3 (International Space Law: United Nations Instruments, 2025)'
+  verified_by: Dan + Claude (see docs/verification-2026-07.md)
+  verified_date: '2026-07-02'
+  note: 100% match to the official compilation (source of record); independent (non-compilation) corroboration
+    remains a tracked follow-on.

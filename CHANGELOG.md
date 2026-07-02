@@ -32,6 +32,9 @@ Three GitHub Actions workflows: `validate.yml` (integrity gate on every change),
 ### G. Transferability
 Full maintainer's guide (`docs/MAINTAINERS.md`) and this changelog. Finding a permanent institutional home is noted as a future milestone, not a present dependency.
 
+### Fidelity verification (2026-07-02)
+All ten texts cross-checked word-for-word against UNOOSA's official compilation ST/SPACE/61/Rev.3 (an independent source for the treaties; source of record for the principles) — see `docs/verification-2026-07.md`. Eight were confirmed faithful. Two carried real defects, corrected per JC-8 as documented, dated corrections (prior text preserved in Git): Liability ("mattters"→"matters", "aircraft flight"→"aircraft in flight"), Moon ("depository"→"depositary"), Rescue ("to the following"→"on the following", "of the Article"→"of this Article", "authorised"→"authorized"). All ten upgraded to `text_fidelity: extracted_verified` with a `verification` record; derived layer regenerated. Schema gained optional `verification` and `corrections` fields.
+
 ### Open follow-ons (tracked, not blocking)
 - Verify the ten texts against certified references; upgrade `text_fidelity` from `extracted_unverified`.
 - Re-capture the Rescue Agreement from a UN/depositary source to replace the Australian Treaty Series copy.

@@ -21,10 +21,10 @@ retrieval_date: '2026-07-02'
 retrieved_by: 'corpus ingest v0.1 via automated web-fetch tool; operator: Dan + Claude'
 original_format: txt
 original_filename: original.txt
-content_hash: sha256:5235b365d7006311a10fd22f2b482d7268094790145d5f0bfead97e021ef6d14
+content_hash: sha256:ca6a56044a572eb16f8132a452cdefe066ca671a385054e436944578c07ce534
 original_sha256: sha256:de53ee7c171b33c3d567928f75ea6e4a8a2b45526f6edc549bb5571c7443ac53
-text_sha256: sha256:5235b365d7006311a10fd22f2b482d7268094790145d5f0bfead97e021ef6d14
-text_fidelity: extracted_unverified
+text_sha256: sha256:ca6a56044a572eb16f8132a452cdefe066ca671a385054e436944578c07ce534
+text_fidelity: extracted_verified
 language: en
 authoritative_status: authentic_text
 license: UN-materials-terms
@@ -47,3 +47,15 @@ provenance_note: 'English authentic text of the Moon Agreement. SOURCE: the UNOO
   text.txt is the extracted authentic treaty text (the Annex), programmatically sliced and stripped of
   markdown. FIDELITY: extracted_unverified pending human verification against the UNTS certified text;
   a byte-exact certified-PDF capture is a tracked follow-on.'
+corrections:
+- date: '2026-07-02'
+  change: 'Article 18: corrected ''depository'' -> authentic ''depositary'''
+  reference: 'UNOOSA ST/SPACE/61/Rev.3 (International Space Law: United Nations Instruments, 2025)'
+verification:
+  status: verified
+  method: Independent word-for-word cross-check against ST/SPACE/61/Rev.3 (treaty was ingested from a
+    different source).
+  reference: 'UNOOSA ST/SPACE/61/Rev.3 (International Space Law: United Nations Instruments, 2025)'
+  verified_by: Dan + Claude (see docs/verification-2026-07.md)
+  verified_date: '2026-07-02'
+  note: Confirmed defects corrected against the compilation; re-verified word-for-word.

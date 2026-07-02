@@ -22,10 +22,10 @@ retrieval_date: '2026-07-02'
 retrieved_by: 'corpus ingest v0.1 via automated web-fetch tool; operator: Dan + Claude'
 original_format: txt
 original_filename: original.txt
-content_hash: sha256:748fa1bec4b0966ccbd47b46753947d51705d85ea1f55614ea9a4ae6cc809ec8
+content_hash: sha256:fd87ebe4467e5fc8ec04fbcf80d47a886639e8ca71d0b38b52614b78d171659a
 original_sha256: sha256:08a6441aaae8ee6fb76f8fd9d5752217cd141f8d22ea502a85bbf1e74bf74326
-text_sha256: sha256:748fa1bec4b0966ccbd47b46753947d51705d85ea1f55614ea9a4ae6cc809ec8
-text_fidelity: extracted_unverified
+text_sha256: sha256:fd87ebe4467e5fc8ec04fbcf80d47a886639e8ca71d0b38b52614b78d171659a
+text_fidelity: extracted_verified
 language: en
 authoritative_status: authentic_text
 license: UN-materials-terms
@@ -53,3 +53,21 @@ provenance_note: 'English authentic text of the Rescue Agreement. SOURCE OF RECO
   lines rejoined. FIDELITY: extracted_unverified; the ATS reproduction may carry minor orthographic variants
   (e.g. ''authorised''); re-capture and verification against the UN Treaty Series certified English text
   (672 UNTS 119) is a tracked follow-on.'
+corrections:
+- date: '2026-07-02'
+  change: 'Preamble: ''to the following'' -> authentic ''on the following'''
+  reference: 'UNOOSA ST/SPACE/61/Rev.3 (International Space Law: United Nations Instruments, 2025)'
+- date: '2026-07-02'
+  change: 'Article 5(4): ''of the Article'' -> authentic ''of this Article'''
+  reference: 'UNOOSA ST/SPACE/61/Rev.3 (International Space Law: United Nations Instruments, 2025)'
+- date: '2026-07-02'
+  change: 'Article 10: ''authorised'' -> authentic ''authorized'''
+  reference: 'UNOOSA ST/SPACE/61/Rev.3 (International Space Law: United Nations Instruments, 2025)'
+verification:
+  status: verified
+  method: Independent word-for-word cross-check against ST/SPACE/61/Rev.3 (treaty was ingested from a
+    different source).
+  reference: 'UNOOSA ST/SPACE/61/Rev.3 (International Space Law: United Nations Instruments, 2025)'
+  verified_by: Dan + Claude (see docs/verification-2026-07.md)
+  verified_date: '2026-07-02'
+  note: Confirmed defects corrected against the compilation; re-verified word-for-word.

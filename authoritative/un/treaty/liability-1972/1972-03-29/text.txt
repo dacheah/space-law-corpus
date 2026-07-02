@@ -32,7 +32,7 @@ For the purposes of this Convention:
 
 Article II
 
-A launching State shall be absolutely liable to pay compensation for damage caused by its space object on the surface of the earth or to aircraft flight.
+A launching State shall be absolutely liable to pay compensation for damage caused by its space object on the surface of the earth or to aircraft in flight.
 
 Article III
 
@@ -122,7 +122,7 @@ Article XVI
 
 3. The Commission shall determine its own procedure.
 
-4. The Commission shall determine the place or places where it shall sit and all other administrative mattters.
+4. The Commission shall determine the place or places where it shall sit and all other administrative matters.
 
 5. Except in the case of decisions and awards by a single-member Commission, all decisions and awards of the Commission shall be by majority vote.
 
