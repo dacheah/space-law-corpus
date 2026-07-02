@@ -47,6 +47,7 @@ schema/           machine-checkable JSON Schemas for the metadata
 queue/            borderline items awaiting a scope decision
 scripts/          ingestion, hashing, validation, derived-build, source-watch tooling
 monitoring/       watched-source list + latest monitor report
+site/             generated browsable view — open site/index.html (built by scripts/build_site.py)
 .github/workflows CI validation + automated source monitoring + annual review
 ```
 

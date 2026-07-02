@@ -41,6 +41,9 @@ Ingested the COPUOS **Guidelines for the Long-term Sustainability of Outer Space
 ### Roadmap Step 2 — concept layer (2026-07-03)
 Upgraded the derived concept layer from the initial keyword pass to a **model-generated tagging** (`generation_method: model`, `review_status: unreviewed`) across all 12 instruments — 14 neutral concepts (`docs/concept-vocabulary.md`), 113 tagged provisions at article/guideline/principle granularity. Added the **cross-instrument concept index** (`derived/concept-index.json` and `derived/concept-index.md`): every provision addressing each concept, across the corpus. Tags are model output awaiting human review. Structure extraction now also recognises "Guideline" units.
 
+### Roadmap Step 3 — browsable view (2026-07-03)
+Added `scripts/build_site.py`, which generates a static, self-contained, dependency-free browsable site into `site/` from the repository (the repo stays the single source of truth; the site is read-only and regenerable). A page per instrument shows the **authoritative text alongside its full provenance** (source, official-vs-reproduction flag, retrieval date, citation, fidelity, content hash, verification, corrections); a concept page renders the cross-instrument index; derived concept tags are clearly labelled unofficial. This is the on-ramp to going public (Step 4).
+
 ### Open follow-ons (tracked, not blocking)
 - Verify the ten texts against certified references; upgrade `text_fidelity` from `extracted_unverified`.
 - Re-capture the Rescue Agreement from a UN/depositary source to replace the Australian Treaty Series copy.
