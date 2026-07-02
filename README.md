@@ -2,7 +2,7 @@
 
 A neutral, authoritative, structured, machine-readable record of international and national space law, built to last for decades.
 
-**Status:** Phase 1 — foundational build. Private during construction; intended to become public infrastructure at a deliberate later milestone.
+**Status:** Phase 1 foundational build — the UN-level core is complete (10 instruments, authoritative + derived layers, self-validating). Private during construction; intended to become public infrastructure at a deliberate later milestone. See [`CHANGELOG.md`](CHANGELOG.md).
 
 ---
 
@@ -25,6 +25,17 @@ It is not a commentary, not a legal-advice service, and not organised around any
 
 Where a file lives tells you what it is. The two never mix.
 
+## Current contents
+
+Authoritative layer (10 instruments, English authentic text, full provenance + SHA-256 hashes):
+
+- The **five UN space treaties** — Outer Space Treaty (1967), Rescue Agreement (1968), Liability Convention (1972), Registration Convention (1975), Moon Agreement (1979).
+- The **five UN General Assembly space-law principle instruments** — Declaration of Legal Principles (1963), Direct Broadcasting (1982), Remote Sensing (1986), Nuclear Power Sources (1992), Benefits Declaration (1996).
+
+Derived layer (for each of the above): structure extraction and neutral concept tags, deterministic first passes marked `unreviewed`.
+
+Not yet ingested (deliberately, and tracked): national legislation, key soft law (COPUOS/IADC/PCA), and a fidelity-verification pass to upgrade texts from `extracted_unverified`. See [`docs/source-coverage.md`](docs/source-coverage.md).
+
 ## Repository map
 
 ```
@@ -34,9 +45,16 @@ authoritative/    LAYER 1 — the legal record (see authoritative/README.md)
 derived/          LAYER 2 — derived, unofficial products (see derived/README.md)
 schema/           machine-checkable JSON Schemas for the metadata
 queue/            borderline items awaiting a scope decision
-scripts/          ingestion, hashing, validation tooling
-.github/workflows automated source monitoring (Phase F)
+scripts/          ingestion, hashing, validation, derived-build, source-watch tooling
+monitoring/       watched-source list + latest monitor report
+.github/workflows CI validation + automated source monitoring + annual review
 ```
+
+## How to use it
+
+- Need the law itself? Open `authoritative/<corpus-id>/<version>/text.txt` and check its `metadata.yaml` for provenance.
+- Want to navigate by concept or structure? Open the matching `derived/...` files — everything there is unofficial and traceable back to a specific authoritative version.
+- Taking over maintenance? Read [`docs/MAINTAINERS.md`](docs/MAINTAINERS.md); a competent stranger can run and extend the corpus from it alone.
 
 ## Start here
 
