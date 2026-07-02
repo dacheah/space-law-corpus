@@ -1,0 +1,43 @@
+name: Watch sources
+# Monthly (and on-demand) check of the monitored sources. If a source changed,
+# it opens a review issue and advances the stored baseline. Automation only
+# watches and queues; the maintainer judges. Nothing is ingested automatically.
+on:
+  schedule:
+    - cron: "0 6 1 * *"   # 06:00 UTC on the 1st of each month
+  workflow_dispatch:
+permissions:
+  contents: write   # to update monitoring/ baseline
+  issues: write     # to open a review issue
+jobs:
+  watch:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - id: watch
+        run: python3 scripts/watch_sources.py
+      - name: Commit updated baseline
+        run: |
+          git config user.name "corpus-monitor[bot]"
+          git config user.email "actions@github.com"
+          git add monitoring/
+          git commit -m "monitoring: update source baseline [skip ci]" || echo "no baseline changes"
+          git push || echo "nothing to push"
+      - name: Open review issue on change
+        if: steps.watch.outputs.changes == 'true'
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const fs = require('fs');
+            const body = fs.readFileSync('monitoring/last_report.md', 'utf8');
+            const today = new Date().toISOString().slice(0, 10);
+            await github.rest.issues.create({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              title: `Source change detected — ${today}`,
+              body,
+              labels: ['monitoring', 'needs-review']
+            });

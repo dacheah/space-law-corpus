@@ -1,0 +1,11 @@
+{
+  "description": "Sources the corpus watches for changes (Phase F monitoring). Baselines are updated by scripts/watch_sources.py running in GitHub Actions. A change opens a review issue; automation only watches, the maintainer judges. Index/status pages are watched (highest signal for new instruments or ratification changes).",
+  "sources": [
+    {"name": "UN treaty status", "url": "https://www.unoosa.org/oosa/en/ourwork/spacelaw/treaties/status/index.html", "last_sha256": null, "last_checked": null},
+    {"name": "UNOOSA treaties & principles index", "url": "https://www.unoosa.org/oosa/en/ourwork/spacelaw/treaties.html", "last_sha256": null, "last_checked": null},
+    {"name": "UNOOSA space law resolutions", "url": "https://www.unoosa.org/oosa/en/ourwork/spacelaw/resolutions.html", "last_sha256": null, "last_checked": null},
+    {"name": "UNOOSA national space law", "url": "https://www.unoosa.org/oosa/en/ourwork/spacelaw/nationalspacelaw.html", "last_sha256": null, "last_checked": null},
+    {"name": "ASTRO database", "url": "https://astro.unoosa.org/", "last_sha256": null, "last_checked": null},
+    {"name": "UNOOSA non-binding instruments compendium", "url": "https://www.unoosa.org/oosa/en/ourwork/spacelaw/nlbcompendium.html", "last_sha256": null, "last_checked": null}
+  ]
+}

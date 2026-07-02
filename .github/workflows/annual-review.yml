@@ -1,0 +1,42 @@
+name: Annual review
+# Opens the annual review issue, timed to the COPUOS Legal Subcommittee season.
+# Trigger early any time from the Actions tab (workflow_dispatch) if something
+# material happens.
+on:
+  schedule:
+    - cron: "0 6 1 4 *"   # 06:00 UTC, 1 April (approx. COPUOS Legal Subcommittee)
+  workflow_dispatch:
+permissions:
+  issues: write
+jobs:
+  open-review:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/github-script@v7
+        with:
+          script: |
+            const year = new Date().getFullYear();
+            const body = [
+              `# Annual review ${year} — Space Law Corpus`,
+              ``,
+              `The yearly deep review, aligned to the COPUOS Legal Subcommittee session.`,
+              `Automation has watched the sources through the year; this is the human pass.`,
+              ``,
+              `- [ ] Work the borderline queue (\`queue/candidates.md\`) — decide each item`,
+              `- [ ] Check UNOOSA / ASTRO for new or amended instruments; ingest in-scope ones`,
+              `- [ ] Review any monitoring issues opened since last year`,
+              `- [ ] Upgrade fidelity flags where texts were verified (extracted_unverified → verified)`,
+              `- [ ] Re-capture the Rescue Agreement from a UN/depositary source (replace ATS copy)`,
+              `- [ ] Regenerate derived artifacts for any authoritative text that changed`,
+              `- [ ] Confirm the scope boundary still holds; record any deliberate scope decision`,
+              `- [ ] Run \`python3 scripts/validate_corpus.py\` and tag an annual snapshot`,
+              ``,
+              `_Provenance and version integrity override convenience. Every change is a new dated version._`
+            ].join("\n");
+            await github.rest.issues.create({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              title: `Annual review ${year} — Space Law Corpus`,
+              body,
+              labels: ['annual-review']
+            });
