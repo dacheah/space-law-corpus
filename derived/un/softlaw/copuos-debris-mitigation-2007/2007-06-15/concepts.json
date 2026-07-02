@@ -4,80 +4,71 @@
   "corpus_id": "un/softlaw/copuos-debris-mitigation-2007",
   "version_id": "2007-06-15",
   "concept_vocabulary": [
-    "registration",
-    "liability",
-    "jurisdiction_and_control",
+    "freedom_of_exploration_and_use",
     "non_appropriation",
-    "resource_rights",
-    "abandonment_and_salvage",
-    "state_responsibility",
+    "peaceful_use_and_non_militarization",
+    "state_responsibility_and_supervision",
+    "jurisdiction_and_control",
+    "registration",
+    "liability_and_damage",
     "rescue_and_return",
-    "environmental_and_debris",
-    "dispute_settlement"
+    "abandonment_and_salvage",
+    "resource_rights",
+    "environmental_protection_and_debris",
+    "international_cooperation_and_transparency",
+    "dispute_settlement_and_consultation",
+    "safety_of_space_operations"
   ],
-  "method": "keyword-based first pass (rule_based); crude, for human/model review",
+  "tagging_method": "model",
   "document_concepts": [
-    "environmental_and_debris"
+    "environmental_protection_and_debris",
+    "peaceful_use_and_non_militarization",
+    "safety_of_space_operations"
   ],
   "tags": [
     {
-      "unit": "Paragraph 1",
-      "number": "1",
+      "unit": "Guideline 1",
       "concepts": [
-        "environmental_and_debris"
-      ],
-      "matched_terms": [
-        "debris"
+        "environmental_protection_and_debris"
       ]
     },
     {
-      "unit": "Paragraph 2",
-      "number": "2",
+      "unit": "Guideline 2",
       "concepts": [
-        "environmental_and_debris"
-      ],
-      "matched_terms": [
-        "debris"
+        "environmental_protection_and_debris",
+        "safety_of_space_operations"
       ]
     },
     {
-      "unit": "Paragraph 3",
-      "number": "3",
+      "unit": "Guideline 3",
       "concepts": [
-        "environmental_and_debris"
-      ],
-      "matched_terms": [
-        "debris"
+        "environmental_protection_and_debris",
+        "safety_of_space_operations"
       ]
     },
     {
-      "unit": "Paragraph 4",
-      "number": "4",
+      "unit": "Guideline 4",
       "concepts": [
-        "environmental_and_debris"
-      ],
-      "matched_terms": [
-        "debris"
+        "environmental_protection_and_debris",
+        "peaceful_use_and_non_militarization"
       ]
     },
     {
-      "unit": "Paragraph 5",
-      "number": "5",
+      "unit": "Guideline 5",
       "concepts": [
-        "environmental_and_debris"
-      ],
-      "matched_terms": [
-        "debris"
+        "environmental_protection_and_debris"
       ]
     },
     {
-      "unit": "Paragraph 6",
-      "number": "6",
+      "unit": "Guideline 6",
       "concepts": [
-        "environmental_and_debris"
-      ],
-      "matched_terms": [
-        "debris"
+        "environmental_protection_and_debris"
+      ]
+    },
+    {
+      "unit": "Guideline 7",
+      "concepts": [
+        "environmental_protection_and_debris"
       ]
     }
   ]

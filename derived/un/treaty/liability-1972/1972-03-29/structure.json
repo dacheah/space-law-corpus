@@ -6,7 +6,6 @@
   "title": "Convention on International Liability for Damage Caused by Space Objects",
   "document_type": "treaty",
   "adoption_date": "1971-11-29",
-  "entry_into_force_date": "1972-09-01",
   "unit_type": "article",
   "unit_count": 29,
   "units": [
@@ -157,7 +156,6 @@
     }
   ],
   "citations_detected": [
-    "Charter of the United Nations",
-    "Treaty on Principles Governing"
+    "Charter of the United Nations"
   ]
 }

@@ -4,215 +4,143 @@
   "corpus_id": "un/treaty/liability-1972",
   "version_id": "1972-03-29",
   "concept_vocabulary": [
-    "registration",
-    "liability",
-    "jurisdiction_and_control",
+    "freedom_of_exploration_and_use",
     "non_appropriation",
-    "resource_rights",
-    "abandonment_and_salvage",
-    "state_responsibility",
+    "peaceful_use_and_non_militarization",
+    "state_responsibility_and_supervision",
+    "jurisdiction_and_control",
+    "registration",
+    "liability_and_damage",
     "rescue_and_return",
-    "environmental_and_debris",
-    "dispute_settlement"
-  ],
-  "method": "keyword-based first pass (rule_based); crude, for human/model review",
-  "document_concepts": [
     "abandonment_and_salvage",
-    "dispute_settlement",
-    "liability"
+    "resource_rights",
+    "environmental_protection_and_debris",
+    "international_cooperation_and_transparency",
+    "dispute_settlement_and_consultation",
+    "safety_of_space_operations"
+  ],
+  "tagging_method": "model",
+  "document_concepts": [
+    "dispute_settlement_and_consultation",
+    "international_cooperation_and_transparency",
+    "liability_and_damage",
+    "state_responsibility_and_supervision"
   ],
   "tags": [
     {
-      "unit": "preamble/chapeau",
-      "number": null,
-      "concepts": [
-        "liability"
-      ],
-      "matched_terms": [
-        "compensation",
-        "damage caused",
-        "liabilit"
-      ]
-    },
-    {
       "unit": "Article I",
-      "number": "I",
       "concepts": [
-        "abandonment_and_salvage"
-      ],
-      "matched_terms": [
-        "component parts"
+        "liability_and_damage"
       ]
     },
     {
       "unit": "Article II",
-      "number": "II",
       "concepts": [
-        "liability"
-      ],
-      "matched_terms": [
-        "compensation",
-        "damage caused",
-        "liable"
+        "liability_and_damage"
       ]
     },
     {
       "unit": "Article III",
-      "number": "III",
       "concepts": [
-        "liability"
-      ],
-      "matched_terms": [
-        "liable"
+        "liability_and_damage"
       ]
     },
     {
       "unit": "Article IV",
-      "number": "IV",
       "concepts": [
-        "liability"
-      ],
-      "matched_terms": [
-        "compensation",
-        "liabilit",
-        "liable"
+        "liability_and_damage"
       ]
     },
     {
       "unit": "Article V",
-      "number": "V",
       "concepts": [
-        "liability"
-      ],
-      "matched_terms": [
-        "compensation",
-        "damage caused",
-        "liable"
+        "liability_and_damage"
       ]
     },
     {
       "unit": "Article VI",
-      "number": "VI",
       "concepts": [
-        "liability"
-      ],
-      "matched_terms": [
-        "liabilit"
+        "liability_and_damage"
       ]
     },
     {
       "unit": "Article VII",
-      "number": "VII",
       "concepts": [
-        "liability"
-      ],
-      "matched_terms": [
-        "damage caused"
+        "liability_and_damage"
       ]
     },
     {
       "unit": "Article VIII",
-      "number": "VIII",
       "concepts": [
-        "liability"
-      ],
-      "matched_terms": [
-        "compensation"
+        "liability_and_damage",
+        "dispute_settlement_and_consultation"
       ]
     },
     {
       "unit": "Article IX",
-      "number": "IX",
       "concepts": [
-        "liability"
-      ],
-      "matched_terms": [
-        "compensation"
+        "liability_and_damage",
+        "dispute_settlement_and_consultation"
       ]
     },
     {
       "unit": "Article X",
-      "number": "X",
       "concepts": [
-        "liability"
-      ],
-      "matched_terms": [
-        "compensation",
-        "liable"
+        "liability_and_damage",
+        "dispute_settlement_and_consultation"
       ]
     },
     {
       "unit": "Article XI",
-      "number": "XI",
       "concepts": [
-        "liability"
-      ],
-      "matched_terms": [
-        "compensation"
+        "liability_and_damage",
+        "dispute_settlement_and_consultation"
       ]
     },
     {
       "unit": "Article XII",
-      "number": "XII",
       "concepts": [
-        "liability"
-      ],
-      "matched_terms": [
-        "compensation",
-        "liable"
-      ]
-    },
-    {
-      "unit": "Article XIII",
-      "number": "XIII",
-      "concepts": [
-        "liability"
-      ],
-      "matched_terms": [
-        "compensation"
+        "liability_and_damage",
+        "dispute_settlement_and_consultation"
       ]
     },
     {
       "unit": "Article XIV",
-      "number": "XIV",
       "concepts": [
-        "dispute_settlement"
-      ],
-      "matched_terms": [
-        "negotiation"
+        "dispute_settlement_and_consultation"
+      ]
+    },
+    {
+      "unit": "Article XV",
+      "concepts": [
+        "dispute_settlement_and_consultation"
       ]
     },
     {
       "unit": "Article XVIII",
-      "number": "XVIII",
       "concepts": [
-        "liability"
-      ],
-      "matched_terms": [
-        "compensation"
+        "dispute_settlement_and_consultation",
+        "liability_and_damage"
+      ]
+    },
+    {
+      "unit": "Article XIX",
+      "concepts": [
+        "dispute_settlement_and_consultation"
       ]
     },
     {
       "unit": "Article XXI",
-      "number": "XXI",
       "concepts": [
-        "liability"
-      ],
-      "matched_terms": [
-        "damage caused"
+        "liability_and_damage",
+        "international_cooperation_and_transparency"
       ]
     },
     {
       "unit": "Article XXII",
-      "number": "XXII",
       "concepts": [
-        "liability"
-      ],
-      "matched_terms": [
-        "compensation",
-        "damage caused",
-        "liabilit",
-        "liable"
+        "state_responsibility_and_supervision",
+        "liability_and_damage"
       ]
     }
   ]

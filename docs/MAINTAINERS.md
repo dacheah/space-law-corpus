@@ -62,6 +62,8 @@ Capture and ingest are deliberately **separate** steps.
 
 **Step A — Capture.** Obtain the source. Prefer the official issuer or an official depositary. Save exactly what you retrieved as a local file (the "capture"). Note the exact URL and today's date.
 
+*Sourcing fallback (when the automated fetcher returns blank).* Some official sites — parts of UNOOSA among them — don't respond to the automated web fetcher. In that case, retrieve the file via **Claude in Chrome** (a real browser reaches pages the fetcher can't), or have the maintainer download the official file and supply it. Either way, store the **byte-for-byte original** (e.g. `original.pdf`) — its `original_sha256` then fingerprints the authentic file, which is a provenance *upgrade* over a text rendering. The COPUOS Space Debris Mitigation Guidelines were ingested this way.
+
 **Step B — Prepare the text.** Produce a clean `text.txt` of the **authentic-language** text only (no editorial apparatus, no translation). If you cannot get an authentic text — only an unofficial translation — do **not** ingest it as authoritative; see §8 (gaps).
 
 **Step C — Write an ingest manifest** (JSON) with the metadata fields (see any existing `metadata.yaml` for a worked example, and `docs/design/01-provenance-schema.md` for field definitions). Point it at your capture file and your `text.txt`:

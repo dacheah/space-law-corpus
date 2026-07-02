@@ -4,97 +4,79 @@
   "corpus_id": "un/ga/res-47-68",
   "version_id": "1992-12-14",
   "concept_vocabulary": [
-    "registration",
-    "liability",
-    "jurisdiction_and_control",
+    "freedom_of_exploration_and_use",
     "non_appropriation",
-    "resource_rights",
-    "abandonment_and_salvage",
-    "state_responsibility",
-    "rescue_and_return",
-    "environmental_and_debris",
-    "dispute_settlement"
-  ],
-  "method": "keyword-based first pass (rule_based); crude, for human/model review",
-  "document_concepts": [
-    "abandonment_and_salvage",
-    "dispute_settlement",
-    "environmental_and_debris",
+    "peaceful_use_and_non_militarization",
+    "state_responsibility_and_supervision",
     "jurisdiction_and_control",
-    "liability",
-    "state_responsibility"
+    "registration",
+    "liability_and_damage",
+    "rescue_and_return",
+    "abandonment_and_salvage",
+    "resource_rights",
+    "environmental_protection_and_debris",
+    "international_cooperation_and_transparency",
+    "dispute_settlement_and_consultation",
+    "safety_of_space_operations"
+  ],
+  "tagging_method": "model",
+  "document_concepts": [
+    "environmental_protection_and_debris",
+    "international_cooperation_and_transparency",
+    "liability_and_damage",
+    "safety_of_space_operations",
+    "state_responsibility_and_supervision"
   ],
   "tags": [
     {
-      "unit": "Principle 2. Use of terms 1. For the purpose of these Principles, the terms “launching State” and “State launching” mean the State which exercises jurisdiction and control over a space object with nuclear power sources on board at a given point in time relevant to the principle concerned.",
-      "number": "2",
+      "unit": "Principle 2",
       "concepts": [
-        "jurisdiction_and_control"
-      ],
-      "matched_terms": [
-        "jurisdiction and control"
+        "safety_of_space_operations",
+        "environmental_protection_and_debris"
       ]
     },
     {
-      "unit": "Principle 3. Guidelines and criteria for safe use In order to minimize the quantity of radioactive material in space and the risks involved, the use of nuclear power sources in outer space shall be restricted to those space missions which cannot be operated by non-nuclear energy sources in a reasonable way.",
-      "number": "3",
+      "unit": "Principle 3",
       "concepts": [
-        "liability",
-        "environmental_and_debris"
-      ],
-      "matched_terms": [
-        "contamination",
-        "liabilit",
-        "liable"
+        "safety_of_space_operations",
+        "environmental_protection_and_debris"
       ]
     },
     {
-      "unit": "Principle 6. Consultations States providing information in accordance with principle 5 shall, as far as reasonably practicable, respond promptly to requests for further information or consultations sought by other States.",
-      "number": "6",
+      "unit": "Principle 4",
       "concepts": [
-        "dispute_settlement"
-      ],
-      "matched_terms": [
-        "consultation"
+        "safety_of_space_operations"
       ]
     },
     {
-      "unit": "Principle 8. Responsibility In accordance with article VI of the Treaty on Principles Governing the Activities of States in the Exploration and Use of Outer Space, including the Moon and Other Celestial Bodies, States shall bear international responsibility for national activities involving the use of nuclear power sources in outer space, whether such activities are carried on by governmental agencies or by non-governmental entities, and for assuring that such national activities are carried out in conformity with that Treaty and the recommendations contained in these Principles. When activities in outer space involving the use of nuclear power sources are carried on by an international organization, responsibility for compliance with the aforesaid Treaty and the recommendations contained in these Principles shall be borne both by the international organization and by the States participating in it.",
-      "number": "8",
+      "unit": "Principle 5",
       "concepts": [
-        "state_responsibility"
-      ],
-      "matched_terms": [
-        "international responsibility",
-        "non-governmental entities",
-        "responsibility for national"
+        "international_cooperation_and_transparency",
+        "safety_of_space_operations"
       ]
     },
     {
-      "unit": "Principle 9. Liability and compensation 1. In accordance with article VII of the Treaty on Principles Governing the Activities of States in the Exploration and Use of Outer Space, including the Moon and Other Celestial Bodies, and the provisions of the Convention on International Liability for Damage Caused by Space Objects,3 each State which launches or procures the launching of a space object and each State from whose territory or facility a space object is launched shall be internationally liable for damage caused by such space objects or their component parts. This fully applies to the case of such a space object carrying a nuclear power source on board. Whenever two or more States jointly launch such a space object, they shall be jointly and severally liable for any damage caused, in accordance with article V of the above-mentioned Convention.",
-      "number": "9",
+      "unit": "Principle 6",
       "concepts": [
-        "liability",
-        "abandonment_and_salvage"
-      ],
-      "matched_terms": [
-        "compensation",
-        "component parts",
-        "damage caused",
-        "liabilit",
-        "liable"
+        "international_cooperation_and_transparency"
       ]
     },
     {
-      "unit": "Principle 10. Settlement of disputes Any dispute resulting from the application of these Principles shall be resolved through negotiations or other established procedures for the peaceful settlement of disputes, in accordance with the Charter of the United Nations.",
-      "number": "10",
+      "unit": "Principle 7",
       "concepts": [
-        "dispute_settlement"
-      ],
-      "matched_terms": [
-        "dispute",
-        "negotiation",
-        "peaceful settlement"
+        "international_cooperation_and_transparency"
+      ]
+    },
+    {
+      "unit": "Principle 8",
+      "concepts": [
+        "state_responsibility_and_supervision"
+      ]
+    },
+    {
+      "unit": "Principle 9",
+      "concepts": [
+        "liability_and_damage"
       ]
     }
   ]

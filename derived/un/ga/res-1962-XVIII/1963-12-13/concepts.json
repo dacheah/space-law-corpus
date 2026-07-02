@@ -4,112 +4,91 @@
   "corpus_id": "un/ga/res-1962-XVIII",
   "version_id": "1963-12-13",
   "concept_vocabulary": [
-    "registration",
-    "liability",
-    "jurisdiction_and_control",
+    "freedom_of_exploration_and_use",
     "non_appropriation",
-    "resource_rights",
-    "abandonment_and_salvage",
-    "state_responsibility",
+    "peaceful_use_and_non_militarization",
+    "state_responsibility_and_supervision",
+    "jurisdiction_and_control",
+    "registration",
+    "liability_and_damage",
     "rescue_and_return",
-    "environmental_and_debris",
-    "dispute_settlement"
+    "abandonment_and_salvage",
+    "resource_rights",
+    "environmental_protection_and_debris",
+    "international_cooperation_and_transparency",
+    "dispute_settlement_and_consultation",
+    "safety_of_space_operations"
   ],
-  "method": "keyword-based first pass (rule_based); crude, for human/model review",
+  "tagging_method": "model",
   "document_concepts": [
     "abandonment_and_salvage",
-    "dispute_settlement",
-    "environmental_and_debris",
+    "environmental_protection_and_debris",
+    "freedom_of_exploration_and_use",
+    "international_cooperation_and_transparency",
     "jurisdiction_and_control",
-    "liability",
+    "liability_and_damage",
     "non_appropriation",
-    "registration",
+    "peaceful_use_and_non_militarization",
     "rescue_and_return",
-    "state_responsibility"
+    "state_responsibility_and_supervision"
   ],
   "tags": [
     {
-      "unit": "Paragraph 3",
-      "number": "3",
+      "unit": "Principle 1",
+      "concepts": [
+        "freedom_of_exploration_and_use",
+        "non_appropriation"
+      ]
+    },
+    {
+      "unit": "Principle 2",
+      "concepts": [
+        "freedom_of_exploration_and_use"
+      ]
+    },
+    {
+      "unit": "Principle 3",
       "concepts": [
         "non_appropriation"
-      ],
-      "matched_terms": [
-        "appropriation by claim",
-        "claim of sovereignty",
-        "national appropriation"
       ]
     },
     {
-      "unit": "Paragraph 5",
-      "number": "5",
+      "unit": "Principle 4",
       "concepts": [
-        "state_responsibility"
-      ],
-      "matched_terms": [
-        "authorization and continuing supervision",
-        "international responsibility",
-        "non-governmental entities",
-        "responsibility for national"
+        "peaceful_use_and_non_militarization",
+        "international_cooperation_and_transparency"
       ]
     },
     {
-      "unit": "Paragraph 6",
-      "number": "6",
+      "unit": "Principle 5",
       "concepts": [
-        "environmental_and_debris",
-        "dispute_settlement"
-      ],
-      "matched_terms": [
-        "consultation",
-        "harmful interference"
+        "state_responsibility_and_supervision"
       ]
     },
     {
-      "unit": "Paragraph 7",
-      "number": "7",
+      "unit": "Principle 6",
       "concepts": [
-        "registration",
+        "international_cooperation_and_transparency",
+        "environmental_protection_and_debris"
+      ]
+    },
+    {
+      "unit": "Principle 7",
+      "concepts": [
         "jurisdiction_and_control",
         "abandonment_and_salvage"
-      ],
-      "matched_terms": [
-        "component parts",
-        "jurisdiction and control",
-        "registr",
-        "registry",
-        "retain jurisdiction",
-        "state of registry"
       ]
     },
     {
-      "unit": "Paragraph 8",
-      "number": "8",
+      "unit": "Principle 8",
       "concepts": [
-        "liability",
-        "abandonment_and_salvage"
-      ],
-      "matched_terms": [
-        "component parts",
-        "liable"
+        "liability_and_damage"
       ]
     },
     {
-      "unit": "Paragraph 9",
-      "number": "9",
+      "unit": "Principle 9",
       "concepts": [
-        "registration",
         "rescue_and_return"
-      ],
-      "matched_terms": [
-        "astronaut",
-        "distress",
-        "emergency landing",
-        "envoys of mankind",
-        "registr",
-        "registry",
-        "safely and promptly returned",
-        "state of registry"
       ]
     }
   ]

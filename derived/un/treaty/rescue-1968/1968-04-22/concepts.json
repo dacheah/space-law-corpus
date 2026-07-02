@@ -4,97 +4,67 @@
   "corpus_id": "un/treaty/rescue-1968",
   "version_id": "1968-04-22",
   "concept_vocabulary": [
-    "registration",
-    "liability",
-    "jurisdiction_and_control",
+    "freedom_of_exploration_and_use",
     "non_appropriation",
-    "resource_rights",
-    "abandonment_and_salvage",
-    "state_responsibility",
+    "peaceful_use_and_non_militarization",
+    "state_responsibility_and_supervision",
+    "jurisdiction_and_control",
+    "registration",
+    "liability_and_damage",
     "rescue_and_return",
-    "environmental_and_debris",
-    "dispute_settlement"
+    "abandonment_and_salvage",
+    "resource_rights",
+    "environmental_protection_and_debris",
+    "international_cooperation_and_transparency",
+    "dispute_settlement_and_consultation",
+    "safety_of_space_operations"
   ],
-  "method": "keyword-based first pass (rule_based); crude, for human/model review",
+  "tagging_method": "model",
   "document_concepts": [
     "abandonment_and_salvage",
-    "dispute_settlement",
-    "jurisdiction_and_control",
-    "rescue_and_return"
+    "international_cooperation_and_transparency",
+    "liability_and_damage",
+    "rescue_and_return",
+    "state_responsibility_and_supervision"
   ],
   "tags": [
     {
-      "unit": "preamble/chapeau",
-      "number": null,
-      "concepts": [
-        "abandonment_and_salvage",
-        "rescue_and_return"
-      ],
-      "matched_terms": [
-        "astronaut",
-        "distress",
-        "emergency landing",
-        "return of objects"
-      ]
-    },
-    {
-      "unit": "Article 1 Each Contracting Party which receives information or discovers that the personnel of a spacecraft have suffered accident or are experiencing conditions of distress or have made an emergency or unintended landing in territory under its jurisdiction or on the high seas or in any other place not under the jurisdiction of any State shall immediately:",
-      "number": "1",
-      "concepts": [
-        "rescue_and_return"
-      ],
-      "matched_terms": [
-        "distress"
-      ]
-    },
-    {
-      "unit": "Article 2 If, owing to accident, distress, emergency or unintended landing, the personnel of a spacecraft land in territory under the jurisdiction of a Contracting Party, it shall immediately take all possible steps to rescue them and render them all necessary assistance. It shall inform the launching authority and also the Secretary-General of the United Nations of the steps it is taking and of their progress. If assistance by the launching authority would help to effect a prompt rescue or would contribute substantially to the effectiveness of search and rescue operations, the launching authority shall cooperate with the Contracting Party with a view to the effective conduct of search and rescue operations. Such operations shall be subject to the direction and control of the Contracting Party, which shall act in close and continuing consultation with the launching authority.",
-      "number": "2",
+      "unit": "Article 1",
       "concepts": [
         "rescue_and_return",
-        "dispute_settlement"
-      ],
-      "matched_terms": [
-        "consultation",
-        "distress",
-        "rescue"
+        "international_cooperation_and_transparency"
       ]
     },
     {
-      "unit": "Article 3 If information is received or it is discovered that the personnel of a spacecraft have alighted on the high seas or in any other place not under the jurisdiction of any State, those Contracting Parties which are in a position to do so shall, if necessary, extend assistance in search and rescue operations for such personnel to assure their speedy rescue. They shall inform the launching authority and the Secretary-General of the United Nations of the steps they are taking and of their progress.",
-      "number": "3",
+      "unit": "Article 2",
       "concepts": [
         "rescue_and_return"
-      ],
-      "matched_terms": [
-        "rescue"
       ]
     },
     {
-      "unit": "Article 4 If, owing to accident, distress, emergency or unintended landing, the personnel of a spacecraft land in territory under the jurisdiction of a Contracting Party or have been found on the high seas or in any other place not under the jurisdiction of any State, they shall be safely and promptly returned to representatives of the launching authority.",
-      "number": "4",
+      "unit": "Article 3",
+      "concepts": [
+        "rescue_and_return"
+      ]
+    },
+    {
+      "unit": "Article 4",
+      "concepts": [
+        "rescue_and_return"
+      ]
+    },
+    {
+      "unit": "Article 5",
       "concepts": [
         "abandonment_and_salvage",
-        "rescue_and_return"
-      ],
-      "matched_terms": [
-        "distress",
-        "returned to representatives",
-        "safely and promptly returned"
+        "liability_and_damage",
+        "international_cooperation_and_transparency"
       ]
     },
     {
-      "unit": "Article 5 1. Each Contracting Party which receives information or discovers that a space object or its component parts has returned to Earth in territory under its jurisdiction or on the high seas or in any other place not under the jurisdiction of any State, shall notify the launching authority and the Secretary-General of the United Nations.",
-      "number": "5",
+      "unit": "Article 6",
       "concepts": [
-        "jurisdiction_and_control",
-        "abandonment_and_salvage"
-      ],
-      "matched_terms": [
-        "component parts",
-        "found beyond the territorial",
-        "jurisdiction over",
-        "recover the object"
+        "state_responsibility_and_supervision"
       ]
     }
   ]

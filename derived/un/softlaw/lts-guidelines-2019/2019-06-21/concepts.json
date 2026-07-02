@@ -4,481 +4,161 @@
   "corpus_id": "un/softlaw/lts-guidelines-2019",
   "version_id": "2019-06-21",
   "concept_vocabulary": [
-    "registration",
-    "liability",
-    "jurisdiction_and_control",
+    "freedom_of_exploration_and_use",
     "non_appropriation",
-    "resource_rights",
-    "abandonment_and_salvage",
-    "state_responsibility",
+    "peaceful_use_and_non_militarization",
+    "state_responsibility_and_supervision",
+    "jurisdiction_and_control",
+    "registration",
+    "liability_and_damage",
     "rescue_and_return",
-    "environmental_and_debris",
-    "dispute_settlement"
+    "abandonment_and_salvage",
+    "resource_rights",
+    "environmental_protection_and_debris",
+    "international_cooperation_and_transparency",
+    "dispute_settlement_and_consultation",
+    "safety_of_space_operations"
   ],
-  "method": "keyword-based first pass (rule_based); crude, for human/model review",
+  "tagging_method": "model",
   "document_concepts": [
-    "abandonment_and_salvage",
-    "dispute_settlement",
-    "environmental_and_debris",
-    "jurisdiction_and_control",
-    "liability",
-    "non_appropriation",
+    "environmental_protection_and_debris",
+    "international_cooperation_and_transparency",
     "registration",
-    "rescue_and_return",
-    "resource_rights",
-    "state_responsibility"
+    "safety_of_space_operations",
+    "state_responsibility_and_supervision"
   ],
   "tags": [
     {
-      "unit": "Paragraph 1",
-      "number": "1",
+      "unit": "Guideline A.1",
       "concepts": [
-        "state_responsibility",
-        "environmental_and_debris"
-      ],
-      "matched_terms": [
-        "debris",
-        "non-governmental entities"
+        "state_responsibility_and_supervision"
       ]
     },
     {
-      "unit": "Paragraph 8",
-      "number": "8",
+      "unit": "Guideline A.2",
       "concepts": [
-        "non_appropriation"
-      ],
-      "matched_terms": [
-        "province of all mankind"
+        "state_responsibility_and_supervision"
       ]
     },
     {
-      "unit": "Paragraph 11",
-      "number": "11",
+      "unit": "Guideline A.3",
       "concepts": [
-        "state_responsibility"
-      ],
-      "matched_terms": [
-        "non-governmental entities"
+        "state_responsibility_and_supervision"
       ]
     },
     {
-      "unit": "Paragraph 19",
-      "number": "19",
+      "unit": "Guideline A.4",
       "concepts": [
-        "state_responsibility"
-      ],
-      "matched_terms": [
-        "non-governmental entities"
+        "international_cooperation_and_transparency",
+        "safety_of_space_operations"
       ]
     },
     {
-      "unit": "Paragraph 2",
-      "number": "2",
-      "concepts": [
-        "state_responsibility"
-      ],
-      "matched_terms": [
-        "international responsibility",
-        "non-governmental entities"
-      ]
-    },
-    {
-      "unit": "Paragraph 4",
-      "number": "4",
-      "concepts": [
-        "liability"
-      ],
-      "matched_terms": [
-        "liabilit"
-      ]
-    },
-    {
-      "unit": "Paragraph 2",
-      "number": "2",
-      "concepts": [
-        "resource_rights",
-        "environmental_and_debris"
-      ],
-      "matched_terms": [
-        "debris",
-        "utilization of"
-      ]
-    },
-    {
-      "unit": "Paragraph 1",
-      "number": "1",
-      "concepts": [
-        "state_responsibility"
-      ],
-      "matched_terms": [
-        "non-governmental entities"
-      ]
-    },
-    {
-      "unit": "Paragraph 2",
-      "number": "2",
-      "concepts": [
-        "liability",
-        "state_responsibility"
-      ],
-      "matched_terms": [
-        "authorization and continuing supervision",
-        "international responsibility",
-        "liabilit",
-        "responsibility for national"
-      ]
-    },
-    {
-      "unit": "Paragraph 5",
-      "number": "5",
-      "concepts": [
-        "dispute_settlement"
-      ],
-      "matched_terms": [
-        "consultation"
-      ]
-    },
-    {
-      "unit": "Paragraph 2",
-      "number": "2",
-      "concepts": [
-        "resource_rights"
-      ],
-      "matched_terms": [
-        "natural resources"
-      ]
-    },
-    {
-      "unit": "Paragraph 3",
-      "number": "3",
-      "concepts": [
-        "environmental_and_debris"
-      ],
-      "matched_terms": [
-        "harmful interference"
-      ]
-    },
-    {
-      "unit": "Paragraph 1",
-      "number": "1",
+      "unit": "Guideline A.5",
       "concepts": [
         "registration"
-      ],
-      "matched_terms": [
-        "registr"
       ]
     },
     {
-      "unit": "Paragraph 2",
-      "number": "2",
+      "unit": "Guideline B.1",
       "concepts": [
-        "registration"
-      ],
-      "matched_terms": [
-        "registr"
+        "safety_of_space_operations",
+        "international_cooperation_and_transparency"
       ]
     },
     {
-      "unit": "Paragraph 3",
-      "number": "3",
+      "unit": "Guideline B.2",
       "concepts": [
-        "registration",
-        "jurisdiction_and_control"
-      ],
-      "matched_terms": [
-        "jurisdiction and control",
-        "registr"
+        "safety_of_space_operations",
+        "international_cooperation_and_transparency"
       ]
     },
     {
-      "unit": "Paragraph 4",
-      "number": "4",
+      "unit": "Guideline B.3",
       "concepts": [
-        "registration"
-      ],
-      "matched_terms": [
-        "registr"
+        "environmental_protection_and_debris",
+        "international_cooperation_and_transparency"
       ]
     },
     {
-      "unit": "Paragraph 5",
-      "number": "5",
+      "unit": "Guideline B.4",
       "concepts": [
-        "registration"
-      ],
-      "matched_terms": [
-        "registr",
-        "registry"
+        "safety_of_space_operations"
       ]
     },
     {
-      "unit": "Paragraph 6",
-      "number": "6",
+      "unit": "Guideline B.5",
       "concepts": [
-        "registration"
-      ],
-      "matched_terms": [
-        "registr"
+        "safety_of_space_operations"
       ]
     },
     {
-      "unit": "Paragraph 8",
-      "number": "8",
+      "unit": "Guideline B.6",
       "concepts": [
-        "registration"
-      ],
-      "matched_terms": [
-        "registr",
-        "registry"
+        "safety_of_space_operations"
       ]
     },
     {
-      "unit": "Paragraph 9",
-      "number": "9",
+      "unit": "Guideline B.7",
       "concepts": [
-        "registration"
-      ],
-      "matched_terms": [
-        "registr"
+        "safety_of_space_operations"
       ]
     },
     {
-      "unit": "Paragraph 3",
-      "number": "3",
+      "unit": "Guideline B.8",
       "concepts": [
-        "liability"
-      ],
-      "matched_terms": [
-        "liable"
+        "safety_of_space_operations",
+        "environmental_protection_and_debris"
       ]
     },
     {
-      "unit": "Paragraph 3",
-      "number": "3",
+      "unit": "Guideline B.9",
       "concepts": [
-        "environmental_and_debris"
-      ],
-      "matched_terms": [
-        "debris"
+        "safety_of_space_operations",
+        "environmental_protection_and_debris"
       ]
     },
     {
-      "unit": "Paragraph 3",
-      "number": "3",
+      "unit": "Guideline B.10",
       "concepts": [
-        "state_responsibility"
-      ],
-      "matched_terms": [
-        "non-governmental entities"
+        "safety_of_space_operations"
       ]
     },
     {
-      "unit": "Paragraph 5",
-      "number": "5",
+      "unit": "Guideline C.1",
       "concepts": [
-        "jurisdiction_and_control"
-      ],
-      "matched_terms": [
-        "jurisdiction and control"
+        "international_cooperation_and_transparency"
       ]
     },
     {
-      "unit": "Paragraph 1",
-      "number": "1",
+      "unit": "Guideline C.2",
       "concepts": [
-        "jurisdiction_and_control"
-      ],
-      "matched_terms": [
-        "jurisdiction and control"
+        "international_cooperation_and_transparency"
       ]
     },
     {
-      "unit": "Paragraph 2",
-      "number": "2",
+      "unit": "Guideline C.3",
       "concepts": [
-        "jurisdiction_and_control"
-      ],
-      "matched_terms": [
-        "jurisdiction and control"
+        "international_cooperation_and_transparency"
       ]
     },
     {
-      "unit": "Paragraph 4",
-      "number": "4",
+      "unit": "Guideline C.4",
       "concepts": [
-        "jurisdiction_and_control"
-      ],
-      "matched_terms": [
-        "jurisdiction and control"
+        "international_cooperation_and_transparency"
       ]
     },
     {
-      "unit": "Paragraph 5",
-      "number": "5",
+      "unit": "Guideline D.1",
       "concepts": [
-        "environmental_and_debris"
-      ],
-      "matched_terms": [
-        "debris"
+        "international_cooperation_and_transparency",
+        "safety_of_space_operations"
       ]
     },
     {
-      "unit": "Paragraph 2",
-      "number": "2",
+      "unit": "Guideline D.2",
       "concepts": [
-        "environmental_and_debris"
-      ],
-      "matched_terms": [
-        "debris"
-      ]
-    },
-    {
-      "unit": "Paragraph 1",
-      "number": "1",
-      "concepts": [
-        "jurisdiction_and_control"
-      ],
-      "matched_terms": [
-        "jurisdiction and control"
-      ]
-    },
-    {
-      "unit": "Paragraph 2",
-      "number": "2",
-      "concepts": [
-        "liability",
-        "jurisdiction_and_control"
-      ],
-      "matched_terms": [
-        "jurisdiction over",
-        "liabilit"
-      ]
-    },
-    {
-      "unit": "Paragraph 6",
-      "number": "6",
-      "concepts": [
-        "jurisdiction_and_control",
-        "abandonment_and_salvage",
-        "state_responsibility",
-        "rescue_and_return",
-        "dispute_settlement"
-      ],
-      "matched_terms": [
-        "astronaut",
-        "component parts",
-        "consultation",
-        "jurisdiction and control",
-        "jurisdiction over",
-        "non-governmental entities",
-        "rescue",
-        "return of objects",
-        "return of the object"
-      ]
-    },
-    {
-      "unit": "Paragraph 1",
-      "number": "1",
-      "concepts": [
-        "state_responsibility"
-      ],
-      "matched_terms": [
-        "non-governmental entities"
-      ]
-    },
-    {
-      "unit": "Paragraph 1",
-      "number": "1",
-      "concepts": [
-        "state_responsibility"
-      ],
-      "matched_terms": [
-        "non-governmental entities"
-      ]
-    },
-    {
-      "unit": "Paragraph 2",
-      "number": "2",
-      "concepts": [
-        "resource_rights",
-        "state_responsibility"
-      ],
-      "matched_terms": [
-        "non-governmental entities",
-        "utilization of"
-      ]
-    },
-    {
-      "unit": "Paragraph 3",
-      "number": "3",
-      "concepts": [
-        "state_responsibility"
-      ],
-      "matched_terms": [
-        "non-governmental entities"
-      ]
-    },
-    {
-      "unit": "Paragraph 4",
-      "number": "4",
-      "concepts": [
-        "state_responsibility",
-        "environmental_and_debris"
-      ],
-      "matched_terms": [
-        "debris",
-        "non-governmental entities"
-      ]
-    },
-    {
-      "unit": "Paragraph 4",
-      "number": "4",
-      "concepts": [
-        "environmental_and_debris"
-      ],
-      "matched_terms": [
-        "contamination",
-        "harmful contamination"
-      ]
-    },
-    {
-      "unit": "Paragraph 5",
-      "number": "5",
-      "concepts": [
-        "environmental_and_debris"
-      ],
-      "matched_terms": [
-        "debris"
-      ]
-    },
-    {
-      "unit": "Paragraph 1",
-      "number": "1",
-      "concepts": [
-        "environmental_and_debris"
-      ],
-      "matched_terms": [
-        "debris"
-      ]
-    },
-    {
-      "unit": "Paragraph 2",
-      "number": "2",
-      "concepts": [
-        "environmental_and_debris"
-      ],
-      "matched_terms": [
-        "debris"
-      ]
-    },
-    {
-      "unit": "Paragraph 3",
-      "number": "3",
-      "concepts": [
-        "environmental_and_debris"
-      ],
-      "matched_terms": [
-        "debris"
+        "environmental_protection_and_debris"
       ]
     }
   ]

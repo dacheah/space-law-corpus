@@ -6,7 +6,6 @@
   "title": "Principles Relating to Remote Sensing of the Earth from Outer Space",
   "document_type": "ga_resolution",
   "adoption_date": "1986-12-03",
-  "entry_into_force_date": null,
   "unit_type": "principle",
   "unit_count": 16,
   "units": [
@@ -93,7 +92,6 @@
   ],
   "citations_detected": [
     "Charter of the United Nations",
-    "Treaty on Principles Governing",
     "resolution 3234 (XXIX)"
   ]
 }

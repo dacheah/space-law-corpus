@@ -6,7 +6,6 @@
   "title": "Agreement on the Rescue of Astronauts, the Return of Astronauts and the Return of Objects Launched into Outer Space",
   "document_type": "treaty",
   "adoption_date": "1967-12-19",
-  "entry_into_force_date": "1968-12-03",
   "unit_type": "article",
   "unit_count": 11,
   "units": [
@@ -67,7 +66,6 @@
     }
   ],
   "citations_detected": [
-    "Charter of the United Nations",
-    "Treaty on Principles Governing"
+    "Charter of the United Nations"
   ]
 }

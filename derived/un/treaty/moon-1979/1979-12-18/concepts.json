@@ -4,167 +4,128 @@
   "corpus_id": "un/treaty/moon-1979",
   "version_id": "1979-12-18",
   "concept_vocabulary": [
-    "registration",
-    "liability",
-    "jurisdiction_and_control",
+    "freedom_of_exploration_and_use",
     "non_appropriation",
-    "resource_rights",
-    "abandonment_and_salvage",
-    "state_responsibility",
+    "peaceful_use_and_non_militarization",
+    "state_responsibility_and_supervision",
+    "jurisdiction_and_control",
+    "registration",
+    "liability_and_damage",
     "rescue_and_return",
-    "environmental_and_debris",
-    "dispute_settlement"
+    "abandonment_and_salvage",
+    "resource_rights",
+    "environmental_protection_and_debris",
+    "international_cooperation_and_transparency",
+    "dispute_settlement_and_consultation",
+    "safety_of_space_operations"
   ],
-  "method": "keyword-based first pass (rule_based); crude, for human/model review",
+  "tagging_method": "model",
   "document_concepts": [
-    "abandonment_and_salvage",
-    "dispute_settlement",
-    "environmental_and_debris",
+    "dispute_settlement_and_consultation",
+    "environmental_protection_and_debris",
+    "freedom_of_exploration_and_use",
+    "international_cooperation_and_transparency",
     "jurisdiction_and_control",
-    "liability",
     "non_appropriation",
-    "registration",
+    "peaceful_use_and_non_militarization",
     "rescue_and_return",
     "resource_rights",
-    "state_responsibility"
+    "state_responsibility_and_supervision"
   ],
   "tags": [
     {
-      "unit": "preamble/chapeau",
-      "number": null,
+      "unit": "Article 2",
       "concepts": [
-        "registration",
-        "liability",
-        "resource_rights",
-        "abandonment_and_salvage",
-        "rescue_and_return"
-      ],
-      "matched_terms": [
-        "astronaut",
-        "damage caused",
-        "exploitation of the natural",
-        "liabilit",
-        "natural resources",
-        "registr",
-        "rescue",
-        "resources of the moon",
-        "return of objects"
+        "peaceful_use_and_non_militarization"
+      ]
+    },
+    {
+      "unit": "Article 3",
+      "concepts": [
+        "peaceful_use_and_non_militarization"
       ]
     },
     {
       "unit": "Article 4",
-      "number": "4",
       "concepts": [
-        "non_appropriation"
-      ],
-      "matched_terms": [
-        "province of all mankind"
+        "freedom_of_exploration_and_use",
+        "international_cooperation_and_transparency"
+      ]
+    },
+    {
+      "unit": "Article 5",
+      "concepts": [
+        "international_cooperation_and_transparency"
+      ]
+    },
+    {
+      "unit": "Article 6",
+      "concepts": [
+        "freedom_of_exploration_and_use",
+        "resource_rights"
       ]
     },
     {
       "unit": "Article 7",
-      "number": "7",
       "concepts": [
-        "environmental_and_debris",
-        "dispute_settlement"
-      ],
-      "matched_terms": [
-        "consultation",
-        "contamination",
-        "harmful contamination"
+        "environmental_protection_and_debris"
       ]
     },
     {
       "unit": "Article 8",
-      "number": "8",
       "concepts": [
-        "dispute_settlement"
-      ],
-      "matched_terms": [
-        "consultation"
+        "freedom_of_exploration_and_use"
+      ]
+    },
+    {
+      "unit": "Article 9",
+      "concepts": [
+        "jurisdiction_and_control",
+        "international_cooperation_and_transparency"
       ]
     },
     {
       "unit": "Article 10",
-      "number": "10",
       "concepts": [
-        "abandonment_and_salvage",
         "rescue_and_return"
-      ],
-      "matched_terms": [
-        "astronaut",
-        "distress",
-        "rescue",
-        "return of objects"
       ]
     },
     {
       "unit": "Article 11",
-      "number": "11",
       "concepts": [
         "non_appropriation",
         "resource_rights"
-      ],
-      "matched_terms": [
-        "claim of sovereignty",
-        "common heritage",
-        "exploitation of the natural",
-        "national appropriation",
-        "natural resources",
-        "resources of the moon"
       ]
     },
     {
       "unit": "Article 12",
-      "number": "12",
       "concepts": [
-        "jurisdiction_and_control",
-        "abandonment_and_salvage",
-        "rescue_and_return"
-      ],
-      "matched_terms": [
-        "astronaut",
-        "component parts",
-        "jurisdiction and control",
-        "rescue",
-        "retain jurisdiction",
-        "return of objects"
+        "jurisdiction_and_control"
       ]
     },
     {
       "unit": "Article 13",
-      "number": "13",
       "concepts": [
-        "abandonment_and_salvage"
-      ],
-      "matched_terms": [
-        "component parts"
+        "international_cooperation_and_transparency"
       ]
     },
     {
       "unit": "Article 14",
-      "number": "14",
       "concepts": [
-        "liability",
-        "state_responsibility"
-      ],
-      "matched_terms": [
-        "damage caused",
-        "international responsibility",
-        "liabilit",
-        "non-governmental entities",
-        "responsibility for national"
+        "state_responsibility_and_supervision"
       ]
     },
     {
       "unit": "Article 15",
-      "number": "15",
       "concepts": [
-        "dispute_settlement"
-      ],
-      "matched_terms": [
-        "consultation",
-        "dispute"
+        "international_cooperation_and_transparency",
+        "dispute_settlement_and_consultation"
+      ]
+    },
+    {
+      "unit": "Article 16",
+      "concepts": [
+        "state_responsibility_and_supervision"
       ]
     }
   ]

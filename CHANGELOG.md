@@ -38,6 +38,9 @@ All ten texts cross-checked word-for-word against UNOOSA's official compilation 
 ### Roadmap Step 1 — soft law (2026-07-03)
 Ingested the COPUOS **Guidelines for the Long-term Sustainability of Outer Space Activities** (preamble/context + 21 guidelines A.1–D.2), from UNOOSA's official publication of A/74/20 annex II — `un/softlaw/lts-guidelines-2019`. The COPUOS **Space Debris Mitigation Guidelines** could not be sourced from a UN full text this pass (six UNOOSA/UN routes returned blank to the fetcher or a description sheet only; the authentic text is in ST/SPACE/61 but past that PDF's extraction cut-off) — initially tracked as a follow-on rather than adopting a non-UN copy. **Resolved the same day:** the operator supplied the official UN PDF (ST/SPACE/49), which is stored byte-for-byte as `original.pdf`, and the guidelines were ingested — `un/softlaw/copuos-debris-mitigation-2007` — completing Step 1's soft-law pair. The corpus now holds 12 authoritative instruments.
 
+### Roadmap Step 2 — concept layer (2026-07-03)
+Upgraded the derived concept layer from the initial keyword pass to a **model-generated tagging** (`generation_method: model`, `review_status: unreviewed`) across all 12 instruments — 14 neutral concepts (`docs/concept-vocabulary.md`), 113 tagged provisions at article/guideline/principle granularity. Added the **cross-instrument concept index** (`derived/concept-index.json` and `derived/concept-index.md`): every provision addressing each concept, across the corpus. Tags are model output awaiting human review. Structure extraction now also recognises "Guideline" units.
+
 ### Open follow-ons (tracked, not blocking)
 - Verify the ten texts against certified references; upgrade `text_fidelity` from `extracted_unverified`.
 - Re-capture the Rescue Agreement from a UN/depositary source to replace the Australian Treaty Series copy.

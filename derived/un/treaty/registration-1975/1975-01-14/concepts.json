@@ -4,99 +4,74 @@
   "corpus_id": "un/treaty/registration-1975",
   "version_id": "1975-01-14",
   "concept_vocabulary": [
-    "registration",
-    "liability",
-    "jurisdiction_and_control",
+    "freedom_of_exploration_and_use",
     "non_appropriation",
-    "resource_rights",
-    "abandonment_and_salvage",
-    "state_responsibility",
+    "peaceful_use_and_non_militarization",
+    "state_responsibility_and_supervision",
+    "jurisdiction_and_control",
+    "registration",
+    "liability_and_damage",
     "rescue_and_return",
-    "environmental_and_debris",
-    "dispute_settlement"
+    "abandonment_and_salvage",
+    "resource_rights",
+    "environmental_protection_and_debris",
+    "international_cooperation_and_transparency",
+    "dispute_settlement_and_consultation",
+    "safety_of_space_operations"
   ],
-  "method": "keyword-based first pass (rule_based); crude, for human/model review",
+  "tagging_method": "model",
   "document_concepts": [
     "abandonment_and_salvage",
-    "jurisdiction_and_control",
-    "liability",
+    "international_cooperation_and_transparency",
     "registration",
-    "rescue_and_return",
-    "state_responsibility"
+    "state_responsibility_and_supervision"
   ],
   "tags": [
     {
-      "unit": "preamble/chapeau",
-      "number": null,
-      "concepts": [
-        "registration",
-        "liability",
-        "abandonment_and_salvage",
-        "state_responsibility",
-        "rescue_and_return"
-      ],
-      "matched_terms": [
-        "astronaut",
-        "damage caused",
-        "found beyond the territorial",
-        "international responsibility",
-        "liabilit",
-        "registr",
-        "registry",
-        "rescue",
-        "return of objects"
-      ]
-    },
-    {
       "unit": "Article I",
-      "number": "I",
       "concepts": [
-        "registration",
-        "abandonment_and_salvage"
-      ],
-      "matched_terms": [
-        "component parts",
-        "registr",
-        "registry",
-        "state of registry"
+        "registration"
       ]
     },
     {
       "unit": "Article II",
-      "number": "II",
+      "concepts": [
+        "registration"
+      ]
+    },
+    {
+      "unit": "Article III",
       "concepts": [
         "registration",
-        "jurisdiction_and_control"
-      ],
-      "matched_terms": [
-        "jurisdiction and control",
-        "registr",
-        "registry",
-        "state of registry"
+        "international_cooperation_and_transparency"
       ]
     },
     {
       "unit": "Article IV",
-      "number": "IV",
       "concepts": [
-        "registration"
-      ],
-      "matched_terms": [
-        "registr",
-        "registry",
-        "state of registry"
+        "registration",
+        "international_cooperation_and_transparency"
       ]
     },
     {
       "unit": "Article V",
-      "number": "V",
       "concepts": [
         "registration"
-      ],
-      "matched_terms": [
-        "registr",
-        "registry",
-        "state of registry"
+      ]
+    },
+    {
+      "unit": "Article VI",
+      "concepts": [
+        "registration",
+        "abandonment_and_salvage",
+        "international_cooperation_and_transparency"
+      ]
+    },
+    {
+      "unit": "Article VII",
+      "concepts": [
+        "state_responsibility_and_supervision",
+        "registration"
       ]
     }
   ]
