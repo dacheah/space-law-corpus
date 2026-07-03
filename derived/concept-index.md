@@ -35,6 +35,7 @@ For each neutral legal concept, the provisions across the corpus that address it
 ## state_responsibility_and_supervision
 *International responsibility of States for national activities, including authorization and continuing supervision of non-governmental entities.*
 
+- **French Space Operations Act (2008, consolidated)** (`nat/fra/loi-operations-spatiales-2008`): Art. 2; Art. 3; Art. 4; Art. 7; Art. 7-1; Art. 8; Art. 9; Art. 10; Art. 11; Art. 11-1; Art. 11-2; Art. 20-1; Art. 23; Art. 24; Art. 25; Art. 25-1; Art. 27
 - **Luxembourg Space Resources Law (2017)** (`nat/lux/ressources-espace-2017`): Art. 2; Art. 3; Art. 7; Art. 8; Art. 9; Art. 15; Art. 18
 - **US Space Resource Act (51 U.S.C. ch. 513)** (`nat/usa/space-resources-2015`): §51302 Commercial exploration and commercial recovery
 - **Declaration of Legal Principles** (`un/ga/res-1962-XVIII`): Principle 5
@@ -51,6 +52,7 @@ For each neutral legal concept, the provisions across the corpus that address it
 ## jurisdiction_and_control
 *Retention of jurisdiction and control over space objects and personnel; ownership of objects.*
 
+- **French Space Operations Act (2008, consolidated)** (`nat/fra/loi-operations-spatiales-2008`): Art. 2; Art. 3; Art. 11-2
 - **Declaration of Legal Principles** (`un/ga/res-1962-XVIII`): Principle 7
 - **Moon Agreement** (`un/treaty/moon-1979`): Article 9; Article 12
 - **Outer Space Treaty** (`un/treaty/ost-1967`): Article VIII
@@ -58,12 +60,14 @@ For each neutral legal concept, the provisions across the corpus that address it
 ## registration
 *Registration of space objects in national and UN registries; furnishing of identifying information.*
 
+- **French Space Operations Act (2008, consolidated)** (`nat/fra/loi-operations-spatiales-2008`): Art. 12
 - **LTS Guidelines** (`un/softlaw/lts-guidelines-2019`): Guideline A.5
 - **Registration Convention** (`un/treaty/registration-1975`): Article I; Article II; Article III; Article IV; Article V; Article VI; Article VII
 
 ## liability_and_damage
 *Responsibility/liability for damage caused by space objects; compensation; claims procedures.*
 
+- **French Space Operations Act (2008, consolidated)** (`nat/fra/loi-operations-spatiales-2008`): Art. 6; Art. 13; Art. 13-1; Art. 14; Art. 15; Art. 16; Art. 17; Art. 18; Art. 19; Art. 20
 - **Luxembourg Space Resources Law (2017)** (`nat/lux/ressources-espace-2017`): Art. 16
 - **Declaration of Legal Principles** (`un/ga/res-1962-XVIII`): Principle 8
 - **Nuclear Power Sources Principles** (`un/ga/res-47-68`): Principle 9
@@ -98,6 +102,7 @@ For each neutral legal concept, the provisions across the corpus that address it
 ## environmental_protection_and_debris
 *Protection of the space and Earth environment; harmful contamination; space debris mitigation; long-term sustainability.*
 
+- **French Space Operations Act (2008, consolidated)** (`nat/fra/loi-operations-spatiales-2008`): Art. 5; Art. 9
 - **Declaration of Legal Principles** (`un/ga/res-1962-XVIII`): Principle 6
 - **Remote Sensing Principles** (`un/ga/res-41-65`): Principle X; Principle XI
 - **Nuclear Power Sources Principles** (`un/ga/res-47-68`): Principle 2; Principle 3
@@ -109,6 +114,7 @@ For each neutral legal concept, the provisions across the corpus that address it
 ## international_cooperation_and_transparency
 *International cooperation; information-sharing; notification; consultation; benefit-sharing; capacity-building; openness.*
 
+- **French Space Operations Act (2008, consolidated)** (`nat/fra/loi-operations-spatiales-2008`): Art. 14
 - **Luxembourg Space Resources Law (2017)** (`nat/lux/ressources-espace-2017`): Art. 2
 - **US Space Resource Act (51 U.S.C. ch. 513)** (`nat/usa/space-resources-2015`): §51302 Commercial exploration and commercial recovery
 - **Declaration of Legal Principles** (`un/ga/res-1962-XVIII`): Principle 4; Principle 6
@@ -135,6 +141,7 @@ For each neutral legal concept, the provisions across the corpus that address it
 ## safety_of_space_operations
 *Safety of operations; conjunction assessment; collision avoidance; re-entry safety; nuclear-power-source and operational safety.*
 
+- **French Space Operations Act (2008, consolidated)** (`nat/fra/loi-operations-spatiales-2008`): Art. 4; Art. 5; Art. 7; Art. 8
 - **Nuclear Power Sources Principles** (`un/ga/res-47-68`): Principle 2; Principle 3; Principle 4; Principle 5
 - **COPUOS Space Debris Mitigation Guidelines** (`un/softlaw/copuos-debris-mitigation-2007`): Guideline 2; Guideline 3
 - **LTS Guidelines** (`un/softlaw/lts-guidelines-2019`): Guideline A.4; Guideline B.1; Guideline B.2; Guideline B.4; Guideline B.5; Guideline B.6; Guideline B.7; Guideline B.8; Guideline B.9; Guideline B.10; Guideline D.1

@@ -164,6 +164,108 @@
     ],
     "state_responsibility_and_supervision": [
       {
+        "corpus_id": "nat/fra/loi-operations-spatiales-2008",
+        "short_title": "French Space Operations Act (2008, consolidated)",
+        "version_id": "2023-08-03",
+        "unit": "Art. 2"
+      },
+      {
+        "corpus_id": "nat/fra/loi-operations-spatiales-2008",
+        "short_title": "French Space Operations Act (2008, consolidated)",
+        "version_id": "2023-08-03",
+        "unit": "Art. 3"
+      },
+      {
+        "corpus_id": "nat/fra/loi-operations-spatiales-2008",
+        "short_title": "French Space Operations Act (2008, consolidated)",
+        "version_id": "2023-08-03",
+        "unit": "Art. 4"
+      },
+      {
+        "corpus_id": "nat/fra/loi-operations-spatiales-2008",
+        "short_title": "French Space Operations Act (2008, consolidated)",
+        "version_id": "2023-08-03",
+        "unit": "Art. 7"
+      },
+      {
+        "corpus_id": "nat/fra/loi-operations-spatiales-2008",
+        "short_title": "French Space Operations Act (2008, consolidated)",
+        "version_id": "2023-08-03",
+        "unit": "Art. 7-1"
+      },
+      {
+        "corpus_id": "nat/fra/loi-operations-spatiales-2008",
+        "short_title": "French Space Operations Act (2008, consolidated)",
+        "version_id": "2023-08-03",
+        "unit": "Art. 8"
+      },
+      {
+        "corpus_id": "nat/fra/loi-operations-spatiales-2008",
+        "short_title": "French Space Operations Act (2008, consolidated)",
+        "version_id": "2023-08-03",
+        "unit": "Art. 9"
+      },
+      {
+        "corpus_id": "nat/fra/loi-operations-spatiales-2008",
+        "short_title": "French Space Operations Act (2008, consolidated)",
+        "version_id": "2023-08-03",
+        "unit": "Art. 10"
+      },
+      {
+        "corpus_id": "nat/fra/loi-operations-spatiales-2008",
+        "short_title": "French Space Operations Act (2008, consolidated)",
+        "version_id": "2023-08-03",
+        "unit": "Art. 11"
+      },
+      {
+        "corpus_id": "nat/fra/loi-operations-spatiales-2008",
+        "short_title": "French Space Operations Act (2008, consolidated)",
+        "version_id": "2023-08-03",
+        "unit": "Art. 11-1"
+      },
+      {
+        "corpus_id": "nat/fra/loi-operations-spatiales-2008",
+        "short_title": "French Space Operations Act (2008, consolidated)",
+        "version_id": "2023-08-03",
+        "unit": "Art. 11-2"
+      },
+      {
+        "corpus_id": "nat/fra/loi-operations-spatiales-2008",
+        "short_title": "French Space Operations Act (2008, consolidated)",
+        "version_id": "2023-08-03",
+        "unit": "Art. 20-1"
+      },
+      {
+        "corpus_id": "nat/fra/loi-operations-spatiales-2008",
+        "short_title": "French Space Operations Act (2008, consolidated)",
+        "version_id": "2023-08-03",
+        "unit": "Art. 23"
+      },
+      {
+        "corpus_id": "nat/fra/loi-operations-spatiales-2008",
+        "short_title": "French Space Operations Act (2008, consolidated)",
+        "version_id": "2023-08-03",
+        "unit": "Art. 24"
+      },
+      {
+        "corpus_id": "nat/fra/loi-operations-spatiales-2008",
+        "short_title": "French Space Operations Act (2008, consolidated)",
+        "version_id": "2023-08-03",
+        "unit": "Art. 25"
+      },
+      {
+        "corpus_id": "nat/fra/loi-operations-spatiales-2008",
+        "short_title": "French Space Operations Act (2008, consolidated)",
+        "version_id": "2023-08-03",
+        "unit": "Art. 25-1"
+      },
+      {
+        "corpus_id": "nat/fra/loi-operations-spatiales-2008",
+        "short_title": "French Space Operations Act (2008, consolidated)",
+        "version_id": "2023-08-03",
+        "unit": "Art. 27"
+      },
+      {
         "corpus_id": "nat/lux/ressources-espace-2017",
         "short_title": "Luxembourg Space Resources Law (2017)",
         "version_id": "2017-07-20",
@@ -298,6 +400,24 @@
     ],
     "jurisdiction_and_control": [
       {
+        "corpus_id": "nat/fra/loi-operations-spatiales-2008",
+        "short_title": "French Space Operations Act (2008, consolidated)",
+        "version_id": "2023-08-03",
+        "unit": "Art. 2"
+      },
+      {
+        "corpus_id": "nat/fra/loi-operations-spatiales-2008",
+        "short_title": "French Space Operations Act (2008, consolidated)",
+        "version_id": "2023-08-03",
+        "unit": "Art. 3"
+      },
+      {
+        "corpus_id": "nat/fra/loi-operations-spatiales-2008",
+        "short_title": "French Space Operations Act (2008, consolidated)",
+        "version_id": "2023-08-03",
+        "unit": "Art. 11-2"
+      },
+      {
         "corpus_id": "un/ga/res-1962-XVIII",
         "short_title": "Declaration of Legal Principles",
         "version_id": "1963-12-13",
@@ -323,6 +443,12 @@
       }
     ],
     "registration": [
+      {
+        "corpus_id": "nat/fra/loi-operations-spatiales-2008",
+        "short_title": "French Space Operations Act (2008, consolidated)",
+        "version_id": "2023-08-03",
+        "unit": "Art. 12"
+      },
       {
         "corpus_id": "un/softlaw/lts-guidelines-2019",
         "short_title": "LTS Guidelines",
@@ -373,6 +499,66 @@
       }
     ],
     "liability_and_damage": [
+      {
+        "corpus_id": "nat/fra/loi-operations-spatiales-2008",
+        "short_title": "French Space Operations Act (2008, consolidated)",
+        "version_id": "2023-08-03",
+        "unit": "Art. 6"
+      },
+      {
+        "corpus_id": "nat/fra/loi-operations-spatiales-2008",
+        "short_title": "French Space Operations Act (2008, consolidated)",
+        "version_id": "2023-08-03",
+        "unit": "Art. 13"
+      },
+      {
+        "corpus_id": "nat/fra/loi-operations-spatiales-2008",
+        "short_title": "French Space Operations Act (2008, consolidated)",
+        "version_id": "2023-08-03",
+        "unit": "Art. 13-1"
+      },
+      {
+        "corpus_id": "nat/fra/loi-operations-spatiales-2008",
+        "short_title": "French Space Operations Act (2008, consolidated)",
+        "version_id": "2023-08-03",
+        "unit": "Art. 14"
+      },
+      {
+        "corpus_id": "nat/fra/loi-operations-spatiales-2008",
+        "short_title": "French Space Operations Act (2008, consolidated)",
+        "version_id": "2023-08-03",
+        "unit": "Art. 15"
+      },
+      {
+        "corpus_id": "nat/fra/loi-operations-spatiales-2008",
+        "short_title": "French Space Operations Act (2008, consolidated)",
+        "version_id": "2023-08-03",
+        "unit": "Art. 16"
+      },
+      {
+        "corpus_id": "nat/fra/loi-operations-spatiales-2008",
+        "short_title": "French Space Operations Act (2008, consolidated)",
+        "version_id": "2023-08-03",
+        "unit": "Art. 17"
+      },
+      {
+        "corpus_id": "nat/fra/loi-operations-spatiales-2008",
+        "short_title": "French Space Operations Act (2008, consolidated)",
+        "version_id": "2023-08-03",
+        "unit": "Art. 18"
+      },
+      {
+        "corpus_id": "nat/fra/loi-operations-spatiales-2008",
+        "short_title": "French Space Operations Act (2008, consolidated)",
+        "version_id": "2023-08-03",
+        "unit": "Art. 19"
+      },
+      {
+        "corpus_id": "nat/fra/loi-operations-spatiales-2008",
+        "short_title": "French Space Operations Act (2008, consolidated)",
+        "version_id": "2023-08-03",
+        "unit": "Art. 20"
+      },
       {
         "corpus_id": "nat/lux/ressources-espace-2017",
         "short_title": "Luxembourg Space Resources Law (2017)",
@@ -616,6 +802,18 @@
     ],
     "environmental_protection_and_debris": [
       {
+        "corpus_id": "nat/fra/loi-operations-spatiales-2008",
+        "short_title": "French Space Operations Act (2008, consolidated)",
+        "version_id": "2023-08-03",
+        "unit": "Art. 5"
+      },
+      {
+        "corpus_id": "nat/fra/loi-operations-spatiales-2008",
+        "short_title": "French Space Operations Act (2008, consolidated)",
+        "version_id": "2023-08-03",
+        "unit": "Art. 9"
+      },
+      {
         "corpus_id": "un/ga/res-1962-XVIII",
         "short_title": "Declaration of Legal Principles",
         "version_id": "1963-12-13",
@@ -725,6 +923,12 @@
       }
     ],
     "international_cooperation_and_transparency": [
+      {
+        "corpus_id": "nat/fra/loi-operations-spatiales-2008",
+        "short_title": "French Space Operations Act (2008, consolidated)",
+        "version_id": "2023-08-03",
+        "unit": "Art. 14"
+      },
       {
         "corpus_id": "nat/lux/ressources-espace-2017",
         "short_title": "Luxembourg Space Resources Law (2017)",
@@ -1053,6 +1257,30 @@
       }
     ],
     "safety_of_space_operations": [
+      {
+        "corpus_id": "nat/fra/loi-operations-spatiales-2008",
+        "short_title": "French Space Operations Act (2008, consolidated)",
+        "version_id": "2023-08-03",
+        "unit": "Art. 4"
+      },
+      {
+        "corpus_id": "nat/fra/loi-operations-spatiales-2008",
+        "short_title": "French Space Operations Act (2008, consolidated)",
+        "version_id": "2023-08-03",
+        "unit": "Art. 5"
+      },
+      {
+        "corpus_id": "nat/fra/loi-operations-spatiales-2008",
+        "short_title": "French Space Operations Act (2008, consolidated)",
+        "version_id": "2023-08-03",
+        "unit": "Art. 7"
+      },
+      {
+        "corpus_id": "nat/fra/loi-operations-spatiales-2008",
+        "short_title": "French Space Operations Act (2008, consolidated)",
+        "version_id": "2023-08-03",
+        "unit": "Art. 8"
+      },
       {
         "corpus_id": "un/ga/res-47-68",
         "short_title": "Nuclear Power Sources Principles",

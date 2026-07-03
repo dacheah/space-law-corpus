@@ -1,0 +1,67 @@
+corpus_id: nat/fra/loi-operations-spatiales-2008
+version_id: '2023-08-03'
+title: Loi n° 2008-518 du 3 juin 2008 relative aux opérations spatiales
+short_title: French Space Operations Act (2008, consolidated)
+jurisdiction: FRA
+document_type: national_legislation
+official_citation: 'Loi n° 2008-518 du 3 juin 2008 relative aux opérations spatiales; JORF n°0129 du 4
+  juin 2008, texte n° 1; NOR ESRX0700048L. Version consolidée en vigueur (dernière modification: LOI n°
+  2023-703 du 1er août 2023, art. 60).'
+authentic_languages:
+- fr
+adoption_date: '2008-06-03'
+entry_into_force_date: '2008-06-05'
+source_url: https://www.legifrance.gouv.fr/loda/id/JORFTEXT000018931380/
+source_publisher: Légifrance — Direction de l'information légale et administrative (DILA), République
+  française
+source_is_official: true
+retrieval_date: '2026-07-03'
+retrieved_by: 'corpus ingest v0.1; official Légifrance consolidated PDF supplied by the maintainer (browser
+  download, automated fetcher blocked by Légifrance); operator: maintainer + Claude'
+original_format: pdf
+original_filename: original.pdf
+content_hash: sha256:d3d693321ea5a4f5ec985d0160f2241ecd48d5a191a0a4533c82c44a5b3c0d5b
+original_sha256: sha256:1c9c7b2f53849a5b8d22d668fe1848c93393e8d9b1429782f858a69d2ac7c9b6
+text_sha256: sha256:d3d693321ea5a4f5ec985d0160f2241ecd48d5a191a0a4533c82c44a5b3c0d5b
+text_fidelity: extracted_unverified
+language: fr
+authoritative_status: official_consolidation
+license: public-domain-gov
+rights_note: Official legislative text of the French Republic, published in the Journal officiel (JORF)
+  and consolidated by Légifrance/DILA. Under French law official texts (les lois) are excluded from copyright
+  (CPI) and are freely reproducible; Légifrance data is provided under the Licence Ouverte / Etalab open
+  licence.
+capture_history:
+- date: '2026-07-03'
+  source_url: https://www.legifrance.gouv.fr/loda/id/JORFTEXT000018931380/
+  original_sha256: sha256:1c9c7b2f53849a5b8d22d668fe1848c93393e8d9b1429782f858a69d2ac7c9b6
+  note: Official Légifrance consolidated PDF ('Version en vigueur') supplied by the maintainer via browser
+    download; the automated web-fetcher was blocked by Légifrance's bot-protection. Stored byte-for-byte
+    as original.pdf.
+supersedes: null
+superseded_by: null
+related_documents:
+- un/treaty/ost-1967 (Art. 14 references the 1967 Outer Space Treaty)
+- un/treaty/liability-1972 (Art. 14 references the 1972 Liability Convention)
+- un/treaty/registration-1975 (Art. 12 references the 1975 Registration Convention)
+- nat/usa/space-resources-2015 (comparable national space statute)
+- nat/lux/ressources-espace-2017 (comparable national space statute)
+provenance_note: 'Authentic FRENCH text of the French Space Operations Act (Loi n° 2008-518 du 3 juin
+  2008), CONSOLIDATED in-force version as published by Légifrance. Titres I-VIII, Articles 1-30 plus inserted
+  sub-articles (7-1, 11-1, 11-2, 13-1, 20-1, 25-1); Article 17 shown as amended and the abrogated Article
+  27 reflected per Légifrance. SOURCE: Légifrance (DILA), the official French legal-publication service;
+  the maintainer downloaded the official consolidated PDF (JORFTEXT000018931380) because the automated
+  fetcher is blocked by Légifrance bot-protection; the byte-exact PDF is stored as original.pdf (integrity
+  anchor). STATUS: official_consolidation (NOT the as-enacted 2008 text); version_id 2023-08-03 is the
+  date of the latest consolidated textual state (modification by LOI n° 2023-703 of 1 Aug 2023). text.txt
+  is the legislative text: Titre/Chapitre headings, article headings and bodies, the official NOTA notes
+  (Arts 7-1, 16, 17), and the operative ''A modifié / Modifie / Crée Code ...'' lines that are the consolidated
+  content of Arts 21, 22, 28. Légifrance''s amendment-tracking apparatus (''VERSION EN VIGUEUR ...'',
+  ''Modifié par ...'', ''Création ...'', ''Abrogé par ...''), the consolidation banner, the ''(Article
+  N)'' navigation labels, and PDF page-break control characters were removed. FIDELITY: extracted_unverified
+  — a known pdftotext artifact class remains, where hyphenated compounds broken across PDF lines can appear
+  joined (e.g. ''extraatmosphérique'' for ''extra-atmosphérique'', ''audelà'' for ''au-delà'', ''20072008''
+  for ''2007-2008''); the byte-exact original.pdf is authoritative and a verified pass against it is a
+  tracked follow-on. JUDGEMENT CALL: the consolidated in-force version was ingested (the maintainer downloaded
+  ''Version en vigueur''); the as-enacted 2008 original may be added later as an earlier dated version
+  if desired.'

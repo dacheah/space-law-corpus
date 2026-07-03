@@ -27,15 +27,16 @@ Where a file lives tells you what it is. The two never mix.
 
 ## Current contents
 
-Authoritative layer (12 instruments, English authentic text, full provenance + SHA-256 hashes, verified against an official UN source):
+Authoritative layer (15 instruments, full provenance + SHA-256 hashes). The 12 UN-level instruments carry English authentic text verified against an official UN source; a deliberate 3-instrument national pilot adds authentic-language national statutes:
 
 - The **five UN space treaties** — Outer Space Treaty (1967), Rescue Agreement (1968), Liability Convention (1972), Registration Convention (1975), Moon Agreement (1979).
 - The **five UN General Assembly space-law principle instruments** — Declaration of Legal Principles (1963), Direct Broadcasting (1982), Remote Sensing (1986), Nuclear Power Sources (1992), Benefits Declaration (1996).
 - **Two COPUOS soft-law guidelines** — Space Debris Mitigation Guidelines (2007) and the Guidelines for the Long-term Sustainability of Outer Space Activities (2019).
+- **National-legislation pilot (3 instruments)** — the US Space Resource Act (51 U.S.C. ch. 513; English), the Luxembourg space-resources law (2017; French), and the French Space Operations Act (Loi n° 2008-518; French, official consolidated version). Deliberate and instrument-by-instrument — see [`docs/national-law-guide.md`](docs/national-law-guide.md).
 
 Derived layer (for each of the above): structure extraction and neutral concept tags (a model pass marked `unreviewed`), plus a cross-instrument concept index. A generated browsable site lives in [`site/`](site/index.html).
 
-Not yet ingested (deliberately, and tracked): national legislation, and the IADC/PCA instruments pending the JC-5 licensing check. See [`docs/source-coverage.md`](docs/source-coverage.md) and [`ROADMAP.md`](ROADMAP.md).
+Not yet ingested (deliberately, and tracked): national legislation beyond the current three-instrument pilot, and the IADC/PCA instruments pending the JC-5 licensing check. See [`docs/source-coverage.md`](docs/source-coverage.md) and [`ROADMAP.md`](ROADMAP.md).
 
 ## Repository map
 

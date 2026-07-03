@@ -120,6 +120,18 @@ for root, _, files in os.walk(AUTH):
        "review_status": "unreviewed", "reviewed_by": None, "license": "CC-BY-4.0",
        "confidence_note": cnote, "disclaimer": DISCLAIMER},
     ]
+    tdir = os.path.join(outdir, "translations")
+    if os.path.isdir(tdir):
+        for tf in sorted(os.listdir(tdir)):
+            if tf.endswith(".md"):
+                lang = tf[:-3]
+                dmeta.append({"derived_id": f"{cid}/{ver}/translation-{lang}", "derived_type": "translation",
+                    "artifact_file": f"translations/{tf}", "source_corpus_id": cid, "source_version_id": ver,
+                    "source_text_sha256": src_hash, "generation_method": "model", "generator": "claude-opus-4-8",
+                    "generation_date": "2026-07-03", "review_status": "unreviewed", "reviewed_by": None,
+                    "license": "CC-BY-4.0",
+                    "confidence_note": f"Unofficial machine-draft {lang} translation; not legally operative.",
+                    "disclaimer": DISCLAIMER})
     yaml.safe_dump(dmeta, open(os.path.join(outdir, "derived-metadata.yaml"), "w", encoding="utf-8"),
                    sort_keys=False, allow_unicode=True)
     records.append((cid, ver, utype, len(units), len(doc_concepts)))
