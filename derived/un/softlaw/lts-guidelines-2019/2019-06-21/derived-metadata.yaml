@@ -3,7 +3,7 @@
   artifact_file: structure.json
   source_corpus_id: un/softlaw/lts-guidelines-2019
   source_version_id: '2019-06-21'
-  source_text_sha256: sha256:994fd1dedbedd989dc8660fcd57494a10b029b1100c1862ae542413a6103f999
+  source_text_sha256: sha256:4f34acd1f05ca1aed4cca1d36df9cf9404ebcec209ac88dd7152a8a6e6b5c705
   generation_method: rule_based
   generator: build_derived.py v0.2 (structure)
   generation_date: '2026-07-03'
@@ -19,7 +19,7 @@
   artifact_file: concepts.json
   source_corpus_id: un/softlaw/lts-guidelines-2019
   source_version_id: '2019-06-21'
-  source_text_sha256: sha256:994fd1dedbedd989dc8660fcd57494a10b029b1100c1862ae542413a6103f999
+  source_text_sha256: sha256:4f34acd1f05ca1aed4cca1d36df9cf9404ebcec209ac88dd7152a8a6e6b5c705
   generation_method: model
   generator: claude-opus-4-8
   generation_date: '2026-07-03'

@@ -19,11 +19,11 @@ source_is_official: true
 retrieval_date: '2026-07-03'
 retrieved_by: 'corpus ingest v0.1 via automated web-fetch (PDF text extraction); operator: maintainer
   + Claude'
-original_format: txt
-original_filename: original.txt
-content_hash: sha256:994fd1dedbedd989dc8660fcd57494a10b029b1100c1862ae542413a6103f999
-original_sha256: sha256:a6ff1dea13fa3dbe1a1715972ddfdd8cbfad66803c2def3320e9728f71ab9c85
-text_sha256: sha256:994fd1dedbedd989dc8660fcd57494a10b029b1100c1862ae542413a6103f999
+original_format: pdf
+original_filename: original.pdf
+content_hash: sha256:4f34acd1f05ca1aed4cca1d36df9cf9404ebcec209ac88dd7152a8a6e6b5c705
+original_sha256: sha256:9dbdf01acc33174fa10fe241f74fcbdb1ecca936ee0cea0a813c7bdcb7063c47
+text_sha256: sha256:4f34acd1f05ca1aed4cca1d36df9cf9404ebcec209ac88dd7152a8a6e6b5c705
 text_fidelity: extracted_verified
 language: en
 authoritative_status: authentic_text
@@ -35,6 +35,12 @@ capture_history:
   original_sha256: sha256:a6ff1dea13fa3dbe1a1715972ddfdd8cbfad66803c2def3320e9728f71ab9c85
   note: Extracted from the UNOOSA 2021 publication of the Guidelines (reproducing A/74/20 annex II) via
     web-fetch PDF text extraction.
+- date: '2026-07-03'
+  source_url: https://www.unoosa.org/documents/pdf/PromotingSpaceSustainability/Publication_Final_English_June2021.pdf
+  original_sha256: sha256:9dbdf01acc33174fa10fe241f74fcbdb1ecca936ee0cea0a813c7bdcb7063c47
+  note: Official UNOOSA publication PDF (Publication_Final_English_June2021.pdf) supplied by the maintainer;
+    stored byte-for-byte as original.pdf, upgrading the integrity anchor from the initial text capture.
+    Full-text extraction re-verified against text.txt.
 supersedes: null
 superseded_by: null
 related_documents:
@@ -49,16 +55,19 @@ provenance_note: 'English text of the COPUOS Guidelines for the Long-term Sustai
   pending a cross-check against A/74/20 annex II.'
 verification:
   status: verified
-  method: 'Word-for-word content comparison of text.txt against the official UNOOSA LTS publication (English,
-    June 2021 edition) retrieved from unoosa.org: 0 word/number divergences after normalising hyphenation
-    and spacing; identified line-wrap hyphen-drop slips corrected.'
-  reference: UNOOSA, Guidelines for the Long-term Sustainability of Outer Space Activities (Publication_Final_English_June2021.pdf),
-    unoosa.org
+  method: 'Content verified against the byte-exact official UNOOSA publication (now stored as original.pdf):
+    full-text extraction compared token-for-token against text.txt; the only substantive divergences were
+    reference-side extractor splits (e.g. pdftotext rendering ''international'' as ''inter national''),
+    plus one genuine internal-space defect in text.txt which was corrected (''intergovern mental'' ->
+    ''intergovernmental''). All 21 guidelines and their explanatory text match.'
+  reference: UNOOSA, Guidelines for the Long-term Sustainability of Outer Space Activities (Publication_Final_English_June2021.pdf);
+    official PDF stored byte-exact as original.pdf
   verified_by: maintainer + Claude
   verified_date: '2026-07-03'
-  note: Content verified 100% against the official UNOOSA publication (retrieved via web-fetch; formatting
-    normalised). Storing the byte-exact publication PDF as original.pdf would further upgrade the integrity
-    anchor (currently original.txt).
+  note: Integrity anchor upgraded from the initial text capture (original.txt) to the byte-exact official
+    UNOOSA publication PDF; prior capture preserved in Git. The PDF uses embedded fonts that some extractors
+    render imperfectly (default pdftotext extracts the full text; the -nopgbrk stream truncated); the
+    stored PDF is the authoritative byte-exact anchor.
 corrections:
 - date: '2026-07-03'
   change: 'Restored line-wrap hyphen: ''longterm'' -> ''long-term'' (4 instances)'
@@ -66,3 +75,7 @@ corrections:
 - date: '2026-07-03'
   change: 'Restored line-wrap hyphen: ''realtime'' -> ''real-time'' (1 instance)'
   reference: official UNOOSA LTS publication
+- date: '2026-07-03'
+  change: 'Removed erroneous internal space introduced at a soft-hyphen line-wrap: ''intergovern mental''
+    -> ''intergovernmental'' (1 instance, guideline 6 preamble)'
+  reference: official UNOOSA LTS publication PDF (original.pdf)
