@@ -18,7 +18,7 @@ source_url: https://www.unoosa.org/oosa/en/ourwork/spacelaw/treaties/registratio
 source_publisher: UNOOSA (United Nations Office for Outer Space Affairs)
 source_is_official: true
 retrieval_date: '2026-07-02'
-retrieved_by: 'corpus ingest v0.1 via automated web-fetch tool; operator: Dan + Claude'
+retrieved_by: 'corpus ingest v0.1 via automated web-fetch tool; operator: maintainer + Claude'
 original_format: txt
 original_filename: original.txt
 content_hash: sha256:9e35e1301842aad7ac7dc169935083766c06d51398b775d832e661de26895f06
@@ -52,6 +52,6 @@ verification:
   method: Independent word-for-word cross-check against ST/SPACE/61/Rev.3 (treaty was ingested from a
     different source).
   reference: 'UNOOSA ST/SPACE/61/Rev.3 (International Space Law: United Nations Instruments, 2025)'
-  verified_by: Dan + Claude (see docs/verification-2026-07.md)
+  verified_by: maintainer + Claude (see docs/verification-2026-07.md)
   verified_date: '2026-07-02'
   note: Word-for-word cross-check; differences limited to the compilation's own PDF spacing artifacts.

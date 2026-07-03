@@ -19,8 +19,8 @@ source_publisher: UNOOSA - ST/SPACE/49 (Space Debris Mitigation Guidelines of th
   Uses of Outer Space, 2010)
 source_is_official: true
 retrieval_date: '2026-07-03'
-retrieved_by: 'corpus ingest v0.1; official UN PDF supplied by operator (Dan) from UNOOSA, text-extracted
-  with pdftotext; operator: Dan + Claude'
+retrieved_by: 'corpus ingest v0.1; official UN PDF supplied by operator (the maintainer) from UNOOSA, text-extracted
+  with pdftotext; operator: maintainer + Claude'
 original_format: pdf
 original_filename: original.pdf
 content_hash: sha256:cde29f11ef637a426c8b18e3db22748d18c70924363ac0b9c19f4d13d8e59790

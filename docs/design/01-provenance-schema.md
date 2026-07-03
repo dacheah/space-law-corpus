@@ -47,7 +47,7 @@ The seven above are necessary but not sufficient to make provenance verifiable a
 - `source_publisher` *(required)* — who published the copy we retrieved. *e.g.* `UNOOSA`, `ASTRO`, `Legifrance`, `US GPO`
 - `source_is_official` *(required, boolean)* — is `source_publisher` the official issuer or an official depositary? (vs. a mirror/aggregator)
 - `retrieval_date` *(required)*
-- `retrieved_by` *(required)* — tool + operator. *e.g.* `corpus-ingest v0.1 / manual: Dan`
+- `retrieved_by` *(required)* — tool + operator. *e.g.* `corpus-ingest v0.1 / manual: the maintainer`
 - `original_format` *(required)* — `pdf`, `html`, `docx`, `txt`
 - `original_filename` *(required)* — the stored artifact name. *e.g.* `original.pdf`
 
@@ -95,7 +95,7 @@ source_url: "https://treaties.un.org/doc/Publication/UNTS/Volume%20610/volume-61
 source_publisher: "United Nations Treaty Series (UNTS)"
 source_is_official: true
 retrieval_date: "2026-07-02"
-retrieved_by: "corpus-ingest v0.1 / manual: Dan"
+retrieved_by: "corpus-ingest v0.1 / manual: the maintainer"
 original_format: pdf
 original_filename: original.pdf
 

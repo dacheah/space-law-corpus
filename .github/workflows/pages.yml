@@ -1,0 +1,35 @@
+name: Deploy site to Pages
+# Publishes the browsable view to GitHub Pages. Regenerates site/ from the
+# repository in CI so the public site can never drift from the data. Requires the
+# repo to be public (or GitHub Pro) and Pages set to build from "GitHub Actions".
+on:
+  push:
+    branches: [main]
+    paths: ["authoritative/**", "derived/**", "scripts/build_site.py", ".github/workflows/pages.yml"]
+  workflow_dispatch:
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+concurrency:
+  group: pages
+  cancel-in-progress: true
+jobs:
+  deploy:
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - run: pip install -r scripts/requirements.txt
+      - run: python3 scripts/build_site.py
+      - uses: actions/configure-pages@v5
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: site
+      - id: deployment
+        uses: actions/deploy-pages@v4

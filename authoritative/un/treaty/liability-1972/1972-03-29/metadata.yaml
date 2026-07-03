@@ -18,7 +18,7 @@ source_url: https://www.unoosa.org/oosa/en/ourwork/spacelaw/treaties/liability-c
 source_publisher: UNOOSA (United Nations Office for Outer Space Affairs)
 source_is_official: true
 retrieval_date: '2026-07-02'
-retrieved_by: 'corpus ingest v0.1 via automated web-fetch tool; operator: Dan + Claude'
+retrieved_by: 'corpus ingest v0.1 via automated web-fetch tool; operator: maintainer + Claude'
 original_format: txt
 original_filename: original.txt
 content_hash: sha256:5c493cda132bb5faf07f43d166b9080024e31b16a1b635dfd149c4572e83acba
@@ -59,6 +59,6 @@ verification:
   method: Independent word-for-word cross-check against ST/SPACE/61/Rev.3 (treaty was ingested from a
     different source).
   reference: 'UNOOSA ST/SPACE/61/Rev.3 (International Space Law: United Nations Instruments, 2025)'
-  verified_by: Dan + Claude (see docs/verification-2026-07.md)
+  verified_by: maintainer + Claude (see docs/verification-2026-07.md)
   verified_date: '2026-07-02'
   note: Confirmed defects corrected against the compilation; re-verified word-for-word.

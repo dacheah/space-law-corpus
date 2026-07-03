@@ -2,7 +2,7 @@
 
 A neutral, authoritative, structured, machine-readable record of international and national space law, built to last for decades.
 
-**Status:** Phase 1 foundational build — the UN-level core is complete (10 instruments, authoritative + derived layers, self-validating). Private during construction; intended to become public infrastructure at a deliberate later milestone. See [`CHANGELOG.md`](CHANGELOG.md).
+**Status:** Public — a neutral legal-infrastructure resource. The UN-level core is complete: 12 instruments (5 treaties, 5 GA principle instruments, 2 COPUOS soft-law guidelines), authoritative + derived layers, verified, self-validating and self-monitoring. Contributions and a co-maintainer are welcome — see [`CONTRIBUTING.md`](CONTRIBUTING.md). Build history in [`CHANGELOG.md`](CHANGELOG.md).
 
 ---
 
@@ -27,14 +27,15 @@ Where a file lives tells you what it is. The two never mix.
 
 ## Current contents
 
-Authoritative layer (10 instruments, English authentic text, full provenance + SHA-256 hashes):
+Authoritative layer (12 instruments, English authentic text, full provenance + SHA-256 hashes, verified against an official UN source):
 
 - The **five UN space treaties** — Outer Space Treaty (1967), Rescue Agreement (1968), Liability Convention (1972), Registration Convention (1975), Moon Agreement (1979).
 - The **five UN General Assembly space-law principle instruments** — Declaration of Legal Principles (1963), Direct Broadcasting (1982), Remote Sensing (1986), Nuclear Power Sources (1992), Benefits Declaration (1996).
+- **Two COPUOS soft-law guidelines** — Space Debris Mitigation Guidelines (2007) and the Guidelines for the Long-term Sustainability of Outer Space Activities (2019).
 
-Derived layer (for each of the above): structure extraction and neutral concept tags, deterministic first passes marked `unreviewed`.
+Derived layer (for each of the above): structure extraction and neutral concept tags (a model pass marked `unreviewed`), plus a cross-instrument concept index. A generated browsable site lives in [`site/`](site/index.html).
 
-Not yet ingested (deliberately, and tracked): national legislation, key soft law (COPUOS/IADC/PCA), and a fidelity-verification pass to upgrade texts from `extracted_unverified`. See [`docs/source-coverage.md`](docs/source-coverage.md).
+Not yet ingested (deliberately, and tracked): national legislation, and the IADC/PCA instruments pending the JC-5 licensing check. See [`docs/source-coverage.md`](docs/source-coverage.md) and [`ROADMAP.md`](ROADMAP.md).
 
 ## Repository map
 

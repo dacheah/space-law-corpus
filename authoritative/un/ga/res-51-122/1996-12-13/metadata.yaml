@@ -19,7 +19,7 @@ source_publisher: 'UNOOSA - ST/SPACE/61/Rev.3, ''International Space Law: United
   (2025)'
 source_is_official: true
 retrieval_date: '2026-07-02'
-retrieved_by: 'corpus ingest v0.1 via automated web-fetch (PDF text extraction); operator: Dan + Claude'
+retrieved_by: 'corpus ingest v0.1 via automated web-fetch (PDF text extraction); operator: maintainer + Claude'
 original_format: txt
 original_filename: original.txt
 content_hash: sha256:7ac1923e7ecc925305e103203e0e1b8302f2bfcb0c1f4e3b782c9e8b216e1e58
@@ -54,7 +54,7 @@ verification:
   status: verified
   method: Extraction-fidelity check against the official UN compilation (source of record).
   reference: 'UNOOSA ST/SPACE/61/Rev.3 (International Space Law: United Nations Instruments, 2025)'
-  verified_by: Dan + Claude (see docs/verification-2026-07.md)
+  verified_by: maintainer + Claude (see docs/verification-2026-07.md)
   verified_date: '2026-07-02'
   note: 100% match to the official compilation (source of record); independent (non-compilation) corroboration
     remains a tracked follow-on.

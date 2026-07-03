@@ -74,7 +74,7 @@ The **UN Register of Objects Launched into Outer Space** (registration data subm
 - **IADC / PCA:** non-UN publishers with their own asserted rights -> **JC-5 applies**; verify terms before storing full text.
 - **JC-6 (store originals in-repo):** for the UN treaties, GA resolutions, and COPUOS guidelines (public / freely reproducible), storing byte-for-byte originals in-repo is appropriate. For IADC/PCA and copyright-asserting national sources, default to hash + URL + provenance unless terms clearly permit storage.
 
-**Reminder:** this is an operating policy, not legal advice. Anything ambiguous or high-stakes returns to Dan as a `⚖️ JUDGEMENT CALL`.
+**Reminder:** this is an operating policy, not legal advice. Anything ambiguous or high-stakes returns to the maintainer as a `⚖️ JUDGEMENT CALL`.
 
 ---
 

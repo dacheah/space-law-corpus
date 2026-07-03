@@ -1,6 +1,6 @@
 # Space Law Corpus — Phase A Design Lock (Index)
 
-**Status:** APPROVED — locked 2026-07-02. All six judgement calls (JC-1 … JC-6) approved by Dan on 2026-07-02. These six documents now govern the build; changes to them follow the versioning scheme in doc 02 (a dated decision record, never a silent overwrite).
+**Status:** APPROVED — locked 2026-07-02. All six judgement calls (JC-1 … JC-6) approved by the maintainer on 2026-07-02. These six documents now govern the build; changes to them follow the versioning scheme in doc 02 (a dated decision record, never a silent overwrite).
 **Date:** 2026-07-02
 **Purpose:** These six documents are the foundational, locked-in design decisions for the Space Law Corpus. Once approved, they become the constitutional documents of the repository (they will live at `docs/design/` from the first commit in Phase B). Everything built afterward must conform to them.
 
@@ -63,7 +63,7 @@ The physical split between `authoritative/` and `derived/` **is** the two-layer 
 
 ---
 
-## JUDGEMENT CALLs — RESOLVED (approved by Dan, 2026-07-02)
+## JUDGEMENT CALLs — RESOLVED (approved by the maintainer, 2026-07-02)
 
 All six were approved as recommended. Detail lives in the relevant documents; JC-5 and JC-6 remain subject to per-source terms verification in Phase C, which sets policy here but may surface individual exceptions for a fresh decision.
 

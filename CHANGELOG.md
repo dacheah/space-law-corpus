@@ -21,7 +21,7 @@ Ingested (English authentic text, full provenance, `text_fidelity: extracted_unv
 - Five UN treaties: Outer Space Treaty (`un/treaty/ost-1967`), Rescue Agreement (`un/treaty/rescue-1968`), Liability Convention (`un/treaty/liability-1972`), Registration Convention (`un/treaty/registration-1975`), Moon Agreement (`un/treaty/moon-1979`).
 - Five UN GA principle instruments: Legal Principles (`un/ga/res-1962-XVIII`), Direct Broadcasting (`un/ga/res-37-92`), Remote Sensing (`un/ga/res-41-65`), Nuclear Power Sources (`un/ga/res-47-68`), Benefits Declaration (`un/ga/res-51-122`).
 
-Sourcing notes recorded in each record's `provenance_note`: most from UNOOSA HTML pages; the **Rescue Agreement** from the Australian Treaty Series (AustLII) because UNOOSA's page was unfetchable and the only other complete copy contained transcription errors (JC-7, resolved by Dan: keep hunting for a clean official capture — tracked); the **five principles** sliced from UNOOSA's consolidated official compilation ST/SPACE/61/Rev.3 because the individual principle pages were unfetchable.
+Sourcing notes recorded in each record's `provenance_note`: most from UNOOSA HTML pages; the **Rescue Agreement** from the Australian Treaty Series (AustLII) because UNOOSA's page was unfetchable and the only other complete copy contained transcription errors (JC-7, resolved by the maintainer: keep hunting for a clean official capture — tracked); the **five principles** sliced from UNOOSA's consolidated official compilation ST/SPACE/61/Rev.3 because the individual principle pages were unfetchable.
 
 ### E. Derived layer
 `scripts/build_derived.py` produced, for all ten instruments: structure extraction (`structure.json` — units, dates, detected citations) and neutral concept tags (`concepts.json`). Deterministic (`rule_based`) first passes, `review_status: unreviewed`, quarantined in `derived/`, each traceable to its authoritative text hash with staleness detection. Minor backward-compatible refinement to the derived-metadata format recorded in `docs/design/06`.
@@ -44,8 +44,5 @@ Upgraded the derived concept layer from the initial keyword pass to a **model-ge
 ### Roadmap Step 3 — browsable view (2026-07-03)
 Added `scripts/build_site.py`, which generates a static, self-contained, dependency-free browsable site into `site/` from the repository (the repo stays the single source of truth; the site is read-only and regenerable). A page per instrument shows the **authoritative text alongside its full provenance** (source, official-vs-reproduction flag, retrieval date, citation, fidelity, content hash, verification, corrections); a concept page renders the cross-instrument index; derived concept tags are clearly labelled unofficial. This is the on-ramp to going public (Step 4).
 
-### Open follow-ons (tracked, not blocking)
-- Verify the ten texts against certified references; upgrade `text_fidelity` from `extracted_unverified`.
-- Re-capture the Rescue Agreement from a UN/depositary source to replace the Australian Treaty Series copy.
-- Ingest national legislation and key soft law (COPUOS/IADC/PCA under the JC-5 check).
-- Human review of the first-pass concept tags.
+### Roadmap Step 4 — go-public preparation (2026-07-03)
+Ran the pre-publication audit (`docs/pre-publication-checklist-2026-07.md`): licensing basis, third-party-text, secrets/PII, and the integrity gate all clear. Added `CONTRIBUTING.md` (contribution rules honouring the provenance/two-layer principles, plus a co-maintainer invitation) and a Pages deploy workflow (`.github/workflows/pag
