@@ -91,7 +91,7 @@ for meta in insts:
     open(os.path.join(SITE, sl(cid)), "w", encoding="utf-8").write(page(meta.get("short_title", cid), body))
 
 GROUPS = [("treaty", "The five UN treaties"), ("ga_resolution", "UN General Assembly principles"),
-          ("soft_law_guideline", "Soft law (COPUOS guidelines)")]
+          ("soft_law_guideline", "Soft law (COPUOS guidelines)"), ("national_legislation", "National legislation")]
 rows = ""
 for dt, label in GROUPS:
     items = sorted([x for x in insts if x["document_type"] == dt], key=lambda x: str(x.get("adoption_date")))

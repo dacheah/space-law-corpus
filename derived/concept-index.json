@@ -20,6 +20,12 @@
   "index": {
     "freedom_of_exploration_and_use": [
       {
+        "corpus_id": "nat/usa/space-resources-2015",
+        "short_title": "US Space Resource Act (51 U.S.C. ch. 513)",
+        "version_id": "2015-11-25",
+        "unit": "§51302 Commercial exploration and commercial recovery"
+      },
+      {
         "corpus_id": "un/ga/res-1962-XVIII",
         "short_title": "Declaration of Legal Principles",
         "version_id": "1963-12-13",
@@ -69,6 +75,12 @@
       }
     ],
     "non_appropriation": [
+      {
+        "corpus_id": "nat/lux/ressources-espace-2017",
+        "short_title": "Luxembourg Space Resources Law (2017)",
+        "version_id": "2017-07-20",
+        "unit": "Art. 1er"
+      },
       {
         "corpus_id": "un/ga/res-1962-XVIII",
         "short_title": "Declaration of Legal Principles",
@@ -151,6 +163,54 @@
       }
     ],
     "state_responsibility_and_supervision": [
+      {
+        "corpus_id": "nat/lux/ressources-espace-2017",
+        "short_title": "Luxembourg Space Resources Law (2017)",
+        "version_id": "2017-07-20",
+        "unit": "Art. 2"
+      },
+      {
+        "corpus_id": "nat/lux/ressources-espace-2017",
+        "short_title": "Luxembourg Space Resources Law (2017)",
+        "version_id": "2017-07-20",
+        "unit": "Art. 3"
+      },
+      {
+        "corpus_id": "nat/lux/ressources-espace-2017",
+        "short_title": "Luxembourg Space Resources Law (2017)",
+        "version_id": "2017-07-20",
+        "unit": "Art. 7"
+      },
+      {
+        "corpus_id": "nat/lux/ressources-espace-2017",
+        "short_title": "Luxembourg Space Resources Law (2017)",
+        "version_id": "2017-07-20",
+        "unit": "Art. 8"
+      },
+      {
+        "corpus_id": "nat/lux/ressources-espace-2017",
+        "short_title": "Luxembourg Space Resources Law (2017)",
+        "version_id": "2017-07-20",
+        "unit": "Art. 9"
+      },
+      {
+        "corpus_id": "nat/lux/ressources-espace-2017",
+        "short_title": "Luxembourg Space Resources Law (2017)",
+        "version_id": "2017-07-20",
+        "unit": "Art. 15"
+      },
+      {
+        "corpus_id": "nat/lux/ressources-espace-2017",
+        "short_title": "Luxembourg Space Resources Law (2017)",
+        "version_id": "2017-07-20",
+        "unit": "Art. 18"
+      },
+      {
+        "corpus_id": "nat/usa/space-resources-2015",
+        "short_title": "US Space Resource Act (51 U.S.C. ch. 513)",
+        "version_id": "2015-11-25",
+        "unit": "§51302 Commercial exploration and commercial recovery"
+      },
       {
         "corpus_id": "un/ga/res-1962-XVIII",
         "short_title": "Declaration of Legal Principles",
@@ -313,6 +373,12 @@
       }
     ],
     "liability_and_damage": [
+      {
+        "corpus_id": "nat/lux/ressources-espace-2017",
+        "short_title": "Luxembourg Space Resources Law (2017)",
+        "version_id": "2017-07-20",
+        "unit": "Art. 16"
+      },
       {
         "corpus_id": "un/ga/res-1962-XVIII",
         "short_title": "Declaration of Legal Principles",
@@ -500,6 +566,36 @@
     ],
     "resource_rights": [
       {
+        "corpus_id": "nat/lux/ressources-espace-2017",
+        "short_title": "Luxembourg Space Resources Law (2017)",
+        "version_id": "2017-07-20",
+        "unit": "Art. 1er"
+      },
+      {
+        "corpus_id": "nat/lux/ressources-espace-2017",
+        "short_title": "Luxembourg Space Resources Law (2017)",
+        "version_id": "2017-07-20",
+        "unit": "Art. 3"
+      },
+      {
+        "corpus_id": "nat/usa/space-resources-2015",
+        "short_title": "US Space Resource Act (51 U.S.C. ch. 513)",
+        "version_id": "2015-11-25",
+        "unit": "§51301 Definitions"
+      },
+      {
+        "corpus_id": "nat/usa/space-resources-2015",
+        "short_title": "US Space Resource Act (51 U.S.C. ch. 513)",
+        "version_id": "2015-11-25",
+        "unit": "§51302 Commercial exploration and commercial recovery"
+      },
+      {
+        "corpus_id": "nat/usa/space-resources-2015",
+        "short_title": "US Space Resource Act (51 U.S.C. ch. 513)",
+        "version_id": "2015-11-25",
+        "unit": "§51303 Asteroid resource and space resource rights"
+      },
+      {
         "corpus_id": "un/ga/res-41-65",
         "short_title": "Remote Sensing Principles",
         "version_id": "1986-12-03",
@@ -629,6 +725,18 @@
       }
     ],
     "international_cooperation_and_transparency": [
+      {
+        "corpus_id": "nat/lux/ressources-espace-2017",
+        "short_title": "Luxembourg Space Resources Law (2017)",
+        "version_id": "2017-07-20",
+        "unit": "Art. 2"
+      },
+      {
+        "corpus_id": "nat/usa/space-resources-2015",
+        "short_title": "US Space Resource Act (51 U.S.C. ch. 513)",
+        "version_id": "2015-11-25",
+        "unit": "§51302 Commercial exploration and commercial recovery"
+      },
       {
         "corpus_id": "un/ga/res-1962-XVIII",
         "short_title": "Declaration of Legal Principles",

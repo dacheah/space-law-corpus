@@ -30,6 +30,23 @@ VOCAB = {
 
 # corpus_id -> list of [unit_label, [concepts]]
 TAGS = {
+
+ "nat/usa/space-resources-2015": [
+  ["§51301 Definitions", ["resource_rights"]],
+  ["§51302 Commercial exploration and commercial recovery", ["resource_rights", "state_responsibility_and_supervision", "international_cooperation_and_transparency", "freedom_of_exploration_and_use"]],
+  ["§51303 Asteroid resource and space resource rights", ["resource_rights"]],
+ ],
+ "nat/lux/ressources-espace-2017": [
+  ["Art. 1er", ["resource_rights", "non_appropriation"]],
+  ["Art. 2", ["state_responsibility_and_supervision", "international_cooperation_and_transparency"]],
+  ["Art. 3", ["resource_rights", "state_responsibility_and_supervision"]],
+  ["Art. 7", ["state_responsibility_and_supervision"]],
+  ["Art. 8", ["state_responsibility_and_supervision"]],
+  ["Art. 9", ["state_responsibility_and_supervision"]],
+  ["Art. 15", ["state_responsibility_and_supervision"]],
+  ["Art. 16", ["liability_and_damage"]],
+  ["Art. 18", ["state_responsibility_and_supervision"]],
+ ],
  "un/treaty/ost-1967": [
   ["Article I", ["freedom_of_exploration_and_use", "non_appropriation", "international_cooperation_and_transparency"]],
   ["Article II", ["non_appropriation"]],

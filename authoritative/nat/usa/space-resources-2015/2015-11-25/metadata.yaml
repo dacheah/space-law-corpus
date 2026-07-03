@@ -1,0 +1,46 @@
+corpus_id: nat/usa/space-resources-2015
+version_id: '2015-11-25'
+title: Space Resource Commercial Exploration and Utilization (51 U.S.C. Chapter 513)
+short_title: US Space Resource Act (51 U.S.C. ch. 513)
+jurisdiction: USA
+document_type: national_legislation
+official_citation: 51 U.S.C. §§ 51301-51303 (2015 ed.); enacted by Pub. L. 114-90, title IV (Space Resource
+  Exploration and Utilization Act of 2015), 129 Stat. 720 (Nov. 25, 2015)
+authentic_languages:
+- en
+adoption_date: '2015-11-25'
+entry_into_force_date: '2015-11-25'
+source_url: https://www.govinfo.gov/content/pkg/USCODE-2015-title51/html/USCODE-2015-title51-subtitleV-chap513.htm
+source_publisher: U.S. Government Publishing Office (GPO) - United States Code, 2015 Edition
+source_is_official: true
+retrieval_date: '2026-07-03'
+retrieved_by: 'corpus ingest v0.1 via automated web-fetch tool; operator: maintainer + Claude'
+original_format: txt
+original_filename: original.txt
+content_hash: sha256:82679c9b600708c4bce5058394b13ea6874e9241b5cd1b618ab6e5917e5f79c6
+original_sha256: sha256:d2482715da658bf9b22bf8373e68cce6b696473f3b033b5ceaea002472a76d22
+text_sha256: sha256:82679c9b600708c4bce5058394b13ea6874e9241b5cd1b618ab6e5917e5f79c6
+text_fidelity: extracted_unverified
+language: en
+authoritative_status: authentic_text
+license: public-domain-gov
+rights_note: United States Code; a work of the U.S. Government, in the public domain (17 U.S.C. §105).
+  Title 51 is enacted as positive law.
+capture_history:
+- date: '2026-07-03'
+  source_url: https://www.govinfo.gov/content/pkg/USCODE-2015-title51/html/USCODE-2015-title51-subtitleV-chap513.htm
+  original_sha256: sha256:d2482715da658bf9b22bf8373e68cce6b696473f3b033b5ceaea002472a76d22
+  note: Captured from the official GPO US Code (govinfo.gov) HTML via automated web-fetch.
+supersedes: null
+superseded_by: null
+related_documents:
+- Pub. L. 114-90 (2015)
+- un/treaty/ost-1967 Article II (non-appropriation)
+provenance_note: 'English authentic text of 51 U.S.C. Chapter 513 (Space Resource Commercial Exploration
+  and Utilization), sections 51301-51303, enacted by the Space Resource Exploration and Utilization Act
+  of 2015 (Pub. L. 114-90, title IV). Title 51 is a positive-law title, so the codified US Code text IS
+  the enacted law. SOURCE: the official U.S. Government Publishing Office US Code, 2015 Edition (govinfo.gov),
+  retrieved 2026-07-03 via web-fetch; a US Government work in the public domain. text.txt is the chapter
+  entry (heading, section list, the three sections with their statutory credits, and the US Code editorial
+  Amendments/References notes). FIDELITY: extracted_unverified pending a line check against the official
+  HTML; a byte-exact capture (via Chrome) is a possible follow-on.'

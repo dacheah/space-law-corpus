@@ -7,6 +7,7 @@ For each neutral legal concept, the provisions across the corpus that address it
 ## freedom_of_exploration_and_use
 *Freedom to explore and use outer space by all States; province/benefit of all; freedom of scientific investigation.*
 
+- **US Space Resource Act (51 U.S.C. ch. 513)** (`nat/usa/space-resources-2015`): §51302 Commercial exploration and commercial recovery
 - **Declaration of Legal Principles** (`un/ga/res-1962-XVIII`): Principle 1; Principle 2
 - **Remote Sensing Principles** (`un/ga/res-41-65`): Principle IV
 - **Benefits Declaration** (`un/ga/res-51-122`): Declaration (whole instrument)
@@ -16,6 +17,7 @@ For each neutral legal concept, the provisions across the corpus that address it
 ## non_appropriation
 *Outer space and celestial bodies not subject to national appropriation by sovereignty, use, occupation or other means.*
 
+- **Luxembourg Space Resources Law (2017)** (`nat/lux/ressources-espace-2017`): Art. 1er
 - **Declaration of Legal Principles** (`un/ga/res-1962-XVIII`): Principle 1; Principle 3
 - **Benefits Declaration** (`un/ga/res-51-122`): Declaration (whole instrument)
 - **Moon Agreement** (`un/treaty/moon-1979`): Article 11
@@ -33,6 +35,8 @@ For each neutral legal concept, the provisions across the corpus that address it
 ## state_responsibility_and_supervision
 *International responsibility of States for national activities, including authorization and continuing supervision of non-governmental entities.*
 
+- **Luxembourg Space Resources Law (2017)** (`nat/lux/ressources-espace-2017`): Art. 2; Art. 3; Art. 7; Art. 8; Art. 9; Art. 15; Art. 18
+- **US Space Resource Act (51 U.S.C. ch. 513)** (`nat/usa/space-resources-2015`): §51302 Commercial exploration and commercial recovery
 - **Declaration of Legal Principles** (`un/ga/res-1962-XVIII`): Principle 5
 - **Direct Broadcasting Principles** (`un/ga/res-37-92`): Direct Broadcasting principles (whole instrument)
 - **Remote Sensing Principles** (`un/ga/res-41-65`): Principle XIV
@@ -60,6 +64,7 @@ For each neutral legal concept, the provisions across the corpus that address it
 ## liability_and_damage
 *Responsibility/liability for damage caused by space objects; compensation; claims procedures.*
 
+- **Luxembourg Space Resources Law (2017)** (`nat/lux/ressources-espace-2017`): Art. 16
 - **Declaration of Legal Principles** (`un/ga/res-1962-XVIII`): Principle 8
 - **Nuclear Power Sources Principles** (`un/ga/res-47-68`): Principle 9
 - **Liability Convention** (`un/treaty/liability-1972`): Article I; Article II; Article III; Article IV; Article V; Article VI; Article VII; Article VIII; Article IX; Article X; Article XI; Article XII; Article XVIII; Article XXI; Article XXII
@@ -85,6 +90,8 @@ For each neutral legal concept, the provisions across the corpus that address it
 ## resource_rights
 *Rights over natural resources of celestial bodies; exploitation; common-heritage regime; samples.*
 
+- **Luxembourg Space Resources Law (2017)** (`nat/lux/ressources-espace-2017`): Art. 1er; Art. 3
+- **US Space Resource Act (51 U.S.C. ch. 513)** (`nat/usa/space-resources-2015`): §51301 Definitions; §51302 Commercial exploration and commercial recovery; §51303 Asteroid resource and space resource rights
 - **Remote Sensing Principles** (`un/ga/res-41-65`): Principle XII
 - **Moon Agreement** (`un/treaty/moon-1979`): Article 6; Article 11
 
@@ -102,6 +109,8 @@ For each neutral legal concept, the provisions across the corpus that address it
 ## international_cooperation_and_transparency
 *International cooperation; information-sharing; notification; consultation; benefit-sharing; capacity-building; openness.*
 
+- **Luxembourg Space Resources Law (2017)** (`nat/lux/ressources-espace-2017`): Art. 2
+- **US Space Resource Act (51 U.S.C. ch. 513)** (`nat/usa/space-resources-2015`): §51302 Commercial exploration and commercial recovery
 - **Declaration of Legal Principles** (`un/ga/res-1962-XVIII`): Principle 4; Principle 6
 - **Direct Broadcasting Principles** (`un/ga/res-37-92`): Direct Broadcasting principles (whole instrument)
 - **Remote Sensing Principles** (`un/ga/res-41-65`): Principle IV; Principle XI; Principle XII; Principle XIII
