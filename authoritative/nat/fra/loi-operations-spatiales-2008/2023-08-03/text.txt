@@ -19,7 +19,7 @@ morale qui conduit, sous sa responsabilité et de façon indépendante, une opé
 spatiale ;
 3° “ Opération spatiale ” : toute activité consistant à lancer ou tenter de lancer un objet
 dans l'espace extra-atmosphérique ou à assurer la maîtrise d'un objet spatial ou d'un
-groupe d'objets spatiaux coordonnés pendant leur séjour dans l'espace extraatmosphérique, y compris la Lune et les autres corps célestes, ainsi que, le cas échéant, lors
+groupe d'objets spatiaux coordonnés pendant leur séjour dans l'espace extra-atmosphérique, y compris la Lune et les autres corps célestes, ainsi que, le cas échéant, lors
 du retour sur Terre ;
 
 4° “ Phase de lancement ” : la période de temps qui, dans le cadre d'une opération spatiale,
@@ -29,7 +29,7 @@ application de la présente loi, s'achève à la séparation du lanceur et de l'
 être placé dans l'espace extra-atmosphérique. La phase de lancement comprend, le cas
 échéant, la récupération des éléments réutilisables du lanceur ;
 5° “ Phase de maîtrise ” : la période de temps qui, dans le cadre d'une opération spatiale,
-débute à la séparation du lanceur et de l'objet destiné à être placé dans l'espace extraatmosphérique et qui s'achève à la survenance du premier des événements suivants :
+débute à la séparation du lanceur et de l'objet destiné à être placé dans l'espace extra-atmosphérique et qui s'achève à la survenance du premier des événements suivants :
 ― lorsque les dernières manœuvres de désorbitation et les activités de passivation ont été
 
 effectuées ;
@@ -403,7 +403,7 @@ TITRE III : IMMATRICULATION DES OBJETS SPATIAUX LANCES
 Article 12
 
 Dans les cas où l'obligation d'immatriculer incombe à la France en vertu de l'article II de la
-convention du 14 janvier 1975 sur l'immatriculation des objets lancés dans l'espace extraatmosphérique et, le cas échéant, d'autres accords internationaux, les objets spatiaux
+convention du 14 janvier 1975 sur l'immatriculation des objets lancés dans l'espace extra-atmosphérique et, le cas échéant, d'autres accords internationaux, les objets spatiaux
 lancés sont inscrits sur un registre d'immatriculation tenu, pour le compte de l'Etat, par le
 Centre national d'études spatiales selon des modalités fixées par décret en Conseil d'Etat.
 
@@ -436,7 +436,7 @@ dérogation.
 Article 14
 
 Lorsqu'en vertu des stipulations du traité du 27 janvier 1967 sur les principes régissant
-les activités des Etats en matière d'exploration et d'utilisation de l'espace extraatmosphérique, y compris la Lune et les autres corps célestes, ou de la convention du
+les activités des Etats en matière d'exploration et d'utilisation de l'espace extra-atmosphérique, y compris la Lune et les autres corps célestes, ou de la convention du
 29 mars 1972 sur la responsabilité internationale pour les dommages causés par des
 objets spatiaux, l'Etat a réparé un dommage, il peut exercer une action récursoire
 contre l'opérateur à l'origine de ce dommage ayant engagé la responsabilité
@@ -495,7 +495,7 @@ octroyée la garantie de l'Etat.
 Article 17
 
 Dans le cadre fixé par la loi de finances, l'autorisation délivrée en application de la
-présente loi fixe, compte tenu des risques encourus, le montant en deçà duquel et audelà duquel sont, respectivement, en cas de dommages causés après la phase de
+présente loi fixe, compte tenu des risques encourus, le montant en deçà duquel et au-delà duquel sont, respectivement, en cas de dommages causés après la phase de
 lancement, exercée l'action récursoire et octroyée la garantie de l'Etat.
 NOTA :
 
@@ -648,7 +648,7 @@ Hervé Morin
 (1) Travaux préparatoires : loi n° 2008-518.
 Sénat :
 Projet de loi n° 297 (2006-2007) ;
-Rapport de M. Henri Revol, au nom de la commission des affaires économiques, n° 161 (20072008) ;
+Rapport de M. Henri Revol, au nom de la commission des affaires économiques, n° 161 (2007-2008) ;
 Discussion et adoption le 16 janvier 2008 (TA n° 50).
 Assemblée nationale :
 Projet de loi, adopté par le Sénat, n° 614 ;
@@ -656,5 +656,5 @@ Rapport de M. Pierre Lasbordes, au nom de la commission des affaires économique
 Discussion et adoption le 9 avril 2008 (TA n° 120).
 Sénat :
 Projet de loi n° 272 (2007-2008) ;
-Rapport de M. Henri Revol, au nom de la commission des affaires économiques, n° 328 (20072008) ;
+Rapport de M. Henri Revol, au nom de la commission des affaires économiques, n° 328 (2007-2008) ;
 Discussion et adoption le 22 mai 2008 (TA n° 97).

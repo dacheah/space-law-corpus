@@ -20,7 +20,7 @@ original_filename: original.txt
 content_hash: sha256:82679c9b600708c4bce5058394b13ea6874e9241b5cd1b618ab6e5917e5f79c6
 original_sha256: sha256:d2482715da658bf9b22bf8373e68cce6b696473f3b033b5ceaea002472a76d22
 text_sha256: sha256:82679c9b600708c4bce5058394b13ea6874e9241b5cd1b618ab6e5917e5f79c6
-text_fidelity: extracted_unverified
+text_fidelity: extracted_verified
 language: en
 authoritative_status: authentic_text
 license: public-domain-gov
@@ -44,3 +44,14 @@ provenance_note: 'English authentic text of 51 U.S.C. Chapter 513 (Space Resourc
   entry (heading, section list, the three sections with their statutory credits, and the US Code editorial
   Amendments/References notes). FIDELITY: extracted_unverified pending a line check against the official
   HTML; a byte-exact capture (via Chrome) is a possible follow-on.'
+verification:
+  status: verified
+  method: 'Word-for-word comparison of text.txt against the official GPO United States Code, 2015 Edition
+    (Title 51, ch. 513) from govinfo.gov: the statutory body (sections 51301-51303 with statutory credits
+    and the Amendments/References editorial notes) matches verbatim; the only difference is the chapter
+    heading, rendered in title case with a ''51 U.S.C.'' citation label (all-caps in the official).'
+  reference: U.S. Government Publishing Office, United States Code, 2015 Edition, Title 51 ch. 513 (govinfo.gov)
+  verified_by: maintainer + Claude
+  verified_date: '2026-07-03'
+  note: Positive-law title; the codified US Code text is the enacted law. No corrections to statutory
+    content required.

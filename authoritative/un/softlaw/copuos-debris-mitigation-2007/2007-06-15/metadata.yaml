@@ -19,14 +19,14 @@ source_publisher: UNOOSA - ST/SPACE/49 (Space Debris Mitigation Guidelines of th
   Uses of Outer Space, 2010)
 source_is_official: true
 retrieval_date: '2026-07-03'
-retrieved_by: 'corpus ingest v0.1; official UN PDF supplied by operator (the maintainer) from UNOOSA, text-extracted
-  with pdftotext; operator: maintainer + Claude'
+retrieved_by: 'corpus ingest v0.1; official UN PDF supplied by operator (the maintainer) from UNOOSA,
+  text-extracted with pdftotext; operator: maintainer + Claude'
 original_format: pdf
 original_filename: original.pdf
-content_hash: sha256:cde29f11ef637a426c8b18e3db22748d18c70924363ac0b9c19f4d13d8e59790
+content_hash: sha256:bf264dcf3a6d808491343d721724ea8f24f835a3c13a62a68f26740e24f4a7c5
 original_sha256: sha256:8587ba4b9efd0a1a59f5ae6c7afb3108cd5025cc8bc74d477f22ae2b1c986177
-text_sha256: sha256:cde29f11ef637a426c8b18e3db22748d18c70924363ac0b9c19f4d13d8e59790
-text_fidelity: extracted_unverified
+text_sha256: sha256:bf264dcf3a6d808491343d721724ea8f24f835a3c13a62a68f26740e24f4a7c5
+text_fidelity: extracted_verified
 language: en
 authoritative_status: authentic_text
 license: UN-materials-terms
@@ -51,3 +51,17 @@ provenance_note: 'English text of the Space Debris Mitigation Guidelines of the 
   fingerprints the authentic UN file). text.txt is extracted with pdftotext and cleaned (running headers,
   page numbers, footnote markers removed; soft hyphenation rejoined; page-break-split sentences rejoined).
   FIDELITY: extracted_unverified pending a line-by-line human check against original.pdf.'
+verification:
+  status: verified
+  method: Word-for-word comparison of text.txt against the stored byte-exact official UN PDF (original.pdf,
+    ST/SPACE/49) via pdftotext; the guidelines body matches after correcting one dropped UN document symbol.
+  reference: UNOOSA, Space Debris Mitigation Guidelines of the COPUOS (ST/SPACE/49); stored byte-exact
+    as original.pdf
+  verified_by: maintainer + Claude
+  verified_date: '2026-07-03'
+  note: text.txt is the guidelines body (background, seven guidelines, Reference section); the publication's
+    explanatory footnotes are not included.
+corrections:
+- date: '2026-07-03'
+  change: 'Reference section: restored dropped UN document symbol (''A/AC.105/ C.1/L..'' -> ''A/AC.105/C.1/L.260.'')'
+  reference: original.pdf (ST/SPACE/49)

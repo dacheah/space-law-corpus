@@ -12,7 +12,7 @@ Background
 
 4. The development of voluntary guidelines is premised on the understanding that outer space should remain an operationally stable and safe environment that is maintained for peaceful purposes and open for exploration, use and international
 
-cooperation by current and future generations, in the interest of all countries, irrespective of their degree of economic or scientific development, without discrimination of any kind and with due regard for the principle of equity. The purpose of the guidelines is to assist States and international intergovernmental organizations, both individually and collectively, to mitigate the risks associated with the conduct of outer space activities so that present benefits can be sustained and future opportunities realized. Consequently, the implementation of the guidelines for the longterm sustainability for outer space activities should promote international cooperation in the peaceful use and exploration of outer space.
+cooperation by current and future generations, in the interest of all countries, irrespective of their degree of economic or scientific development, without discrimination of any kind and with due regard for the principle of equity. The purpose of the guidelines is to assist States and international intergovernmental organizations, both individually and collectively, to mitigate the risks associated with the conduct of outer space activities so that present benefits can be sustained and future opportunities realized. Consequently, the implementation of the guidelines for the long-term sustainability for outer space activities should promote international cooperation in the peaceful use and exploration of outer space.
 
 Definition, objectives and scope of the guidelines
 
@@ -122,7 +122,7 @@ Guideline A.3 Supervise national space activities
 
 3. In addition, States are encouraged to designate a responsible entity or entities to plan, coordinate and assess space activities with the aim of promoting their effectiveness in supporting the Sustainable Development Goals and in supporting the objectives of the guidelines for the long-term sustainability of outer space activities in a broader perspective and vision.
 
-4. States should ensure that the management of an entity that conducts outer space activities establishes structures and procedures for planning and conducting space activities in a manner that supports the objective of promoting the longterm sustainability of outer space activities. Appropriate measures to be taken by management in this regard should include:
+4. States should ensure that the management of an entity that conducts outer space activities establishes structures and procedures for planning and conducting space activities in a manner that supports the objective of promoting the long-term sustainability of outer space activities. Appropriate measures to be taken by management in this regard should include:
 
 (a) A commitment at the highest levels of the entity to promoting the long-term sustainability of outer space activities;
 
@@ -240,13 +240,13 @@ Guideline B.6 Share operational space weather data and forecasts
 
 1. States and international intergovernmental organizations should support and promote the collection, archiving, sharing, intercalibration, long-term continuity and dissemination of critical space weather data and space weather model outputs
 
-and forecasts, where appropriate in real time, as a means of enhancing the longterm sustainability of outer space activities.
+and forecasts, where appropriate in real time, as a means of enhancing the long-term sustainability of outer space activities.
 
 2. States should be encouraged to monitor, to the extent feasible, space weather continuously and to share data and information with the aim of establishing an international space weather database network.
 
 3. States and international intergovernmental organizations should support the identification of data sets critical for space weather services and research and should consider adopting policies for the free and unrestricted sharing of critical space weather data from their space- and ground-based assets. All governmental, civilian and commercial space weather data owners are urged to allow free and unrestricted access to and archiving of such data for mutual benefit.
 
-4. States and international intergovernmental organizations should also consider sharing real-time and near-real-time critical space weather data and data products in a common format, promote and adopt common access protocols for their critical space weather data and data products, and promote the interoperability of space weather data portals, thus promoting ease of data access for users and researchers. The realtime sharing of these data could provide a valuable experience for sharing in real time other kinds of data relevant to the long-term sustainability of outer space activities.
+4. States and international intergovernmental organizations should also consider sharing real-time and near-real-time critical space weather data and data products in a common format, promote and adopt common access protocols for their critical space weather data and data products, and promote the interoperability of space weather data portals, thus promoting ease of data access for users and researchers. The real-time sharing of these data could provide a valuable experience for sharing in real time other kinds of data relevant to the long-term sustainability of outer space activities.
 
 5. States and international intergovernmental organizations should further undertake a coordinated approach to maintaining the long-term continuity of space weather observations and identifying and filling key measurement gaps, so as to meet critical needs for space weather information and/or data.
 
@@ -372,7 +372,7 @@ Guideline D.1 Promote and support research into and the development of ways to s
 
 2. In their conduct of space activities for the peaceful exploration and use of outer space, including celestial bodies, States and international intergovernmental organizations should take into account, with reference to the outcome document of the United Nations Conference on Sustainable Development (General Assembly resolution 66/288, annex), the social, economic and environmental dimensions of sustainable development on Earth.
 
-3. States and international intergovernmental organizations should promote the development of technologies that minimize the environmental impact of manufacturing and launching space assets and that maximize the use of renewable resources and the reusability or repurposing of space assets to enhance the longterm sustainability of those activities.
+3. States and international intergovernmental organizations should promote the development of technologies that minimize the environmental impact of manufacturing and launching space assets and that maximize the use of renewable resources and the reusability or repurposing of space assets to enhance the long-term sustainability of those activities.
 
 4. States and international intergovernmental organizations should consider appropriate safety measures to protect the Earth and the space environment from harmful contamination, taking advantage of existing measures, practices and guidelines that may apply to those activities, and developing new measures as appropriate.
 

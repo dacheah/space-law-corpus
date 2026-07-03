@@ -20,10 +20,10 @@ retrieved_by: 'corpus ingest v0.1; official Légifrance consolidated PDF supplie
   download, automated fetcher blocked by Légifrance); operator: maintainer + Claude'
 original_format: pdf
 original_filename: original.pdf
-content_hash: sha256:d3d693321ea5a4f5ec985d0160f2241ecd48d5a191a0a4533c82c44a5b3c0d5b
+content_hash: sha256:f9f98f1abc891d9d0e37f9391bbb119e80b4dc4a8563fef0bc29176c0ddc3d8d
 original_sha256: sha256:1c9c7b2f53849a5b8d22d668fe1848c93393e8d9b1429782f858a69d2ac7c9b6
-text_sha256: sha256:d3d693321ea5a4f5ec985d0160f2241ecd48d5a191a0a4533c82c44a5b3c0d5b
-text_fidelity: extracted_unverified
+text_sha256: sha256:f9f98f1abc891d9d0e37f9391bbb119e80b4dc4a8563fef0bc29176c0ddc3d8d
+text_fidelity: extracted_verified
 language: fr
 authoritative_status: official_consolidation
 license: public-domain-gov
@@ -65,3 +65,24 @@ provenance_note: 'Authentic FRENCH text of the French Space Operations Act (Loi 
   tracked follow-on. JUDGEMENT CALL: the consolidated in-force version was ingested (the maintainer downloaded
   ''Version en vigueur''); the as-enacted 2008 original may be added later as an earlier dated version
   if desired.'
+verification:
+  status: verified
+  method: 'Independent re-extraction (pdftotext) of the stored byte-exact official Légifrance PDF (original.pdf)
+    compared token-for-token against text.txt: 0 substantive divergences across the legislative text;
+    line-wrap hyphenation joins corrected.'
+  reference: Légifrance consolidated PDF (JORFTEXT000018931380), stored byte-exact as original.pdf
+  verified_by: maintainer + Claude
+  verified_date: '2026-07-03'
+  note: Verified against the byte-exact source PDF supplied by the maintainer. Legifrance amendment-tracking
+    apparatus remains intentionally excluded (see provenance_note).
+corrections:
+- date: '2026-07-03'
+  change: 'Restored line-wrap hyphen: ''extraatmosphérique'' -> ''extra-atmosphérique'' (4 instances)'
+  reference: original.pdf
+- date: '2026-07-03'
+  change: 'Restored line-wrap hyphen: ''audelà'' -> ''au-delà'' (1 instance)'
+  reference: original.pdf
+- date: '2026-07-03'
+  change: 'Restored line-wrap hyphen in year range: ''20072008'' -> ''2007-2008'' (2 instances, travaux
+    préparatoires)'
+  reference: original.pdf

@@ -3,7 +3,7 @@
   artifact_file: structure.json
   source_corpus_id: nat/fra/loi-operations-spatiales-2008
   source_version_id: '2023-08-03'
-  source_text_sha256: sha256:d3d693321ea5a4f5ec985d0160f2241ecd48d5a191a0a4533c82c44a5b3c0d5b
+  source_text_sha256: sha256:f9f98f1abc891d9d0e37f9391bbb119e80b4dc4a8563fef0bc29176c0ddc3d8d
   generation_method: rule_based
   generator: build_derived.py v0.2 (structure)
   generation_date: '2026-07-03'
@@ -19,7 +19,7 @@
   artifact_file: concepts.json
   source_corpus_id: nat/fra/loi-operations-spatiales-2008
   source_version_id: '2023-08-03'
-  source_text_sha256: sha256:d3d693321ea5a4f5ec985d0160f2241ecd48d5a191a0a4533c82c44a5b3c0d5b
+  source_text_sha256: sha256:f9f98f1abc891d9d0e37f9391bbb119e80b4dc4a8563fef0bc29176c0ddc3d8d
   generation_method: model
   generator: claude-opus-4-8
   generation_date: '2026-07-03'

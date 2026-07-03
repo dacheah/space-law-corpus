@@ -3,7 +3,7 @@
   artifact_file: structure.json
   source_corpus_id: un/softlaw/copuos-debris-mitigation-2007
   source_version_id: '2007-06-15'
-  source_text_sha256: sha256:cde29f11ef637a426c8b18e3db22748d18c70924363ac0b9c19f4d13d8e59790
+  source_text_sha256: sha256:bf264dcf3a6d808491343d721724ea8f24f835a3c13a62a68f26740e24f4a7c5
   generation_method: rule_based
   generator: build_derived.py v0.2 (structure)
   generation_date: '2026-07-03'
@@ -19,7 +19,7 @@
   artifact_file: concepts.json
   source_corpus_id: un/softlaw/copuos-debris-mitigation-2007
   source_version_id: '2007-06-15'
-  source_text_sha256: sha256:cde29f11ef637a426c8b18e3db22748d18c70924363ac0b9c19f4d13d8e59790
+  source_text_sha256: sha256:bf264dcf3a6d808491343d721724ea8f24f835a3c13a62a68f26740e24f4a7c5
   generation_method: model
   generator: claude-opus-4-8
   generation_date: '2026-07-03'
