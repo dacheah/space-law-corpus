@@ -1,0 +1,62 @@
+corpus_id: un/treaty/ost-1967
+version_id: 1967-01-27-zh
+title: 关于各国探索和利用包括月球和其他天体在内外层空间活动的原则条约
+short_title: 外层空间条约 (OST, Chinese authentic text)
+jurisdiction: international/UN
+document_type: treaty
+official_citation: '610 UNTS 205; UNGA Res 2222 (XXI); done at London, Moscow and Washington, 27 January
+  1967 This record: the ZH authentic text.'
+authentic_languages:
+- en
+- ru
+- fr
+- es
+- zh
+adoption_date: '1966-12-19'
+entry_into_force_date: '1967-10-10'
+source_url: https://www.unoosa.org/res/oosadoc/data/documents/2025/stspace/st_space_61rev03C.pdf
+source_publisher: UNOOSA - ST/SPACE/61/Rev.3, Chinese edition ('国际空间法：联合国文书', 2025)
+source_is_official: true
+retrieval_date: '2026-07-04'
+retrieved_by: 'maintainer download of the byte-exact official PDF; text extracted and cleaned by operator:
+  maintainer + Claude'
+original_format: pdf
+original_filename: original.pdf
+content_hash: sha256:91fbe44ded02d61a05f197ac6a8f229d7fd5c0ae5e9db3c7ff1401eee5734970
+original_sha256: sha256:79583c19e7fadb44c5a83b4f06610e313af57381f9cf20652f9b930a0b1c6db4
+text_sha256: sha256:91fbe44ded02d61a05f197ac6a8f229d7fd5c0ae5e9db3c7ff1401eee5734970
+text_fidelity: extracted_verified
+language: zh
+authoritative_status: authentic_text
+license: UN-materials-terms
+rights_note: Treaty text is a UN legal instrument, freely reproducible with attribution. Reproduced from
+  the UNOOSA ST/SPACE/61/Rev.3 zh edition. The UN asserts copyright over its publications, not over the
+  treaty text itself.
+capture_history:
+- date: '2026-07-04'
+  source_url: https://www.unoosa.org/res/oosadoc/data/documents/2025/stspace/st_space_61rev03C.pdf
+  original_sha256: sha256:79583c19e7fadb44c5a83b4f06610e313af57381f9cf20652f9b930a0b1c6db4
+  note: Initial capture directly from the byte-exact official ST/SPACE/61/Rev.3 zh edition PDF supplied
+    by the maintainer; anchor and text share one source. Cleaning verified against an independent plain
+    pdftotext extraction (similarity 0.9959); divergences were limited to intentionally-removed footnote
+    citations and extractor splits.
+supersedes: null
+superseded_by: null
+related_documents: []
+provenance_note: 'zh authentic text (co-equal authoritative record alongside the other authentic-language
+  versions, per design doc 03 JC-3 and the 2026-07-04 layout addendum). SOURCE: UNOOSA ST/SPACE/61/Rev.3
+  Chinese edition (''国际空间法：联合国文书'', 2025), maintainer-downloaded byte-exact PDF stored as original.pdf.
+  text.txt is extracted with pdftotext -layout and cleaned: page furniture and UNTS footnote citations
+  removed, hyphen line-wraps rejoined, paragraphs reflowed on first-line indents. CJK note: fidelity was
+  checked character-by-character (whitespace-insensitive); CJK text carries no word spacing.'
+verification:
+  status: verified
+  method: 'Extraction-fidelity check: the cleaned text.txt was compared against an independent plain pdftotext
+    extraction of the same pages of the byte-exact official PDF; similarity 0.9959 character-level (whitespace-insensitive;
+    only the intentionally-removed UNTS footnote). Article count and structure confirmed against the instrument
+    (headers complete and in order).'
+  reference: UNOOSA ST/SPACE/61/Rev.3, Chinese edition (2025); byte-exact PDF stored as original.pdf
+  verified_by: maintainer + Claude
+  verified_date: '2026-07-04'
+  note: Cross-check against a second official rendering in this language (e.g. the UNTS depositary volume)
+    remains a tracked follow-on, as for the English texts.

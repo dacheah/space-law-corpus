@@ -27,7 +27,7 @@ Where a file lives tells you what it is. The two never mix.
 
 ## Current contents
 
-Authoritative layer (16 records: 15 instruments, plus the French authentic text of the Outer Space Treaty — the first co-equal authentic-language record — with full provenance + SHA-256 hashes; the five GA principle instruments and both soft-law guidelines carry byte-exact official-PDF anchors). The 12 UN-level instruments carry English authentic text verified against an official UN source; a deliberate 3-instrument national pilot adds authentic-language national statutes:
+Authoritative layer (23 records: 15 instruments with full provenance + SHA-256 hashes. The Outer Space Treaty is held in **all five authentic languages** (en/ru/fr/es/zh) and all five UN treaties carry their French authentic text — co-equal authoritative records per design doc 03. The five GA principle instruments, both soft-law guidelines, and all eight language records carry byte-exact official-PDF anchors). The 12 UN-level instruments carry English authentic text verified against an official UN source; a deliberate 3-instrument national pilot adds authentic-language national statutes:
 
 - The **five UN space treaties** — Outer Space Treaty (1967), Rescue Agreement (1968), Liability Convention (1972), Registration Convention (1975), Moon Agreement (1979).
 - The **five UN General Assembly space-law principle instruments** — Declaration of Legal Principles (1963), Direct Broadcasting (1982), Remote Sensing (1986), Nuclear Power Sources (1992), Benefits Declaration (1996).

@@ -91,6 +91,20 @@ Refreshed the Hugging Face export (`scripts/export_hf_dataset.py` → `hf-datase
 anchor hashes. Publication target: `dacheah/space-law-corpus` (HF dataset); Zenodo DOI via the first
 archived GitHub release.
 
+### Authentic-language expansion — OST complete, French treaty layer (2026-07-04)
+Seven new co-equal authentic-language records from maintainer-supplied byte-exact ST/SPACE/61/Rev.3
+language editions (Russian, Spanish, Chinese, French). **The Outer Space Treaty is now held in all
+five of its authentic languages** (en/ru/fr/es/zh), and **all five UN treaties now carry their French
+authentic text**. Every record: byte-exact PDF anchor sharing one source with the text, full
+provenance, extraction verified against an independent extraction of the same pages (similarities
+0.9959–1.0000; Russian token-for-token perfect; Chinese checked character-level). Two source
+observations documented, not corrected: the official Russian edition's running headers erroneously
+print 'ST/SPACE/61/Rev.1' (the file is the 2025 Rev.3 publication, © UN 2025, V.24-22756 (R)); and
+the queue's Moon Agreement UNTS registration number was corrected to I-23002 (per the Rev.3
+footnotes) from an earlier transcription error. The corpus now holds 23 authoritative records
+(15 instruments). Derived layer and site regenerated; validation green. Concept tags for the new
+language records mirror the English model pass and remain `unreviewed`.
+
 ### Open follow-ons (tracked, not blocking)
 - Independent (non-compilation) corroboration of the five GA principles.
 - Human review of the model concept tags (upgrade `review_status` to `human_reviewed`).

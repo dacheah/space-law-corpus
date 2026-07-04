@@ -12,8 +12,12 @@ For each neutral legal concept, the provisions across the corpus that address it
 - **Remote Sensing Principles** (`un/ga/res-41-65`): Principle IV
 - **Benefits Declaration** (`un/ga/res-51-122`): Declaration (whole instrument)
 - **Moon Agreement** (`un/treaty/moon-1979`): Article 4; Article 6; Article 8
+- **Accord sur la Lune (Moon Agreement, French authentic text)** (`un/treaty/moon-1979`): Article 4; Article 6; Article 8
 - **Outer Space Treaty** (`un/treaty/ost-1967`): Article I
+- **Tratado sobre el espacio ultraterrestre (OST, Spanish authentic text)** (`un/treaty/ost-1967`): Article I
 - **Traité sur l'espace extra-atmosphérique (OST, French authentic text)** (`un/treaty/ost-1967`): Article I
+- **Договор по космосу (OST, Russian authentic text)** (`un/treaty/ost-1967`): Article I
+- **外层空间条约 (OST, Chinese authentic text)** (`un/treaty/ost-1967`): Article I
 
 ## non_appropriation
 *Outer space and celestial bodies not subject to national appropriation by sovereignty, use, occupation or other means.*
@@ -22,8 +26,12 @@ For each neutral legal concept, the provisions across the corpus that address it
 - **Declaration of Legal Principles** (`un/ga/res-1962-XVIII`): Principle 1; Principle 3
 - **Benefits Declaration** (`un/ga/res-51-122`): Declaration (whole instrument)
 - **Moon Agreement** (`un/treaty/moon-1979`): Article 11
+- **Accord sur la Lune (Moon Agreement, French authentic text)** (`un/treaty/moon-1979`): Article 11
 - **Outer Space Treaty** (`un/treaty/ost-1967`): Article I; Article II
+- **Tratado sobre el espacio ultraterrestre (OST, Spanish authentic text)** (`un/treaty/ost-1967`): Article I; Article II
 - **Traité sur l'espace extra-atmosphérique (OST, French authentic text)** (`un/treaty/ost-1967`): Article I; Article II
+- **Договор по космосу (OST, Russian authentic text)** (`un/treaty/ost-1967`): Article I; Article II
+- **外层空间条约 (OST, Chinese authentic text)** (`un/treaty/ost-1967`): Article I; Article II
 
 ## peaceful_use_and_non_militarization
 *Peaceful purposes; prohibition of WMD/weapons; no military bases; no intentional harmful acts.*
@@ -32,8 +40,12 @@ For each neutral legal concept, the provisions across the corpus that address it
 - **Direct Broadcasting Principles** (`un/ga/res-37-92`): Direct Broadcasting principles (whole instrument)
 - **COPUOS Space Debris Mitigation Guidelines** (`un/softlaw/copuos-debris-mitigation-2007`): Guideline 4
 - **Moon Agreement** (`un/treaty/moon-1979`): Article 2; Article 3
+- **Accord sur la Lune (Moon Agreement, French authentic text)** (`un/treaty/moon-1979`): Article 2; Article 3
 - **Outer Space Treaty** (`un/treaty/ost-1967`): Article III; Article IV
+- **Tratado sobre el espacio ultraterrestre (OST, Spanish authentic text)** (`un/treaty/ost-1967`): Article III; Article IV
 - **Traité sur l'espace extra-atmosphérique (OST, French authentic text)** (`un/treaty/ost-1967`): Article III; Article IV
+- **Договор по космосу (OST, Russian authentic text)** (`un/treaty/ost-1967`): Article III; Article IV
+- **外层空间条约 (OST, Chinese authentic text)** (`un/treaty/ost-1967`): Article III; Article IV
 
 ## state_responsibility_and_supervision
 *International responsibility of States for national activities, including authorization and continuing supervision of non-governmental entities.*
@@ -47,11 +59,18 @@ For each neutral legal concept, the provisions across the corpus that address it
 - **Nuclear Power Sources Principles** (`un/ga/res-47-68`): Principle 8
 - **LTS Guidelines** (`un/softlaw/lts-guidelines-2019`): Guideline A.1; Guideline A.2; Guideline A.3
 - **Liability Convention** (`un/treaty/liability-1972`): Article XXII
+- **Convention sur la responsabilité (Liability Convention, French authentic text)** (`un/treaty/liability-1972`): Article XXII
 - **Moon Agreement** (`un/treaty/moon-1979`): Article 14; Article 16
+- **Accord sur la Lune (Moon Agreement, French authentic text)** (`un/treaty/moon-1979`): Article 14; Article 16
 - **Outer Space Treaty** (`un/treaty/ost-1967`): Article VI; Article XIII
+- **Tratado sobre el espacio ultraterrestre (OST, Spanish authentic text)** (`un/treaty/ost-1967`): Article VI; Article XIII
 - **Traité sur l'espace extra-atmosphérique (OST, French authentic text)** (`un/treaty/ost-1967`): Article VI; Article XIII
+- **Договор по космосу (OST, Russian authentic text)** (`un/treaty/ost-1967`): Article VI; Article XIII
+- **外层空间条约 (OST, Chinese authentic text)** (`un/treaty/ost-1967`): Article VI; Article XIII
 - **Registration Convention** (`un/treaty/registration-1975`): Article VII
+- **Convention sur l'immatriculation (Registration Convention, French authentic text)** (`un/treaty/registration-1975`): Article VII
 - **Rescue Agreement** (`un/treaty/rescue-1968`): Article 6
+- **Accord sur le sauvetage (Rescue Agreement, French authentic text)** (`un/treaty/rescue-1968`): Article 6
 
 ## jurisdiction_and_control
 *Retention of jurisdiction and control over space objects and personnel; ownership of objects.*
@@ -59,8 +78,12 @@ For each neutral legal concept, the provisions across the corpus that address it
 - **French Space Operations Act (2008, consolidated)** (`nat/fra/loi-operations-spatiales-2008`): Art. 2; Art. 3; Art. 11-2
 - **Declaration of Legal Principles** (`un/ga/res-1962-XVIII`): Principle 7
 - **Moon Agreement** (`un/treaty/moon-1979`): Article 9; Article 12
+- **Accord sur la Lune (Moon Agreement, French authentic text)** (`un/treaty/moon-1979`): Article 9; Article 12
 - **Outer Space Treaty** (`un/treaty/ost-1967`): Article VIII
+- **Tratado sobre el espacio ultraterrestre (OST, Spanish authentic text)** (`un/treaty/ost-1967`): Article VIII
 - **Traité sur l'espace extra-atmosphérique (OST, French authentic text)** (`un/treaty/ost-1967`): Article VIII
+- **Договор по космосу (OST, Russian authentic text)** (`un/treaty/ost-1967`): Article VIII
+- **外层空间条约 (OST, Chinese authentic text)** (`un/treaty/ost-1967`): Article VIII
 
 ## registration
 *Registration of space objects in national and UN registries; furnishing of identifying information.*
@@ -68,6 +91,7 @@ For each neutral legal concept, the provisions across the corpus that address it
 - **French Space Operations Act (2008, consolidated)** (`nat/fra/loi-operations-spatiales-2008`): Art. 12
 - **LTS Guidelines** (`un/softlaw/lts-guidelines-2019`): Guideline A.5
 - **Registration Convention** (`un/treaty/registration-1975`): Article I; Article II; Article III; Article IV; Article V; Article VI; Article VII
+- **Convention sur l'immatriculation (Registration Convention, French authentic text)** (`un/treaty/registration-1975`): Article I; Article II; Article III; Article IV; Article V; Article VI; Article VII
 
 ## liability_and_damage
 *Responsibility/liability for damage caused by space objects; compensation; claims procedures.*
@@ -77,27 +101,42 @@ For each neutral legal concept, the provisions across the corpus that address it
 - **Declaration of Legal Principles** (`un/ga/res-1962-XVIII`): Principle 8
 - **Nuclear Power Sources Principles** (`un/ga/res-47-68`): Principle 9
 - **Liability Convention** (`un/treaty/liability-1972`): Article I; Article II; Article III; Article IV; Article V; Article VI; Article VII; Article VIII; Article IX; Article X; Article XI; Article XII; Article XVIII; Article XXI; Article XXII
+- **Convention sur la responsabilité (Liability Convention, French authentic text)** (`un/treaty/liability-1972`): Article I; Article II; Article III; Article IV; Article V; Article VI; Article VII; Article VIII; Article IX; Article X; Article XI; Article XII; Article XVIII; Article XXI; Article XXII
 - **Outer Space Treaty** (`un/treaty/ost-1967`): Article VII
+- **Tratado sobre el espacio ultraterrestre (OST, Spanish authentic text)** (`un/treaty/ost-1967`): Article VII
 - **Traité sur l'espace extra-atmosphérique (OST, French authentic text)** (`un/treaty/ost-1967`): Article VII
+- **Договор по космосу (OST, Russian authentic text)** (`un/treaty/ost-1967`): Article VII
+- **外层空间条约 (OST, Chinese authentic text)** (`un/treaty/ost-1967`): Article VII
 - **Rescue Agreement** (`un/treaty/rescue-1968`): Article 5
+- **Accord sur le sauvetage (Rescue Agreement, French authentic text)** (`un/treaty/rescue-1968`): Article 5
 
 ## rescue_and_return
 *Rescue and return of astronauts/personnel in distress; assistance.*
 
 - **Declaration of Legal Principles** (`un/ga/res-1962-XVIII`): Principle 9
 - **Moon Agreement** (`un/treaty/moon-1979`): Article 10
+- **Accord sur la Lune (Moon Agreement, French authentic text)** (`un/treaty/moon-1979`): Article 10
 - **Outer Space Treaty** (`un/treaty/ost-1967`): Article V
+- **Tratado sobre el espacio ultraterrestre (OST, Spanish authentic text)** (`un/treaty/ost-1967`): Article V
 - **Traité sur l'espace extra-atmosphérique (OST, French authentic text)** (`un/treaty/ost-1967`): Article V
+- **Договор по космосу (OST, Russian authentic text)** (`un/treaty/ost-1967`): Article V
+- **外层空间条约 (OST, Chinese authentic text)** (`un/treaty/ost-1967`): Article V
 - **Rescue Agreement** (`un/treaty/rescue-1968`): Article 1; Article 2; Article 3; Article 4
+- **Accord sur le sauvetage (Rescue Agreement, French authentic text)** (`un/treaty/rescue-1968`): Article 1; Article 2; Article 3; Article 4
 
 ## abandonment_and_salvage
 *Ownership, recovery and return of space objects (and parts) found beyond the launching State's limits.*
 
 - **Declaration of Legal Principles** (`un/ga/res-1962-XVIII`): Principle 7
 - **Outer Space Treaty** (`un/treaty/ost-1967`): Article VIII
+- **Tratado sobre el espacio ultraterrestre (OST, Spanish authentic text)** (`un/treaty/ost-1967`): Article VIII
 - **Traité sur l'espace extra-atmosphérique (OST, French authentic text)** (`un/treaty/ost-1967`): Article VIII
+- **Договор по космосу (OST, Russian authentic text)** (`un/treaty/ost-1967`): Article VIII
+- **外层空间条约 (OST, Chinese authentic text)** (`un/treaty/ost-1967`): Article VIII
 - **Registration Convention** (`un/treaty/registration-1975`): Article VI
+- **Convention sur l'immatriculation (Registration Convention, French authentic text)** (`un/treaty/registration-1975`): Article VI
 - **Rescue Agreement** (`un/treaty/rescue-1968`): Article 5
+- **Accord sur le sauvetage (Rescue Agreement, French authentic text)** (`un/treaty/rescue-1968`): Article 5
 
 ## resource_rights
 *Rights over natural resources of celestial bodies; exploitation; common-heritage regime; samples.*
@@ -106,6 +145,7 @@ For each neutral legal concept, the provisions across the corpus that address it
 - **US Space Resource Act (51 U.S.C. ch. 513)** (`nat/usa/space-resources-2015`): §51301 Definitions; §51302 Commercial exploration and commercial recovery; §51303 Asteroid resource and space resource rights
 - **Remote Sensing Principles** (`un/ga/res-41-65`): Principle XII
 - **Moon Agreement** (`un/treaty/moon-1979`): Article 6; Article 11
+- **Accord sur la Lune (Moon Agreement, French authentic text)** (`un/treaty/moon-1979`): Article 6; Article 11
 
 ## environmental_protection_and_debris
 *Protection of the space and Earth environment; harmful contamination; space debris mitigation; long-term sustainability.*
@@ -117,8 +157,12 @@ For each neutral legal concept, the provisions across the corpus that address it
 - **COPUOS Space Debris Mitigation Guidelines** (`un/softlaw/copuos-debris-mitigation-2007`): Guideline 1; Guideline 2; Guideline 3; Guideline 4; Guideline 5; Guideline 6; Guideline 7
 - **LTS Guidelines** (`un/softlaw/lts-guidelines-2019`): Guideline B.3; Guideline B.8; Guideline B.9; Guideline D.2
 - **Moon Agreement** (`un/treaty/moon-1979`): Article 7
+- **Accord sur la Lune (Moon Agreement, French authentic text)** (`un/treaty/moon-1979`): Article 7
 - **Outer Space Treaty** (`un/treaty/ost-1967`): Article IX
+- **Tratado sobre el espacio ultraterrestre (OST, Spanish authentic text)** (`un/treaty/ost-1967`): Article IX
 - **Traité sur l'espace extra-atmosphérique (OST, French authentic text)** (`un/treaty/ost-1967`): Article IX
+- **Договор по космосу (OST, Russian authentic text)** (`un/treaty/ost-1967`): Article IX
+- **外层空间条约 (OST, Chinese authentic text)** (`un/treaty/ost-1967`): Article IX
 
 ## international_cooperation_and_transparency
 *International cooperation; information-sharing; notification; consultation; benefit-sharing; capacity-building; openness.*
@@ -133,11 +177,18 @@ For each neutral legal concept, the provisions across the corpus that address it
 - **Benefits Declaration** (`un/ga/res-51-122`): Declaration (whole instrument)
 - **LTS Guidelines** (`un/softlaw/lts-guidelines-2019`): Guideline A.4; Guideline B.1; Guideline B.2; Guideline B.3; Guideline C.1; Guideline C.2; Guideline C.3; Guideline C.4; Guideline D.1
 - **Liability Convention** (`un/treaty/liability-1972`): Article XXI
+- **Convention sur la responsabilité (Liability Convention, French authentic text)** (`un/treaty/liability-1972`): Article XXI
 - **Moon Agreement** (`un/treaty/moon-1979`): Article 4; Article 5; Article 9; Article 13; Article 15
+- **Accord sur la Lune (Moon Agreement, French authentic text)** (`un/treaty/moon-1979`): Article 4; Article 5; Article 9; Article 13; Article 15
 - **Outer Space Treaty** (`un/treaty/ost-1967`): Article I; Article III; Article V; Article IX; Article X; Article XI; Article XII; Article XIII
+- **Tratado sobre el espacio ultraterrestre (OST, Spanish authentic text)** (`un/treaty/ost-1967`): Article I; Article III; Article V; Article IX; Article X; Article XI; Article XII; Article XIII
 - **Traité sur l'espace extra-atmosphérique (OST, French authentic text)** (`un/treaty/ost-1967`): Article I; Article III; Article V; Article IX; Article X; Article XI; Article XII; Article XIII
+- **Договор по космосу (OST, Russian authentic text)** (`un/treaty/ost-1967`): Article I; Article III; Article V; Article IX; Article X; Article XI; Article XII; Article XIII
+- **外层空间条约 (OST, Chinese authentic text)** (`un/treaty/ost-1967`): Article I; Article III; Article V; Article IX; Article X; Article XI; Article XII; Article XIII
 - **Registration Convention** (`un/treaty/registration-1975`): Article III; Article IV; Article VI
+- **Convention sur l'immatriculation (Registration Convention, French authentic text)** (`un/treaty/registration-1975`): Article III; Article IV; Article VI
 - **Rescue Agreement** (`un/treaty/rescue-1968`): Article 1; Article 5
+- **Accord sur le sauvetage (Rescue Agreement, French authentic text)** (`un/treaty/rescue-1968`): Article 1; Article 5
 
 ## dispute_settlement_and_consultation
 *Consultation and settlement of disputes; claims commissions; arbitration.*
@@ -145,9 +196,14 @@ For each neutral legal concept, the provisions across the corpus that address it
 - **Direct Broadcasting Principles** (`un/ga/res-37-92`): Direct Broadcasting principles (whole instrument)
 - **Remote Sensing Principles** (`un/ga/res-41-65`): Principle XV
 - **Liability Convention** (`un/treaty/liability-1972`): Article VIII; Article IX; Article X; Article XI; Article XII; Article XIV; Article XV; Article XVIII; Article XIX
+- **Convention sur la responsabilité (Liability Convention, French authentic text)** (`un/treaty/liability-1972`): Article VIII; Article IX; Article X; Article XI; Article XII; Article XIV; Article XV; Article XVIII; Article XIX
 - **Moon Agreement** (`un/treaty/moon-1979`): Article 15
+- **Accord sur la Lune (Moon Agreement, French authentic text)** (`un/treaty/moon-1979`): Article 15
 - **Outer Space Treaty** (`un/treaty/ost-1967`): Article IX
+- **Tratado sobre el espacio ultraterrestre (OST, Spanish authentic text)** (`un/treaty/ost-1967`): Article IX
 - **Traité sur l'espace extra-atmosphérique (OST, French authentic text)** (`un/treaty/ost-1967`): Article IX
+- **Договор по космосу (OST, Russian authentic text)** (`un/treaty/ost-1967`): Article IX
+- **外层空间条约 (OST, Chinese authentic text)** (`un/treaty/ost-1967`): Article IX
 
 ## safety_of_space_operations
 *Safety of operations; conjunction assessment; collision avoidance; re-entry safety; nuclear-power-source and operational safety.*

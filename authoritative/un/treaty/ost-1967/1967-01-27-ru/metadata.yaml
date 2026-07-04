@@ -1,0 +1,66 @@
+corpus_id: un/treaty/ost-1967
+version_id: 1967-01-27-ru
+title: Договор о принципах деятельности государств по исследованию и использованию космического пространства,
+  включая Луну и другие небесные тела
+short_title: Договор по космосу (OST, Russian authentic text)
+jurisdiction: international/UN
+document_type: treaty
+official_citation: '610 UNTS 205; UNGA Res 2222 (XXI); done at London, Moscow and Washington, 27 January
+  1967 This record: the RU authentic text.'
+authentic_languages:
+- en
+- ru
+- fr
+- es
+- zh
+adoption_date: '1966-12-19'
+entry_into_force_date: '1967-10-10'
+source_url: https://www.unoosa.org/res/oosadoc/data/documents/2025/stspace/st_space_61rev03R.pdf
+source_publisher: 'UNOOSA - ST/SPACE/61/Rev.3, édition russe (''Международное космическое право: документы
+  Организации Объединенных Наций'', 2025)'
+source_is_official: true
+retrieval_date: '2026-07-04'
+retrieved_by: 'maintainer download of the byte-exact official PDF; text extracted and cleaned by operator:
+  maintainer + Claude'
+original_format: pdf
+original_filename: original.pdf
+content_hash: sha256:2ae8747631de1533c97a16701ecc953771a3fd1a637a4d29d077156bff7d394d
+original_sha256: sha256:13eea4b1af0b07b06bd20e0c347fb0445e36c89e71460289aa1217533fb63347
+text_sha256: sha256:2ae8747631de1533c97a16701ecc953771a3fd1a637a4d29d077156bff7d394d
+text_fidelity: extracted_verified
+language: ru
+authoritative_status: authentic_text
+license: UN-materials-terms
+rights_note: Treaty text is a UN legal instrument, freely reproducible with attribution. Reproduced from
+  the UNOOSA ST/SPACE/61/Rev.3 ru edition. The UN asserts copyright over its publications, not over the
+  treaty text itself.
+capture_history:
+- date: '2026-07-04'
+  source_url: https://www.unoosa.org/res/oosadoc/data/documents/2025/stspace/st_space_61rev03R.pdf
+  original_sha256: sha256:13eea4b1af0b07b06bd20e0c347fb0445e36c89e71460289aa1217533fb63347
+  note: Initial capture directly from the byte-exact official ST/SPACE/61/Rev.3 ru edition PDF supplied
+    by the maintainer; anchor and text share one source. Cleaning verified against an independent plain
+    pdftotext extraction (similarity 1.0000); divergences were limited to intentionally-removed footnote
+    citations and extractor splits.
+supersedes: null
+superseded_by: null
+related_documents: []
+provenance_note: 'ru authentic text (co-equal authoritative record alongside the other authentic-language
+  versions, per design doc 03 JC-3 and the 2026-07-04 layout addendum). SOURCE: UNOOSA ST/SPACE/61/Rev.3
+  édition russe (''Международное космическое право: документы Организации Объединенных Наций'', 2025),
+  maintainer-downloaded byte-exact PDF stored as original.pdf. text.txt is extracted with pdftotext -layout
+  and cleaned: page furniture and UNTS footnote citations removed, hyphen line-wraps rejoined, paragraphs
+  reflowed on first-line indents. NOTE: the official Russian PDF''s running headers erroneously print
+  ''ST/SPACE/61/Rev.1''; the file is the 2025 Rev.3 publication (© United Nations 2025, New York; job
+  V.24-22756 (R)) — a source defect documented, not corrected.'
+verification:
+  status: verified
+  method: 'Extraction-fidelity check: the cleaned text.txt was compared against an independent plain pdftotext
+    extraction of the same pages of the byte-exact official PDF; similarity 1.0000 (token-for-token, zero
+    divergences). Article count and structure confirmed against the instrument (headers complete and in
+    order).'
+  reference: UNOOSA ST/SPACE/61/Rev.3, russe edition (2025); byte-exact PDF stored as original.pdf
+  verified_by: maintainer + Claude
+  verified_date: '2026-07-04'
+  note: Cross-check against a second official rendering in this language (e.g. the UNTS depositary volume)
+    remains a tracked follow-on, as for the English texts.

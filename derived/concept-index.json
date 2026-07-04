@@ -68,6 +68,24 @@
         "unit": "Article 8"
       },
       {
+        "corpus_id": "un/treaty/moon-1979",
+        "short_title": "Accord sur la Lune (Moon Agreement, French authentic text)",
+        "version_id": "1979-12-18-fr",
+        "unit": "Article 4"
+      },
+      {
+        "corpus_id": "un/treaty/moon-1979",
+        "short_title": "Accord sur la Lune (Moon Agreement, French authentic text)",
+        "version_id": "1979-12-18-fr",
+        "unit": "Article 6"
+      },
+      {
+        "corpus_id": "un/treaty/moon-1979",
+        "short_title": "Accord sur la Lune (Moon Agreement, French authentic text)",
+        "version_id": "1979-12-18-fr",
+        "unit": "Article 8"
+      },
+      {
         "corpus_id": "un/treaty/ost-1967",
         "short_title": "Outer Space Treaty",
         "version_id": "1967-01-27",
@@ -75,8 +93,26 @@
       },
       {
         "corpus_id": "un/treaty/ost-1967",
+        "short_title": "Tratado sobre el espacio ultraterrestre (OST, Spanish authentic text)",
+        "version_id": "1967-01-27-es",
+        "unit": "Article I"
+      },
+      {
+        "corpus_id": "un/treaty/ost-1967",
         "short_title": "Traité sur l'espace extra-atmosphérique (OST, French authentic text)",
         "version_id": "1967-01-27-fr",
+        "unit": "Article I"
+      },
+      {
+        "corpus_id": "un/treaty/ost-1967",
+        "short_title": "Договор по космосу (OST, Russian authentic text)",
+        "version_id": "1967-01-27-ru",
+        "unit": "Article I"
+      },
+      {
+        "corpus_id": "un/treaty/ost-1967",
+        "short_title": "外层空间条约 (OST, Chinese authentic text)",
+        "version_id": "1967-01-27-zh",
         "unit": "Article I"
       }
     ],
@@ -112,6 +148,12 @@
         "unit": "Article 11"
       },
       {
+        "corpus_id": "un/treaty/moon-1979",
+        "short_title": "Accord sur la Lune (Moon Agreement, French authentic text)",
+        "version_id": "1979-12-18-fr",
+        "unit": "Article 11"
+      },
+      {
         "corpus_id": "un/treaty/ost-1967",
         "short_title": "Outer Space Treaty",
         "version_id": "1967-01-27",
@@ -125,6 +167,18 @@
       },
       {
         "corpus_id": "un/treaty/ost-1967",
+        "short_title": "Tratado sobre el espacio ultraterrestre (OST, Spanish authentic text)",
+        "version_id": "1967-01-27-es",
+        "unit": "Article I"
+      },
+      {
+        "corpus_id": "un/treaty/ost-1967",
+        "short_title": "Tratado sobre el espacio ultraterrestre (OST, Spanish authentic text)",
+        "version_id": "1967-01-27-es",
+        "unit": "Article II"
+      },
+      {
+        "corpus_id": "un/treaty/ost-1967",
         "short_title": "Traité sur l'espace extra-atmosphérique (OST, French authentic text)",
         "version_id": "1967-01-27-fr",
         "unit": "Article I"
@@ -133,6 +187,30 @@
         "corpus_id": "un/treaty/ost-1967",
         "short_title": "Traité sur l'espace extra-atmosphérique (OST, French authentic text)",
         "version_id": "1967-01-27-fr",
+        "unit": "Article II"
+      },
+      {
+        "corpus_id": "un/treaty/ost-1967",
+        "short_title": "Договор по космосу (OST, Russian authentic text)",
+        "version_id": "1967-01-27-ru",
+        "unit": "Article I"
+      },
+      {
+        "corpus_id": "un/treaty/ost-1967",
+        "short_title": "Договор по космосу (OST, Russian authentic text)",
+        "version_id": "1967-01-27-ru",
+        "unit": "Article II"
+      },
+      {
+        "corpus_id": "un/treaty/ost-1967",
+        "short_title": "外层空间条约 (OST, Chinese authentic text)",
+        "version_id": "1967-01-27-zh",
+        "unit": "Article I"
+      },
+      {
+        "corpus_id": "un/treaty/ost-1967",
+        "short_title": "外层空间条约 (OST, Chinese authentic text)",
+        "version_id": "1967-01-27-zh",
         "unit": "Article II"
       }
     ],
@@ -168,6 +246,18 @@
         "unit": "Article 3"
       },
       {
+        "corpus_id": "un/treaty/moon-1979",
+        "short_title": "Accord sur la Lune (Moon Agreement, French authentic text)",
+        "version_id": "1979-12-18-fr",
+        "unit": "Article 2"
+      },
+      {
+        "corpus_id": "un/treaty/moon-1979",
+        "short_title": "Accord sur la Lune (Moon Agreement, French authentic text)",
+        "version_id": "1979-12-18-fr",
+        "unit": "Article 3"
+      },
+      {
         "corpus_id": "un/treaty/ost-1967",
         "short_title": "Outer Space Treaty",
         "version_id": "1967-01-27",
@@ -181,6 +271,18 @@
       },
       {
         "corpus_id": "un/treaty/ost-1967",
+        "short_title": "Tratado sobre el espacio ultraterrestre (OST, Spanish authentic text)",
+        "version_id": "1967-01-27-es",
+        "unit": "Article III"
+      },
+      {
+        "corpus_id": "un/treaty/ost-1967",
+        "short_title": "Tratado sobre el espacio ultraterrestre (OST, Spanish authentic text)",
+        "version_id": "1967-01-27-es",
+        "unit": "Article IV"
+      },
+      {
+        "corpus_id": "un/treaty/ost-1967",
         "short_title": "Traité sur l'espace extra-atmosphérique (OST, French authentic text)",
         "version_id": "1967-01-27-fr",
         "unit": "Article III"
@@ -189,6 +291,30 @@
         "corpus_id": "un/treaty/ost-1967",
         "short_title": "Traité sur l'espace extra-atmosphérique (OST, French authentic text)",
         "version_id": "1967-01-27-fr",
+        "unit": "Article IV"
+      },
+      {
+        "corpus_id": "un/treaty/ost-1967",
+        "short_title": "Договор по космосу (OST, Russian authentic text)",
+        "version_id": "1967-01-27-ru",
+        "unit": "Article III"
+      },
+      {
+        "corpus_id": "un/treaty/ost-1967",
+        "short_title": "Договор по космосу (OST, Russian authentic text)",
+        "version_id": "1967-01-27-ru",
+        "unit": "Article IV"
+      },
+      {
+        "corpus_id": "un/treaty/ost-1967",
+        "short_title": "外层空间条约 (OST, Chinese authentic text)",
+        "version_id": "1967-01-27-zh",
+        "unit": "Article III"
+      },
+      {
+        "corpus_id": "un/treaty/ost-1967",
+        "short_title": "外层空间条约 (OST, Chinese authentic text)",
+        "version_id": "1967-01-27-zh",
         "unit": "Article IV"
       }
     ],
@@ -392,6 +518,12 @@
         "unit": "Article XXII"
       },
       {
+        "corpus_id": "un/treaty/liability-1972",
+        "short_title": "Convention sur la responsabilité (Liability Convention, French authentic text)",
+        "version_id": "1972-03-29-fr",
+        "unit": "Article XXII"
+      },
+      {
         "corpus_id": "un/treaty/moon-1979",
         "short_title": "Moon Agreement",
         "version_id": "1979-12-18",
@@ -401,6 +533,18 @@
         "corpus_id": "un/treaty/moon-1979",
         "short_title": "Moon Agreement",
         "version_id": "1979-12-18",
+        "unit": "Article 16"
+      },
+      {
+        "corpus_id": "un/treaty/moon-1979",
+        "short_title": "Accord sur la Lune (Moon Agreement, French authentic text)",
+        "version_id": "1979-12-18-fr",
+        "unit": "Article 14"
+      },
+      {
+        "corpus_id": "un/treaty/moon-1979",
+        "short_title": "Accord sur la Lune (Moon Agreement, French authentic text)",
+        "version_id": "1979-12-18-fr",
         "unit": "Article 16"
       },
       {
@@ -417,6 +561,18 @@
       },
       {
         "corpus_id": "un/treaty/ost-1967",
+        "short_title": "Tratado sobre el espacio ultraterrestre (OST, Spanish authentic text)",
+        "version_id": "1967-01-27-es",
+        "unit": "Article VI"
+      },
+      {
+        "corpus_id": "un/treaty/ost-1967",
+        "short_title": "Tratado sobre el espacio ultraterrestre (OST, Spanish authentic text)",
+        "version_id": "1967-01-27-es",
+        "unit": "Article XIII"
+      },
+      {
+        "corpus_id": "un/treaty/ost-1967",
         "short_title": "Traité sur l'espace extra-atmosphérique (OST, French authentic text)",
         "version_id": "1967-01-27-fr",
         "unit": "Article VI"
@@ -428,15 +584,51 @@
         "unit": "Article XIII"
       },
       {
+        "corpus_id": "un/treaty/ost-1967",
+        "short_title": "Договор по космосу (OST, Russian authentic text)",
+        "version_id": "1967-01-27-ru",
+        "unit": "Article VI"
+      },
+      {
+        "corpus_id": "un/treaty/ost-1967",
+        "short_title": "Договор по космосу (OST, Russian authentic text)",
+        "version_id": "1967-01-27-ru",
+        "unit": "Article XIII"
+      },
+      {
+        "corpus_id": "un/treaty/ost-1967",
+        "short_title": "外层空间条约 (OST, Chinese authentic text)",
+        "version_id": "1967-01-27-zh",
+        "unit": "Article VI"
+      },
+      {
+        "corpus_id": "un/treaty/ost-1967",
+        "short_title": "外层空间条约 (OST, Chinese authentic text)",
+        "version_id": "1967-01-27-zh",
+        "unit": "Article XIII"
+      },
+      {
         "corpus_id": "un/treaty/registration-1975",
         "short_title": "Registration Convention",
         "version_id": "1975-01-14",
         "unit": "Article VII"
       },
       {
+        "corpus_id": "un/treaty/registration-1975",
+        "short_title": "Convention sur l'immatriculation (Registration Convention, French authentic text)",
+        "version_id": "1975-01-14-fr",
+        "unit": "Article VII"
+      },
+      {
         "corpus_id": "un/treaty/rescue-1968",
         "short_title": "Rescue Agreement",
         "version_id": "1968-04-22",
+        "unit": "Article 6"
+      },
+      {
+        "corpus_id": "un/treaty/rescue-1968",
+        "short_title": "Accord sur le sauvetage (Rescue Agreement, French authentic text)",
+        "version_id": "1968-04-22-fr",
         "unit": "Article 6"
       }
     ],
@@ -478,6 +670,18 @@
         "unit": "Article 12"
       },
       {
+        "corpus_id": "un/treaty/moon-1979",
+        "short_title": "Accord sur la Lune (Moon Agreement, French authentic text)",
+        "version_id": "1979-12-18-fr",
+        "unit": "Article 9"
+      },
+      {
+        "corpus_id": "un/treaty/moon-1979",
+        "short_title": "Accord sur la Lune (Moon Agreement, French authentic text)",
+        "version_id": "1979-12-18-fr",
+        "unit": "Article 12"
+      },
+      {
         "corpus_id": "un/treaty/ost-1967",
         "short_title": "Outer Space Treaty",
         "version_id": "1967-01-27",
@@ -485,8 +689,26 @@
       },
       {
         "corpus_id": "un/treaty/ost-1967",
+        "short_title": "Tratado sobre el espacio ultraterrestre (OST, Spanish authentic text)",
+        "version_id": "1967-01-27-es",
+        "unit": "Article VIII"
+      },
+      {
+        "corpus_id": "un/treaty/ost-1967",
         "short_title": "Traité sur l'espace extra-atmosphérique (OST, French authentic text)",
         "version_id": "1967-01-27-fr",
+        "unit": "Article VIII"
+      },
+      {
+        "corpus_id": "un/treaty/ost-1967",
+        "short_title": "Договор по космосу (OST, Russian authentic text)",
+        "version_id": "1967-01-27-ru",
+        "unit": "Article VIII"
+      },
+      {
+        "corpus_id": "un/treaty/ost-1967",
+        "short_title": "外层空间条约 (OST, Chinese authentic text)",
+        "version_id": "1967-01-27-zh",
         "unit": "Article VIII"
       }
     ],
@@ -543,6 +765,48 @@
         "corpus_id": "un/treaty/registration-1975",
         "short_title": "Registration Convention",
         "version_id": "1975-01-14",
+        "unit": "Article VII"
+      },
+      {
+        "corpus_id": "un/treaty/registration-1975",
+        "short_title": "Convention sur l'immatriculation (Registration Convention, French authentic text)",
+        "version_id": "1975-01-14-fr",
+        "unit": "Article I"
+      },
+      {
+        "corpus_id": "un/treaty/registration-1975",
+        "short_title": "Convention sur l'immatriculation (Registration Convention, French authentic text)",
+        "version_id": "1975-01-14-fr",
+        "unit": "Article II"
+      },
+      {
+        "corpus_id": "un/treaty/registration-1975",
+        "short_title": "Convention sur l'immatriculation (Registration Convention, French authentic text)",
+        "version_id": "1975-01-14-fr",
+        "unit": "Article III"
+      },
+      {
+        "corpus_id": "un/treaty/registration-1975",
+        "short_title": "Convention sur l'immatriculation (Registration Convention, French authentic text)",
+        "version_id": "1975-01-14-fr",
+        "unit": "Article IV"
+      },
+      {
+        "corpus_id": "un/treaty/registration-1975",
+        "short_title": "Convention sur l'immatriculation (Registration Convention, French authentic text)",
+        "version_id": "1975-01-14-fr",
+        "unit": "Article V"
+      },
+      {
+        "corpus_id": "un/treaty/registration-1975",
+        "short_title": "Convention sur l'immatriculation (Registration Convention, French authentic text)",
+        "version_id": "1975-01-14-fr",
+        "unit": "Article VI"
+      },
+      {
+        "corpus_id": "un/treaty/registration-1975",
+        "short_title": "Convention sur l'immatriculation (Registration Convention, French authentic text)",
+        "version_id": "1975-01-14-fr",
         "unit": "Article VII"
       }
     ],
@@ -716,9 +980,105 @@
         "unit": "Article XXII"
       },
       {
+        "corpus_id": "un/treaty/liability-1972",
+        "short_title": "Convention sur la responsabilité (Liability Convention, French authentic text)",
+        "version_id": "1972-03-29-fr",
+        "unit": "Article I"
+      },
+      {
+        "corpus_id": "un/treaty/liability-1972",
+        "short_title": "Convention sur la responsabilité (Liability Convention, French authentic text)",
+        "version_id": "1972-03-29-fr",
+        "unit": "Article II"
+      },
+      {
+        "corpus_id": "un/treaty/liability-1972",
+        "short_title": "Convention sur la responsabilité (Liability Convention, French authentic text)",
+        "version_id": "1972-03-29-fr",
+        "unit": "Article III"
+      },
+      {
+        "corpus_id": "un/treaty/liability-1972",
+        "short_title": "Convention sur la responsabilité (Liability Convention, French authentic text)",
+        "version_id": "1972-03-29-fr",
+        "unit": "Article IV"
+      },
+      {
+        "corpus_id": "un/treaty/liability-1972",
+        "short_title": "Convention sur la responsabilité (Liability Convention, French authentic text)",
+        "version_id": "1972-03-29-fr",
+        "unit": "Article V"
+      },
+      {
+        "corpus_id": "un/treaty/liability-1972",
+        "short_title": "Convention sur la responsabilité (Liability Convention, French authentic text)",
+        "version_id": "1972-03-29-fr",
+        "unit": "Article VI"
+      },
+      {
+        "corpus_id": "un/treaty/liability-1972",
+        "short_title": "Convention sur la responsabilité (Liability Convention, French authentic text)",
+        "version_id": "1972-03-29-fr",
+        "unit": "Article VII"
+      },
+      {
+        "corpus_id": "un/treaty/liability-1972",
+        "short_title": "Convention sur la responsabilité (Liability Convention, French authentic text)",
+        "version_id": "1972-03-29-fr",
+        "unit": "Article VIII"
+      },
+      {
+        "corpus_id": "un/treaty/liability-1972",
+        "short_title": "Convention sur la responsabilité (Liability Convention, French authentic text)",
+        "version_id": "1972-03-29-fr",
+        "unit": "Article IX"
+      },
+      {
+        "corpus_id": "un/treaty/liability-1972",
+        "short_title": "Convention sur la responsabilité (Liability Convention, French authentic text)",
+        "version_id": "1972-03-29-fr",
+        "unit": "Article X"
+      },
+      {
+        "corpus_id": "un/treaty/liability-1972",
+        "short_title": "Convention sur la responsabilité (Liability Convention, French authentic text)",
+        "version_id": "1972-03-29-fr",
+        "unit": "Article XI"
+      },
+      {
+        "corpus_id": "un/treaty/liability-1972",
+        "short_title": "Convention sur la responsabilité (Liability Convention, French authentic text)",
+        "version_id": "1972-03-29-fr",
+        "unit": "Article XII"
+      },
+      {
+        "corpus_id": "un/treaty/liability-1972",
+        "short_title": "Convention sur la responsabilité (Liability Convention, French authentic text)",
+        "version_id": "1972-03-29-fr",
+        "unit": "Article XVIII"
+      },
+      {
+        "corpus_id": "un/treaty/liability-1972",
+        "short_title": "Convention sur la responsabilité (Liability Convention, French authentic text)",
+        "version_id": "1972-03-29-fr",
+        "unit": "Article XXI"
+      },
+      {
+        "corpus_id": "un/treaty/liability-1972",
+        "short_title": "Convention sur la responsabilité (Liability Convention, French authentic text)",
+        "version_id": "1972-03-29-fr",
+        "unit": "Article XXII"
+      },
+      {
         "corpus_id": "un/treaty/ost-1967",
         "short_title": "Outer Space Treaty",
         "version_id": "1967-01-27",
+        "unit": "Article VII"
+      },
+      {
+        "corpus_id": "un/treaty/ost-1967",
+        "short_title": "Tratado sobre el espacio ultraterrestre (OST, Spanish authentic text)",
+        "version_id": "1967-01-27-es",
         "unit": "Article VII"
       },
       {
@@ -728,9 +1088,27 @@
         "unit": "Article VII"
       },
       {
+        "corpus_id": "un/treaty/ost-1967",
+        "short_title": "Договор по космосу (OST, Russian authentic text)",
+        "version_id": "1967-01-27-ru",
+        "unit": "Article VII"
+      },
+      {
+        "corpus_id": "un/treaty/ost-1967",
+        "short_title": "外层空间条约 (OST, Chinese authentic text)",
+        "version_id": "1967-01-27-zh",
+        "unit": "Article VII"
+      },
+      {
         "corpus_id": "un/treaty/rescue-1968",
         "short_title": "Rescue Agreement",
         "version_id": "1968-04-22",
+        "unit": "Article 5"
+      },
+      {
+        "corpus_id": "un/treaty/rescue-1968",
+        "short_title": "Accord sur le sauvetage (Rescue Agreement, French authentic text)",
+        "version_id": "1968-04-22-fr",
         "unit": "Article 5"
       }
     ],
@@ -748,6 +1126,12 @@
         "unit": "Article 10"
       },
       {
+        "corpus_id": "un/treaty/moon-1979",
+        "short_title": "Accord sur la Lune (Moon Agreement, French authentic text)",
+        "version_id": "1979-12-18-fr",
+        "unit": "Article 10"
+      },
+      {
         "corpus_id": "un/treaty/ost-1967",
         "short_title": "Outer Space Treaty",
         "version_id": "1967-01-27",
@@ -755,8 +1139,26 @@
       },
       {
         "corpus_id": "un/treaty/ost-1967",
+        "short_title": "Tratado sobre el espacio ultraterrestre (OST, Spanish authentic text)",
+        "version_id": "1967-01-27-es",
+        "unit": "Article V"
+      },
+      {
+        "corpus_id": "un/treaty/ost-1967",
         "short_title": "Traité sur l'espace extra-atmosphérique (OST, French authentic text)",
         "version_id": "1967-01-27-fr",
+        "unit": "Article V"
+      },
+      {
+        "corpus_id": "un/treaty/ost-1967",
+        "short_title": "Договор по космосу (OST, Russian authentic text)",
+        "version_id": "1967-01-27-ru",
+        "unit": "Article V"
+      },
+      {
+        "corpus_id": "un/treaty/ost-1967",
+        "short_title": "外层空间条约 (OST, Chinese authentic text)",
+        "version_id": "1967-01-27-zh",
         "unit": "Article V"
       },
       {
@@ -782,6 +1184,30 @@
         "short_title": "Rescue Agreement",
         "version_id": "1968-04-22",
         "unit": "Article 4"
+      },
+      {
+        "corpus_id": "un/treaty/rescue-1968",
+        "short_title": "Accord sur le sauvetage (Rescue Agreement, French authentic text)",
+        "version_id": "1968-04-22-fr",
+        "unit": "Article 1"
+      },
+      {
+        "corpus_id": "un/treaty/rescue-1968",
+        "short_title": "Accord sur le sauvetage (Rescue Agreement, French authentic text)",
+        "version_id": "1968-04-22-fr",
+        "unit": "Article 2"
+      },
+      {
+        "corpus_id": "un/treaty/rescue-1968",
+        "short_title": "Accord sur le sauvetage (Rescue Agreement, French authentic text)",
+        "version_id": "1968-04-22-fr",
+        "unit": "Article 3"
+      },
+      {
+        "corpus_id": "un/treaty/rescue-1968",
+        "short_title": "Accord sur le sauvetage (Rescue Agreement, French authentic text)",
+        "version_id": "1968-04-22-fr",
+        "unit": "Article 4"
       }
     ],
     "abandonment_and_salvage": [
@@ -799,8 +1225,26 @@
       },
       {
         "corpus_id": "un/treaty/ost-1967",
+        "short_title": "Tratado sobre el espacio ultraterrestre (OST, Spanish authentic text)",
+        "version_id": "1967-01-27-es",
+        "unit": "Article VIII"
+      },
+      {
+        "corpus_id": "un/treaty/ost-1967",
         "short_title": "Traité sur l'espace extra-atmosphérique (OST, French authentic text)",
         "version_id": "1967-01-27-fr",
+        "unit": "Article VIII"
+      },
+      {
+        "corpus_id": "un/treaty/ost-1967",
+        "short_title": "Договор по космосу (OST, Russian authentic text)",
+        "version_id": "1967-01-27-ru",
+        "unit": "Article VIII"
+      },
+      {
+        "corpus_id": "un/treaty/ost-1967",
+        "short_title": "外层空间条约 (OST, Chinese authentic text)",
+        "version_id": "1967-01-27-zh",
         "unit": "Article VIII"
       },
       {
@@ -810,9 +1254,21 @@
         "unit": "Article VI"
       },
       {
+        "corpus_id": "un/treaty/registration-1975",
+        "short_title": "Convention sur l'immatriculation (Registration Convention, French authentic text)",
+        "version_id": "1975-01-14-fr",
+        "unit": "Article VI"
+      },
+      {
         "corpus_id": "un/treaty/rescue-1968",
         "short_title": "Rescue Agreement",
         "version_id": "1968-04-22",
+        "unit": "Article 5"
+      },
+      {
+        "corpus_id": "un/treaty/rescue-1968",
+        "short_title": "Accord sur le sauvetage (Rescue Agreement, French authentic text)",
+        "version_id": "1968-04-22-fr",
         "unit": "Article 5"
       }
     ],
@@ -863,6 +1319,18 @@
         "corpus_id": "un/treaty/moon-1979",
         "short_title": "Moon Agreement",
         "version_id": "1979-12-18",
+        "unit": "Article 11"
+      },
+      {
+        "corpus_id": "un/treaty/moon-1979",
+        "short_title": "Accord sur la Lune (Moon Agreement, French authentic text)",
+        "version_id": "1979-12-18-fr",
+        "unit": "Article 6"
+      },
+      {
+        "corpus_id": "un/treaty/moon-1979",
+        "short_title": "Accord sur la Lune (Moon Agreement, French authentic text)",
+        "version_id": "1979-12-18-fr",
         "unit": "Article 11"
       }
     ],
@@ -982,6 +1450,12 @@
         "unit": "Article 7"
       },
       {
+        "corpus_id": "un/treaty/moon-1979",
+        "short_title": "Accord sur la Lune (Moon Agreement, French authentic text)",
+        "version_id": "1979-12-18-fr",
+        "unit": "Article 7"
+      },
+      {
         "corpus_id": "un/treaty/ost-1967",
         "short_title": "Outer Space Treaty",
         "version_id": "1967-01-27",
@@ -989,8 +1463,26 @@
       },
       {
         "corpus_id": "un/treaty/ost-1967",
+        "short_title": "Tratado sobre el espacio ultraterrestre (OST, Spanish authentic text)",
+        "version_id": "1967-01-27-es",
+        "unit": "Article IX"
+      },
+      {
+        "corpus_id": "un/treaty/ost-1967",
         "short_title": "Traité sur l'espace extra-atmosphérique (OST, French authentic text)",
         "version_id": "1967-01-27-fr",
+        "unit": "Article IX"
+      },
+      {
+        "corpus_id": "un/treaty/ost-1967",
+        "short_title": "Договор по космосу (OST, Russian authentic text)",
+        "version_id": "1967-01-27-ru",
+        "unit": "Article IX"
+      },
+      {
+        "corpus_id": "un/treaty/ost-1967",
+        "short_title": "外层空间条约 (OST, Chinese authentic text)",
+        "version_id": "1967-01-27-zh",
         "unit": "Article IX"
       }
     ],
@@ -1140,6 +1632,12 @@
         "unit": "Article XXI"
       },
       {
+        "corpus_id": "un/treaty/liability-1972",
+        "short_title": "Convention sur la responsabilité (Liability Convention, French authentic text)",
+        "version_id": "1972-03-29-fr",
+        "unit": "Article XXI"
+      },
+      {
         "corpus_id": "un/treaty/moon-1979",
         "short_title": "Moon Agreement",
         "version_id": "1979-12-18",
@@ -1167,6 +1665,36 @@
         "corpus_id": "un/treaty/moon-1979",
         "short_title": "Moon Agreement",
         "version_id": "1979-12-18",
+        "unit": "Article 15"
+      },
+      {
+        "corpus_id": "un/treaty/moon-1979",
+        "short_title": "Accord sur la Lune (Moon Agreement, French authentic text)",
+        "version_id": "1979-12-18-fr",
+        "unit": "Article 4"
+      },
+      {
+        "corpus_id": "un/treaty/moon-1979",
+        "short_title": "Accord sur la Lune (Moon Agreement, French authentic text)",
+        "version_id": "1979-12-18-fr",
+        "unit": "Article 5"
+      },
+      {
+        "corpus_id": "un/treaty/moon-1979",
+        "short_title": "Accord sur la Lune (Moon Agreement, French authentic text)",
+        "version_id": "1979-12-18-fr",
+        "unit": "Article 9"
+      },
+      {
+        "corpus_id": "un/treaty/moon-1979",
+        "short_title": "Accord sur la Lune (Moon Agreement, French authentic text)",
+        "version_id": "1979-12-18-fr",
+        "unit": "Article 13"
+      },
+      {
+        "corpus_id": "un/treaty/moon-1979",
+        "short_title": "Accord sur la Lune (Moon Agreement, French authentic text)",
+        "version_id": "1979-12-18-fr",
         "unit": "Article 15"
       },
       {
@@ -1219,6 +1747,54 @@
       },
       {
         "corpus_id": "un/treaty/ost-1967",
+        "short_title": "Tratado sobre el espacio ultraterrestre (OST, Spanish authentic text)",
+        "version_id": "1967-01-27-es",
+        "unit": "Article I"
+      },
+      {
+        "corpus_id": "un/treaty/ost-1967",
+        "short_title": "Tratado sobre el espacio ultraterrestre (OST, Spanish authentic text)",
+        "version_id": "1967-01-27-es",
+        "unit": "Article III"
+      },
+      {
+        "corpus_id": "un/treaty/ost-1967",
+        "short_title": "Tratado sobre el espacio ultraterrestre (OST, Spanish authentic text)",
+        "version_id": "1967-01-27-es",
+        "unit": "Article V"
+      },
+      {
+        "corpus_id": "un/treaty/ost-1967",
+        "short_title": "Tratado sobre el espacio ultraterrestre (OST, Spanish authentic text)",
+        "version_id": "1967-01-27-es",
+        "unit": "Article IX"
+      },
+      {
+        "corpus_id": "un/treaty/ost-1967",
+        "short_title": "Tratado sobre el espacio ultraterrestre (OST, Spanish authentic text)",
+        "version_id": "1967-01-27-es",
+        "unit": "Article X"
+      },
+      {
+        "corpus_id": "un/treaty/ost-1967",
+        "short_title": "Tratado sobre el espacio ultraterrestre (OST, Spanish authentic text)",
+        "version_id": "1967-01-27-es",
+        "unit": "Article XI"
+      },
+      {
+        "corpus_id": "un/treaty/ost-1967",
+        "short_title": "Tratado sobre el espacio ultraterrestre (OST, Spanish authentic text)",
+        "version_id": "1967-01-27-es",
+        "unit": "Article XII"
+      },
+      {
+        "corpus_id": "un/treaty/ost-1967",
+        "short_title": "Tratado sobre el espacio ultraterrestre (OST, Spanish authentic text)",
+        "version_id": "1967-01-27-es",
+        "unit": "Article XIII"
+      },
+      {
+        "corpus_id": "un/treaty/ost-1967",
         "short_title": "Traité sur l'espace extra-atmosphérique (OST, French authentic text)",
         "version_id": "1967-01-27-fr",
         "unit": "Article I"
@@ -1266,6 +1842,102 @@
         "unit": "Article XIII"
       },
       {
+        "corpus_id": "un/treaty/ost-1967",
+        "short_title": "Договор по космосу (OST, Russian authentic text)",
+        "version_id": "1967-01-27-ru",
+        "unit": "Article I"
+      },
+      {
+        "corpus_id": "un/treaty/ost-1967",
+        "short_title": "Договор по космосу (OST, Russian authentic text)",
+        "version_id": "1967-01-27-ru",
+        "unit": "Article III"
+      },
+      {
+        "corpus_id": "un/treaty/ost-1967",
+        "short_title": "Договор по космосу (OST, Russian authentic text)",
+        "version_id": "1967-01-27-ru",
+        "unit": "Article V"
+      },
+      {
+        "corpus_id": "un/treaty/ost-1967",
+        "short_title": "Договор по космосу (OST, Russian authentic text)",
+        "version_id": "1967-01-27-ru",
+        "unit": "Article IX"
+      },
+      {
+        "corpus_id": "un/treaty/ost-1967",
+        "short_title": "Договор по космосу (OST, Russian authentic text)",
+        "version_id": "1967-01-27-ru",
+        "unit": "Article X"
+      },
+      {
+        "corpus_id": "un/treaty/ost-1967",
+        "short_title": "Договор по космосу (OST, Russian authentic text)",
+        "version_id": "1967-01-27-ru",
+        "unit": "Article XI"
+      },
+      {
+        "corpus_id": "un/treaty/ost-1967",
+        "short_title": "Договор по космосу (OST, Russian authentic text)",
+        "version_id": "1967-01-27-ru",
+        "unit": "Article XII"
+      },
+      {
+        "corpus_id": "un/treaty/ost-1967",
+        "short_title": "Договор по космосу (OST, Russian authentic text)",
+        "version_id": "1967-01-27-ru",
+        "unit": "Article XIII"
+      },
+      {
+        "corpus_id": "un/treaty/ost-1967",
+        "short_title": "外层空间条约 (OST, Chinese authentic text)",
+        "version_id": "1967-01-27-zh",
+        "unit": "Article I"
+      },
+      {
+        "corpus_id": "un/treaty/ost-1967",
+        "short_title": "外层空间条约 (OST, Chinese authentic text)",
+        "version_id": "1967-01-27-zh",
+        "unit": "Article III"
+      },
+      {
+        "corpus_id": "un/treaty/ost-1967",
+        "short_title": "外层空间条约 (OST, Chinese authentic text)",
+        "version_id": "1967-01-27-zh",
+        "unit": "Article V"
+      },
+      {
+        "corpus_id": "un/treaty/ost-1967",
+        "short_title": "外层空间条约 (OST, Chinese authentic text)",
+        "version_id": "1967-01-27-zh",
+        "unit": "Article IX"
+      },
+      {
+        "corpus_id": "un/treaty/ost-1967",
+        "short_title": "外层空间条约 (OST, Chinese authentic text)",
+        "version_id": "1967-01-27-zh",
+        "unit": "Article X"
+      },
+      {
+        "corpus_id": "un/treaty/ost-1967",
+        "short_title": "外层空间条约 (OST, Chinese authentic text)",
+        "version_id": "1967-01-27-zh",
+        "unit": "Article XI"
+      },
+      {
+        "corpus_id": "un/treaty/ost-1967",
+        "short_title": "外层空间条约 (OST, Chinese authentic text)",
+        "version_id": "1967-01-27-zh",
+        "unit": "Article XII"
+      },
+      {
+        "corpus_id": "un/treaty/ost-1967",
+        "short_title": "外层空间条约 (OST, Chinese authentic text)",
+        "version_id": "1967-01-27-zh",
+        "unit": "Article XIII"
+      },
+      {
         "corpus_id": "un/treaty/registration-1975",
         "short_title": "Registration Convention",
         "version_id": "1975-01-14",
@@ -1284,6 +1956,24 @@
         "unit": "Article VI"
       },
       {
+        "corpus_id": "un/treaty/registration-1975",
+        "short_title": "Convention sur l'immatriculation (Registration Convention, French authentic text)",
+        "version_id": "1975-01-14-fr",
+        "unit": "Article III"
+      },
+      {
+        "corpus_id": "un/treaty/registration-1975",
+        "short_title": "Convention sur l'immatriculation (Registration Convention, French authentic text)",
+        "version_id": "1975-01-14-fr",
+        "unit": "Article IV"
+      },
+      {
+        "corpus_id": "un/treaty/registration-1975",
+        "short_title": "Convention sur l'immatriculation (Registration Convention, French authentic text)",
+        "version_id": "1975-01-14-fr",
+        "unit": "Article VI"
+      },
+      {
         "corpus_id": "un/treaty/rescue-1968",
         "short_title": "Rescue Agreement",
         "version_id": "1968-04-22",
@@ -1293,6 +1983,18 @@
         "corpus_id": "un/treaty/rescue-1968",
         "short_title": "Rescue Agreement",
         "version_id": "1968-04-22",
+        "unit": "Article 5"
+      },
+      {
+        "corpus_id": "un/treaty/rescue-1968",
+        "short_title": "Accord sur le sauvetage (Rescue Agreement, French authentic text)",
+        "version_id": "1968-04-22-fr",
+        "unit": "Article 1"
+      },
+      {
+        "corpus_id": "un/treaty/rescue-1968",
+        "short_title": "Accord sur le sauvetage (Rescue Agreement, French authentic text)",
+        "version_id": "1968-04-22-fr",
         "unit": "Article 5"
       }
     ],
@@ -1364,9 +2066,69 @@
         "unit": "Article XIX"
       },
       {
+        "corpus_id": "un/treaty/liability-1972",
+        "short_title": "Convention sur la responsabilité (Liability Convention, French authentic text)",
+        "version_id": "1972-03-29-fr",
+        "unit": "Article VIII"
+      },
+      {
+        "corpus_id": "un/treaty/liability-1972",
+        "short_title": "Convention sur la responsabilité (Liability Convention, French authentic text)",
+        "version_id": "1972-03-29-fr",
+        "unit": "Article IX"
+      },
+      {
+        "corpus_id": "un/treaty/liability-1972",
+        "short_title": "Convention sur la responsabilité (Liability Convention, French authentic text)",
+        "version_id": "1972-03-29-fr",
+        "unit": "Article X"
+      },
+      {
+        "corpus_id": "un/treaty/liability-1972",
+        "short_title": "Convention sur la responsabilité (Liability Convention, French authentic text)",
+        "version_id": "1972-03-29-fr",
+        "unit": "Article XI"
+      },
+      {
+        "corpus_id": "un/treaty/liability-1972",
+        "short_title": "Convention sur la responsabilité (Liability Convention, French authentic text)",
+        "version_id": "1972-03-29-fr",
+        "unit": "Article XII"
+      },
+      {
+        "corpus_id": "un/treaty/liability-1972",
+        "short_title": "Convention sur la responsabilité (Liability Convention, French authentic text)",
+        "version_id": "1972-03-29-fr",
+        "unit": "Article XIV"
+      },
+      {
+        "corpus_id": "un/treaty/liability-1972",
+        "short_title": "Convention sur la responsabilité (Liability Convention, French authentic text)",
+        "version_id": "1972-03-29-fr",
+        "unit": "Article XV"
+      },
+      {
+        "corpus_id": "un/treaty/liability-1972",
+        "short_title": "Convention sur la responsabilité (Liability Convention, French authentic text)",
+        "version_id": "1972-03-29-fr",
+        "unit": "Article XVIII"
+      },
+      {
+        "corpus_id": "un/treaty/liability-1972",
+        "short_title": "Convention sur la responsabilité (Liability Convention, French authentic text)",
+        "version_id": "1972-03-29-fr",
+        "unit": "Article XIX"
+      },
+      {
         "corpus_id": "un/treaty/moon-1979",
         "short_title": "Moon Agreement",
         "version_id": "1979-12-18",
+        "unit": "Article 15"
+      },
+      {
+        "corpus_id": "un/treaty/moon-1979",
+        "short_title": "Accord sur la Lune (Moon Agreement, French authentic text)",
+        "version_id": "1979-12-18-fr",
         "unit": "Article 15"
       },
       {
@@ -1377,8 +2139,26 @@
       },
       {
         "corpus_id": "un/treaty/ost-1967",
+        "short_title": "Tratado sobre el espacio ultraterrestre (OST, Spanish authentic text)",
+        "version_id": "1967-01-27-es",
+        "unit": "Article IX"
+      },
+      {
+        "corpus_id": "un/treaty/ost-1967",
         "short_title": "Traité sur l'espace extra-atmosphérique (OST, French authentic text)",
         "version_id": "1967-01-27-fr",
+        "unit": "Article IX"
+      },
+      {
+        "corpus_id": "un/treaty/ost-1967",
+        "short_title": "Договор по космосу (OST, Russian authentic text)",
+        "version_id": "1967-01-27-ru",
+        "unit": "Article IX"
+      },
+      {
+        "corpus_id": "un/treaty/ost-1967",
+        "short_title": "外层空间条约 (OST, Chinese authentic text)",
+        "version_id": "1967-01-27-zh",
         "unit": "Article IX"
       }
     ],

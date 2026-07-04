@@ -5,7 +5,10 @@ license_name: mixed-provenance
 license_link: https://github.com/dacheah/space-law-corpus/blob/main/docs/design/04-licensing-policy.md
 language:
 - en
+- es
 - fr
+- ru
+- zh
 tags:
 - legal
 - law
@@ -35,7 +38,7 @@ A neutral, **provenance-first**, machine-readable record of international and na
 - **Source of truth / build history:** https://github.com/dacheah/space-law-corpus
 - **Archived & citable:** concept DOI [10.5281/zenodo.21185483](https://doi.org/10.5281/zenodo.21185483) (resolves to the latest Zenodo-archived GitHub release)
 - **Human-browsable site:** https://dacheah.github.io/space-law-corpus/
-- **16** instruments (16 verified against official sources) · **232** provisions · **238** neutral concept tags
+- **23** instruments (23 verified against official sources) · **310** provisions · **349** neutral concept tags
 
 ## Why this dataset is different
 
@@ -68,11 +71,18 @@ prov = load_dataset("dacheah/space-law-corpus", "provisions")
 | COPUOS Space Debris Mitigation Guidelines | international/UN | 2007-06-15 | `extracted_verified` |
 | LTS Guidelines | international/UN | 2019-06-21 | `extracted_verified` |
 | Liability Convention | international/UN | 1971-11-29 | `extracted_verified` |
+| Convention sur la responsabilité (Liability Convention, French authentic text) | international/UN | 1971-11-29 | `extracted_verified` |
 | Moon Agreement | international/UN | 1979-12-05 | `extracted_verified` |
+| Accord sur la Lune (Moon Agreement, French authentic text) | international/UN | 1979-12-05 | `extracted_verified` |
 | Outer Space Treaty | international/UN | 1966-12-19 | `extracted_verified` |
+| Tratado sobre el espacio ultraterrestre (OST, Spanish authentic text) | international/UN | 1966-12-19 | `extracted_verified` |
 | Traité sur l'espace extra-atmosphérique (OST, French authentic text) | international/UN | 1966-12-19 | `extracted_verified` |
+| Договор по космосу (OST, Russian authentic text) | international/UN | 1966-12-19 | `extracted_verified` |
+| 外层空间条约 (OST, Chinese authentic text) | international/UN | 1966-12-19 | `extracted_verified` |
 | Registration Convention | international/UN | 1974-11-12 | `extracted_verified` |
+| Convention sur l'immatriculation (Registration Convention, French authentic text) | international/UN | 1974-11-12 | `extracted_verified` |
 | Rescue Agreement | international/UN | 1967-12-19 | `extracted_verified` |
+| Accord sur le sauvetage (Rescue Agreement, French authentic text) | international/UN | 1967-12-19 | `extracted_verified` |
 
 ## Licensing
 
