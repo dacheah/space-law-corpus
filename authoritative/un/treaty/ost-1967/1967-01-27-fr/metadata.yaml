@@ -1,0 +1,67 @@
+corpus_id: un/treaty/ost-1967
+version_id: 1967-01-27-fr
+title: Traité sur les principes régissant les activités des États en matière d'exploration et d'utilisation
+  de l'espace extra-atmosphérique, y compris la Lune et les autres corps célestes
+short_title: Traité sur l'espace extra-atmosphérique (OST, French authentic text)
+jurisdiction: international/UN
+document_type: treaty
+official_citation: '610 UNTS 205; UNGA Res 2222 (XXI); done at London, Moscow and Washington, 27 January
+  1967. French authentic text (Article XVII: English, Russian, French, Spanish and Chinese texts equally
+  authentic).'
+authentic_languages:
+- en
+- ru
+- fr
+- es
+- zh
+adoption_date: '1966-12-19'
+entry_into_force_date: '1967-10-10'
+source_url: https://www.unoosa.org/res/oosadoc/data/documents/2025/stspace/stspace61rev_3_0_html/st_space_61rev03F.pdf
+source_publisher: 'UNOOSA - ST/SPACE/61/Rev.3, édition française (''Droit international de l''espace:
+  instruments des Nations Unies'', 2025)'
+source_is_official: true
+retrieval_date: '2026-07-04'
+retrieved_by: 'maintainer download of the byte-exact official PDF; text extracted and cleaned by operator:
+  maintainer + Claude'
+original_format: pdf
+original_filename: original.pdf
+content_hash: sha256:f9014dc1787b1508d31302073e4de366acdb11687776d24831bd3fedb1d1d726
+original_sha256: sha256:69c56420f88d24d193058a463baf0e4eda387685220bf5cecc14e11bb584081a
+text_sha256: sha256:f9014dc1787b1508d31302073e4de366acdb11687776d24831bd3fedb1d1d726
+text_fidelity: extracted_verified
+language: fr
+authoritative_status: authentic_text
+license: UN-materials-terms
+rights_note: Treaty text is a UN legal instrument, freely reproducible with attribution. Reproduced from
+  the UNOOSA ST/SPACE/61/Rev.3 French edition. The UN asserts copyright over its publications, not over
+  the treaty text itself.
+capture_history:
+- date: '2026-07-04'
+  source_url: https://www.unoosa.org/res/oosadoc/data/documents/2025/stspace/stspace61rev_3_0_html/st_space_61rev03F.pdf
+  original_sha256: sha256:69c56420f88d24d193058a463baf0e4eda387685220bf5cecc14e11bb584081a
+  note: Initial capture directly from the byte-exact official UNOOSA ST/SPACE/61/Rev.3 French edition
+    PDF supplied by the maintainer; anchor and text share one source. Cleaning verified token-for-token
+    (ratio 0.9987) against an independent plain pdftotext extraction; the only divergences were the two
+    repaired extractor letter-splits.
+supersedes: null
+superseded_by: null
+related_documents: []
+provenance_note: 'French authentic text of the Outer Space Treaty (co-equal authoritative record alongside
+  the English text at version 1967-01-27, per design doc 03 JC-3; language-suffixed version directory
+  per the 2026-07-04 layout decision). SOURCE: UNOOSA ST/SPACE/61/Rev.3 French edition (2025), maintainer-downloaded
+  byte-exact PDF stored as original.pdf. text.txt is extracted with pdftotext -layout and cleaned: page
+  furniture and the UNTS footnote removed, hyphen line-wraps rejoined, paragraphs reflowed on first-line
+  indents, two extractor letter-splits repaired (''d e la'' -> ''de la'', ''l a'' -> ''la'', ''e n'' ->
+  ''en''). NOTE: Rev.3 renders article heads as ''Article I'' (not the traditional ''Article premier'');
+  the text follows the source rendering.'
+verification:
+  status: verified
+  method: 'Extraction-fidelity check: the cleaned text.txt was token-compared (ratio 0.9987) against an
+    independent plain pdftotext extraction of the same byte-exact official PDF; the only divergences were
+    two repaired extractor letter-splits (''d e la'', ''l a''/''e n''). Anchor and text share one source
+    (ST/SPACE/61/Rev.3, French edition).'
+  reference: UNOOSA ST/SPACE/61/Rev.3, édition française (2025); byte-exact PDF stored as original.pdf
+  verified_by: maintainer + Claude
+  verified_date: '2026-07-04'
+  note: Cross-check against a second official French rendering (e.g. the UNTS depositary volume 610) remains
+    a tracked follow-on, as for the English texts.

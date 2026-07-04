@@ -22,9 +22,9 @@ retrieval_date: '2026-07-02'
 retrieved_by: 'corpus ingest v0.1 via automated web-fetch tool; operator: maintainer + Claude'
 original_format: txt
 original_filename: original.txt
-content_hash: sha256:0e4f8a0d00f22e19686dadd666435072a040bd2d64b82cdf6c51e37974f778eb
+content_hash: sha256:2312a1b376199f71cdde5a3be188005542e92501f115443936c79e618c40d32e
 original_sha256: sha256:b2768f682bbfae9f84701751b2ffd0b9b93ac8877b2d7b71177bedacf3ec4709
-text_sha256: sha256:0e4f8a0d00f22e19686dadd666435072a040bd2d64b82cdf6c51e37974f778eb
+text_sha256: sha256:2312a1b376199f71cdde5a3be188005542e92501f115443936c79e618c40d32e
 text_fidelity: extracted_verified
 language: en
 authoritative_status: authentic_text
@@ -52,9 +52,19 @@ provenance_note: 'English authentic text of the Outer Space Treaty. SOURCE: the 
   verification against the UNTS certified text; a byte-exact certified-PDF capture is a tracked follow-on.'
 verification:
   status: verified
-  method: Independent word-for-word cross-check against ST/SPACE/61/Rev.3 (treaty was ingested from a
-    different source).
-  reference: 'UNOOSA ST/SPACE/61/Rev.3 (International Space Law: United Nations Instruments, 2025)'
-  verified_by: maintainer + Claude (see docs/verification-2026-07.md)
-  verified_date: '2026-07-02'
-  note: Word-for-word cross-check; differences limited to the compilation's own PDF spacing artifacts.
+  method: 'Token-for-token cross-check of text.txt against a pdftotext extraction of the byte-exact official
+    ST/SPACE/61/Rev.3 publication (2025). Systematic, documented rendering differences between Rev.3 and
+    this text''s source (UNOOSA treaty page reproducing the authentic-era orthography) were NOT treated
+    as defects: Rev.3 modernises ''co-operation'' to ''cooperation'', uses typographic apostrophes, reorders
+    the depositary-government and authentic-language listings in the testimonium, and adds footnote markers.'
+  reference: 'UNOOSA ST/SPACE/61/Rev.3 (International Space Law: United Nations Instruments, 2025); byte-exact
+    PDF stored'
+  verified_by: maintainer + Claude
+  verified_date: '2026-07-04'
+  note: Cross-verification against a second official UN rendering; anchor unchanged (initial capture retained).
+    A byte-exact UNTS depositary-volume anchor upgrade is a tracked follow-on (see queue/).
+corrections:
+- date: '2026-07-04'
+  change: 'Corrected capture/source artifact: ''Space",which'' -> ''Space", which'' (1 instance)'
+  reference: 'UNOOSA ST/SPACE/61/Rev.3 (International Space Law: United Nations Instruments, 2025); byte-exact
+    PDF stored'

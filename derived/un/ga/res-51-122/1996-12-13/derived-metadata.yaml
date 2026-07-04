@@ -3,7 +3,7 @@
   artifact_file: structure.json
   source_corpus_id: un/ga/res-51-122
   source_version_id: '1996-12-13'
-  source_text_sha256: sha256:7ac1923e7ecc925305e103203e0e1b8302f2bfcb0c1f4e3b782c9e8b216e1e58
+  source_text_sha256: sha256:3e0f1ab923b268d494a1bc4cb2329bd8721bda93b554e60b63d43e4cf21007f2
   generation_method: rule_based
   generator: build_derived.py v0.2 (structure)
   generation_date: '2026-07-03'
@@ -19,7 +19,7 @@
   artifact_file: concepts.json
   source_corpus_id: un/ga/res-51-122
   source_version_id: '1996-12-13'
-  source_text_sha256: sha256:7ac1923e7ecc925305e103203e0e1b8302f2bfcb0c1f4e3b782c9e8b216e1e58
+  source_text_sha256: sha256:3e0f1ab923b268d494a1bc4cb2329bd8721bda93b554e60b63d43e4cf21007f2
   generation_method: model
   generator: claude-opus-4-8
   generation_date: '2026-07-03'

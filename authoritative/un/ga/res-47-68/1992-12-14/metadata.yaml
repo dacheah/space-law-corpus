@@ -17,13 +17,14 @@ source_url: https://www.unoosa.org/res/oosadoc/data/documents/2025/stspace/stspa
 source_publisher: 'UNOOSA - ST/SPACE/61/Rev.3, ''International Space Law: United Nations Instruments''
   (2025)'
 source_is_official: true
-retrieval_date: '2026-07-02'
-retrieved_by: 'corpus ingest v0.1 via automated web-fetch (PDF text extraction); operator: maintainer + Claude'
-original_format: txt
-original_filename: original.txt
-content_hash: sha256:211ab631a8a834a633df65785488cf568fe77db3805894f0ab2c5329ca4dafa5
-original_sha256: sha256:989209079da45d6313a17f4f217a841f119d3e3476acb88a17427bd8bba86d2f
-text_sha256: sha256:211ab631a8a834a633df65785488cf568fe77db3805894f0ab2c5329ca4dafa5
+retrieval_date: '2026-07-04'
+retrieved_by: 'maintainer download of the byte-exact official PDF; initial capture via automated web-fetch
+  PDF text extraction; operator: maintainer + Claude'
+original_format: pdf
+original_filename: original.pdf
+content_hash: sha256:3279130e22f8d177d495eae10e1983fab9145d62ef13e7f2d5b16ee42c6bcfbf
+original_sha256: sha256:5bacb8b48ec5372f507afcc0a185e68c4e2b4fe6ef644587733c18dfb0a5721c
+text_sha256: sha256:3279130e22f8d177d495eae10e1983fab9145d62ef13e7f2d5b16ee42c6bcfbf
 text_fidelity: extracted_verified
 language: en
 authoritative_status: authentic_text
@@ -35,6 +36,13 @@ capture_history:
   source_url: https://www.unoosa.org/res/oosadoc/data/documents/2025/stspace/stspace61rev_3_0_html/st_space_61rev03E.pdf
   original_sha256: sha256:989209079da45d6313a17f4f217a841f119d3e3476acb88a17427bd8bba86d2f
   note: Extracted from the UNOOSA ST/SPACE/61/Rev.3 consolidated PDF via web-fetch text extraction.
+- date: '2026-07-04'
+  source_url: https://www.unoosa.org/res/oosadoc/data/documents/2025/stspace/stspace61rev_3_0_html/st_space_61rev03E.pdf
+  original_sha256: sha256:5bacb8b48ec5372f507afcc0a185e68c4e2b4fe6ef644587733c18dfb0a5721c
+  note: Official UNOOSA publication PDF (ST/SPACE/61/Rev.3) supplied by the maintainer; stored byte-for-byte
+    as original.pdf, upgrading the integrity anchor from the initial web-fetch text extraction (original.txt;
+    preserved in Git). Same source document as the initial capture. Full-text extraction re-verified token-for-token
+    against text.txt.
 supersedes: null
 superseded_by: null
 related_documents: []
@@ -50,9 +58,18 @@ provenance_note: 'English text of the Principles Relevant to the Use of Nuclear 
   text is a tracked follow-on.'
 verification:
   status: verified
-  method: Extraction-fidelity check against the official UN compilation (source of record).
-  reference: 'UNOOSA ST/SPACE/61/Rev.3 (International Space Law: United Nations Instruments, 2025)'
-  verified_by: maintainer + Claude (see docs/verification-2026-07.md)
-  verified_date: '2026-07-02'
-  note: 100% match to the official compilation (source of record); independent (non-compilation) corroboration
-    remains a tracked follow-on.
+  method: Token-for-token comparison of text.txt against a pdftotext extraction of the byte-exact official
+    PDF (original.pdf). Divergences were limited to reference-side extractor splits and the capture artifacts
+    listed in corrections, which were fixed.
+  reference: 'UNOOSA ST/SPACE/61/Rev.3 (International Space Law: United Nations Instruments, 2025); byte-exact
+    PDF stored'
+  verified_by: maintainer + Claude
+  verified_date: '2026-07-04'
+  note: Supersedes the 2026-07-02 extraction-fidelity check (same source, text-extraction capture). The
+    anchor is now the byte-exact official PDF. Independent (non-compilation) corroboration against the
+    individual A/RES texts remains a tracked follow-on.
+corrections:
+- date: '2026-07-04'
+  change: 'Corrected capture/source artifact: ''con sequences'' -> ''consequences'' (1 instance)'
+  reference: 'UNOOSA ST/SPACE/61/Rev.3 (International Space Law: United Nations Instruments, 2025); byte-exact
+    PDF stored'

@@ -3,7 +3,7 @@
   artifact_file: structure.json
   source_corpus_id: un/treaty/moon-1979
   source_version_id: '1979-12-18'
-  source_text_sha256: sha256:ca6a56044a572eb16f8132a452cdefe066ca671a385054e436944578c07ce534
+  source_text_sha256: sha256:6ec8161802beda8bb232185bc9bac6a93038d9ccccaae628c50f4073dd748021
   generation_method: rule_based
   generator: build_derived.py v0.2 (structure)
   generation_date: '2026-07-03'
@@ -19,7 +19,7 @@
   artifact_file: concepts.json
   source_corpus_id: un/treaty/moon-1979
   source_version_id: '1979-12-18'
-  source_text_sha256: sha256:ca6a56044a572eb16f8132a452cdefe066ca671a385054e436944578c07ce534
+  source_text_sha256: sha256:6ec8161802beda8bb232185bc9bac6a93038d9ccccaae628c50f4073dd748021
   generation_method: model
   generator: claude-opus-4-8
   generation_date: '2026-07-03'

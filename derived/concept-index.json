@@ -72,6 +72,12 @@
         "short_title": "Outer Space Treaty",
         "version_id": "1967-01-27",
         "unit": "Article I"
+      },
+      {
+        "corpus_id": "un/treaty/ost-1967",
+        "short_title": "Traité sur l'espace extra-atmosphérique (OST, French authentic text)",
+        "version_id": "1967-01-27-fr",
+        "unit": "Article I"
       }
     ],
     "non_appropriation": [
@@ -116,6 +122,18 @@
         "short_title": "Outer Space Treaty",
         "version_id": "1967-01-27",
         "unit": "Article II"
+      },
+      {
+        "corpus_id": "un/treaty/ost-1967",
+        "short_title": "Traité sur l'espace extra-atmosphérique (OST, French authentic text)",
+        "version_id": "1967-01-27-fr",
+        "unit": "Article I"
+      },
+      {
+        "corpus_id": "un/treaty/ost-1967",
+        "short_title": "Traité sur l'espace extra-atmosphérique (OST, French authentic text)",
+        "version_id": "1967-01-27-fr",
+        "unit": "Article II"
       }
     ],
     "peaceful_use_and_non_militarization": [
@@ -159,6 +177,18 @@
         "corpus_id": "un/treaty/ost-1967",
         "short_title": "Outer Space Treaty",
         "version_id": "1967-01-27",
+        "unit": "Article IV"
+      },
+      {
+        "corpus_id": "un/treaty/ost-1967",
+        "short_title": "Traité sur l'espace extra-atmosphérique (OST, French authentic text)",
+        "version_id": "1967-01-27-fr",
+        "unit": "Article III"
+      },
+      {
+        "corpus_id": "un/treaty/ost-1967",
+        "short_title": "Traité sur l'espace extra-atmosphérique (OST, French authentic text)",
+        "version_id": "1967-01-27-fr",
         "unit": "Article IV"
       }
     ],
@@ -386,6 +416,18 @@
         "unit": "Article XIII"
       },
       {
+        "corpus_id": "un/treaty/ost-1967",
+        "short_title": "Traité sur l'espace extra-atmosphérique (OST, French authentic text)",
+        "version_id": "1967-01-27-fr",
+        "unit": "Article VI"
+      },
+      {
+        "corpus_id": "un/treaty/ost-1967",
+        "short_title": "Traité sur l'espace extra-atmosphérique (OST, French authentic text)",
+        "version_id": "1967-01-27-fr",
+        "unit": "Article XIII"
+      },
+      {
         "corpus_id": "un/treaty/registration-1975",
         "short_title": "Registration Convention",
         "version_id": "1975-01-14",
@@ -439,6 +481,12 @@
         "corpus_id": "un/treaty/ost-1967",
         "short_title": "Outer Space Treaty",
         "version_id": "1967-01-27",
+        "unit": "Article VIII"
+      },
+      {
+        "corpus_id": "un/treaty/ost-1967",
+        "short_title": "Traité sur l'espace extra-atmosphérique (OST, French authentic text)",
+        "version_id": "1967-01-27-fr",
         "unit": "Article VIII"
       }
     ],
@@ -674,6 +722,12 @@
         "unit": "Article VII"
       },
       {
+        "corpus_id": "un/treaty/ost-1967",
+        "short_title": "Traité sur l'espace extra-atmosphérique (OST, French authentic text)",
+        "version_id": "1967-01-27-fr",
+        "unit": "Article VII"
+      },
+      {
         "corpus_id": "un/treaty/rescue-1968",
         "short_title": "Rescue Agreement",
         "version_id": "1968-04-22",
@@ -697,6 +751,12 @@
         "corpus_id": "un/treaty/ost-1967",
         "short_title": "Outer Space Treaty",
         "version_id": "1967-01-27",
+        "unit": "Article V"
+      },
+      {
+        "corpus_id": "un/treaty/ost-1967",
+        "short_title": "Traité sur l'espace extra-atmosphérique (OST, French authentic text)",
+        "version_id": "1967-01-27-fr",
         "unit": "Article V"
       },
       {
@@ -735,6 +795,12 @@
         "corpus_id": "un/treaty/ost-1967",
         "short_title": "Outer Space Treaty",
         "version_id": "1967-01-27",
+        "unit": "Article VIII"
+      },
+      {
+        "corpus_id": "un/treaty/ost-1967",
+        "short_title": "Traité sur l'espace extra-atmosphérique (OST, French authentic text)",
+        "version_id": "1967-01-27-fr",
         "unit": "Article VIII"
       },
       {
@@ -919,6 +985,12 @@
         "corpus_id": "un/treaty/ost-1967",
         "short_title": "Outer Space Treaty",
         "version_id": "1967-01-27",
+        "unit": "Article IX"
+      },
+      {
+        "corpus_id": "un/treaty/ost-1967",
+        "short_title": "Traité sur l'espace extra-atmosphérique (OST, French authentic text)",
+        "version_id": "1967-01-27-fr",
         "unit": "Article IX"
       }
     ],
@@ -1146,6 +1218,54 @@
         "unit": "Article XIII"
       },
       {
+        "corpus_id": "un/treaty/ost-1967",
+        "short_title": "Traité sur l'espace extra-atmosphérique (OST, French authentic text)",
+        "version_id": "1967-01-27-fr",
+        "unit": "Article I"
+      },
+      {
+        "corpus_id": "un/treaty/ost-1967",
+        "short_title": "Traité sur l'espace extra-atmosphérique (OST, French authentic text)",
+        "version_id": "1967-01-27-fr",
+        "unit": "Article III"
+      },
+      {
+        "corpus_id": "un/treaty/ost-1967",
+        "short_title": "Traité sur l'espace extra-atmosphérique (OST, French authentic text)",
+        "version_id": "1967-01-27-fr",
+        "unit": "Article V"
+      },
+      {
+        "corpus_id": "un/treaty/ost-1967",
+        "short_title": "Traité sur l'espace extra-atmosphérique (OST, French authentic text)",
+        "version_id": "1967-01-27-fr",
+        "unit": "Article IX"
+      },
+      {
+        "corpus_id": "un/treaty/ost-1967",
+        "short_title": "Traité sur l'espace extra-atmosphérique (OST, French authentic text)",
+        "version_id": "1967-01-27-fr",
+        "unit": "Article X"
+      },
+      {
+        "corpus_id": "un/treaty/ost-1967",
+        "short_title": "Traité sur l'espace extra-atmosphérique (OST, French authentic text)",
+        "version_id": "1967-01-27-fr",
+        "unit": "Article XI"
+      },
+      {
+        "corpus_id": "un/treaty/ost-1967",
+        "short_title": "Traité sur l'espace extra-atmosphérique (OST, French authentic text)",
+        "version_id": "1967-01-27-fr",
+        "unit": "Article XII"
+      },
+      {
+        "corpus_id": "un/treaty/ost-1967",
+        "short_title": "Traité sur l'espace extra-atmosphérique (OST, French authentic text)",
+        "version_id": "1967-01-27-fr",
+        "unit": "Article XIII"
+      },
+      {
         "corpus_id": "un/treaty/registration-1975",
         "short_title": "Registration Convention",
         "version_id": "1975-01-14",
@@ -1253,6 +1373,12 @@
         "corpus_id": "un/treaty/ost-1967",
         "short_title": "Outer Space Treaty",
         "version_id": "1967-01-27",
+        "unit": "Article IX"
+      },
+      {
+        "corpus_id": "un/treaty/ost-1967",
+        "short_title": "Traité sur l'espace extra-atmosphérique (OST, French authentic text)",
+        "version_id": "1967-01-27-fr",
         "unit": "Article IX"
       }
     ],

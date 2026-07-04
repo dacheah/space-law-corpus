@@ -3,7 +3,7 @@
   artifact_file: structure.json
   source_corpus_id: un/treaty/ost-1967
   source_version_id: '1967-01-27'
-  source_text_sha256: sha256:0e4f8a0d00f22e19686dadd666435072a040bd2d64b82cdf6c51e37974f778eb
+  source_text_sha256: sha256:2312a1b376199f71cdde5a3be188005542e92501f115443936c79e618c40d32e
   generation_method: rule_based
   generator: build_derived.py v0.2 (structure)
   generation_date: '2026-07-03'
@@ -19,7 +19,7 @@
   artifact_file: concepts.json
   source_corpus_id: un/treaty/ost-1967
   source_version_id: '1967-01-27'
-  source_text_sha256: sha256:0e4f8a0d00f22e19686dadd666435072a040bd2d64b82cdf6c51e37974f778eb
+  source_text_sha256: sha256:2312a1b376199f71cdde5a3be188005542e92501f115443936c79e618c40d32e
   generation_method: model
   generator: claude-opus-4-8
   generation_date: '2026-07-03'

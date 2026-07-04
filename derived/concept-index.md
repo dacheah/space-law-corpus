@@ -13,6 +13,7 @@ For each neutral legal concept, the provisions across the corpus that address it
 - **Benefits Declaration** (`un/ga/res-51-122`): Declaration (whole instrument)
 - **Moon Agreement** (`un/treaty/moon-1979`): Article 4; Article 6; Article 8
 - **Outer Space Treaty** (`un/treaty/ost-1967`): Article I
+- **Traité sur l'espace extra-atmosphérique (OST, French authentic text)** (`un/treaty/ost-1967`): Article I
 
 ## non_appropriation
 *Outer space and celestial bodies not subject to national appropriation by sovereignty, use, occupation or other means.*
@@ -22,6 +23,7 @@ For each neutral legal concept, the provisions across the corpus that address it
 - **Benefits Declaration** (`un/ga/res-51-122`): Declaration (whole instrument)
 - **Moon Agreement** (`un/treaty/moon-1979`): Article 11
 - **Outer Space Treaty** (`un/treaty/ost-1967`): Article I; Article II
+- **Traité sur l'espace extra-atmosphérique (OST, French authentic text)** (`un/treaty/ost-1967`): Article I; Article II
 
 ## peaceful_use_and_non_militarization
 *Peaceful purposes; prohibition of WMD/weapons; no military bases; no intentional harmful acts.*
@@ -31,6 +33,7 @@ For each neutral legal concept, the provisions across the corpus that address it
 - **COPUOS Space Debris Mitigation Guidelines** (`un/softlaw/copuos-debris-mitigation-2007`): Guideline 4
 - **Moon Agreement** (`un/treaty/moon-1979`): Article 2; Article 3
 - **Outer Space Treaty** (`un/treaty/ost-1967`): Article III; Article IV
+- **Traité sur l'espace extra-atmosphérique (OST, French authentic text)** (`un/treaty/ost-1967`): Article III; Article IV
 
 ## state_responsibility_and_supervision
 *International responsibility of States for national activities, including authorization and continuing supervision of non-governmental entities.*
@@ -46,6 +49,7 @@ For each neutral legal concept, the provisions across the corpus that address it
 - **Liability Convention** (`un/treaty/liability-1972`): Article XXII
 - **Moon Agreement** (`un/treaty/moon-1979`): Article 14; Article 16
 - **Outer Space Treaty** (`un/treaty/ost-1967`): Article VI; Article XIII
+- **Traité sur l'espace extra-atmosphérique (OST, French authentic text)** (`un/treaty/ost-1967`): Article VI; Article XIII
 - **Registration Convention** (`un/treaty/registration-1975`): Article VII
 - **Rescue Agreement** (`un/treaty/rescue-1968`): Article 6
 
@@ -56,6 +60,7 @@ For each neutral legal concept, the provisions across the corpus that address it
 - **Declaration of Legal Principles** (`un/ga/res-1962-XVIII`): Principle 7
 - **Moon Agreement** (`un/treaty/moon-1979`): Article 9; Article 12
 - **Outer Space Treaty** (`un/treaty/ost-1967`): Article VIII
+- **Traité sur l'espace extra-atmosphérique (OST, French authentic text)** (`un/treaty/ost-1967`): Article VIII
 
 ## registration
 *Registration of space objects in national and UN registries; furnishing of identifying information.*
@@ -73,6 +78,7 @@ For each neutral legal concept, the provisions across the corpus that address it
 - **Nuclear Power Sources Principles** (`un/ga/res-47-68`): Principle 9
 - **Liability Convention** (`un/treaty/liability-1972`): Article I; Article II; Article III; Article IV; Article V; Article VI; Article VII; Article VIII; Article IX; Article X; Article XI; Article XII; Article XVIII; Article XXI; Article XXII
 - **Outer Space Treaty** (`un/treaty/ost-1967`): Article VII
+- **Traité sur l'espace extra-atmosphérique (OST, French authentic text)** (`un/treaty/ost-1967`): Article VII
 - **Rescue Agreement** (`un/treaty/rescue-1968`): Article 5
 
 ## rescue_and_return
@@ -81,6 +87,7 @@ For each neutral legal concept, the provisions across the corpus that address it
 - **Declaration of Legal Principles** (`un/ga/res-1962-XVIII`): Principle 9
 - **Moon Agreement** (`un/treaty/moon-1979`): Article 10
 - **Outer Space Treaty** (`un/treaty/ost-1967`): Article V
+- **Traité sur l'espace extra-atmosphérique (OST, French authentic text)** (`un/treaty/ost-1967`): Article V
 - **Rescue Agreement** (`un/treaty/rescue-1968`): Article 1; Article 2; Article 3; Article 4
 
 ## abandonment_and_salvage
@@ -88,6 +95,7 @@ For each neutral legal concept, the provisions across the corpus that address it
 
 - **Declaration of Legal Principles** (`un/ga/res-1962-XVIII`): Principle 7
 - **Outer Space Treaty** (`un/treaty/ost-1967`): Article VIII
+- **Traité sur l'espace extra-atmosphérique (OST, French authentic text)** (`un/treaty/ost-1967`): Article VIII
 - **Registration Convention** (`un/treaty/registration-1975`): Article VI
 - **Rescue Agreement** (`un/treaty/rescue-1968`): Article 5
 
@@ -110,6 +118,7 @@ For each neutral legal concept, the provisions across the corpus that address it
 - **LTS Guidelines** (`un/softlaw/lts-guidelines-2019`): Guideline B.3; Guideline B.8; Guideline B.9; Guideline D.2
 - **Moon Agreement** (`un/treaty/moon-1979`): Article 7
 - **Outer Space Treaty** (`un/treaty/ost-1967`): Article IX
+- **Traité sur l'espace extra-atmosphérique (OST, French authentic text)** (`un/treaty/ost-1967`): Article IX
 
 ## international_cooperation_and_transparency
 *International cooperation; information-sharing; notification; consultation; benefit-sharing; capacity-building; openness.*
@@ -126,6 +135,7 @@ For each neutral legal concept, the provisions across the corpus that address it
 - **Liability Convention** (`un/treaty/liability-1972`): Article XXI
 - **Moon Agreement** (`un/treaty/moon-1979`): Article 4; Article 5; Article 9; Article 13; Article 15
 - **Outer Space Treaty** (`un/treaty/ost-1967`): Article I; Article III; Article V; Article IX; Article X; Article XI; Article XII; Article XIII
+- **Traité sur l'espace extra-atmosphérique (OST, French authentic text)** (`un/treaty/ost-1967`): Article I; Article III; Article V; Article IX; Article X; Article XI; Article XII; Article XIII
 - **Registration Convention** (`un/treaty/registration-1975`): Article III; Article IV; Article VI
 - **Rescue Agreement** (`un/treaty/rescue-1968`): Article 1; Article 5
 
@@ -137,6 +147,7 @@ For each neutral legal concept, the provisions across the corpus that address it
 - **Liability Convention** (`un/treaty/liability-1972`): Article VIII; Article IX; Article X; Article XI; Article XII; Article XIV; Article XV; Article XVIII; Article XIX
 - **Moon Agreement** (`un/treaty/moon-1979`): Article 15
 - **Outer Space Treaty** (`un/treaty/ost-1967`): Article IX
+- **Traité sur l'espace extra-atmosphérique (OST, French authentic text)** (`un/treaty/ost-1967`): Article IX
 
 ## safety_of_space_operations
 *Safety of operations; conjunction assessment; collision avoidance; re-entry safety; nuclear-power-source and operational safety.*

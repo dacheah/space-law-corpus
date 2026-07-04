@@ -75,3 +75,18 @@ The fidelity flag is part of provenance: it tells a future user exactly how much
 - Auto-translating into the authoritative layer (ever).
 - Filling a gap with a substitute and moving on silently.
 - Editing an authentic text to "clean it up" — corrections are new versions with notes (doc 02), and cleanups belong to derived structure extraction, not the authoritative text.
+
+
+---
+
+### Dated addendum — 2026-07-04: JC-3 layout decision (co-equal authentic languages)
+
+**⚖️ JUDGEMENT CALL (approved by maintainer, 2026-07-04).** JC-3 fixed that each authentic-language
+version is a co-equal authoritative record under the same `corpus_id`, distinguished by `language`,
+but did not fix the on-disk layout. Decision: a co-equal authentic-language record lives in a
+**language-suffixed version directory** — `authoritative/<corpus_id>/<version_id>-<lang>/` with
+`version_id` `"<date>-<lang>"` (e.g. `un/treaty/ost-1967/1967-01-27-fr/`), `language: <lang>`, and the
+un-suffixed directory remaining the English record ingested first. Rationale: keeps one `corpus_id`
+(so the concept index and cross-references stay unified), needs no schema or validator change, and the
+suffix makes the language visible in every path and derived trace. First instance: the French
+authentic text of the Outer Space Treaty, from the UNOOSA ST/SPACE/61/Rev.3 French edition.

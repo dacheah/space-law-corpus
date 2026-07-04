@@ -67,10 +67,16 @@ corrections:
     preserved in Git history.
 verification:
   status: verified
-  method: Re-sourced from and matches the official UN compilation (source of record); cross-checked against
-    the prior corrected Australian text.
-  reference: ST/SPACE/61/Rev.3
-  verified_by: maintainer + Claude (see docs/verification-2026-07.md)
-  verified_date: '2026-07-02'
-  note: Base text is now the authentic UN compilation rendering; the earlier Australian-sourced base is
-    preserved in Git history.
+  method: 'Token-for-token cross-check of text.txt against a pdftotext extraction of the byte-exact official
+    ST/SPACE/61/Rev.3 publication (2025). Systematic, documented rendering differences between Rev.3 and
+    this text''s source (UNOOSA treaty page reproducing the authentic-era orthography) were NOT treated
+    as defects: Rev.3 modernises ''co-operation'' to ''cooperation'', uses typographic apostrophes, reorders
+    the depositary-government and authentic-language listings in the testimonium, and adds footnote markers.
+    Rev.3-side omission noted: Rev.3 drops ''the'' in Article 2 (''cooperate with the Contracting Party'');
+    this text retains the authentic reading.'
+  reference: 'UNOOSA ST/SPACE/61/Rev.3 (International Space Law: United Nations Instruments, 2025); byte-exact
+    PDF stored'
+  verified_by: maintainer + Claude
+  verified_date: '2026-07-04'
+  note: Cross-verification against a second official UN rendering; anchor unchanged (initial capture retained).
+    A byte-exact UNTS depositary-volume anchor upgrade is a tracked follow-on (see queue/).

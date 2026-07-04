@@ -27,7 +27,7 @@ Where a file lives tells you what it is. The two never mix.
 
 ## Current contents
 
-Authoritative layer (15 instruments, full provenance + SHA-256 hashes). The 12 UN-level instruments carry English authentic text verified against an official UN source; a deliberate 3-instrument national pilot adds authentic-language national statutes:
+Authoritative layer (16 records: 15 instruments, plus the French authentic text of the Outer Space Treaty — the first co-equal authentic-language record — with full provenance + SHA-256 hashes; the five GA principle instruments and both soft-law guidelines carry byte-exact official-PDF anchors). The 12 UN-level instruments carry English authentic text verified against an official UN source; a deliberate 3-instrument national pilot adds authentic-language national statutes:
 
 - The **five UN space treaties** — Outer Space Treaty (1967), Rescue Agreement (1968), Liability Convention (1972), Registration Convention (1975), Moon Agreement (1979).
 - The **five UN General Assembly space-law principle instruments** — Declaration of Legal Principles (1963), Direct Broadcasting (1982), Remote Sensing (1986), Nuclear Power Sources (1992), Benefits Declaration (1996).
@@ -65,8 +65,4 @@ Read the design lock in [`docs/design/`](docs/design/00-design-lock-index.md). T
 
 ## Licensing (summary)
 
-Our own contributions — the derived layer, schema, scripts, and documentation — are licensed **CC BY 4.0** (see [`LICENSE`](LICENSE)). **Source texts are not relicensed**; each remains under its own terms, recorded in that document's metadata. See [`docs/design/04-licensing-policy.md`](docs/design/04-licensing-policy.md).
-
-## Provenance of this corpus
-
-Design locked 2026-07-02. Maintained at an annual cadence aligned to the COPUOS Legal Subcommittee session, with automated monitoring between reviews. See [`docs/MAINTAINERS.md`](docs/MAINTAINERS.md).
+Our own contributions — the derived 
