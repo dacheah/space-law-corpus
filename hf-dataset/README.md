@@ -34,7 +34,7 @@ A neutral, **provenance-first**, machine-readable record of international and na
 
 - **Source of truth / build history:** https://github.com/dacheah/space-law-corpus
 - **Human-browsable site:** https://dacheah.github.io/space-law-corpus/
-- **15** instruments (15 verified against official sources) · **214** provisions · **204** neutral concept tags
+- **16** instruments (16 verified against official sources) · **232** provisions · **238** neutral concept tags
 
 ## Why this dataset is different
 
@@ -69,6 +69,7 @@ prov = load_dataset("dacheah/space-law-corpus", "provisions")
 | Liability Convention | international/UN | 1971-11-29 | `extracted_verified` |
 | Moon Agreement | international/UN | 1979-12-05 | `extracted_verified` |
 | Outer Space Treaty | international/UN | 1966-12-19 | `extracted_verified` |
+| Traité sur l'espace extra-atmosphérique (OST, French authentic text) | international/UN | 1966-12-19 | `extracted_verified` |
 | Registration Convention | international/UN | 1974-11-12 | `extracted_verified` |
 | Rescue Agreement | international/UN | 1967-12-19 | `extracted_verified` |
 
@@ -86,4 +87,4 @@ This is a **reference record, not legal advice**. The authoritative text of each
 Space Law Corpus (Daniel Cheah). https://github.com/dacheah/space-law-corpus
 ```
 
-_Dataset generated from the repository by `scripts/export_hf_dataset.py` on 2026-07-03 — do not edit by hand._
+_Dataset generated from the repository by `scripts/export_hf_dataset.py` on 2026-07-04 — do not edit by hand._

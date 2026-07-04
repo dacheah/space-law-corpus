@@ -63,6 +63,19 @@ site/             generated browsable view — open site/index.html (built by sc
 
 Read the design lock in [`docs/design/`](docs/design/00-design-lock-index.md). Those six documents govern everything in this repository. For where the project is heading, see [`ROADMAP.md`](ROADMAP.md).
 
+## How to cite
+
+Citation metadata lives in [`CITATION.cff`](CITATION.cff) (GitHub renders a "Cite this repository"
+button from it). The dataset is also published on Hugging Face as
+[`dacheah/space-law-corpus`](https://huggingface.co/datasets/dacheah/space-law-corpus) — one JSONL row
+per authoritative instrument version (full text + provenance) and one per concept-tagged provision.
+Archived releases receive a DOI via Zenodo; cite the version DOI for reproducibility and check the
+`content_hash` of any text you rely on.
+
 ## Licensing (summary)
 
-Our own contributions — the derived 
+Our own contributions — the derived layer, schema, scripts, and documentation — are licensed **CC BY 4.0** (see [`LICENSE`](LICENSE)). **Source texts are not relicensed**; each remains under its own terms, recorded in that document's metadata. See [`docs/design/04-licensing-policy.md`](docs/design/04-licensing-policy.md).
+
+## Provenance of this corpus
+
+Design locked 2026-07-02. Maintained at an annual cadence aligned to the COPUOS Legal Subcommittee session, with automated monitoring between reviews. See [`docs/MAINTAINERS.md`](docs/MAINTAINERS.md).
