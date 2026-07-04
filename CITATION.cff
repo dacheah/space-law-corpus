@@ -1,6 +1,4 @@
 # CITATION.cff — citation metadata for the Space Law Corpus.
-# After the first Zenodo-archived GitHub release, add the concept DOI under
-# `identifiers:` (see the release checklist in the maintainer's guide / CHANGELOG).
 cff-version: 1.2.0
 message: "If you use this corpus, please cite it as below."
 type: dataset
@@ -8,6 +6,14 @@ title: "Space Law Corpus: a provenance-tracked, machine-readable record of inter
 authors:
   - family-names: Cheah
     given-names: Daniel
+doi: 10.5281/zenodo.21185483
+identifiers:
+  - type: doi
+    value: 10.5281/zenodo.21185483
+    description: "Concept DOI (always resolves to the latest archived release)"
+  - type: doi
+    value: 10.5281/zenodo.21185484
+    description: "Version DOI for release v2026.07"
 repository-code: "https://github.com/dacheah/space-law-corpus"
 url: "https://dacheah.github.io/space-law-corpus/"
 license-url: "https://github.com/dacheah/space-law-corpus/blob/main/docs/design/04-licensing-policy.md"

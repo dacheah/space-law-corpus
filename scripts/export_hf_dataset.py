@@ -123,6 +123,7 @@ def card(docs, provs, repo_id):
              "flag, and a SHA-256 content hash; texts are verified against official sources.")
     b.append("")
     b.append("- **Source of truth / build history:** https://github.com/dacheah/space-law-corpus")
+    b.append("- **Archived & citable:** concept DOI [10.5281/zenodo.21185483](https://doi.org/10.5281/zenodo.21185483) (resolves to the latest Zenodo-archived GitHub release)")
     b.append("- **Human-browsable site:** https://dacheah.github.io/space-law-corpus/")
     b.append("- **" + str(len(docs)) + "** instruments (" + str(verified) + " verified against official sources) · **"
              + str(len(provs)) + "** provisions · **" + str(n_tags) + "** neutral concept tags")

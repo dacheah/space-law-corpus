@@ -33,6 +33,7 @@ configs:
 A neutral, **provenance-first**, machine-readable record of international and national space law. Every record carries its official source, retrieval date, citation, language, an authoritative-status flag, and a SHA-256 content hash; texts are verified against official sources.
 
 - **Source of truth / build history:** https://github.com/dacheah/space-law-corpus
+- **Archived & citable:** concept DOI [10.5281/zenodo.21185483](https://doi.org/10.5281/zenodo.21185483) (resolves to the latest Zenodo-archived GitHub release)
 - **Human-browsable site:** https://dacheah.github.io/space-law-corpus/
 - **16** instruments (16 verified against official sources) · **232** provisions · **238** neutral concept tags
 
