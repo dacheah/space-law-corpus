@@ -19,10 +19,9 @@
     "dispute_settlement_and_consultation",
     "safety_of_space_operations"
   ],
-  "tagging_method": "model",
+  "tagging_method": "dual_pass_model_consensus_plus_human_adjudication",
   "document_concepts": [
     "freedom_of_exploration_and_use",
-    "international_cooperation_and_transparency",
     "resource_rights",
     "state_responsibility_and_supervision"
   ],
@@ -31,22 +30,24 @@
       "unit": "§51301 Definitions",
       "concepts": [
         "resource_rights"
-      ]
+      ],
+      "review_status": "model_consensus"
     },
     {
       "unit": "§51302 Commercial exploration and commercial recovery",
       "concepts": [
+        "freedom_of_exploration_and_use",
         "resource_rights",
-        "state_responsibility_and_supervision",
-        "international_cooperation_and_transparency",
-        "freedom_of_exploration_and_use"
-      ]
+        "state_responsibility_and_supervision"
+      ],
+      "review_status": "human_adjudicated"
     },
     {
       "unit": "§51303 Asteroid resource and space resource rights",
       "concepts": [
         "resource_rights"
-      ]
+      ],
+      "review_status": "model_consensus"
     }
   ]
 }

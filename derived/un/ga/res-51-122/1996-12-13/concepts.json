@@ -19,20 +19,68 @@
     "dispute_settlement_and_consultation",
     "safety_of_space_operations"
   ],
-  "tagging_method": "model",
+  "tagging_method": "dual_pass_model_consensus_plus_human_adjudication",
   "document_concepts": [
     "freedom_of_exploration_and_use",
-    "international_cooperation_and_transparency",
-    "non_appropriation"
+    "international_cooperation_and_transparency"
   ],
   "tags": [
     {
-      "unit": "Declaration (whole instrument)",
+      "unit": "Paragraph 1",
       "concepts": [
-        "international_cooperation_and_transparency",
         "freedom_of_exploration_and_use",
-        "non_appropriation"
-      ]
+        "international_cooperation_and_transparency"
+      ],
+      "review_status": "human_adjudicated"
+    },
+    {
+      "unit": "Paragraph 2",
+      "concepts": [
+        "international_cooperation_and_transparency"
+      ],
+      "review_status": "human_adjudicated"
+    },
+    {
+      "unit": "Paragraph 3",
+      "concepts": [
+        "international_cooperation_and_transparency"
+      ],
+      "review_status": "human_adjudicated"
+    },
+    {
+      "unit": "Paragraph 4",
+      "concepts": [
+        "international_cooperation_and_transparency"
+      ],
+      "review_status": "human_adjudicated"
+    },
+    {
+      "unit": "Paragraph 5",
+      "concepts": [
+        "international_cooperation_and_transparency"
+      ],
+      "review_status": "human_adjudicated"
+    },
+    {
+      "unit": "Paragraph 6",
+      "concepts": [
+        "international_cooperation_and_transparency"
+      ],
+      "review_status": "human_adjudicated"
+    },
+    {
+      "unit": "Paragraph 7",
+      "concepts": [
+        "international_cooperation_and_transparency"
+      ],
+      "review_status": "human_adjudicated"
+    },
+    {
+      "unit": "Paragraph 8",
+      "concepts": [
+        "international_cooperation_and_transparency"
+      ],
+      "review_status": "human_adjudicated"
     }
   ]
 }

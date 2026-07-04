@@ -19,10 +19,9 @@
     "dispute_settlement_and_consultation",
     "safety_of_space_operations"
   ],
-  "tagging_method": "model",
+  "tagging_method": "dual_pass_model_consensus_plus_human_adjudication",
   "document_concepts": [
     "environmental_protection_and_debris",
-    "peaceful_use_and_non_militarization",
     "safety_of_space_operations"
   ],
   "tags": [
@@ -30,46 +29,54 @@
       "unit": "Guideline 1",
       "concepts": [
         "environmental_protection_and_debris"
-      ]
+      ],
+      "review_status": "model_consensus"
     },
     {
       "unit": "Guideline 2",
       "concepts": [
         "environmental_protection_and_debris",
         "safety_of_space_operations"
-      ]
+      ],
+      "review_status": "model_consensus"
     },
     {
       "unit": "Guideline 3",
       "concepts": [
         "environmental_protection_and_debris",
         "safety_of_space_operations"
-      ]
+      ],
+      "review_status": "model_consensus"
     },
     {
       "unit": "Guideline 4",
       "concepts": [
         "environmental_protection_and_debris",
-        "peaceful_use_and_non_militarization"
-      ]
+        "safety_of_space_operations"
+      ],
+      "review_status": "human_adjudicated"
     },
     {
       "unit": "Guideline 5",
       "concepts": [
-        "environmental_protection_and_debris"
-      ]
+        "environmental_protection_and_debris",
+        "safety_of_space_operations"
+      ],
+      "review_status": "human_adjudicated"
     },
     {
       "unit": "Guideline 6",
       "concepts": [
         "environmental_protection_and_debris"
-      ]
+      ],
+      "review_status": "model_consensus"
     },
     {
       "unit": "Guideline 7",
       "concepts": [
         "environmental_protection_and_debris"
-      ]
+      ],
+      "review_status": "model_consensus"
     }
   ]
 }

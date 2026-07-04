@@ -19,17 +19,20 @@
     "dispute_settlement_and_consultation",
     "safety_of_space_operations"
   ],
-  "tagging_method": "model",
+  "tagging_method": "dual_pass_model_consensus_plus_human_adjudication",
   "document_concepts": [
+    "abandonment_and_salvage",
     "dispute_settlement_and_consultation",
     "environmental_protection_and_debris",
     "freedom_of_exploration_and_use",
     "international_cooperation_and_transparency",
     "jurisdiction_and_control",
+    "liability_and_damage",
     "non_appropriation",
     "peaceful_use_and_non_militarization",
     "rescue_and_return",
     "resource_rights",
+    "safety_of_space_operations",
     "state_responsibility_and_supervision"
   ],
   "tags": [
@@ -37,96 +40,115 @@
       "unit": "Article 2",
       "concepts": [
         "peaceful_use_and_non_militarization"
-      ]
+      ],
+      "review_status": "model_consensus"
     },
     {
       "unit": "Article 3",
       "concepts": [
         "peaceful_use_and_non_militarization"
-      ]
+      ],
+      "review_status": "model_consensus"
     },
     {
       "unit": "Article 4",
       "concepts": [
         "freedom_of_exploration_and_use",
         "international_cooperation_and_transparency"
-      ]
+      ],
+      "review_status": "model_consensus"
     },
     {
       "unit": "Article 5",
       "concepts": [
         "international_cooperation_and_transparency"
-      ]
+      ],
+      "review_status": "model_consensus"
     },
     {
       "unit": "Article 6",
       "concepts": [
         "freedom_of_exploration_and_use",
         "resource_rights"
-      ]
+      ],
+      "review_status": "model_consensus"
     },
     {
       "unit": "Article 7",
       "concepts": [
         "environmental_protection_and_debris"
-      ]
+      ],
+      "review_status": "model_consensus"
     },
     {
       "unit": "Article 8",
       "concepts": [
         "freedom_of_exploration_and_use"
-      ]
+      ],
+      "review_status": "model_consensus"
     },
     {
       "unit": "Article 9",
       "concepts": [
-        "jurisdiction_and_control",
+        "freedom_of_exploration_and_use",
         "international_cooperation_and_transparency"
-      ]
+      ],
+      "review_status": "human_adjudicated"
     },
     {
       "unit": "Article 10",
       "concepts": [
-        "rescue_and_return"
-      ]
+        "rescue_and_return",
+        "safety_of_space_operations"
+      ],
+      "review_status": "human_adjudicated"
     },
     {
       "unit": "Article 11",
       "concepts": [
         "non_appropriation",
         "resource_rights"
-      ]
+      ],
+      "review_status": "model_consensus"
     },
     {
       "unit": "Article 12",
       "concepts": [
+        "abandonment_and_salvage",
         "jurisdiction_and_control"
-      ]
+      ],
+      "review_status": "human_adjudicated"
     },
     {
       "unit": "Article 13",
       "concepts": [
+        "abandonment_and_salvage",
         "international_cooperation_and_transparency"
-      ]
+      ],
+      "review_status": "human_adjudicated"
     },
     {
       "unit": "Article 14",
       "concepts": [
+        "liability_and_damage",
         "state_responsibility_and_supervision"
-      ]
+      ],
+      "review_status": "human_adjudicated"
     },
     {
       "unit": "Article 15",
       "concepts": [
-        "international_cooperation_and_transparency",
-        "dispute_settlement_and_consultation"
-      ]
+        "dispute_settlement_and_consultation",
+        "international_cooperation_and_transparency"
+      ],
+      "review_status": "model_consensus"
     },
     {
       "unit": "Article 16",
       "concepts": [
         "state_responsibility_and_supervision"
-      ]
+      ],
+      "review_status": "model_consensus"
     }
   ]
 }

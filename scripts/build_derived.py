@@ -88,9 +88,15 @@ for root, _, files in os.walk(AUTH):
     utype, units = split_units(body)
 
     if cid in MODEL_TAGS:
-        tags = [{"unit": u, "concepts": cs} for u, cs in MODEL_TAGS[cid]]
+        rev = getattr(concept_tags, "REVIEW", {}).get(cid, {})
+        tags = [{"unit": u, "concepts": cs, "review_status": rev.get(u, "model_consensus")}
+                for u, cs in MODEL_TAGS[cid]]
         doc_concepts = sorted({c for _, cs in MODEL_TAGS[cid] for c in cs})
-        method, gen, cnote = "model", "claude-opus-4-8", "Model tagging at provision granularity; not legally reviewed."
+        method, gen, cnote = ("dual_pass_model_consensus_plus_human_adjudication",
+                              "two independent model passes + maintainer adjudication (see reviews/)",
+                              "Dual-pass tagging: divergences between two independent model passes were "
+                              "adjudicated by the maintainer (reviews/concept-decisions-2026-07.yaml); "
+                              "per-unit status in each tag entry.")
     else:
         tags, doc_concepts = keyword_tags(units)
         method, gen, cnote = "rule_based", "build_derived.py v0.2 (keyword fallback)", "Keyword fallback; expect false pos/neg."
@@ -116,8 +122,11 @@ for root, _, files in os.walk(AUTH):
        "confidence_note": f"Deterministic parse into {len(units)} {utype} unit(s).", "disclaimer": DISCLAIMER},
       {"derived_id": f"{cid}/{ver}/concepts", "derived_type": "concept_tags", "artifact_file": "concepts.json",
        "source_corpus_id": cid, "source_version_id": ver, "source_text_sha256": src_hash,
-       "generation_method": method, "generator": gen, "generation_date": "2026-07-03",
-       "review_status": "unreviewed", "reviewed_by": None, "license": "CC-BY-4.0",
+       "generation_method": "hybrid" if cid in MODEL_TAGS else method, "generator": gen,
+       "generation_date": "2026-07-04" if cid in MODEL_TAGS else "2026-07-03",
+       "review_status": "human_reviewed" if cid in MODEL_TAGS else "unreviewed",
+       "reviewed_by": "maintainer (dual-pass adjudication, 2026-07-04)" if cid in MODEL_TAGS else None,
+       "license": "CC-BY-4.0",
        "confidence_note": cnote, "disclaimer": DISCLAIMER},
     ]
     tdir = os.path.join(outdir, "translations")
@@ -144,7 +153,7 @@ json.dump({"_derived": True, "_disclaimer": DISCLAIMER, "vocabulary": VOCAB, "in
 md = ["# Concept Index (derived, unofficial)", "",
       f"_{DISCLAIMER}_", "",
       "For each neutral legal concept, the provisions across the corpus that address it. "
-      "Tags are a model pass awaiting human review. Concepts describe what a provision is *about*; "
+      "Tags were produced by two independent model passes with maintainer adjudication of all divergences (dual-pass review). Concepts describe what a provision is *about*; "
       "they take no position on any doctrine.", ""]
 for c in VOCAB:
     entries = index.get(c, [])

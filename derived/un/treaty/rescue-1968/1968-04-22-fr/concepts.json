@@ -19,53 +19,54 @@
     "dispute_settlement_and_consultation",
     "safety_of_space_operations"
   ],
-  "tagging_method": "model",
+  "tagging_method": "dual_pass_model_consensus_plus_human_adjudication",
   "document_concepts": [
     "abandonment_and_salvage",
     "international_cooperation_and_transparency",
     "liability_and_damage",
     "rescue_and_return",
-    "state_responsibility_and_supervision"
+    "safety_of_space_operations"
   ],
   "tags": [
     {
       "unit": "Article 1",
       "concepts": [
-        "rescue_and_return",
-        "international_cooperation_and_transparency"
-      ]
+        "international_cooperation_and_transparency",
+        "rescue_and_return"
+      ],
+      "review_status": "model_consensus"
     },
     {
       "unit": "Article 2",
       "concepts": [
+        "international_cooperation_and_transparency",
         "rescue_and_return"
-      ]
+      ],
+      "review_status": "human_adjudicated"
     },
     {
       "unit": "Article 3",
       "concepts": [
         "rescue_and_return"
-      ]
+      ],
+      "review_status": "model_consensus"
     },
     {
       "unit": "Article 4",
       "concepts": [
         "rescue_and_return"
-      ]
+      ],
+      "review_status": "model_consensus"
     },
     {
       "unit": "Article 5",
       "concepts": [
         "abandonment_and_salvage",
+        "international_cooperation_and_transparency",
         "liability_and_damage",
-        "international_cooperation_and_transparency"
-      ]
-    },
-    {
-      "unit": "Article 6",
-      "concepts": [
-        "state_responsibility_and_supervision"
-      ]
+        "safety_of_space_operations"
+      ],
+      "review_status": "human_adjudicated"
     }
   ]
 }

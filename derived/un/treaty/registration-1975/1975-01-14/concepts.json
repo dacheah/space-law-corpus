@@ -19,10 +19,10 @@
     "dispute_settlement_and_consultation",
     "safety_of_space_operations"
   ],
-  "tagging_method": "model",
+  "tagging_method": "dual_pass_model_consensus_plus_human_adjudication",
   "document_concepts": [
-    "abandonment_and_salvage",
     "international_cooperation_and_transparency",
+    "liability_and_damage",
     "registration",
     "state_responsibility_and_supervision"
   ],
@@ -31,48 +31,55 @@
       "unit": "Article I",
       "concepts": [
         "registration"
-      ]
+      ],
+      "review_status": "model_consensus"
     },
     {
       "unit": "Article II",
       "concepts": [
         "registration"
-      ]
+      ],
+      "review_status": "model_consensus"
     },
     {
       "unit": "Article III",
       "concepts": [
-        "registration",
-        "international_cooperation_and_transparency"
-      ]
+        "international_cooperation_and_transparency",
+        "registration"
+      ],
+      "review_status": "model_consensus"
     },
     {
       "unit": "Article IV",
       "concepts": [
-        "registration",
-        "international_cooperation_and_transparency"
-      ]
+        "international_cooperation_and_transparency",
+        "registration"
+      ],
+      "review_status": "model_consensus"
     },
     {
       "unit": "Article V",
       "concepts": [
         "registration"
-      ]
+      ],
+      "review_status": "model_consensus"
     },
     {
       "unit": "Article VI",
       "concepts": [
-        "registration",
-        "abandonment_and_salvage",
-        "international_cooperation_and_transparency"
-      ]
+        "international_cooperation_and_transparency",
+        "liability_and_damage",
+        "registration"
+      ],
+      "review_status": "human_adjudicated"
     },
     {
       "unit": "Article VII",
       "concepts": [
-        "state_responsibility_and_supervision",
-        "registration"
-      ]
+        "registration",
+        "state_responsibility_and_supervision"
+      ],
+      "review_status": "model_consensus"
     }
   ]
 }

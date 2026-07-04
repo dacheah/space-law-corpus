@@ -29,13 +29,25 @@
         "corpus_id": "un/ga/res-1962-XVIII",
         "short_title": "Declaration of Legal Principles",
         "version_id": "1963-12-13",
-        "unit": "Principle 1"
+        "unit": "Paragraph 1"
       },
       {
         "corpus_id": "un/ga/res-1962-XVIII",
         "short_title": "Declaration of Legal Principles",
         "version_id": "1963-12-13",
-        "unit": "Principle 2"
+        "unit": "Paragraph 2"
+      },
+      {
+        "corpus_id": "un/ga/res-37-92",
+        "short_title": "Direct Broadcasting Principles",
+        "version_id": "1982-12-10",
+        "unit": "Paragraph 5"
+      },
+      {
+        "corpus_id": "un/ga/res-41-65",
+        "short_title": "Remote Sensing Principles",
+        "version_id": "1986-12-03",
+        "unit": "Principle II"
       },
       {
         "corpus_id": "un/ga/res-41-65",
@@ -47,7 +59,7 @@
         "corpus_id": "un/ga/res-51-122",
         "short_title": "Benefits Declaration",
         "version_id": "1996-12-13",
-        "unit": "Declaration (whole instrument)"
+        "unit": "Paragraph 1"
       },
       {
         "corpus_id": "un/treaty/moon-1979",
@@ -69,6 +81,12 @@
       },
       {
         "corpus_id": "un/treaty/moon-1979",
+        "short_title": "Moon Agreement",
+        "version_id": "1979-12-18",
+        "unit": "Article 9"
+      },
+      {
+        "corpus_id": "un/treaty/moon-1979",
         "short_title": "Accord sur la Lune (Moon Agreement, French authentic text)",
         "version_id": "1979-12-18-fr",
         "unit": "Article 4"
@@ -84,6 +102,12 @@
         "short_title": "Accord sur la Lune (Moon Agreement, French authentic text)",
         "version_id": "1979-12-18-fr",
         "unit": "Article 8"
+      },
+      {
+        "corpus_id": "un/treaty/moon-1979",
+        "short_title": "Accord sur la Lune (Moon Agreement, French authentic text)",
+        "version_id": "1979-12-18-fr",
+        "unit": "Article 9"
       },
       {
         "corpus_id": "un/treaty/ost-1967",
@@ -127,19 +151,7 @@
         "corpus_id": "un/ga/res-1962-XVIII",
         "short_title": "Declaration of Legal Principles",
         "version_id": "1963-12-13",
-        "unit": "Principle 1"
-      },
-      {
-        "corpus_id": "un/ga/res-1962-XVIII",
-        "short_title": "Declaration of Legal Principles",
-        "version_id": "1963-12-13",
-        "unit": "Principle 3"
-      },
-      {
-        "corpus_id": "un/ga/res-51-122",
-        "short_title": "Benefits Declaration",
-        "version_id": "1996-12-13",
-        "unit": "Declaration (whole instrument)"
+        "unit": "Paragraph 3"
       },
       {
         "corpus_id": "un/treaty/moon-1979",
@@ -157,19 +169,7 @@
         "corpus_id": "un/treaty/ost-1967",
         "short_title": "Outer Space Treaty",
         "version_id": "1967-01-27",
-        "unit": "Article I"
-      },
-      {
-        "corpus_id": "un/treaty/ost-1967",
-        "short_title": "Outer Space Treaty",
-        "version_id": "1967-01-27",
         "unit": "Article II"
-      },
-      {
-        "corpus_id": "un/treaty/ost-1967",
-        "short_title": "Tratado sobre el espacio ultraterrestre (OST, Spanish authentic text)",
-        "version_id": "1967-01-27-es",
-        "unit": "Article I"
       },
       {
         "corpus_id": "un/treaty/ost-1967",
@@ -181,31 +181,13 @@
         "corpus_id": "un/treaty/ost-1967",
         "short_title": "Traité sur l'espace extra-atmosphérique (OST, French authentic text)",
         "version_id": "1967-01-27-fr",
-        "unit": "Article I"
-      },
-      {
-        "corpus_id": "un/treaty/ost-1967",
-        "short_title": "Traité sur l'espace extra-atmosphérique (OST, French authentic text)",
-        "version_id": "1967-01-27-fr",
         "unit": "Article II"
       },
       {
         "corpus_id": "un/treaty/ost-1967",
         "short_title": "Договор по космосу (OST, Russian authentic text)",
         "version_id": "1967-01-27-ru",
-        "unit": "Article I"
-      },
-      {
-        "corpus_id": "un/treaty/ost-1967",
-        "short_title": "Договор по космосу (OST, Russian authentic text)",
-        "version_id": "1967-01-27-ru",
         "unit": "Article II"
-      },
-      {
-        "corpus_id": "un/treaty/ost-1967",
-        "short_title": "外层空间条约 (OST, Chinese authentic text)",
-        "version_id": "1967-01-27-zh",
-        "unit": "Article I"
       },
       {
         "corpus_id": "un/treaty/ost-1967",
@@ -219,19 +201,13 @@
         "corpus_id": "un/ga/res-1962-XVIII",
         "short_title": "Declaration of Legal Principles",
         "version_id": "1963-12-13",
-        "unit": "Principle 4"
+        "unit": "Paragraph 4"
       },
       {
         "corpus_id": "un/ga/res-37-92",
         "short_title": "Direct Broadcasting Principles",
         "version_id": "1982-12-10",
-        "unit": "Direct Broadcasting principles (whole instrument)"
-      },
-      {
-        "corpus_id": "un/softlaw/copuos-debris-mitigation-2007",
-        "short_title": "COPUOS Space Debris Mitigation Guidelines",
-        "version_id": "2007-06-15",
-        "unit": "Guideline 4"
+        "unit": "Paragraph 3"
       },
       {
         "corpus_id": "un/treaty/moon-1979",
@@ -341,6 +317,12 @@
         "corpus_id": "nat/fra/loi-operations-spatiales-2008",
         "short_title": "French Space Operations Act (2008, consolidated)",
         "version_id": "2023-08-03",
+        "unit": "Art. 6"
+      },
+      {
+        "corpus_id": "nat/fra/loi-operations-spatiales-2008",
+        "short_title": "French Space Operations Act (2008, consolidated)",
+        "version_id": "2023-08-03",
         "unit": "Art. 7"
       },
       {
@@ -377,19 +359,7 @@
         "corpus_id": "nat/fra/loi-operations-spatiales-2008",
         "short_title": "French Space Operations Act (2008, consolidated)",
         "version_id": "2023-08-03",
-        "unit": "Art. 11-1"
-      },
-      {
-        "corpus_id": "nat/fra/loi-operations-spatiales-2008",
-        "short_title": "French Space Operations Act (2008, consolidated)",
-        "version_id": "2023-08-03",
         "unit": "Art. 11-2"
-      },
-      {
-        "corpus_id": "nat/fra/loi-operations-spatiales-2008",
-        "short_title": "French Space Operations Act (2008, consolidated)",
-        "version_id": "2023-08-03",
-        "unit": "Art. 20-1"
       },
       {
         "corpus_id": "nat/fra/loi-operations-spatiales-2008",
@@ -410,18 +380,6 @@
         "unit": "Art. 25"
       },
       {
-        "corpus_id": "nat/fra/loi-operations-spatiales-2008",
-        "short_title": "French Space Operations Act (2008, consolidated)",
-        "version_id": "2023-08-03",
-        "unit": "Art. 25-1"
-      },
-      {
-        "corpus_id": "nat/fra/loi-operations-spatiales-2008",
-        "short_title": "French Space Operations Act (2008, consolidated)",
-        "version_id": "2023-08-03",
-        "unit": "Art. 27"
-      },
-      {
         "corpus_id": "nat/lux/ressources-espace-2017",
         "short_title": "Luxembourg Space Resources Law (2017)",
         "version_id": "2017-07-20",
@@ -432,6 +390,24 @@
         "short_title": "Luxembourg Space Resources Law (2017)",
         "version_id": "2017-07-20",
         "unit": "Art. 3"
+      },
+      {
+        "corpus_id": "nat/lux/ressources-espace-2017",
+        "short_title": "Luxembourg Space Resources Law (2017)",
+        "version_id": "2017-07-20",
+        "unit": "Art. 4"
+      },
+      {
+        "corpus_id": "nat/lux/ressources-espace-2017",
+        "short_title": "Luxembourg Space Resources Law (2017)",
+        "version_id": "2017-07-20",
+        "unit": "Art. 5"
+      },
+      {
+        "corpus_id": "nat/lux/ressources-espace-2017",
+        "short_title": "Luxembourg Space Resources Law (2017)",
+        "version_id": "2017-07-20",
+        "unit": "Art. 6"
       },
       {
         "corpus_id": "nat/lux/ressources-espace-2017",
@@ -455,6 +431,30 @@
         "corpus_id": "nat/lux/ressources-espace-2017",
         "short_title": "Luxembourg Space Resources Law (2017)",
         "version_id": "2017-07-20",
+        "unit": "Art. 10"
+      },
+      {
+        "corpus_id": "nat/lux/ressources-espace-2017",
+        "short_title": "Luxembourg Space Resources Law (2017)",
+        "version_id": "2017-07-20",
+        "unit": "Art. 11"
+      },
+      {
+        "corpus_id": "nat/lux/ressources-espace-2017",
+        "short_title": "Luxembourg Space Resources Law (2017)",
+        "version_id": "2017-07-20",
+        "unit": "Art. 12"
+      },
+      {
+        "corpus_id": "nat/lux/ressources-espace-2017",
+        "short_title": "Luxembourg Space Resources Law (2017)",
+        "version_id": "2017-07-20",
+        "unit": "Art. 14"
+      },
+      {
+        "corpus_id": "nat/lux/ressources-espace-2017",
+        "short_title": "Luxembourg Space Resources Law (2017)",
+        "version_id": "2017-07-20",
         "unit": "Art. 15"
       },
       {
@@ -473,13 +473,25 @@
         "corpus_id": "un/ga/res-1962-XVIII",
         "short_title": "Declaration of Legal Principles",
         "version_id": "1963-12-13",
-        "unit": "Principle 5"
+        "unit": "Paragraph 5"
       },
       {
         "corpus_id": "un/ga/res-37-92",
         "short_title": "Direct Broadcasting Principles",
         "version_id": "1982-12-10",
-        "unit": "Direct Broadcasting principles (whole instrument)"
+        "unit": "Paragraph 5"
+      },
+      {
+        "corpus_id": "un/ga/res-37-92",
+        "short_title": "Direct Broadcasting Principles",
+        "version_id": "1982-12-10",
+        "unit": "Paragraph 8"
+      },
+      {
+        "corpus_id": "un/ga/res-37-92",
+        "short_title": "Direct Broadcasting Principles",
+        "version_id": "1982-12-10",
+        "unit": "Paragraph 9"
       },
       {
         "corpus_id": "un/ga/res-41-65",
@@ -618,27 +630,9 @@
         "short_title": "Convention sur l'immatriculation (Registration Convention, French authentic text)",
         "version_id": "1975-01-14-fr",
         "unit": "Article VII"
-      },
-      {
-        "corpus_id": "un/treaty/rescue-1968",
-        "short_title": "Rescue Agreement",
-        "version_id": "1968-04-22",
-        "unit": "Article 6"
-      },
-      {
-        "corpus_id": "un/treaty/rescue-1968",
-        "short_title": "Accord sur le sauvetage (Rescue Agreement, French authentic text)",
-        "version_id": "1968-04-22-fr",
-        "unit": "Article 6"
       }
     ],
     "jurisdiction_and_control": [
-      {
-        "corpus_id": "nat/fra/loi-operations-spatiales-2008",
-        "short_title": "French Space Operations Act (2008, consolidated)",
-        "version_id": "2023-08-03",
-        "unit": "Art. 2"
-      },
       {
         "corpus_id": "nat/fra/loi-operations-spatiales-2008",
         "short_title": "French Space Operations Act (2008, consolidated)",
@@ -655,25 +649,13 @@
         "corpus_id": "un/ga/res-1962-XVIII",
         "short_title": "Declaration of Legal Principles",
         "version_id": "1963-12-13",
-        "unit": "Principle 7"
-      },
-      {
-        "corpus_id": "un/treaty/moon-1979",
-        "short_title": "Moon Agreement",
-        "version_id": "1979-12-18",
-        "unit": "Article 9"
+        "unit": "Paragraph 7"
       },
       {
         "corpus_id": "un/treaty/moon-1979",
         "short_title": "Moon Agreement",
         "version_id": "1979-12-18",
         "unit": "Article 12"
-      },
-      {
-        "corpus_id": "un/treaty/moon-1979",
-        "short_title": "Accord sur la Lune (Moon Agreement, French authentic text)",
-        "version_id": "1979-12-18-fr",
-        "unit": "Article 9"
       },
       {
         "corpus_id": "un/treaty/moon-1979",
@@ -718,6 +700,12 @@
         "short_title": "French Space Operations Act (2008, consolidated)",
         "version_id": "2023-08-03",
         "unit": "Art. 12"
+      },
+      {
+        "corpus_id": "un/ga/res-41-65",
+        "short_title": "Remote Sensing Principles",
+        "version_id": "1986-12-03",
+        "unit": "Principle IX"
       },
       {
         "corpus_id": "un/softlaw/lts-guidelines-2019",
@@ -815,6 +803,12 @@
         "corpus_id": "nat/fra/loi-operations-spatiales-2008",
         "short_title": "French Space Operations Act (2008, consolidated)",
         "version_id": "2023-08-03",
+        "unit": "Art. 1"
+      },
+      {
+        "corpus_id": "nat/fra/loi-operations-spatiales-2008",
+        "short_title": "French Space Operations Act (2008, consolidated)",
+        "version_id": "2023-08-03",
         "unit": "Art. 6"
       },
       {
@@ -875,13 +869,19 @@
         "corpus_id": "nat/lux/ressources-espace-2017",
         "short_title": "Luxembourg Space Resources Law (2017)",
         "version_id": "2017-07-20",
+        "unit": "Art. 10"
+      },
+      {
+        "corpus_id": "nat/lux/ressources-espace-2017",
+        "short_title": "Luxembourg Space Resources Law (2017)",
+        "version_id": "2017-07-20",
         "unit": "Art. 16"
       },
       {
         "corpus_id": "un/ga/res-1962-XVIII",
         "short_title": "Declaration of Legal Principles",
         "version_id": "1963-12-13",
-        "unit": "Principle 8"
+        "unit": "Paragraph 8"
       },
       {
         "corpus_id": "un/ga/res-47-68",
@@ -965,13 +965,19 @@
         "corpus_id": "un/treaty/liability-1972",
         "short_title": "Liability Convention",
         "version_id": "1972-03-29",
-        "unit": "Article XVIII"
+        "unit": "Article XIII"
       },
       {
         "corpus_id": "un/treaty/liability-1972",
         "short_title": "Liability Convention",
         "version_id": "1972-03-29",
-        "unit": "Article XXI"
+        "unit": "Article XIV"
+      },
+      {
+        "corpus_id": "un/treaty/liability-1972",
+        "short_title": "Liability Convention",
+        "version_id": "1972-03-29",
+        "unit": "Article XVIII"
       },
       {
         "corpus_id": "un/treaty/liability-1972",
@@ -1055,19 +1061,37 @@
         "corpus_id": "un/treaty/liability-1972",
         "short_title": "Convention sur la responsabilité (Liability Convention, French authentic text)",
         "version_id": "1972-03-29-fr",
+        "unit": "Article XIII"
+      },
+      {
+        "corpus_id": "un/treaty/liability-1972",
+        "short_title": "Convention sur la responsabilité (Liability Convention, French authentic text)",
+        "version_id": "1972-03-29-fr",
+        "unit": "Article XIV"
+      },
+      {
+        "corpus_id": "un/treaty/liability-1972",
+        "short_title": "Convention sur la responsabilité (Liability Convention, French authentic text)",
+        "version_id": "1972-03-29-fr",
         "unit": "Article XVIII"
       },
       {
         "corpus_id": "un/treaty/liability-1972",
         "short_title": "Convention sur la responsabilité (Liability Convention, French authentic text)",
         "version_id": "1972-03-29-fr",
-        "unit": "Article XXI"
+        "unit": "Article XXII"
       },
       {
-        "corpus_id": "un/treaty/liability-1972",
-        "short_title": "Convention sur la responsabilité (Liability Convention, French authentic text)",
-        "version_id": "1972-03-29-fr",
-        "unit": "Article XXII"
+        "corpus_id": "un/treaty/moon-1979",
+        "short_title": "Moon Agreement",
+        "version_id": "1979-12-18",
+        "unit": "Article 14"
+      },
+      {
+        "corpus_id": "un/treaty/moon-1979",
+        "short_title": "Accord sur la Lune (Moon Agreement, French authentic text)",
+        "version_id": "1979-12-18-fr",
+        "unit": "Article 14"
       },
       {
         "corpus_id": "un/treaty/ost-1967",
@@ -1100,6 +1124,18 @@
         "unit": "Article VII"
       },
       {
+        "corpus_id": "un/treaty/registration-1975",
+        "short_title": "Registration Convention",
+        "version_id": "1975-01-14",
+        "unit": "Article VI"
+      },
+      {
+        "corpus_id": "un/treaty/registration-1975",
+        "short_title": "Convention sur l'immatriculation (Registration Convention, French authentic text)",
+        "version_id": "1975-01-14-fr",
+        "unit": "Article VI"
+      },
+      {
         "corpus_id": "un/treaty/rescue-1968",
         "short_title": "Rescue Agreement",
         "version_id": "1968-04-22",
@@ -1117,7 +1153,7 @@
         "corpus_id": "un/ga/res-1962-XVIII",
         "short_title": "Declaration of Legal Principles",
         "version_id": "1963-12-13",
-        "unit": "Principle 9"
+        "unit": "Paragraph 9"
       },
       {
         "corpus_id": "un/treaty/moon-1979",
@@ -1215,7 +1251,31 @@
         "corpus_id": "un/ga/res-1962-XVIII",
         "short_title": "Declaration of Legal Principles",
         "version_id": "1963-12-13",
-        "unit": "Principle 7"
+        "unit": "Paragraph 7"
+      },
+      {
+        "corpus_id": "un/treaty/moon-1979",
+        "short_title": "Moon Agreement",
+        "version_id": "1979-12-18",
+        "unit": "Article 12"
+      },
+      {
+        "corpus_id": "un/treaty/moon-1979",
+        "short_title": "Moon Agreement",
+        "version_id": "1979-12-18",
+        "unit": "Article 13"
+      },
+      {
+        "corpus_id": "un/treaty/moon-1979",
+        "short_title": "Accord sur la Lune (Moon Agreement, French authentic text)",
+        "version_id": "1979-12-18-fr",
+        "unit": "Article 12"
+      },
+      {
+        "corpus_id": "un/treaty/moon-1979",
+        "short_title": "Accord sur la Lune (Moon Agreement, French authentic text)",
+        "version_id": "1979-12-18-fr",
+        "unit": "Article 13"
       },
       {
         "corpus_id": "un/treaty/ost-1967",
@@ -1246,18 +1306,6 @@
         "short_title": "外层空间条约 (OST, Chinese authentic text)",
         "version_id": "1967-01-27-zh",
         "unit": "Article VIII"
-      },
-      {
-        "corpus_id": "un/treaty/registration-1975",
-        "short_title": "Registration Convention",
-        "version_id": "1975-01-14",
-        "unit": "Article VI"
-      },
-      {
-        "corpus_id": "un/treaty/registration-1975",
-        "short_title": "Convention sur l'immatriculation (Registration Convention, French authentic text)",
-        "version_id": "1975-01-14-fr",
-        "unit": "Article VI"
       },
       {
         "corpus_id": "un/treaty/rescue-1968",
@@ -1304,12 +1352,6 @@
         "unit": "§51303 Asteroid resource and space resource rights"
       },
       {
-        "corpus_id": "un/ga/res-41-65",
-        "short_title": "Remote Sensing Principles",
-        "version_id": "1986-12-03",
-        "unit": "Principle XII"
-      },
-      {
         "corpus_id": "un/treaty/moon-1979",
         "short_title": "Moon Agreement",
         "version_id": "1979-12-18",
@@ -1342,34 +1384,16 @@
         "unit": "Art. 5"
       },
       {
-        "corpus_id": "nat/fra/loi-operations-spatiales-2008",
-        "short_title": "French Space Operations Act (2008, consolidated)",
-        "version_id": "2023-08-03",
-        "unit": "Art. 9"
-      },
-      {
         "corpus_id": "un/ga/res-1962-XVIII",
         "short_title": "Declaration of Legal Principles",
         "version_id": "1963-12-13",
-        "unit": "Principle 6"
+        "unit": "Paragraph 6"
       },
       {
         "corpus_id": "un/ga/res-41-65",
         "short_title": "Remote Sensing Principles",
         "version_id": "1986-12-03",
         "unit": "Principle X"
-      },
-      {
-        "corpus_id": "un/ga/res-41-65",
-        "short_title": "Remote Sensing Principles",
-        "version_id": "1986-12-03",
-        "unit": "Principle XI"
-      },
-      {
-        "corpus_id": "un/ga/res-47-68",
-        "short_title": "Nuclear Power Sources Principles",
-        "version_id": "1992-12-14",
-        "unit": "Principle 2"
       },
       {
         "corpus_id": "un/ga/res-47-68",
@@ -1429,13 +1453,7 @@
         "corpus_id": "un/softlaw/lts-guidelines-2019",
         "short_title": "LTS Guidelines",
         "version_id": "2019-06-21",
-        "unit": "Guideline B.8"
-      },
-      {
-        "corpus_id": "un/softlaw/lts-guidelines-2019",
-        "short_title": "LTS Guidelines",
-        "version_id": "2019-06-21",
-        "unit": "Guideline B.9"
+        "unit": "Guideline D.1"
       },
       {
         "corpus_id": "un/softlaw/lts-guidelines-2019",
@@ -1488,46 +1506,106 @@
     ],
     "international_cooperation_and_transparency": [
       {
-        "corpus_id": "nat/fra/loi-operations-spatiales-2008",
-        "short_title": "French Space Operations Act (2008, consolidated)",
-        "version_id": "2023-08-03",
-        "unit": "Art. 14"
-      },
-      {
-        "corpus_id": "nat/lux/ressources-espace-2017",
-        "short_title": "Luxembourg Space Resources Law (2017)",
-        "version_id": "2017-07-20",
-        "unit": "Art. 2"
-      },
-      {
-        "corpus_id": "nat/usa/space-resources-2015",
-        "short_title": "US Space Resource Act (51 U.S.C. ch. 513)",
-        "version_id": "2015-11-25",
-        "unit": "§51302 Commercial exploration and commercial recovery"
+        "corpus_id": "un/ga/res-1962-XVIII",
+        "short_title": "Declaration of Legal Principles",
+        "version_id": "1963-12-13",
+        "unit": "Paragraph 4"
       },
       {
         "corpus_id": "un/ga/res-1962-XVIII",
         "short_title": "Declaration of Legal Principles",
         "version_id": "1963-12-13",
-        "unit": "Principle 4"
-      },
-      {
-        "corpus_id": "un/ga/res-1962-XVIII",
-        "short_title": "Declaration of Legal Principles",
-        "version_id": "1963-12-13",
-        "unit": "Principle 6"
+        "unit": "Paragraph 6"
       },
       {
         "corpus_id": "un/ga/res-37-92",
         "short_title": "Direct Broadcasting Principles",
         "version_id": "1982-12-10",
-        "unit": "Direct Broadcasting principles (whole instrument)"
+        "unit": "Paragraph 1"
+      },
+      {
+        "corpus_id": "un/ga/res-37-92",
+        "short_title": "Direct Broadcasting Principles",
+        "version_id": "1982-12-10",
+        "unit": "Paragraph 2"
+      },
+      {
+        "corpus_id": "un/ga/res-37-92",
+        "short_title": "Direct Broadcasting Principles",
+        "version_id": "1982-12-10",
+        "unit": "Paragraph 3"
+      },
+      {
+        "corpus_id": "un/ga/res-37-92",
+        "short_title": "Direct Broadcasting Principles",
+        "version_id": "1982-12-10",
+        "unit": "Paragraph 6"
+      },
+      {
+        "corpus_id": "un/ga/res-37-92",
+        "short_title": "Direct Broadcasting Principles",
+        "version_id": "1982-12-10",
+        "unit": "Paragraph 10"
+      },
+      {
+        "corpus_id": "un/ga/res-37-92",
+        "short_title": "Direct Broadcasting Principles",
+        "version_id": "1982-12-10",
+        "unit": "Paragraph 11"
+      },
+      {
+        "corpus_id": "un/ga/res-37-92",
+        "short_title": "Direct Broadcasting Principles",
+        "version_id": "1982-12-10",
+        "unit": "Paragraph 12"
+      },
+      {
+        "corpus_id": "un/ga/res-37-92",
+        "short_title": "Direct Broadcasting Principles",
+        "version_id": "1982-12-10",
+        "unit": "Paragraph 13"
+      },
+      {
+        "corpus_id": "un/ga/res-37-92",
+        "short_title": "Direct Broadcasting Principles",
+        "version_id": "1982-12-10",
+        "unit": "Paragraph 14"
       },
       {
         "corpus_id": "un/ga/res-41-65",
         "short_title": "Remote Sensing Principles",
         "version_id": "1986-12-03",
-        "unit": "Principle IV"
+        "unit": "Principle V"
+      },
+      {
+        "corpus_id": "un/ga/res-41-65",
+        "short_title": "Remote Sensing Principles",
+        "version_id": "1986-12-03",
+        "unit": "Principle VI"
+      },
+      {
+        "corpus_id": "un/ga/res-41-65",
+        "short_title": "Remote Sensing Principles",
+        "version_id": "1986-12-03",
+        "unit": "Principle VII"
+      },
+      {
+        "corpus_id": "un/ga/res-41-65",
+        "short_title": "Remote Sensing Principles",
+        "version_id": "1986-12-03",
+        "unit": "Principle VIII"
+      },
+      {
+        "corpus_id": "un/ga/res-41-65",
+        "short_title": "Remote Sensing Principles",
+        "version_id": "1986-12-03",
+        "unit": "Principle IX"
+      },
+      {
+        "corpus_id": "un/ga/res-41-65",
+        "short_title": "Remote Sensing Principles",
+        "version_id": "1986-12-03",
+        "unit": "Principle X"
       },
       {
         "corpus_id": "un/ga/res-41-65",
@@ -1551,6 +1629,12 @@
         "corpus_id": "un/ga/res-47-68",
         "short_title": "Nuclear Power Sources Principles",
         "version_id": "1992-12-14",
+        "unit": "Principle 4"
+      },
+      {
+        "corpus_id": "un/ga/res-47-68",
+        "short_title": "Nuclear Power Sources Principles",
+        "version_id": "1992-12-14",
         "unit": "Principle 5"
       },
       {
@@ -1569,7 +1653,49 @@
         "corpus_id": "un/ga/res-51-122",
         "short_title": "Benefits Declaration",
         "version_id": "1996-12-13",
-        "unit": "Declaration (whole instrument)"
+        "unit": "Paragraph 1"
+      },
+      {
+        "corpus_id": "un/ga/res-51-122",
+        "short_title": "Benefits Declaration",
+        "version_id": "1996-12-13",
+        "unit": "Paragraph 2"
+      },
+      {
+        "corpus_id": "un/ga/res-51-122",
+        "short_title": "Benefits Declaration",
+        "version_id": "1996-12-13",
+        "unit": "Paragraph 3"
+      },
+      {
+        "corpus_id": "un/ga/res-51-122",
+        "short_title": "Benefits Declaration",
+        "version_id": "1996-12-13",
+        "unit": "Paragraph 4"
+      },
+      {
+        "corpus_id": "un/ga/res-51-122",
+        "short_title": "Benefits Declaration",
+        "version_id": "1996-12-13",
+        "unit": "Paragraph 5"
+      },
+      {
+        "corpus_id": "un/ga/res-51-122",
+        "short_title": "Benefits Declaration",
+        "version_id": "1996-12-13",
+        "unit": "Paragraph 6"
+      },
+      {
+        "corpus_id": "un/ga/res-51-122",
+        "short_title": "Benefits Declaration",
+        "version_id": "1996-12-13",
+        "unit": "Paragraph 7"
+      },
+      {
+        "corpus_id": "un/ga/res-51-122",
+        "short_title": "Benefits Declaration",
+        "version_id": "1996-12-13",
+        "unit": "Paragraph 8"
       },
       {
         "corpus_id": "un/softlaw/lts-guidelines-2019",
@@ -1594,6 +1720,24 @@
         "short_title": "LTS Guidelines",
         "version_id": "2019-06-21",
         "unit": "Guideline B.3"
+      },
+      {
+        "corpus_id": "un/softlaw/lts-guidelines-2019",
+        "short_title": "LTS Guidelines",
+        "version_id": "2019-06-21",
+        "unit": "Guideline B.6"
+      },
+      {
+        "corpus_id": "un/softlaw/lts-guidelines-2019",
+        "short_title": "LTS Guidelines",
+        "version_id": "2019-06-21",
+        "unit": "Guideline B.7"
+      },
+      {
+        "corpus_id": "un/softlaw/lts-guidelines-2019",
+        "short_title": "LTS Guidelines",
+        "version_id": "2019-06-21",
+        "unit": "Guideline B.9"
       },
       {
         "corpus_id": "un/softlaw/lts-guidelines-2019",
@@ -1983,6 +2127,12 @@
         "corpus_id": "un/treaty/rescue-1968",
         "short_title": "Rescue Agreement",
         "version_id": "1968-04-22",
+        "unit": "Article 2"
+      },
+      {
+        "corpus_id": "un/treaty/rescue-1968",
+        "short_title": "Rescue Agreement",
+        "version_id": "1968-04-22",
         "unit": "Article 5"
       },
       {
@@ -1995,15 +2145,45 @@
         "corpus_id": "un/treaty/rescue-1968",
         "short_title": "Accord sur le sauvetage (Rescue Agreement, French authentic text)",
         "version_id": "1968-04-22-fr",
+        "unit": "Article 2"
+      },
+      {
+        "corpus_id": "un/treaty/rescue-1968",
+        "short_title": "Accord sur le sauvetage (Rescue Agreement, French authentic text)",
+        "version_id": "1968-04-22-fr",
         "unit": "Article 5"
       }
     ],
     "dispute_settlement_and_consultation": [
       {
+        "corpus_id": "un/ga/res-1962-XVIII",
+        "short_title": "Declaration of Legal Principles",
+        "version_id": "1963-12-13",
+        "unit": "Paragraph 6"
+      },
+      {
         "corpus_id": "un/ga/res-37-92",
         "short_title": "Direct Broadcasting Principles",
         "version_id": "1982-12-10",
-        "unit": "Direct Broadcasting principles (whole instrument)"
+        "unit": "Paragraph 7"
+      },
+      {
+        "corpus_id": "un/ga/res-37-92",
+        "short_title": "Direct Broadcasting Principles",
+        "version_id": "1982-12-10",
+        "unit": "Paragraph 10"
+      },
+      {
+        "corpus_id": "un/ga/res-37-92",
+        "short_title": "Direct Broadcasting Principles",
+        "version_id": "1982-12-10",
+        "unit": "Paragraph 13"
+      },
+      {
+        "corpus_id": "un/ga/res-41-65",
+        "short_title": "Remote Sensing Principles",
+        "version_id": "1986-12-03",
+        "unit": "Principle XIII"
       },
       {
         "corpus_id": "un/ga/res-41-65",
@@ -2012,34 +2192,22 @@
         "unit": "Principle XV"
       },
       {
-        "corpus_id": "un/treaty/liability-1972",
-        "short_title": "Liability Convention",
-        "version_id": "1972-03-29",
-        "unit": "Article VIII"
+        "corpus_id": "un/ga/res-47-68",
+        "short_title": "Nuclear Power Sources Principles",
+        "version_id": "1992-12-14",
+        "unit": "Principle 6"
       },
       {
-        "corpus_id": "un/treaty/liability-1972",
-        "short_title": "Liability Convention",
-        "version_id": "1972-03-29",
-        "unit": "Article IX"
-      },
-      {
-        "corpus_id": "un/treaty/liability-1972",
-        "short_title": "Liability Convention",
-        "version_id": "1972-03-29",
-        "unit": "Article X"
+        "corpus_id": "un/ga/res-47-68",
+        "short_title": "Nuclear Power Sources Principles",
+        "version_id": "1992-12-14",
+        "unit": "Principle 10"
       },
       {
         "corpus_id": "un/treaty/liability-1972",
         "short_title": "Liability Convention",
         "version_id": "1972-03-29",
         "unit": "Article XI"
-      },
-      {
-        "corpus_id": "un/treaty/liability-1972",
-        "short_title": "Liability Convention",
-        "version_id": "1972-03-29",
-        "unit": "Article XII"
       },
       {
         "corpus_id": "un/treaty/liability-1972",
@@ -2057,6 +2225,18 @@
         "corpus_id": "un/treaty/liability-1972",
         "short_title": "Liability Convention",
         "version_id": "1972-03-29",
+        "unit": "Article XVI"
+      },
+      {
+        "corpus_id": "un/treaty/liability-1972",
+        "short_title": "Liability Convention",
+        "version_id": "1972-03-29",
+        "unit": "Article XVII"
+      },
+      {
+        "corpus_id": "un/treaty/liability-1972",
+        "short_title": "Liability Convention",
+        "version_id": "1972-03-29",
         "unit": "Article XVIII"
       },
       {
@@ -2067,33 +2247,15 @@
       },
       {
         "corpus_id": "un/treaty/liability-1972",
-        "short_title": "Convention sur la responsabilité (Liability Convention, French authentic text)",
-        "version_id": "1972-03-29-fr",
-        "unit": "Article VIII"
-      },
-      {
-        "corpus_id": "un/treaty/liability-1972",
-        "short_title": "Convention sur la responsabilité (Liability Convention, French authentic text)",
-        "version_id": "1972-03-29-fr",
-        "unit": "Article IX"
-      },
-      {
-        "corpus_id": "un/treaty/liability-1972",
-        "short_title": "Convention sur la responsabilité (Liability Convention, French authentic text)",
-        "version_id": "1972-03-29-fr",
-        "unit": "Article X"
+        "short_title": "Liability Convention",
+        "version_id": "1972-03-29",
+        "unit": "Article XX"
       },
       {
         "corpus_id": "un/treaty/liability-1972",
         "short_title": "Convention sur la responsabilité (Liability Convention, French authentic text)",
         "version_id": "1972-03-29-fr",
         "unit": "Article XI"
-      },
-      {
-        "corpus_id": "un/treaty/liability-1972",
-        "short_title": "Convention sur la responsabilité (Liability Convention, French authentic text)",
-        "version_id": "1972-03-29-fr",
-        "unit": "Article XII"
       },
       {
         "corpus_id": "un/treaty/liability-1972",
@@ -2111,6 +2273,18 @@
         "corpus_id": "un/treaty/liability-1972",
         "short_title": "Convention sur la responsabilité (Liability Convention, French authentic text)",
         "version_id": "1972-03-29-fr",
+        "unit": "Article XVI"
+      },
+      {
+        "corpus_id": "un/treaty/liability-1972",
+        "short_title": "Convention sur la responsabilité (Liability Convention, French authentic text)",
+        "version_id": "1972-03-29-fr",
+        "unit": "Article XVII"
+      },
+      {
+        "corpus_id": "un/treaty/liability-1972",
+        "short_title": "Convention sur la responsabilité (Liability Convention, French authentic text)",
+        "version_id": "1972-03-29-fr",
         "unit": "Article XVIII"
       },
       {
@@ -2118,6 +2292,12 @@
         "short_title": "Convention sur la responsabilité (Liability Convention, French authentic text)",
         "version_id": "1972-03-29-fr",
         "unit": "Article XIX"
+      },
+      {
+        "corpus_id": "un/treaty/liability-1972",
+        "short_title": "Convention sur la responsabilité (Liability Convention, French authentic text)",
+        "version_id": "1972-03-29-fr",
+        "unit": "Article XX"
       },
       {
         "corpus_id": "un/treaty/moon-1979",
@@ -2179,19 +2359,7 @@
         "corpus_id": "nat/fra/loi-operations-spatiales-2008",
         "short_title": "French Space Operations Act (2008, consolidated)",
         "version_id": "2023-08-03",
-        "unit": "Art. 7"
-      },
-      {
-        "corpus_id": "nat/fra/loi-operations-spatiales-2008",
-        "short_title": "French Space Operations Act (2008, consolidated)",
-        "version_id": "2023-08-03",
         "unit": "Art. 8"
-      },
-      {
-        "corpus_id": "un/ga/res-47-68",
-        "short_title": "Nuclear Power Sources Principles",
-        "version_id": "1992-12-14",
-        "unit": "Principle 2"
       },
       {
         "corpus_id": "un/ga/res-47-68",
@@ -2212,6 +2380,12 @@
         "unit": "Principle 5"
       },
       {
+        "corpus_id": "un/ga/res-47-68",
+        "short_title": "Nuclear Power Sources Principles",
+        "version_id": "1992-12-14",
+        "unit": "Principle 7"
+      },
+      {
         "corpus_id": "un/softlaw/copuos-debris-mitigation-2007",
         "short_title": "COPUOS Space Debris Mitigation Guidelines",
         "version_id": "2007-06-15",
@@ -2222,6 +2396,18 @@
         "short_title": "COPUOS Space Debris Mitigation Guidelines",
         "version_id": "2007-06-15",
         "unit": "Guideline 3"
+      },
+      {
+        "corpus_id": "un/softlaw/copuos-debris-mitigation-2007",
+        "short_title": "COPUOS Space Debris Mitigation Guidelines",
+        "version_id": "2007-06-15",
+        "unit": "Guideline 4"
+      },
+      {
+        "corpus_id": "un/softlaw/copuos-debris-mitigation-2007",
+        "short_title": "COPUOS Space Debris Mitigation Guidelines",
+        "version_id": "2007-06-15",
+        "unit": "Guideline 5"
       },
       {
         "corpus_id": "un/softlaw/lts-guidelines-2019",
@@ -2284,10 +2470,28 @@
         "unit": "Guideline B.10"
       },
       {
-        "corpus_id": "un/softlaw/lts-guidelines-2019",
-        "short_title": "LTS Guidelines",
-        "version_id": "2019-06-21",
-        "unit": "Guideline D.1"
+        "corpus_id": "un/treaty/moon-1979",
+        "short_title": "Moon Agreement",
+        "version_id": "1979-12-18",
+        "unit": "Article 10"
+      },
+      {
+        "corpus_id": "un/treaty/moon-1979",
+        "short_title": "Accord sur la Lune (Moon Agreement, French authentic text)",
+        "version_id": "1979-12-18-fr",
+        "unit": "Article 10"
+      },
+      {
+        "corpus_id": "un/treaty/rescue-1968",
+        "short_title": "Rescue Agreement",
+        "version_id": "1968-04-22",
+        "unit": "Article 5"
+      },
+      {
+        "corpus_id": "un/treaty/rescue-1968",
+        "short_title": "Accord sur le sauvetage (Rescue Agreement, French authentic text)",
+        "version_id": "1968-04-22-fr",
+        "unit": "Article 5"
       }
     ]
   }

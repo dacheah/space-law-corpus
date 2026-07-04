@@ -19,22 +19,109 @@
     "dispute_settlement_and_consultation",
     "safety_of_space_operations"
   ],
-  "tagging_method": "model",
+  "tagging_method": "dual_pass_model_consensus_plus_human_adjudication",
   "document_concepts": [
     "dispute_settlement_and_consultation",
+    "freedom_of_exploration_and_use",
     "international_cooperation_and_transparency",
     "peaceful_use_and_non_militarization",
     "state_responsibility_and_supervision"
   ],
   "tags": [
     {
-      "unit": "Direct Broadcasting principles (whole instrument)",
+      "unit": "Paragraph 1",
+      "concepts": [
+        "international_cooperation_and_transparency"
+      ],
+      "review_status": "human_adjudicated"
+    },
+    {
+      "unit": "Paragraph 2",
+      "concepts": [
+        "international_cooperation_and_transparency"
+      ],
+      "review_status": "human_adjudicated"
+    },
+    {
+      "unit": "Paragraph 3",
       "concepts": [
         "international_cooperation_and_transparency",
-        "state_responsibility_and_supervision",
-        "dispute_settlement_and_consultation",
         "peaceful_use_and_non_militarization"
-      ]
+      ],
+      "review_status": "human_adjudicated"
+    },
+    {
+      "unit": "Paragraph 5",
+      "concepts": [
+        "freedom_of_exploration_and_use",
+        "state_responsibility_and_supervision"
+      ],
+      "review_status": "human_adjudicated"
+    },
+    {
+      "unit": "Paragraph 6",
+      "concepts": [
+        "international_cooperation_and_transparency"
+      ],
+      "review_status": "human_adjudicated"
+    },
+    {
+      "unit": "Paragraph 7",
+      "concepts": [
+        "dispute_settlement_and_consultation"
+      ],
+      "review_status": "human_adjudicated"
+    },
+    {
+      "unit": "Paragraph 8",
+      "concepts": [
+        "state_responsibility_and_supervision"
+      ],
+      "review_status": "human_adjudicated"
+    },
+    {
+      "unit": "Paragraph 9",
+      "concepts": [
+        "state_responsibility_and_supervision"
+      ],
+      "review_status": "human_adjudicated"
+    },
+    {
+      "unit": "Paragraph 10",
+      "concepts": [
+        "dispute_settlement_and_consultation",
+        "international_cooperation_and_transparency"
+      ],
+      "review_status": "human_adjudicated"
+    },
+    {
+      "unit": "Paragraph 11",
+      "concepts": [
+        "international_cooperation_and_transparency"
+      ],
+      "review_status": "human_adjudicated"
+    },
+    {
+      "unit": "Paragraph 12",
+      "concepts": [
+        "international_cooperation_and_transparency"
+      ],
+      "review_status": "human_adjudicated"
+    },
+    {
+      "unit": "Paragraph 13",
+      "concepts": [
+        "dispute_settlement_and_consultation",
+        "international_cooperation_and_transparency"
+      ],
+      "review_status": "human_adjudicated"
+    },
+    {
+      "unit": "Paragraph 14",
+      "concepts": [
+        "international_cooperation_and_transparency"
+      ],
+      "review_status": "human_adjudicated"
     }
   ]
 }

@@ -19,60 +19,109 @@
     "dispute_settlement_and_consultation",
     "safety_of_space_operations"
   ],
-  "tagging_method": "model",
+  "tagging_method": "dual_pass_model_consensus_plus_human_adjudication",
   "document_concepts": [
     "dispute_settlement_and_consultation",
     "environmental_protection_and_debris",
     "freedom_of_exploration_and_use",
     "international_cooperation_and_transparency",
-    "resource_rights",
+    "registration",
     "state_responsibility_and_supervision"
   ],
   "tags": [
     {
+      "unit": "Principle II",
+      "concepts": [
+        "freedom_of_exploration_and_use"
+      ],
+      "review_status": "human_adjudicated"
+    },
+    {
       "unit": "Principle IV",
       "concepts": [
-        "freedom_of_exploration_and_use",
+        "freedom_of_exploration_and_use"
+      ],
+      "review_status": "human_adjudicated"
+    },
+    {
+      "unit": "Principle V",
+      "concepts": [
         "international_cooperation_and_transparency"
-      ]
+      ],
+      "review_status": "human_adjudicated"
+    },
+    {
+      "unit": "Principle VI",
+      "concepts": [
+        "international_cooperation_and_transparency"
+      ],
+      "review_status": "human_adjudicated"
+    },
+    {
+      "unit": "Principle VII",
+      "concepts": [
+        "international_cooperation_and_transparency"
+      ],
+      "review_status": "human_adjudicated"
+    },
+    {
+      "unit": "Principle VIII",
+      "concepts": [
+        "international_cooperation_and_transparency"
+      ],
+      "review_status": "human_adjudicated"
+    },
+    {
+      "unit": "Principle IX",
+      "concepts": [
+        "international_cooperation_and_transparency",
+        "registration"
+      ],
+      "review_status": "human_adjudicated"
     },
     {
       "unit": "Principle X",
       "concepts": [
-        "environmental_protection_and_debris"
-      ]
+        "environmental_protection_and_debris",
+        "international_cooperation_and_transparency"
+      ],
+      "review_status": "human_adjudicated"
     },
     {
       "unit": "Principle XI",
       "concepts": [
-        "environmental_protection_and_debris",
         "international_cooperation_and_transparency"
-      ]
+      ],
+      "review_status": "human_adjudicated"
     },
     {
       "unit": "Principle XII",
       "concepts": [
-        "international_cooperation_and_transparency",
-        "resource_rights"
-      ]
+        "international_cooperation_and_transparency"
+      ],
+      "review_status": "human_adjudicated"
     },
     {
       "unit": "Principle XIII",
       "concepts": [
+        "dispute_settlement_and_consultation",
         "international_cooperation_and_transparency"
-      ]
+      ],
+      "review_status": "human_adjudicated"
     },
     {
       "unit": "Principle XIV",
       "concepts": [
         "state_responsibility_and_supervision"
-      ]
+      ],
+      "review_status": "model_consensus"
     },
     {
       "unit": "Principle XV",
       "concepts": [
         "dispute_settlement_and_consultation"
-      ]
+      ],
+      "review_status": "model_consensus"
     }
   ]
 }

@@ -1,0 +1,1081 @@
+{
+ "provenance": {
+  "pass_a": {
+   "generation_method": "model",
+   "generated": "2026-07-03",
+   "generator": "Claude (Anthropic), session of 2026-07-03; single-pass tagging recorded in scripts/concept_tags.py",
+   "prompt_frame": "instrument-level tagging pass during Roadmap Step 2 (see CHANGELOG 2026-07-03)",
+   "vocabulary": "scripts/concept_tags.py VOCAB (14 concepts)"
+  },
+  "pass_b": {
+   "generation_method": "model",
+   "generated": "2026-07-04",
+   "generator": "Claude Fable (Anthropic), session of 2026-07-04",
+   "prompt_frame": "independent per-provision pass: each unit's text read from derived/*/structure.json (or authoritative text.txt for instruments the parser holds as one unit) and tagged against the VOCAB definitions; procedural/final clauses and preambles left untagged",
+   "independence_note": "Same model family as pass A (residual correlation risk documented); different session, different prompt frame, tags derived from provision texts. A cross-vendor third pass remains an open option.",
+   "vocabulary": "scripts/concept_tags.py VOCAB (14 concepts)"
+  }
+ },
+ "units_compared": 208,
+ "agreements": 118,
+ "queue": [
+  {
+   "corpus_id": "nat/fra/loi-operations-spatiales-2008",
+   "unit": "Art. 1",
+   "kind": "tags",
+   "pass_a": "(untagged by A)",
+   "pass_b": [
+    "liability_and_damage"
+   ],
+   "only_a": [],
+   "only_b": [
+    "liability_and_damage"
+   ]
+  },
+  {
+   "corpus_id": "nat/fra/loi-operations-spatiales-2008",
+   "unit": "Art. 11-1",
+   "kind": "tags",
+   "pass_a": [
+    "state_responsibility_and_supervision"
+   ],
+   "pass_b": [],
+   "only_a": [
+    "state_responsibility_and_supervision"
+   ],
+   "only_b": []
+  },
+  {
+   "corpus_id": "nat/fra/loi-operations-spatiales-2008",
+   "unit": "Art. 14",
+   "kind": "tags",
+   "pass_a": [
+    "international_cooperation_and_transparency",
+    "liability_and_damage"
+   ],
+   "pass_b": [
+    "liability_and_damage"
+   ],
+   "only_a": [
+    "international_cooperation_and_transparency"
+   ],
+   "only_b": []
+  },
+  {
+   "corpus_id": "nat/fra/loi-operations-spatiales-2008",
+   "unit": "Art. 2",
+   "kind": "tags",
+   "pass_a": [
+    "jurisdiction_and_control",
+    "state_responsibility_and_supervision"
+   ],
+   "pass_b": [
+    "state_responsibility_and_supervision"
+   ],
+   "only_a": [
+    "jurisdiction_and_control"
+   ],
+   "only_b": []
+  },
+  {
+   "corpus_id": "nat/fra/loi-operations-spatiales-2008",
+   "unit": "Art. 20-1",
+   "kind": "tags",
+   "pass_a": [
+    "state_responsibility_and_supervision"
+   ],
+   "pass_b": [],
+   "only_a": [
+    "state_responsibility_and_supervision"
+   ],
+   "only_b": []
+  },
+  {
+   "corpus_id": "nat/fra/loi-operations-spatiales-2008",
+   "unit": "Art. 25-1",
+   "kind": "tags",
+   "pass_a": [
+    "state_responsibility_and_supervision"
+   ],
+   "pass_b": [],
+   "only_a": [
+    "state_responsibility_and_supervision"
+   ],
+   "only_b": []
+  },
+  {
+   "corpus_id": "nat/fra/loi-operations-spatiales-2008",
+   "unit": "Art. 27",
+   "kind": "tags",
+   "pass_a": [
+    "state_responsibility_and_supervision"
+   ],
+   "pass_b": [],
+   "only_a": [
+    "state_responsibility_and_supervision"
+   ],
+   "only_b": []
+  },
+  {
+   "corpus_id": "nat/fra/loi-operations-spatiales-2008",
+   "unit": "Art. 6",
+   "kind": "tags",
+   "pass_a": [
+    "liability_and_damage"
+   ],
+   "pass_b": [
+    "liability_and_damage",
+    "state_responsibility_and_supervision"
+   ],
+   "only_a": [],
+   "only_b": [
+    "state_responsibility_and_supervision"
+   ]
+  },
+  {
+   "corpus_id": "nat/fra/loi-operations-spatiales-2008",
+   "unit": "Art. 7",
+   "kind": "tags",
+   "pass_a": [
+    "safety_of_space_operations",
+    "state_responsibility_and_supervision"
+   ],
+   "pass_b": [
+    "state_responsibility_and_supervision"
+   ],
+   "only_a": [
+    "safety_of_space_operations"
+   ],
+   "only_b": []
+  },
+  {
+   "corpus_id": "nat/fra/loi-operations-spatiales-2008",
+   "unit": "Art. 9",
+   "kind": "tags",
+   "pass_a": [
+    "environmental_protection_and_debris",
+    "state_responsibility_and_supervision"
+   ],
+   "pass_b": [
+    "state_responsibility_and_supervision"
+   ],
+   "only_a": [
+    "environmental_protection_and_debris"
+   ],
+   "only_b": []
+  },
+  {
+   "corpus_id": "nat/lux/ressources-espace-2017",
+   "unit": "Art. 1er",
+   "kind": "tags",
+   "pass_a": [
+    "non_appropriation",
+    "resource_rights"
+   ],
+   "pass_b": [
+    "resource_rights"
+   ],
+   "only_a": [
+    "non_appropriation"
+   ],
+   "only_b": []
+  },
+  {
+   "corpus_id": "nat/lux/ressources-espace-2017",
+   "unit": "Art. 10",
+   "kind": "tags",
+   "pass_a": "(untagged by A)",
+   "pass_b": [
+    "liability_and_damage",
+    "state_responsibility_and_supervision"
+   ],
+   "only_a": [],
+   "only_b": [
+    "liability_and_damage",
+    "state_responsibility_and_supervision"
+   ]
+  },
+  {
+   "corpus_id": "nat/lux/ressources-espace-2017",
+   "unit": "Art. 11",
+   "kind": "tags",
+   "pass_a": "(untagged by A)",
+   "pass_b": [
+    "state_responsibility_and_supervision"
+   ],
+   "only_a": [],
+   "only_b": [
+    "state_responsibility_and_supervision"
+   ]
+  },
+  {
+   "corpus_id": "nat/lux/ressources-espace-2017",
+   "unit": "Art. 12",
+   "kind": "tags",
+   "pass_a": "(untagged by A)",
+   "pass_b": [
+    "state_responsibility_and_supervision"
+   ],
+   "only_a": [],
+   "only_b": [
+    "state_responsibility_and_supervision"
+   ]
+  },
+  {
+   "corpus_id": "nat/lux/ressources-espace-2017",
+   "unit": "Art. 14",
+   "kind": "tags",
+   "pass_a": "(untagged by A)",
+   "pass_b": [
+    "state_responsibility_and_supervision"
+   ],
+   "only_a": [],
+   "only_b": [
+    "state_responsibility_and_supervision"
+   ]
+  },
+  {
+   "corpus_id": "nat/lux/ressources-espace-2017",
+   "unit": "Art. 2",
+   "kind": "tags",
+   "pass_a": [
+    "international_cooperation_and_transparency",
+    "state_responsibility_and_supervision"
+   ],
+   "pass_b": [
+    "state_responsibility_and_supervision"
+   ],
+   "only_a": [
+    "international_cooperation_and_transparency"
+   ],
+   "only_b": []
+  },
+  {
+   "corpus_id": "nat/lux/ressources-espace-2017",
+   "unit": "Art. 4",
+   "kind": "tags",
+   "pass_a": "(untagged by A)",
+   "pass_b": [
+    "state_responsibility_and_supervision"
+   ],
+   "only_a": [],
+   "only_b": [
+    "state_responsibility_and_supervision"
+   ]
+  },
+  {
+   "corpus_id": "nat/lux/ressources-espace-2017",
+   "unit": "Art. 5",
+   "kind": "tags",
+   "pass_a": "(untagged by A)",
+   "pass_b": [
+    "state_responsibility_and_supervision"
+   ],
+   "only_a": [],
+   "only_b": [
+    "state_responsibility_and_supervision"
+   ]
+  },
+  {
+   "corpus_id": "nat/lux/ressources-espace-2017",
+   "unit": "Art. 6",
+   "kind": "tags",
+   "pass_a": "(untagged by A)",
+   "pass_b": [
+    "state_responsibility_and_supervision"
+   ],
+   "only_a": [],
+   "only_b": [
+    "state_responsibility_and_supervision"
+   ]
+  },
+  {
+   "corpus_id": "nat/usa/space-resources-2015",
+   "unit": "\u00a751302 Commercial exploration and commercial recovery",
+   "kind": "tags",
+   "pass_a": [
+    "freedom_of_exploration_and_use",
+    "international_cooperation_and_transparency",
+    "resource_rights",
+    "state_responsibility_and_supervision"
+   ],
+   "pass_b": [
+    "freedom_of_exploration_and_use",
+    "resource_rights",
+    "state_responsibility_and_supervision"
+   ],
+   "only_a": [
+    "international_cooperation_and_transparency"
+   ],
+   "only_b": []
+  },
+  {
+   "corpus_id": "un/ga/res-1962-XVIII",
+   "unit": "Paragraph 1",
+   "kind": "tags",
+   "pass_a": [
+    "freedom_of_exploration_and_use",
+    "non_appropriation"
+   ],
+   "pass_b": [
+    "freedom_of_exploration_and_use"
+   ],
+   "only_a": [
+    "non_appropriation"
+   ],
+   "only_b": []
+  },
+  {
+   "corpus_id": "un/ga/res-1962-XVIII",
+   "unit": "Paragraph 6",
+   "kind": "tags",
+   "pass_a": [
+    "environmental_protection_and_debris",
+    "international_cooperation_and_transparency"
+   ],
+   "pass_b": [
+    "dispute_settlement_and_consultation",
+    "environmental_protection_and_debris",
+    "international_cooperation_and_transparency"
+   ],
+   "only_a": [],
+   "only_b": [
+    "dispute_settlement_and_consultation"
+   ]
+  },
+  {
+   "corpus_id": "un/ga/res-37-92",
+   "unit": "(granularity)",
+   "kind": "granularity",
+   "pass_a": [
+    "dispute_settlement_and_consultation",
+    "international_cooperation_and_transparency",
+    "peaceful_use_and_non_militarization",
+    "state_responsibility_and_supervision"
+   ],
+   "pass_b": "per-unit tags (see pass-B.json)",
+   "note": "Pass A tagged the whole instrument; pass B tagged per unit."
+  },
+  {
+   "corpus_id": "un/ga/res-41-65",
+   "unit": "Principle II",
+   "kind": "tags",
+   "pass_a": "(untagged by A)",
+   "pass_b": [
+    "freedom_of_exploration_and_use"
+   ],
+   "only_a": [],
+   "only_b": [
+    "freedom_of_exploration_and_use"
+   ]
+  },
+  {
+   "corpus_id": "un/ga/res-41-65",
+   "unit": "Principle IV",
+   "kind": "tags",
+   "pass_a": [
+    "freedom_of_exploration_and_use",
+    "international_cooperation_and_transparency"
+   ],
+   "pass_b": [
+    "freedom_of_exploration_and_use"
+   ],
+   "only_a": [
+    "international_cooperation_and_transparency"
+   ],
+   "only_b": []
+  },
+  {
+   "corpus_id": "un/ga/res-41-65",
+   "unit": "Principle IX",
+   "kind": "tags",
+   "pass_a": "(untagged by A)",
+   "pass_b": [
+    "international_cooperation_and_transparency",
+    "registration"
+   ],
+   "only_a": [],
+   "only_b": [
+    "international_cooperation_and_transparency",
+    "registration"
+   ]
+  },
+  {
+   "corpus_id": "un/ga/res-41-65",
+   "unit": "Principle V",
+   "kind": "tags",
+   "pass_a": "(untagged by A)",
+   "pass_b": [
+    "international_cooperation_and_transparency"
+   ],
+   "only_a": [],
+   "only_b": [
+    "international_cooperation_and_transparency"
+   ]
+  },
+  {
+   "corpus_id": "un/ga/res-41-65",
+   "unit": "Principle VI",
+   "kind": "tags",
+   "pass_a": "(untagged by A)",
+   "pass_b": [
+    "international_cooperation_and_transparency"
+   ],
+   "only_a": [],
+   "only_b": [
+    "international_cooperation_and_transparency"
+   ]
+  },
+  {
+   "corpus_id": "un/ga/res-41-65",
+   "unit": "Principle VII",
+   "kind": "tags",
+   "pass_a": "(untagged by A)",
+   "pass_b": [
+    "international_cooperation_and_transparency"
+   ],
+   "only_a": [],
+   "only_b": [
+    "international_cooperation_and_transparency"
+   ]
+  },
+  {
+   "corpus_id": "un/ga/res-41-65",
+   "unit": "Principle VIII",
+   "kind": "tags",
+   "pass_a": "(untagged by A)",
+   "pass_b": [
+    "international_cooperation_and_transparency"
+   ],
+   "only_a": [],
+   "only_b": [
+    "international_cooperation_and_transparency"
+   ]
+  },
+  {
+   "corpus_id": "un/ga/res-41-65",
+   "unit": "Principle X",
+   "kind": "tags",
+   "pass_a": [
+    "environmental_protection_and_debris"
+   ],
+   "pass_b": [
+    "environmental_protection_and_debris",
+    "international_cooperation_and_transparency"
+   ],
+   "only_a": [],
+   "only_b": [
+    "international_cooperation_and_transparency"
+   ]
+  },
+  {
+   "corpus_id": "un/ga/res-41-65",
+   "unit": "Principle XI",
+   "kind": "tags",
+   "pass_a": [
+    "environmental_protection_and_debris",
+    "international_cooperation_and_transparency"
+   ],
+   "pass_b": [
+    "international_cooperation_and_transparency"
+   ],
+   "only_a": [
+    "environmental_protection_and_debris"
+   ],
+   "only_b": []
+  },
+  {
+   "corpus_id": "un/ga/res-41-65",
+   "unit": "Principle XII",
+   "kind": "tags",
+   "pass_a": [
+    "international_cooperation_and_transparency",
+    "resource_rights"
+   ],
+   "pass_b": [
+    "international_cooperation_and_transparency"
+   ],
+   "only_a": [
+    "resource_rights"
+   ],
+   "only_b": []
+  },
+  {
+   "corpus_id": "un/ga/res-41-65",
+   "unit": "Principle XIII",
+   "kind": "tags",
+   "pass_a": [
+    "international_cooperation_and_transparency"
+   ],
+   "pass_b": [
+    "dispute_settlement_and_consultation",
+    "international_cooperation_and_transparency"
+   ],
+   "only_a": [],
+   "only_b": [
+    "dispute_settlement_and_consultation"
+   ]
+  },
+  {
+   "corpus_id": "un/ga/res-47-68",
+   "unit": "Principle 10",
+   "kind": "tags",
+   "pass_a": "(untagged by A)",
+   "pass_b": [
+    "dispute_settlement_and_consultation"
+   ],
+   "only_a": [],
+   "only_b": [
+    "dispute_settlement_and_consultation"
+   ]
+  },
+  {
+   "corpus_id": "un/ga/res-47-68",
+   "unit": "Principle 2",
+   "kind": "tags",
+   "pass_a": [
+    "environmental_protection_and_debris",
+    "safety_of_space_operations"
+   ],
+   "pass_b": [],
+   "only_a": [
+    "environmental_protection_and_debris",
+    "safety_of_space_operations"
+   ],
+   "only_b": []
+  },
+  {
+   "corpus_id": "un/ga/res-47-68",
+   "unit": "Principle 4",
+   "kind": "tags",
+   "pass_a": [
+    "safety_of_space_operations"
+   ],
+   "pass_b": [
+    "international_cooperation_and_transparency",
+    "safety_of_space_operations"
+   ],
+   "only_a": [],
+   "only_b": [
+    "international_cooperation_and_transparency"
+   ]
+  },
+  {
+   "corpus_id": "un/ga/res-47-68",
+   "unit": "Principle 6",
+   "kind": "tags",
+   "pass_a": [
+    "international_cooperation_and_transparency"
+   ],
+   "pass_b": [
+    "dispute_settlement_and_consultation",
+    "international_cooperation_and_transparency"
+   ],
+   "only_a": [],
+   "only_b": [
+    "dispute_settlement_and_consultation"
+   ]
+  },
+  {
+   "corpus_id": "un/ga/res-47-68",
+   "unit": "Principle 7",
+   "kind": "tags",
+   "pass_a": [
+    "international_cooperation_and_transparency"
+   ],
+   "pass_b": [
+    "international_cooperation_and_transparency",
+    "safety_of_space_operations"
+   ],
+   "only_a": [],
+   "only_b": [
+    "safety_of_space_operations"
+   ]
+  },
+  {
+   "corpus_id": "un/ga/res-51-122",
+   "unit": "(granularity)",
+   "kind": "granularity",
+   "pass_a": [
+    "freedom_of_exploration_and_use",
+    "international_cooperation_and_transparency",
+    "non_appropriation"
+   ],
+   "pass_b": "per-unit tags (see pass-B.json)",
+   "note": "Pass A tagged the whole instrument; pass B tagged per unit."
+  },
+  {
+   "corpus_id": "un/softlaw/copuos-debris-mitigation-2007",
+   "unit": "Guideline 4",
+   "kind": "tags",
+   "pass_a": [
+    "environmental_protection_and_debris",
+    "peaceful_use_and_non_militarization"
+   ],
+   "pass_b": [
+    "environmental_protection_and_debris",
+    "safety_of_space_operations"
+   ],
+   "only_a": [
+    "peaceful_use_and_non_militarization"
+   ],
+   "only_b": [
+    "safety_of_space_operations"
+   ]
+  },
+  {
+   "corpus_id": "un/softlaw/copuos-debris-mitigation-2007",
+   "unit": "Guideline 5",
+   "kind": "tags",
+   "pass_a": [
+    "environmental_protection_and_debris"
+   ],
+   "pass_b": [
+    "environmental_protection_and_debris",
+    "safety_of_space_operations"
+   ],
+   "only_a": [],
+   "only_b": [
+    "safety_of_space_operations"
+   ]
+  },
+  {
+   "corpus_id": "un/softlaw/lts-guidelines-2019",
+   "unit": "Guideline A.4",
+   "kind": "tags",
+   "pass_a": [
+    "international_cooperation_and_transparency",
+    "safety_of_space_operations"
+   ],
+   "pass_b": [
+    "international_cooperation_and_transparency"
+   ],
+   "only_a": [
+    "safety_of_space_operations"
+   ],
+   "only_b": []
+  },
+  {
+   "corpus_id": "un/softlaw/lts-guidelines-2019",
+   "unit": "Guideline B.6",
+   "kind": "tags",
+   "pass_a": [
+    "safety_of_space_operations"
+   ],
+   "pass_b": [
+    "international_cooperation_and_transparency",
+    "safety_of_space_operations"
+   ],
+   "only_a": [],
+   "only_b": [
+    "international_cooperation_and_transparency"
+   ]
+  },
+  {
+   "corpus_id": "un/softlaw/lts-guidelines-2019",
+   "unit": "Guideline B.7",
+   "kind": "tags",
+   "pass_a": [
+    "safety_of_space_operations"
+   ],
+   "pass_b": [
+    "international_cooperation_and_transparency",
+    "safety_of_space_operations"
+   ],
+   "only_a": [],
+   "only_b": [
+    "international_cooperation_and_transparency"
+   ]
+  },
+  {
+   "corpus_id": "un/softlaw/lts-guidelines-2019",
+   "unit": "Guideline B.8",
+   "kind": "tags",
+   "pass_a": [
+    "environmental_protection_and_debris",
+    "safety_of_space_operations"
+   ],
+   "pass_b": [
+    "safety_of_space_operations"
+   ],
+   "only_a": [
+    "environmental_protection_and_debris"
+   ],
+   "only_b": []
+  },
+  {
+   "corpus_id": "un/softlaw/lts-guidelines-2019",
+   "unit": "Guideline B.9",
+   "kind": "tags",
+   "pass_a": [
+    "environmental_protection_and_debris",
+    "safety_of_space_operations"
+   ],
+   "pass_b": [
+    "international_cooperation_and_transparency",
+    "safety_of_space_operations"
+   ],
+   "only_a": [
+    "environmental_protection_and_debris"
+   ],
+   "only_b": [
+    "international_cooperation_and_transparency"
+   ]
+  },
+  {
+   "corpus_id": "un/softlaw/lts-guidelines-2019",
+   "unit": "Guideline D.1",
+   "kind": "tags",
+   "pass_a": [
+    "international_cooperation_and_transparency",
+    "safety_of_space_operations"
+   ],
+   "pass_b": [
+    "environmental_protection_and_debris",
+    "international_cooperation_and_transparency"
+   ],
+   "only_a": [
+    "safety_of_space_operations"
+   ],
+   "only_b": [
+    "environmental_protection_and_debris"
+   ]
+  },
+  {
+   "corpus_id": "un/treaty/liability-1972",
+   "unit": "Article IX",
+   "kind": "tags",
+   "pass_a": [
+    "dispute_settlement_and_consultation",
+    "liability_and_damage"
+   ],
+   "pass_b": [
+    "liability_and_damage"
+   ],
+   "only_a": [
+    "dispute_settlement_and_consultation"
+   ],
+   "only_b": []
+  },
+  {
+   "corpus_id": "un/treaty/liability-1972",
+   "unit": "Article VIII",
+   "kind": "tags",
+   "pass_a": [
+    "dispute_settlement_and_consultation",
+    "liability_and_damage"
+   ],
+   "pass_b": [
+    "liability_and_damage"
+   ],
+   "only_a": [
+    "dispute_settlement_and_consultation"
+   ],
+   "only_b": []
+  },
+  {
+   "corpus_id": "un/treaty/liability-1972",
+   "unit": "Article X",
+   "kind": "tags",
+   "pass_a": [
+    "dispute_settlement_and_consultation",
+    "liability_and_damage"
+   ],
+   "pass_b": [
+    "liability_and_damage"
+   ],
+   "only_a": [
+    "dispute_settlement_and_consultation"
+   ],
+   "only_b": []
+  },
+  {
+   "corpus_id": "un/treaty/liability-1972",
+   "unit": "Article XII",
+   "kind": "tags",
+   "pass_a": [
+    "dispute_settlement_and_consultation",
+    "liability_and_damage"
+   ],
+   "pass_b": [
+    "liability_and_damage"
+   ],
+   "only_a": [
+    "dispute_settlement_and_consultation"
+   ],
+   "only_b": []
+  },
+  {
+   "corpus_id": "un/treaty/liability-1972",
+   "unit": "Article XIII",
+   "kind": "tags",
+   "pass_a": "(untagged by A)",
+   "pass_b": [
+    "liability_and_damage"
+   ],
+   "only_a": [],
+   "only_b": [
+    "liability_and_damage"
+   ]
+  },
+  {
+   "corpus_id": "un/treaty/liability-1972",
+   "unit": "Article XIV",
+   "kind": "tags",
+   "pass_a": [
+    "dispute_settlement_and_consultation"
+   ],
+   "pass_b": [
+    "dispute_settlement_and_consultation",
+    "liability_and_damage"
+   ],
+   "only_a": [],
+   "only_b": [
+    "liability_and_damage"
+   ]
+  },
+  {
+   "corpus_id": "un/treaty/liability-1972",
+   "unit": "Article XVI",
+   "kind": "tags",
+   "pass_a": "(untagged by A)",
+   "pass_b": [
+    "dispute_settlement_and_consultation"
+   ],
+   "only_a": [],
+   "only_b": [
+    "dispute_settlement_and_consultation"
+   ]
+  },
+  {
+   "corpus_id": "un/treaty/liability-1972",
+   "unit": "Article XVII",
+   "kind": "tags",
+   "pass_a": "(untagged by A)",
+   "pass_b": [
+    "dispute_settlement_and_consultation"
+   ],
+   "only_a": [],
+   "only_b": [
+    "dispute_settlement_and_consultation"
+   ]
+  },
+  {
+   "corpus_id": "un/treaty/liability-1972",
+   "unit": "Article XX",
+   "kind": "tags",
+   "pass_a": "(untagged by A)",
+   "pass_b": [
+    "dispute_settlement_and_consultation"
+   ],
+   "only_a": [],
+   "only_b": [
+    "dispute_settlement_and_consultation"
+   ]
+  },
+  {
+   "corpus_id": "un/treaty/liability-1972",
+   "unit": "Article XXI",
+   "kind": "tags",
+   "pass_a": [
+    "international_cooperation_and_transparency",
+    "liability_and_damage"
+   ],
+   "pass_b": [
+    "international_cooperation_and_transparency"
+   ],
+   "only_a": [
+    "liability_and_damage"
+   ],
+   "only_b": []
+  },
+  {
+   "corpus_id": "un/treaty/moon-1979",
+   "unit": "Article 10",
+   "kind": "tags",
+   "pass_a": [
+    "rescue_and_return"
+   ],
+   "pass_b": [
+    "rescue_and_return",
+    "safety_of_space_operations"
+   ],
+   "only_a": [],
+   "only_b": [
+    "safety_of_space_operations"
+   ]
+  },
+  {
+   "corpus_id": "un/treaty/moon-1979",
+   "unit": "Article 12",
+   "kind": "tags",
+   "pass_a": [
+    "jurisdiction_and_control"
+   ],
+   "pass_b": [
+    "abandonment_and_salvage",
+    "jurisdiction_and_control"
+   ],
+   "only_a": [],
+   "only_b": [
+    "abandonment_and_salvage"
+   ]
+  },
+  {
+   "corpus_id": "un/treaty/moon-1979",
+   "unit": "Article 13",
+   "kind": "tags",
+   "pass_a": [
+    "international_cooperation_and_transparency"
+   ],
+   "pass_b": [
+    "abandonment_and_salvage",
+    "international_cooperation_and_transparency"
+   ],
+   "only_a": [],
+   "only_b": [
+    "abandonment_and_salvage"
+   ]
+  },
+  {
+   "corpus_id": "un/treaty/moon-1979",
+   "unit": "Article 14",
+   "kind": "tags",
+   "pass_a": [
+    "state_responsibility_and_supervision"
+   ],
+   "pass_b": [
+    "liability_and_damage",
+    "state_responsibility_and_supervision"
+   ],
+   "only_a": [],
+   "only_b": [
+    "liability_and_damage"
+   ]
+  },
+  {
+   "corpus_id": "un/treaty/moon-1979",
+   "unit": "Article 2",
+   "kind": "tags",
+   "pass_a": [
+    "peaceful_use_and_non_militarization"
+   ],
+   "pass_b": [
+    "international_cooperation_and_transparency",
+    "peaceful_use_and_non_militarization"
+   ],
+   "only_a": [],
+   "only_b": [
+    "international_cooperation_and_transparency"
+   ]
+  },
+  {
+   "corpus_id": "un/treaty/moon-1979",
+   "unit": "Article 9",
+   "kind": "tags",
+   "pass_a": [
+    "international_cooperation_and_transparency",
+    "jurisdiction_and_control"
+   ],
+   "pass_b": [
+    "freedom_of_exploration_and_use",
+    "international_cooperation_and_transparency"
+   ],
+   "only_a": [
+    "jurisdiction_and_control"
+   ],
+   "only_b": [
+    "freedom_of_exploration_and_use"
+   ]
+  },
+  {
+   "corpus_id": "un/treaty/ost-1967",
+   "unit": "Article I",
+   "kind": "tags",
+   "pass_a": [
+    "freedom_of_exploration_and_use",
+    "international_cooperation_and_transparency",
+    "non_appropriation"
+   ],
+   "pass_b": [
+    "freedom_of_exploration_and_use",
+    "international_cooperation_and_transparency"
+   ],
+   "only_a": [
+    "non_appropriation"
+   ],
+   "only_b": []
+  },
+  {
+   "corpus_id": "un/treaty/registration-1975",
+   "unit": "Article VI",
+   "kind": "tags",
+   "pass_a": [
+    "abandonment_and_salvage",
+    "international_cooperation_and_transparency",
+    "registration"
+   ],
+   "pass_b": [
+    "international_cooperation_and_transparency",
+    "liability_and_damage",
+    "registration"
+   ],
+   "only_a": [
+    "abandonment_and_salvage"
+   ],
+   "only_b": [
+    "liability_and_damage"
+   ]
+  },
+  {
+   "corpus_id": "un/treaty/rescue-1968",
+   "unit": "Article 2",
+   "kind": "tags",
+   "pass_a": [
+    "rescue_and_return"
+   ],
+   "pass_b": [
+    "international_cooperation_and_transparency",
+    "rescue_and_return"
+   ],
+   "only_a": [],
+   "only_b": [
+    "international_cooperation_and_transparency"
+   ]
+  },
+  {
+   "corpus_id": "un/treaty/rescue-1968",
+   "unit": "Article 5",
+   "kind": "tags",
+   "pass_a": [
+    "abandonment_and_salvage",
+    "international_cooperation_and_transparency",
+    "liability_and_damage"
+   ],
+   "pass_b": [
+    "abandonment_and_salvage",
+    "international_cooperation_and_transparency",
+    "safety_of_space_operations"
+   ],
+   "only_a": [
+    "liability_and_damage"
+   ],
+   "only_b": [
+    "safety_of_space_operations"
+   ]
+  },
+  {
+   "corpus_id": "un/treaty/rescue-1968",
+   "unit": "Article 6",
+   "kind": "tags",
+   "pass_a": [
+    "state_responsibility_and_supervision"
+   ],
+   "pass_b": [],
+   "only_a": [
+    "state_responsibility_and_supervision"
+   ],
+   "only_b": []
+  }
+ ]
+}

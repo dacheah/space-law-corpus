@@ -1,0 +1,34 @@
+date: '2026-07-04'
+adjudicator: maintainer (Daniel Cheah)
+method: 'Dual-pass concept tagging: two independent model passes (reviews/concept-passes/), difference queue adjudicated
+  by the maintainer. Group rulings below; all remaining divergences resolved to pass B per the group rulings.'
+group_rulings:
+  G1_granularity: Adopt pass B per-unit tags for res-37-92 and res-51-122 (A was whole-instrument).
+  G2_coverage: Accept pass B tags for the 19 units pass A skipped.
+  G3_claims_procedure: 'Liability Convention VIII/IX/X/XII: claims procedure sits under liability_and_damage; dispute_settlement
+    begins at Art XIV (pass B).'
+  G4_consultation: Provisions expressly mandating consultation carry dispute_settlement_and_consultation (pass B).
+  G5_province_of_mankind: '''Province of all mankind'' clauses are freedom/benefit, not non_appropriation (pass
+    B).'
+  G6_scope_exclusions: Scope-exclusion and pure-definition units left untagged (pass B).
+  G7_boundary_calls: Remaining softlaw/treaty boundary conflicts resolved to pass B as recommended.
+item_overrides:
+- item: 10
+  unit: nat/lux/ressources-espace-2017 Art. 1er
+  ruling: pass A (keep non_appropriation alongside resource_rights)
+- item: 26
+  unit: un/softlaw/lts-guidelines-2019 Guideline A.4
+  ruling: pass A (keep safety_of_space_operations)
+- item: 47
+  unit: un/treaty/rescue-1968 Article 5
+  ruling: union of both passes (abandonment, cooperation, liability, safety)
+- item: 42
+  unit: un/treaty/moon-1979 Article 2
+  ruling: pass A (peaceful_use only)
+stats:
+  units_compared: 208
+  inter_pass_agreements: 118
+  divergences_adjudicated: 69
+  final_tagged_units: 186
+  consensus_units: 107
+  adjudicated_units: 79

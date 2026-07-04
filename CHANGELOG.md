@@ -105,9 +105,25 @@ footnotes) from an earlier transcription error. The corpus now holds 23 authorit
 (15 instruments). Derived layer and site regenerated; validation green. Concept tags for the new
 language records mirror the English model pass and remain `unreviewed`.
 
+### Roadmap Step 2 completed — dual-pass concept review (2026-07-04)
+The concept layer's tags are no longer an unreviewed model pass. **Dual-pass review method**: a
+second, independent model tagging pass was generated per provision from the texts
+(`reviews/concept-passes/pass-B.json`; the 2026-07-03 pass preserved as pass-A), the two passes
+were diffed (`scripts/diff_passes.py`: 208 units compared, 118 agreements, 69 divergences), and
+**every divergence was adjudicated by the maintainer** — seven group rulings + four item rulings,
+all recorded in `reviews/concept-decisions-2026-07.yaml`. Coverage grew from 113 to 186 tagged
+units (pass A had skipped substantive provisions; two whole-instrument taggings were replaced with
+per-unit tags). Each tag now carries a per-unit status (`model_consensus` — both passes agreed —
+or `human_adjudicated`); the concepts artifacts are `generation_method: hybrid`,
+`review_status: human_reviewed`. Honesty notes: both passes are from the same model family
+(different sessions and prompt frames; residual correlation risk documented in the pass files —
+a cross-vendor third pass is an open option), and consensus units were accepted on two-pass
+agreement plus the maintainer's group-level review, not read one-by-one. Derived layer, site and
+HF export regenerated; validation green.
+
 ### Open follow-ons (tracked, not blocking)
 - Independent (non-compilation) corroboration of the five GA principles.
-- Human review of the model concept tags (upgrade `review_status` to `human_reviewed`).
+- ~~Human review of the model concept tags~~ — done 2026-07-04 via the dual-pass method; open refinement: a cross-vendor third pass.
 - (Optional) Give the remaining six text-anchored records (five UN treaties + the US statute) byte-exact PDF anchors — the five GA principles were upgraded 2026-07-04; the treaties' UNTS depositary-volume anchors are queued (`queue/candidates.md`).
 - Scale national legislation beyond the pilot (further jurisdictions), per `docs/national-law-guide.md` — a deliberate, instrument-by-instrument decision, not a sweep.
 - Optionally add the **as-enacted 2008** France text as an earlier dated version (the ingested version is the consolidated in-force text).

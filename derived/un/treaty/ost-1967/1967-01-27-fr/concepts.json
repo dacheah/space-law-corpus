@@ -19,7 +19,7 @@
     "dispute_settlement_and_consultation",
     "safety_of_space_operations"
   ],
-  "tagging_method": "model",
+  "tagging_method": "dual_pass_model_consensus_plus_human_adjudication",
   "document_concepts": [
     "abandonment_and_salvage",
     "dispute_settlement_and_consultation",
@@ -38,87 +38,99 @@
       "unit": "Article I",
       "concepts": [
         "freedom_of_exploration_and_use",
-        "non_appropriation",
         "international_cooperation_and_transparency"
-      ]
+      ],
+      "review_status": "human_adjudicated"
     },
     {
       "unit": "Article II",
       "concepts": [
         "non_appropriation"
-      ]
+      ],
+      "review_status": "model_consensus"
     },
     {
       "unit": "Article III",
       "concepts": [
-        "peaceful_use_and_non_militarization",
-        "international_cooperation_and_transparency"
-      ]
+        "international_cooperation_and_transparency",
+        "peaceful_use_and_non_militarization"
+      ],
+      "review_status": "model_consensus"
     },
     {
       "unit": "Article IV",
       "concepts": [
         "peaceful_use_and_non_militarization"
-      ]
+      ],
+      "review_status": "model_consensus"
     },
     {
       "unit": "Article V",
       "concepts": [
-        "rescue_and_return",
-        "international_cooperation_and_transparency"
-      ]
+        "international_cooperation_and_transparency",
+        "rescue_and_return"
+      ],
+      "review_status": "model_consensus"
     },
     {
       "unit": "Article VI",
       "concepts": [
         "state_responsibility_and_supervision"
-      ]
+      ],
+      "review_status": "model_consensus"
     },
     {
       "unit": "Article VII",
       "concepts": [
         "liability_and_damage"
-      ]
+      ],
+      "review_status": "model_consensus"
     },
     {
       "unit": "Article VIII",
       "concepts": [
-        "jurisdiction_and_control",
-        "abandonment_and_salvage"
-      ]
+        "abandonment_and_salvage",
+        "jurisdiction_and_control"
+      ],
+      "review_status": "model_consensus"
     },
     {
       "unit": "Article IX",
       "concepts": [
+        "dispute_settlement_and_consultation",
         "environmental_protection_and_debris",
-        "international_cooperation_and_transparency",
-        "dispute_settlement_and_consultation"
-      ]
+        "international_cooperation_and_transparency"
+      ],
+      "review_status": "model_consensus"
     },
     {
       "unit": "Article X",
       "concepts": [
         "international_cooperation_and_transparency"
-      ]
+      ],
+      "review_status": "model_consensus"
     },
     {
       "unit": "Article XI",
       "concepts": [
         "international_cooperation_and_transparency"
-      ]
+      ],
+      "review_status": "model_consensus"
     },
     {
       "unit": "Article XII",
       "concepts": [
         "international_cooperation_and_transparency"
-      ]
+      ],
+      "review_status": "model_consensus"
     },
     {
       "unit": "Article XIII",
       "concepts": [
         "international_cooperation_and_transparency",
         "state_responsibility_and_supervision"
-      ]
+      ],
+      "review_status": "model_consensus"
     }
   ]
 }

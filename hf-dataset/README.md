@@ -38,7 +38,7 @@ A neutral, **provenance-first**, machine-readable record of international and na
 - **Source of truth / build history:** https://github.com/dacheah/space-law-corpus
 - **Archived & citable:** concept DOI [10.5281/zenodo.21185483](https://doi.org/10.5281/zenodo.21185483) (resolves to the latest Zenodo-archived GitHub release)
 - **Human-browsable site:** https://dacheah.github.io/space-law-corpus/
-- **23** instruments (23 verified against official sources) · **310** provisions · **349** neutral concept tags
+- **23** instruments (23 verified against official sources) · **310** provisions · **451** neutral concept tags
 
 ## Why this dataset is different
 

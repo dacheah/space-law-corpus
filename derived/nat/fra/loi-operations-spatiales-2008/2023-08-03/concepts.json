@@ -19,10 +19,9 @@
     "dispute_settlement_and_consultation",
     "safety_of_space_operations"
   ],
-  "tagging_method": "model",
+  "tagging_method": "dual_pass_model_consensus_plus_human_adjudication",
   "document_concepts": [
     "environmental_protection_and_debris",
-    "international_cooperation_and_transparency",
     "jurisdiction_and_control",
     "liability_and_damage",
     "registration",
@@ -31,187 +30,192 @@
   ],
   "tags": [
     {
+      "unit": "Art. 1",
+      "concepts": [
+        "liability_and_damage"
+      ],
+      "review_status": "human_adjudicated"
+    },
+    {
       "unit": "Art. 2",
       "concepts": [
-        "state_responsibility_and_supervision",
-        "jurisdiction_and_control"
-      ]
+        "state_responsibility_and_supervision"
+      ],
+      "review_status": "human_adjudicated"
     },
     {
       "unit": "Art. 3",
       "concepts": [
-        "state_responsibility_and_supervision",
-        "jurisdiction_and_control"
-      ]
+        "jurisdiction_and_control",
+        "state_responsibility_and_supervision"
+      ],
+      "review_status": "model_consensus"
     },
     {
       "unit": "Art. 4",
       "concepts": [
-        "state_responsibility_and_supervision",
-        "safety_of_space_operations"
-      ]
+        "safety_of_space_operations",
+        "state_responsibility_and_supervision"
+      ],
+      "review_status": "model_consensus"
     },
     {
       "unit": "Art. 5",
       "concepts": [
-        "safety_of_space_operations",
-        "environmental_protection_and_debris"
-      ]
+        "environmental_protection_and_debris",
+        "safety_of_space_operations"
+      ],
+      "review_status": "model_consensus"
     },
     {
       "unit": "Art. 6",
       "concepts": [
-        "liability_and_damage"
-      ]
+        "liability_and_damage",
+        "state_responsibility_and_supervision"
+      ],
+      "review_status": "human_adjudicated"
     },
     {
       "unit": "Art. 7",
       "concepts": [
-        "state_responsibility_and_supervision",
-        "safety_of_space_operations"
-      ]
+        "state_responsibility_and_supervision"
+      ],
+      "review_status": "human_adjudicated"
     },
     {
       "unit": "Art. 7-1",
       "concepts": [
         "state_responsibility_and_supervision"
-      ]
+      ],
+      "review_status": "model_consensus"
     },
     {
       "unit": "Art. 8",
       "concepts": [
         "safety_of_space_operations",
         "state_responsibility_and_supervision"
-      ]
+      ],
+      "review_status": "model_consensus"
     },
     {
       "unit": "Art. 9",
       "concepts": [
-        "state_responsibility_and_supervision",
-        "environmental_protection_and_debris"
-      ]
+        "state_responsibility_and_supervision"
+      ],
+      "review_status": "human_adjudicated"
     },
     {
       "unit": "Art. 10",
       "concepts": [
         "state_responsibility_and_supervision"
-      ]
+      ],
+      "review_status": "model_consensus"
     },
     {
       "unit": "Art. 11",
       "concepts": [
         "state_responsibility_and_supervision"
-      ]
-    },
-    {
-      "unit": "Art. 11-1",
-      "concepts": [
-        "state_responsibility_and_supervision"
-      ]
+      ],
+      "review_status": "model_consensus"
     },
     {
       "unit": "Art. 11-2",
       "concepts": [
         "jurisdiction_and_control",
         "state_responsibility_and_supervision"
-      ]
+      ],
+      "review_status": "model_consensus"
     },
     {
       "unit": "Art. 12",
       "concepts": [
         "registration"
-      ]
+      ],
+      "review_status": "model_consensus"
     },
     {
       "unit": "Art. 13",
       "concepts": [
         "liability_and_damage"
-      ]
+      ],
+      "review_status": "model_consensus"
     },
     {
       "unit": "Art. 13-1",
       "concepts": [
         "liability_and_damage"
-      ]
+      ],
+      "review_status": "model_consensus"
     },
     {
       "unit": "Art. 14",
       "concepts": [
-        "liability_and_damage",
-        "international_cooperation_and_transparency"
-      ]
+        "liability_and_damage"
+      ],
+      "review_status": "human_adjudicated"
     },
     {
       "unit": "Art. 15",
       "concepts": [
         "liability_and_damage"
-      ]
+      ],
+      "review_status": "model_consensus"
     },
     {
       "unit": "Art. 16",
       "concepts": [
         "liability_and_damage"
-      ]
+      ],
+      "review_status": "model_consensus"
     },
     {
       "unit": "Art. 17",
       "concepts": [
         "liability_and_damage"
-      ]
+      ],
+      "review_status": "model_consensus"
     },
     {
       "unit": "Art. 18",
       "concepts": [
         "liability_and_damage"
-      ]
+      ],
+      "review_status": "model_consensus"
     },
     {
       "unit": "Art. 19",
       "concepts": [
         "liability_and_damage"
-      ]
+      ],
+      "review_status": "model_consensus"
     },
     {
       "unit": "Art. 20",
       "concepts": [
         "liability_and_damage"
-      ]
-    },
-    {
-      "unit": "Art. 20-1",
-      "concepts": [
-        "state_responsibility_and_supervision"
-      ]
+      ],
+      "review_status": "model_consensus"
     },
     {
       "unit": "Art. 23",
       "concepts": [
         "state_responsibility_and_supervision"
-      ]
+      ],
+      "review_status": "model_consensus"
     },
     {
       "unit": "Art. 24",
       "concepts": [
         "state_responsibility_and_supervision"
-      ]
+      ],
+      "review_status": "model_consensus"
     },
     {
       "unit": "Art. 25",
       "concepts": [
         "state_responsibility_and_supervision"
-      ]
-    },
-    {
-      "unit": "Art. 25-1",
-      "concepts": [
-        "state_responsibility_and_supervision"
-      ]
-    },
-    {
-      "unit": "Art. 27",
-      "concepts": [
-        "state_responsibility_and_supervision"
-      ]
+      ],
+      "review_status": "model_consensus"
     }
   ]
 }

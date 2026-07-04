@@ -1,0 +1,573 @@
+{
+ "_pass": "A",
+ "_provenance": {
+  "generation_method": "model",
+  "generated": "2026-07-03",
+  "generator": "Claude (Anthropic), session of 2026-07-03; single-pass tagging recorded in scripts/concept_tags.py",
+  "prompt_frame": "instrument-level tagging pass during Roadmap Step 2 (see CHANGELOG 2026-07-03)",
+  "vocabulary": "scripts/concept_tags.py VOCAB (14 concepts)"
+ },
+ "tags": {
+  "nat/usa/space-resources-2015": {
+   "§51301 Definitions": [
+    "resource_rights"
+   ],
+   "§51302 Commercial exploration and commercial recovery": [
+    "resource_rights",
+    "state_responsibility_and_supervision",
+    "international_cooperation_and_transparency",
+    "freedom_of_exploration_and_use"
+   ],
+   "§51303 Asteroid resource and space resource rights": [
+    "resource_rights"
+   ]
+  },
+  "nat/lux/ressources-espace-2017": {
+   "Art. 1er": [
+    "resource_rights",
+    "non_appropriation"
+   ],
+   "Art. 2": [
+    "state_responsibility_and_supervision",
+    "international_cooperation_and_transparency"
+   ],
+   "Art. 3": [
+    "resource_rights",
+    "state_responsibility_and_supervision"
+   ],
+   "Art. 7": [
+    "state_responsibility_and_supervision"
+   ],
+   "Art. 8": [
+    "state_responsibility_and_supervision"
+   ],
+   "Art. 9": [
+    "state_responsibility_and_supervision"
+   ],
+   "Art. 15": [
+    "state_responsibility_and_supervision"
+   ],
+   "Art. 16": [
+    "liability_and_damage"
+   ],
+   "Art. 18": [
+    "state_responsibility_and_supervision"
+   ]
+  },
+  "nat/fra/loi-operations-spatiales-2008": {
+   "Art. 2": [
+    "state_responsibility_and_supervision",
+    "jurisdiction_and_control"
+   ],
+   "Art. 3": [
+    "state_responsibility_and_supervision",
+    "jurisdiction_and_control"
+   ],
+   "Art. 4": [
+    "state_responsibility_and_supervision",
+    "safety_of_space_operations"
+   ],
+   "Art. 5": [
+    "safety_of_space_operations",
+    "environmental_protection_and_debris"
+   ],
+   "Art. 6": [
+    "liability_and_damage"
+   ],
+   "Art. 7": [
+    "state_responsibility_and_supervision",
+    "safety_of_space_operations"
+   ],
+   "Art. 7-1": [
+    "state_responsibility_and_supervision"
+   ],
+   "Art. 8": [
+    "safety_of_space_operations",
+    "state_responsibility_and_supervision"
+   ],
+   "Art. 9": [
+    "state_responsibility_and_supervision",
+    "environmental_protection_and_debris"
+   ],
+   "Art. 10": [
+    "state_responsibility_and_supervision"
+   ],
+   "Art. 11": [
+    "state_responsibility_and_supervision"
+   ],
+   "Art. 11-1": [
+    "state_responsibility_and_supervision"
+   ],
+   "Art. 11-2": [
+    "jurisdiction_and_control",
+    "state_responsibility_and_supervision"
+   ],
+   "Art. 12": [
+    "registration"
+   ],
+   "Art. 13": [
+    "liability_and_damage"
+   ],
+   "Art. 13-1": [
+    "liability_and_damage"
+   ],
+   "Art. 14": [
+    "liability_and_damage",
+    "international_cooperation_and_transparency"
+   ],
+   "Art. 15": [
+    "liability_and_damage"
+   ],
+   "Art. 16": [
+    "liability_and_damage"
+   ],
+   "Art. 17": [
+    "liability_and_damage"
+   ],
+   "Art. 18": [
+    "liability_and_damage"
+   ],
+   "Art. 19": [
+    "liability_and_damage"
+   ],
+   "Art. 20": [
+    "liability_and_damage"
+   ],
+   "Art. 20-1": [
+    "state_responsibility_and_supervision"
+   ],
+   "Art. 23": [
+    "state_responsibility_and_supervision"
+   ],
+   "Art. 24": [
+    "state_responsibility_and_supervision"
+   ],
+   "Art. 25": [
+    "state_responsibility_and_supervision"
+   ],
+   "Art. 25-1": [
+    "state_responsibility_and_supervision"
+   ],
+   "Art. 27": [
+    "state_responsibility_and_supervision"
+   ]
+  },
+  "un/treaty/ost-1967": {
+   "Article I": [
+    "freedom_of_exploration_and_use",
+    "non_appropriation",
+    "international_cooperation_and_transparency"
+   ],
+   "Article II": [
+    "non_appropriation"
+   ],
+   "Article III": [
+    "peaceful_use_and_non_militarization",
+    "international_cooperation_and_transparency"
+   ],
+   "Article IV": [
+    "peaceful_use_and_non_militarization"
+   ],
+   "Article V": [
+    "rescue_and_return",
+    "international_cooperation_and_transparency"
+   ],
+   "Article VI": [
+    "state_responsibility_and_supervision"
+   ],
+   "Article VII": [
+    "liability_and_damage"
+   ],
+   "Article VIII": [
+    "jurisdiction_and_control",
+    "abandonment_and_salvage"
+   ],
+   "Article IX": [
+    "environmental_protection_and_debris",
+    "international_cooperation_and_transparency",
+    "dispute_settlement_and_consultation"
+   ],
+   "Article X": [
+    "international_cooperation_and_transparency"
+   ],
+   "Article XI": [
+    "international_cooperation_and_transparency"
+   ],
+   "Article XII": [
+    "international_cooperation_and_transparency"
+   ],
+   "Article XIII": [
+    "international_cooperation_and_transparency",
+    "state_responsibility_and_supervision"
+   ]
+  },
+  "un/treaty/rescue-1968": {
+   "Article 1": [
+    "rescue_and_return",
+    "international_cooperation_and_transparency"
+   ],
+   "Article 2": [
+    "rescue_and_return"
+   ],
+   "Article 3": [
+    "rescue_and_return"
+   ],
+   "Article 4": [
+    "rescue_and_return"
+   ],
+   "Article 5": [
+    "abandonment_and_salvage",
+    "liability_and_damage",
+    "international_cooperation_and_transparency"
+   ],
+   "Article 6": [
+    "state_responsibility_and_supervision"
+   ]
+  },
+  "un/treaty/liability-1972": {
+   "Article I": [
+    "liability_and_damage"
+   ],
+   "Article II": [
+    "liability_and_damage"
+   ],
+   "Article III": [
+    "liability_and_damage"
+   ],
+   "Article IV": [
+    "liability_and_damage"
+   ],
+   "Article V": [
+    "liability_and_damage"
+   ],
+   "Article VI": [
+    "liability_and_damage"
+   ],
+   "Article VII": [
+    "liability_and_damage"
+   ],
+   "Article VIII": [
+    "liability_and_damage",
+    "dispute_settlement_and_consultation"
+   ],
+   "Article IX": [
+    "liability_and_damage",
+    "dispute_settlement_and_consultation"
+   ],
+   "Article X": [
+    "liability_and_damage",
+    "dispute_settlement_and_consultation"
+   ],
+   "Article XI": [
+    "liability_and_damage",
+    "dispute_settlement_and_consultation"
+   ],
+   "Article XII": [
+    "liability_and_damage",
+    "dispute_settlement_and_consultation"
+   ],
+   "Article XIV": [
+    "dispute_settlement_and_consultation"
+   ],
+   "Article XV": [
+    "dispute_settlement_and_consultation"
+   ],
+   "Article XVIII": [
+    "dispute_settlement_and_consultation",
+    "liability_and_damage"
+   ],
+   "Article XIX": [
+    "dispute_settlement_and_consultation"
+   ],
+   "Article XXI": [
+    "liability_and_damage",
+    "international_cooperation_and_transparency"
+   ],
+   "Article XXII": [
+    "state_responsibility_and_supervision",
+    "liability_and_damage"
+   ]
+  },
+  "un/treaty/registration-1975": {
+   "Article I": [
+    "registration"
+   ],
+   "Article II": [
+    "registration"
+   ],
+   "Article III": [
+    "registration",
+    "international_cooperation_and_transparency"
+   ],
+   "Article IV": [
+    "registration",
+    "international_cooperation_and_transparency"
+   ],
+   "Article V": [
+    "registration"
+   ],
+   "Article VI": [
+    "registration",
+    "abandonment_and_salvage",
+    "international_cooperation_and_transparency"
+   ],
+   "Article VII": [
+    "state_responsibility_and_supervision",
+    "registration"
+   ]
+  },
+  "un/treaty/moon-1979": {
+   "Article 2": [
+    "peaceful_use_and_non_militarization"
+   ],
+   "Article 3": [
+    "peaceful_use_and_non_militarization"
+   ],
+   "Article 4": [
+    "freedom_of_exploration_and_use",
+    "international_cooperation_and_transparency"
+   ],
+   "Article 5": [
+    "international_cooperation_and_transparency"
+   ],
+   "Article 6": [
+    "freedom_of_exploration_and_use",
+    "resource_rights"
+   ],
+   "Article 7": [
+    "environmental_protection_and_debris"
+   ],
+   "Article 8": [
+    "freedom_of_exploration_and_use"
+   ],
+   "Article 9": [
+    "jurisdiction_and_control",
+    "international_cooperation_and_transparency"
+   ],
+   "Article 10": [
+    "rescue_and_return"
+   ],
+   "Article 11": [
+    "non_appropriation",
+    "resource_rights"
+   ],
+   "Article 12": [
+    "jurisdiction_and_control"
+   ],
+   "Article 13": [
+    "international_cooperation_and_transparency"
+   ],
+   "Article 14": [
+    "state_responsibility_and_supervision"
+   ],
+   "Article 15": [
+    "international_cooperation_and_transparency",
+    "dispute_settlement_and_consultation"
+   ],
+   "Article 16": [
+    "state_responsibility_and_supervision"
+   ]
+  },
+  "un/ga/res-1962-XVIII": {
+   "Principle 1": [
+    "freedom_of_exploration_and_use",
+    "non_appropriation"
+   ],
+   "Principle 2": [
+    "freedom_of_exploration_and_use"
+   ],
+   "Principle 3": [
+    "non_appropriation"
+   ],
+   "Principle 4": [
+    "peaceful_use_and_non_militarization",
+    "international_cooperation_and_transparency"
+   ],
+   "Principle 5": [
+    "state_responsibility_and_supervision"
+   ],
+   "Principle 6": [
+    "international_cooperation_and_transparency",
+    "environmental_protection_and_debris"
+   ],
+   "Principle 7": [
+    "jurisdiction_and_control",
+    "abandonment_and_salvage"
+   ],
+   "Principle 8": [
+    "liability_and_damage"
+   ],
+   "Principle 9": [
+    "rescue_and_return"
+   ]
+  },
+  "un/ga/res-37-92": {
+   "Direct Broadcasting principles (whole instrument)": [
+    "international_cooperation_and_transparency",
+    "state_responsibility_and_supervision",
+    "dispute_settlement_and_consultation",
+    "peaceful_use_and_non_militarization"
+   ]
+  },
+  "un/ga/res-41-65": {
+   "Principle IV": [
+    "freedom_of_exploration_and_use",
+    "international_cooperation_and_transparency"
+   ],
+   "Principle X": [
+    "environmental_protection_and_debris"
+   ],
+   "Principle XI": [
+    "environmental_protection_and_debris",
+    "international_cooperation_and_transparency"
+   ],
+   "Principle XII": [
+    "international_cooperation_and_transparency",
+    "resource_rights"
+   ],
+   "Principle XIII": [
+    "international_cooperation_and_transparency"
+   ],
+   "Principle XIV": [
+    "state_responsibility_and_supervision"
+   ],
+   "Principle XV": [
+    "dispute_settlement_and_consultation"
+   ]
+  },
+  "un/ga/res-47-68": {
+   "Principle 2": [
+    "safety_of_space_operations",
+    "environmental_protection_and_debris"
+   ],
+   "Principle 3": [
+    "safety_of_space_operations",
+    "environmental_protection_and_debris"
+   ],
+   "Principle 4": [
+    "safety_of_space_operations"
+   ],
+   "Principle 5": [
+    "international_cooperation_and_transparency",
+    "safety_of_space_operations"
+   ],
+   "Principle 6": [
+    "international_cooperation_and_transparency"
+   ],
+   "Principle 7": [
+    "international_cooperation_and_transparency"
+   ],
+   "Principle 8": [
+    "state_responsibility_and_supervision"
+   ],
+   "Principle 9": [
+    "liability_and_damage"
+   ]
+  },
+  "un/ga/res-51-122": {
+   "Declaration (whole instrument)": [
+    "international_cooperation_and_transparency",
+    "freedom_of_exploration_and_use",
+    "non_appropriation"
+   ]
+  },
+  "un/softlaw/lts-guidelines-2019": {
+   "Guideline A.1": [
+    "state_responsibility_and_supervision"
+   ],
+   "Guideline A.2": [
+    "state_responsibility_and_supervision"
+   ],
+   "Guideline A.3": [
+    "state_responsibility_and_supervision"
+   ],
+   "Guideline A.4": [
+    "international_cooperation_and_transparency",
+    "safety_of_space_operations"
+   ],
+   "Guideline A.5": [
+    "registration"
+   ],
+   "Guideline B.1": [
+    "safety_of_space_operations",
+    "international_cooperation_and_transparency"
+   ],
+   "Guideline B.2": [
+    "safety_of_space_operations",
+    "international_cooperation_and_transparency"
+   ],
+   "Guideline B.3": [
+    "environmental_protection_and_debris",
+    "international_cooperation_and_transparency"
+   ],
+   "Guideline B.4": [
+    "safety_of_space_operations"
+   ],
+   "Guideline B.5": [
+    "safety_of_space_operations"
+   ],
+   "Guideline B.6": [
+    "safety_of_space_operations"
+   ],
+   "Guideline B.7": [
+    "safety_of_space_operations"
+   ],
+   "Guideline B.8": [
+    "safety_of_space_operations",
+    "environmental_protection_and_debris"
+   ],
+   "Guideline B.9": [
+    "safety_of_space_operations",
+    "environmental_protection_and_debris"
+   ],
+   "Guideline B.10": [
+    "safety_of_space_operations"
+   ],
+   "Guideline C.1": [
+    "international_cooperation_and_transparency"
+   ],
+   "Guideline C.2": [
+    "international_cooperation_and_transparency"
+   ],
+   "Guideline C.3": [
+    "international_cooperation_and_transparency"
+   ],
+   "Guideline C.4": [
+    "international_cooperation_and_transparency"
+   ],
+   "Guideline D.1": [
+    "international_cooperation_and_transparency",
+    "safety_of_space_operations"
+   ],
+   "Guideline D.2": [
+    "environmental_protection_and_debris"
+   ]
+  },
+  "un/softlaw/copuos-debris-mitigation-2007": {
+   "Guideline 1": [
+    "environmental_protection_and_debris"
+   ],
+   "Guideline 2": [
+    "environmental_protection_and_debris",
+    "safety_of_space_operations"
+   ],
+   "Guideline 3": [
+    "environmental_protection_and_debris",
+    "safety_of_space_operations"
+   ],
+   "Guideline 4": [
+    "environmental_protection_and_debris",
+    "peaceful_use_and_non_militarization"
+   ],
+   "Guideline 5": [
+    "environmental_protection_and_debris"
+   ],
+   "Guideline 6": [
+    "environmental_protection_and_debris"
+   ],
+   "Guideline 7": [
+    "environmental_protection_and_debris"
+   ]
+  }
+ }
+}

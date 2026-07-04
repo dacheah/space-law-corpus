@@ -19,7 +19,7 @@
     "dispute_settlement_and_consultation",
     "safety_of_space_operations"
   ],
-  "tagging_method": "model",
+  "tagging_method": "dual_pass_model_consensus_plus_human_adjudication",
   "document_concepts": [
     "environmental_protection_and_debris",
     "international_cooperation_and_transparency",
@@ -32,134 +32,156 @@
       "unit": "Guideline A.1",
       "concepts": [
         "state_responsibility_and_supervision"
-      ]
+      ],
+      "review_status": "model_consensus"
     },
     {
       "unit": "Guideline A.2",
       "concepts": [
         "state_responsibility_and_supervision"
-      ]
+      ],
+      "review_status": "model_consensus"
     },
     {
       "unit": "Guideline A.3",
       "concepts": [
         "state_responsibility_and_supervision"
-      ]
+      ],
+      "review_status": "model_consensus"
     },
     {
       "unit": "Guideline A.4",
       "concepts": [
         "international_cooperation_and_transparency",
         "safety_of_space_operations"
-      ]
+      ],
+      "review_status": "model_consensus"
     },
     {
       "unit": "Guideline A.5",
       "concepts": [
         "registration"
-      ]
+      ],
+      "review_status": "model_consensus"
     },
     {
       "unit": "Guideline B.1",
       "concepts": [
-        "safety_of_space_operations",
-        "international_cooperation_and_transparency"
-      ]
+        "international_cooperation_and_transparency",
+        "safety_of_space_operations"
+      ],
+      "review_status": "model_consensus"
     },
     {
       "unit": "Guideline B.2",
       "concepts": [
-        "safety_of_space_operations",
-        "international_cooperation_and_transparency"
-      ]
+        "international_cooperation_and_transparency",
+        "safety_of_space_operations"
+      ],
+      "review_status": "model_consensus"
     },
     {
       "unit": "Guideline B.3",
       "concepts": [
         "environmental_protection_and_debris",
         "international_cooperation_and_transparency"
-      ]
+      ],
+      "review_status": "model_consensus"
     },
     {
       "unit": "Guideline B.4",
       "concepts": [
         "safety_of_space_operations"
-      ]
+      ],
+      "review_status": "model_consensus"
     },
     {
       "unit": "Guideline B.5",
       "concepts": [
         "safety_of_space_operations"
-      ]
+      ],
+      "review_status": "model_consensus"
     },
     {
       "unit": "Guideline B.6",
       "concepts": [
+        "international_cooperation_and_transparency",
         "safety_of_space_operations"
-      ]
+      ],
+      "review_status": "human_adjudicated"
     },
     {
       "unit": "Guideline B.7",
       "concepts": [
+        "international_cooperation_and_transparency",
         "safety_of_space_operations"
-      ]
+      ],
+      "review_status": "human_adjudicated"
     },
     {
       "unit": "Guideline B.8",
       "concepts": [
-        "safety_of_space_operations",
-        "environmental_protection_and_debris"
-      ]
+        "safety_of_space_operations"
+      ],
+      "review_status": "human_adjudicated"
     },
     {
       "unit": "Guideline B.9",
       "concepts": [
-        "safety_of_space_operations",
-        "environmental_protection_and_debris"
-      ]
+        "international_cooperation_and_transparency",
+        "safety_of_space_operations"
+      ],
+      "review_status": "human_adjudicated"
     },
     {
       "unit": "Guideline B.10",
       "concepts": [
         "safety_of_space_operations"
-      ]
+      ],
+      "review_status": "model_consensus"
     },
     {
       "unit": "Guideline C.1",
       "concepts": [
         "international_cooperation_and_transparency"
-      ]
+      ],
+      "review_status": "model_consensus"
     },
     {
       "unit": "Guideline C.2",
       "concepts": [
         "international_cooperation_and_transparency"
-      ]
+      ],
+      "review_status": "model_consensus"
     },
     {
       "unit": "Guideline C.3",
       "concepts": [
         "international_cooperation_and_transparency"
-      ]
+      ],
+      "review_status": "model_consensus"
     },
     {
       "unit": "Guideline C.4",
       "concepts": [
         "international_cooperation_and_transparency"
-      ]
+      ],
+      "review_status": "model_consensus"
     },
     {
       "unit": "Guideline D.1",
       "concepts": [
-        "international_cooperation_and_transparency",
-        "safety_of_space_operations"
-      ]
+        "environmental_protection_and_debris",
+        "international_cooperation_and_transparency"
+      ],
+      "review_status": "human_adjudicated"
     },
     {
       "unit": "Guideline D.2",
       "concepts": [
         "environmental_protection_and_debris"
-      ]
+      ],
+      "review_status": "model_consensus"
     }
   ]
 }

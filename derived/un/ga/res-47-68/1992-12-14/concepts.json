@@ -19,8 +19,9 @@
     "dispute_settlement_and_consultation",
     "safety_of_space_operations"
   ],
-  "tagging_method": "model",
+  "tagging_method": "dual_pass_model_consensus_plus_human_adjudication",
   "document_concepts": [
+    "dispute_settlement_and_consultation",
     "environmental_protection_and_debris",
     "international_cooperation_and_transparency",
     "liability_and_damage",
@@ -29,55 +30,65 @@
   ],
   "tags": [
     {
-      "unit": "Principle 2",
-      "concepts": [
-        "safety_of_space_operations",
-        "environmental_protection_and_debris"
-      ]
-    },
-    {
       "unit": "Principle 3",
       "concepts": [
-        "safety_of_space_operations",
-        "environmental_protection_and_debris"
-      ]
+        "environmental_protection_and_debris",
+        "safety_of_space_operations"
+      ],
+      "review_status": "model_consensus"
     },
     {
       "unit": "Principle 4",
       "concepts": [
+        "international_cooperation_and_transparency",
         "safety_of_space_operations"
-      ]
+      ],
+      "review_status": "human_adjudicated"
     },
     {
       "unit": "Principle 5",
       "concepts": [
         "international_cooperation_and_transparency",
         "safety_of_space_operations"
-      ]
+      ],
+      "review_status": "model_consensus"
     },
     {
       "unit": "Principle 6",
       "concepts": [
+        "dispute_settlement_and_consultation",
         "international_cooperation_and_transparency"
-      ]
+      ],
+      "review_status": "human_adjudicated"
     },
     {
       "unit": "Principle 7",
       "concepts": [
-        "international_cooperation_and_transparency"
-      ]
+        "international_cooperation_and_transparency",
+        "safety_of_space_operations"
+      ],
+      "review_status": "human_adjudicated"
     },
     {
       "unit": "Principle 8",
       "concepts": [
         "state_responsibility_and_supervision"
-      ]
+      ],
+      "review_status": "model_consensus"
     },
     {
       "unit": "Principle 9",
       "concepts": [
         "liability_and_damage"
-      ]
+      ],
+      "review_status": "model_consensus"
+    },
+    {
+      "unit": "Principle 10",
+      "concepts": [
+        "dispute_settlement_and_consultation"
+      ],
+      "review_status": "human_adjudicated"
     }
   ]
 }

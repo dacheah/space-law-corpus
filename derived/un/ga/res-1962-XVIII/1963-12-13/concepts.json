@@ -19,9 +19,10 @@
     "dispute_settlement_and_consultation",
     "safety_of_space_operations"
   ],
-  "tagging_method": "model",
+  "tagging_method": "dual_pass_model_consensus_plus_human_adjudication",
   "document_concepts": [
     "abandonment_and_salvage",
+    "dispute_settlement_and_consultation",
     "environmental_protection_and_debris",
     "freedom_of_exploration_and_use",
     "international_cooperation_and_transparency",
@@ -34,62 +35,71 @@
   ],
   "tags": [
     {
-      "unit": "Principle 1",
-      "concepts": [
-        "freedom_of_exploration_and_use",
-        "non_appropriation"
-      ]
-    },
-    {
-      "unit": "Principle 2",
+      "unit": "Paragraph 1",
       "concepts": [
         "freedom_of_exploration_and_use"
-      ]
+      ],
+      "review_status": "human_adjudicated"
     },
     {
-      "unit": "Principle 3",
+      "unit": "Paragraph 2",
+      "concepts": [
+        "freedom_of_exploration_and_use"
+      ],
+      "review_status": "model_consensus"
+    },
+    {
+      "unit": "Paragraph 3",
       "concepts": [
         "non_appropriation"
-      ]
+      ],
+      "review_status": "model_consensus"
     },
     {
-      "unit": "Principle 4",
-      "concepts": [
-        "peaceful_use_and_non_militarization",
-        "international_cooperation_and_transparency"
-      ]
-    },
-    {
-      "unit": "Principle 5",
-      "concepts": [
-        "state_responsibility_and_supervision"
-      ]
-    },
-    {
-      "unit": "Principle 6",
+      "unit": "Paragraph 4",
       "concepts": [
         "international_cooperation_and_transparency",
-        "environmental_protection_and_debris"
-      ]
+        "peaceful_use_and_non_militarization"
+      ],
+      "review_status": "model_consensus"
     },
     {
-      "unit": "Principle 7",
+      "unit": "Paragraph 5",
       "concepts": [
-        "jurisdiction_and_control",
-        "abandonment_and_salvage"
-      ]
+        "state_responsibility_and_supervision"
+      ],
+      "review_status": "model_consensus"
     },
     {
-      "unit": "Principle 8",
+      "unit": "Paragraph 6",
+      "concepts": [
+        "dispute_settlement_and_consultation",
+        "environmental_protection_and_debris",
+        "international_cooperation_and_transparency"
+      ],
+      "review_status": "human_adjudicated"
+    },
+    {
+      "unit": "Paragraph 7",
+      "concepts": [
+        "abandonment_and_salvage",
+        "jurisdiction_and_control"
+      ],
+      "review_status": "model_consensus"
+    },
+    {
+      "unit": "Paragraph 8",
       "concepts": [
         "liability_and_damage"
-      ]
+      ],
+      "review_status": "model_consensus"
     },
     {
-      "unit": "Principle 9",
+      "unit": "Paragraph 9",
       "concepts": [
         "rescue_and_return"
-      ]
+      ],
+      "review_status": "model_consensus"
     }
   ]
 }
