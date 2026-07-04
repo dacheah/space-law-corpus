@@ -14,6 +14,9 @@ identifiers:
   - type: doi
     value: 10.5281/zenodo.21185484
     description: "Version DOI for release v2026.07"
+  - type: doi
+    value: 10.5281/zenodo.21187618
+    description: "Version DOI for release v2026.07.1 (OST in all five authentic languages)"
 repository-code: "https://github.com/dacheah/space-law-corpus"
 url: "https://dacheah.github.io/space-law-corpus/"
 license-url: "https://github.com/dacheah/space-law-corpus/blob/main/docs/design/04-licensing-policy.md"

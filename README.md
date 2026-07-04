@@ -71,9 +71,9 @@ button from it). The dataset is also published on Hugging Face as
 per authoritative instrument version (full text + provenance) and one per concept-tagged provision.
 Archived releases receive a DOI via Zenodo
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.21185483.svg)](https://doi.org/10.5281/zenodo.21185483)
-— concept DOI **10.5281/zenodo.21185483** (always the latest release); this release (v2026.07) is
-**10.5281/zenodo.21185484**. Cite the version DOI for reproducibility and check the `content_hash`
-of any text you rely on.
+— concept DOI **10.5281/zenodo.21185483** (always the latest release); the current release
+(v2026.07.1, OST in all five authentic languages) is **10.5281/zenodo.21187618**. Cite the version
+DOI for reproducibility and check the `content_hash` of any text you rely on.
 
 ## Licensing (summary)
 
