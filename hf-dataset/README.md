@@ -98,4 +98,4 @@ This is a **reference record, not legal advice**. The authoritative text of each
 Space Law Corpus (Daniel Cheah). https://github.com/dacheah/space-law-corpus
 ```
 
-_Dataset generated from the repository by `scripts/export_hf_dataset.py` on 2026-07-04 — do not edit by hand._
+_Dataset generated from the repository by `scripts/export_hf_dataset.py` on 2026-07-11 — do not edit by hand._

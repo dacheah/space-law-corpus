@@ -1,0 +1,12 @@
+{
+ "corpus_id": "un/treaty/liability-1972",
+ "version_id": "1972-03-29",
+ "extractor": {
+  "tool": "passthrough"
+ },
+ "slice": null,
+ "overlap_unit": "word",
+ "overlap_pct": 98.78,
+ "threshold": 97.0,
+ "note": "text.txt content re-derives from original via this extractor+slice; exact bytes hash-pinned by text_sha256."
+}

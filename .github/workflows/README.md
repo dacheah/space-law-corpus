@@ -3,6 +3,7 @@
 Three workflows, all using the built-in `GITHUB_TOKEN` (no external secrets):
 
 - **`validate.yml`** — runs `scripts/validate_corpus.py` on every push / pull request.
+- **`reproducibility.yml`** — on push/PR and on demand. Installs an extractor toolchain (`poppler`) and runs `scripts/extract.py` to prove every authoritative text re-derives from its stored original (≥97% token overlap). Separate from the fast pure-python `validate.yml` because it needs system deps.
   Fails the check on any hash mismatch, schema break, broken derived-trace, or
   two-layer-wall violation. This is the integrity gate.
 - **`watch-sources.yml`** — monthly (1st, 06:00 UTC) and on demand. Runs

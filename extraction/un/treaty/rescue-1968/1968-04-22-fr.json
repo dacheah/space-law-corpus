@@ -1,0 +1,16 @@
+{
+ "corpus_id": "un/treaty/rescue-1968",
+ "version_id": "1968-04-22-fr",
+ "extractor": {
+  "tool": "pdftotext",
+  "args": [
+   "-layout"
+  ],
+  "toolchain": "poppler 22.02.0"
+ },
+ "slice": null,
+ "overlap_unit": "word",
+ "overlap_pct": 99.93,
+ "threshold": 97.0,
+ "note": "text.txt content re-derives from original via this extractor+slice; exact bytes hash-pinned by text_sha256."
+}

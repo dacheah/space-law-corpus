@@ -1,0 +1,16 @@
+{
+ "corpus_id": "un/softlaw/lts-guidelines-2019",
+ "version_id": "2019-06-21",
+ "extractor": {
+  "tool": "pdftotext",
+  "args": [
+   "-layout"
+  ],
+  "toolchain": "poppler 22.02.0"
+ },
+ "slice": null,
+ "overlap_unit": "word",
+ "overlap_pct": 98.42,
+ "threshold": 97.0,
+ "note": "text.txt content re-derives from original via this extractor+slice; exact bytes hash-pinned by text_sha256."
+}

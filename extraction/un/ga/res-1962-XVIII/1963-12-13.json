@@ -1,0 +1,16 @@
+{
+ "corpus_id": "un/ga/res-1962-XVIII",
+ "version_id": "1963-12-13",
+ "extractor": {
+  "tool": "pdftotext",
+  "args": [
+   "-layout"
+  ],
+  "toolchain": "poppler 22.02.0"
+ },
+ "slice": null,
+ "overlap_unit": "word",
+ "overlap_pct": 99.37,
+ "threshold": 97.0,
+ "note": "text.txt content re-derives from original via this extractor+slice; exact bytes hash-pinned by text_sha256."
+}

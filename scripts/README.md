@@ -35,3 +35,5 @@ The pipeline has been exercised end-to-end: a throwaway self-test (ingest +
 append-only guard + tamper detection), then the first real document — the Outer
 Space Treaty English authentic text at
 `authoritative/un/treaty/ost-1967/1967-01-27/`.
+
+- **`extract.py`** — reproducibility engine. Re-extracts each `original.<ext>` with a version-pinned extractor and proves `text.txt` is a ≥97% contiguous token slice of the official original (recipes in `extraction/`). Run `python3 scripts/extract.py` to verify all; `--calibrate` to (re)author recipes. Needs `pdftotext` (poppler).

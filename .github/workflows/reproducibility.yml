@@ -1,0 +1,17 @@
+name: Reproducibility
+# Proves every authoritative text re-derives from its stored original via scripts/extract.py.
+# Needs a real extractor toolchain (poppler), so it's separate from the fast pure-python validate gate.
+on: [push, pull_request, workflow_dispatch]
+jobs:
+  reproduce:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: { python-version: "3.11" }
+      - name: Install extractor toolchain + deps
+        run: |
+          sudo apt-get update && sudo apt-get install -y poppler-utils
+          pip install -r scripts/requirements.txt
+      - name: Verify content re-derivation from originals
+        run: python3 scripts/extract.py     # exits non-zero unless every record reproduces

@@ -121,6 +121,17 @@ a cross-vendor third pass is an open option), and consensus units were accepted 
 agreement plus the maintainer's group-level review, not read one-by-one. Derived layer, site and
 HF export regenerated; validation green.
 
+### Reproducibility established — content re-derivation from originals (2026-07-11)
+The second verification axis is now automated. New tool `scripts/extract.py` re-extracts every stored
+`original.<ext>` with a **version-pinned** extractor and proves the stored `text.txt` is a **≥97%
+contiguous token slice** of that official extraction (median ~99.4%; the Chinese OST text verified at
+character level), i.e. the text's content mechanically re-derives from the official original and cannot
+be faked by storing a copy (the check reads the original every run). Per-record recipes live in
+`extraction/<id>/<ver>.json` (extractor + args + toolchain + measured overlap). Exact bytes remain
+hash-pinned (`text_sha256`). Result: **23/23 re-derive** under poppler 22.02.0. Honesty note: this
+attests *content provenance*, not byte-for-byte regeneration of the cosmetic line-wrapping chosen during
+cleaning (which the official source never dictated); reproducibility holds under the recorded toolchain.
+
 ### Open follow-ons (tracked, not blocking)
 - Independent (non-compilation) corroboration of the five GA principles.
 - ~~Human review of the model concept tags~~ — done 2026-07-04 via the dual-pass method; open refinement: a cross-vendor third pass.
