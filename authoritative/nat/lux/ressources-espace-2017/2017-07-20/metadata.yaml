@@ -68,3 +68,6 @@ verification:
   verified_date: '2026-07-03'
   note: Integrity anchor upgraded from the initial HTML text capture (original.txt) to the byte-exact
     official Journal officiel PDF; prior capture preserved in Git.
+binding_force: binding
+issuing_authority: "Chamber of Deputies of Luxembourg"
+administering_authority: "Ministry of the Economy (Luxembourg)"

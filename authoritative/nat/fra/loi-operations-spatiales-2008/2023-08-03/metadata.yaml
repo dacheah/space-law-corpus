@@ -86,3 +86,6 @@ corrections:
   change: 'Restored line-wrap hyphen in year range: ''20072008'' -> ''2007-2008'' (2 instances, travaux
     préparatoires)'
   reference: original.pdf
+binding_force: binding
+issuing_authority: "Parliament of France"
+administering_authority: "Minister responsible for space activities (France)"

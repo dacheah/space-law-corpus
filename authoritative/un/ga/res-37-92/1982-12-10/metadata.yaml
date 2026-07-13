@@ -3,7 +3,7 @@ version_id: '1982-12-10'
 title: Principles Governing the Use by States of Artificial Earth Satellites for International Direct
   Television Broadcasting
 short_title: Direct Broadcasting Principles
-jurisdiction: international/UN
+jurisdiction: international
 document_type: ga_resolution
 official_citation: UNGA Res 37/92 of 10 December 1982; reproduced in ST/SPACE/61/Rev.3
 authentic_languages:
@@ -74,3 +74,6 @@ corrections:
   change: 'Corrected capture/source artifact: ''inter national'' -> ''international'' (1 instance)'
   reference: 'UNOOSA ST/SPACE/61/Rev.3 (International Space Law: United Nations Instruments, 2025); byte-exact
     PDF stored'
+binding_force: non_binding
+issuing_authority: "United Nations General Assembly"
+administering_authority: null

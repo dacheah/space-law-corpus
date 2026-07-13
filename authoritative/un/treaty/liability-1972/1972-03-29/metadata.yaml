@@ -2,7 +2,7 @@ corpus_id: un/treaty/liability-1972
 version_id: '1972-03-29'
 title: Convention on International Liability for Damage Caused by Space Objects
 short_title: Liability Convention
-jurisdiction: international/UN
+jurisdiction: international
 document_type: treaty
 official_citation: 961 UNTS 187; UNGA Res 2777 (XXVI); done at London, Moscow and Washington, 29 March
   1972
@@ -72,3 +72,6 @@ verification:
   verified_date: '2026-07-04'
   note: Cross-verification against a second official UN rendering; anchor unchanged (initial capture retained).
     A byte-exact UNTS depositary-volume anchor upgrade is a tracked follow-on (see queue/).
+binding_force: binding
+issuing_authority: "United Nations General Assembly"
+administering_authority: null

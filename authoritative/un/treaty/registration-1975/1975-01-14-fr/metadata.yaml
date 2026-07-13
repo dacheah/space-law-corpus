@@ -2,7 +2,7 @@ corpus_id: un/treaty/registration-1975
 version_id: 1975-01-14-fr
 title: Convention sur l’immatriculation des objets lancés dans l’espace extra-atmosphérique
 short_title: Convention sur l'immatriculation (Registration Convention, French authentic text)
-jurisdiction: international/UN
+jurisdiction: international
 document_type: treaty
 official_citation: '1023 UNTS 15; UNGA Res 3235 (XXIX); opened for signature at New York, 14 January 1975
   This record: the FR authentic text.'
@@ -62,3 +62,6 @@ verification:
   verified_date: '2026-07-04'
   note: Cross-check against a second official rendering in this language (e.g. the UNTS depositary volume)
     remains a tracked follow-on, as for the English texts.
+binding_force: binding
+issuing_authority: "United Nations General Assembly"
+administering_authority: null

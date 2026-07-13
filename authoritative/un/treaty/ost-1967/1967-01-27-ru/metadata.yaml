@@ -3,7 +3,7 @@ version_id: 1967-01-27-ru
 title: Договор о принципах деятельности государств по исследованию и использованию космического пространства,
   включая Луну и другие небесные тела
 short_title: Договор по космосу (OST, Russian authentic text)
-jurisdiction: international/UN
+jurisdiction: international
 document_type: treaty
 official_citation: '610 UNTS 205; UNGA Res 2222 (XXI); done at London, Moscow and Washington, 27 January
   1967 This record: the RU authentic text.'
@@ -64,3 +64,6 @@ verification:
   verified_date: '2026-07-04'
   note: Cross-check against a second official rendering in this language (e.g. the UNTS depositary volume)
     remains a tracked follow-on, as for the English texts.
+binding_force: binding
+issuing_authority: "United Nations General Assembly"
+administering_authority: null

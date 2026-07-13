@@ -2,7 +2,7 @@ corpus_id: un/treaty/liability-1972
 version_id: 1972-03-29-fr
 title: Convention sur la responsabilité internationale pour les dommages causés par des objets spatiaux
 short_title: Convention sur la responsabilité (Liability Convention, French authentic text)
-jurisdiction: international/UN
+jurisdiction: international
 document_type: treaty
 official_citation: '961 UNTS 187; UNGA Res 2777 (XXVI); done at London, Moscow and Washington, 29 March
   1972 This record: the FR authentic text.'
@@ -61,3 +61,6 @@ verification:
   verified_date: '2026-07-04'
   note: Cross-check against a second official rendering in this language (e.g. the UNTS depositary volume)
     remains a tracked follow-on, as for the English texts.
+binding_force: binding
+issuing_authority: "United Nations General Assembly"
+administering_authority: null

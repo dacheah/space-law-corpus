@@ -2,7 +2,7 @@ corpus_id: un/treaty/moon-1979
 version_id: '1979-12-18'
 title: Agreement Governing the Activities of States on the Moon and Other Celestial Bodies
 short_title: Moon Agreement
-jurisdiction: international/UN
+jurisdiction: international
 document_type: treaty
 official_citation: 1363 UNTS 3; UNGA Res 34/68; opened for signature at New York, 18 December 1979
 authentic_languages:
@@ -76,3 +76,6 @@ verification:
   verified_date: '2026-07-04'
   note: Cross-verification against a second official UN rendering; anchor unchanged (initial capture retained).
     A byte-exact UNTS depositary-volume anchor upgrade is a tracked follow-on (see queue/).
+binding_force: binding
+issuing_authority: "United Nations General Assembly"
+administering_authority: null

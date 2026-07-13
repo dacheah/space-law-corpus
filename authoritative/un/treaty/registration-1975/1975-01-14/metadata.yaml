@@ -2,7 +2,7 @@ corpus_id: un/treaty/registration-1975
 version_id: '1975-01-14'
 title: Convention on Registration of Objects Launched into Outer Space
 short_title: Registration Convention
-jurisdiction: international/UN
+jurisdiction: international
 document_type: treaty
 official_citation: 1023 UNTS 15; UNGA Res 3235 (XXIX); opened for signature at New York, 14 January 1975
 authentic_languages:
@@ -60,3 +60,6 @@ verification:
   verified_date: '2026-07-04'
   note: Cross-verification against a second official UN rendering; anchor unchanged (initial capture retained).
     A byte-exact UNTS depositary-volume anchor upgrade is a tracked follow-on (see queue/).
+binding_force: binding
+issuing_authority: "United Nations General Assembly"
+administering_authority: null

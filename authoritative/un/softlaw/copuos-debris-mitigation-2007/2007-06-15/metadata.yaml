@@ -2,7 +2,7 @@ corpus_id: un/softlaw/copuos-debris-mitigation-2007
 version_id: '2007-06-15'
 title: Space Debris Mitigation Guidelines of the Committee on the Peaceful Uses of Outer Space
 short_title: COPUOS Space Debris Mitigation Guidelines
-jurisdiction: international/UN
+jurisdiction: international
 document_type: soft_law_guideline
 official_citation: A/62/20, paras. 118-119 and annex (2007); endorsed by UNGA Res 62/217 of 22 December
   2007; UN publication ST/SPACE/49 (2010)
@@ -65,3 +65,6 @@ corrections:
 - date: '2026-07-03'
   change: 'Reference section: restored dropped UN document symbol (''A/AC.105/ C.1/L..'' -> ''A/AC.105/C.1/L.260.'')'
   reference: original.pdf (ST/SPACE/49)
+binding_force: non_binding
+issuing_authority: "United Nations Committee on the Peaceful Uses of Outer Space (COPUOS)"
+administering_authority: null

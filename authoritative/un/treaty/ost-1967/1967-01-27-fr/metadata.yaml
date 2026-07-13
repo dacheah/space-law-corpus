@@ -3,7 +3,7 @@ version_id: 1967-01-27-fr
 title: Traité sur les principes régissant les activités des États en matière d'exploration et d'utilisation
   de l'espace extra-atmosphérique, y compris la Lune et les autres corps célestes
 short_title: Traité sur l'espace extra-atmosphérique (OST, French authentic text)
-jurisdiction: international/UN
+jurisdiction: international
 document_type: treaty
 official_citation: '610 UNTS 205; UNGA Res 2222 (XXI); done at London, Moscow and Washington, 27 January
   1967. French authentic text (Article XVII: English, Russian, French, Spanish and Chinese texts equally
@@ -65,3 +65,6 @@ verification:
   verified_date: '2026-07-04'
   note: Cross-check against a second official French rendering (e.g. the UNTS depositary volume 610) remains
     a tracked follow-on, as for the English texts.
+binding_force: binding
+issuing_authority: "United Nations General Assembly"
+administering_authority: null

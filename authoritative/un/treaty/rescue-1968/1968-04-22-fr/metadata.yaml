@@ -3,7 +3,7 @@ version_id: 1968-04-22-fr
 title: Accord sur le sauvetage des astronautes, le retour des astronautes et la restitution des objets
   lancés dans l’espace extra-atmosphérique
 short_title: Accord sur le sauvetage (Rescue Agreement, French authentic text)
-jurisdiction: international/UN
+jurisdiction: international
 document_type: treaty
 official_citation: '672 UNTS 119; UNGA Res 2345 (XXII); done at London, Moscow and Washington, 22 April
   1968; reproduced in ST/SPACE/61/Rev.3 This record: the FR authentic text.'
@@ -62,3 +62,6 @@ verification:
   verified_date: '2026-07-04'
   note: Cross-check against a second official rendering in this language (e.g. the UNTS depositary volume)
     remains a tracked follow-on, as for the English texts.
+binding_force: binding
+issuing_authority: "United Nations General Assembly"
+administering_authority: null

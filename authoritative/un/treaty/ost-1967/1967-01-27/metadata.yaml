@@ -3,7 +3,7 @@ version_id: '1967-01-27'
 title: Treaty on Principles Governing the Activities of States in the Exploration and Use of Outer Space,
   including the Moon and Other Celestial Bodies
 short_title: Outer Space Treaty
-jurisdiction: international/UN
+jurisdiction: international
 document_type: treaty
 official_citation: 610 UNTS 205; UNGA Res 2222 (XXI); done at London, Moscow and Washington, 27 January
   1967
@@ -68,3 +68,6 @@ corrections:
   change: 'Corrected capture/source artifact: ''Space",which'' -> ''Space", which'' (1 instance)'
   reference: 'UNOOSA ST/SPACE/61/Rev.3 (International Space Law: United Nations Instruments, 2025); byte-exact
     PDF stored'
+binding_force: binding
+issuing_authority: "United Nations General Assembly"
+administering_authority: null
