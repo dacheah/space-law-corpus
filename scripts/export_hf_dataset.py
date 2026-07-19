@@ -75,7 +75,12 @@ def build_provisions(metas):
     return rows
 
 def write_jsonl(path, rows):
-    with open(path, "w", encoding="utf-8") as f:
+    # newline="\n" is REQUIRED. Without it, Python text mode on Windows rewrites every \n as
+    # \r\n, so each export produced CRLF files that differed from the repo's LF blobs in line
+    # endings only — leaving hf-dataset/ permanently "modified" with an empty diff, and shipping
+    # non-standard CRLF JSONL to Hugging Face. .gitattributes (* text=auto eol=lf) cannot help:
+    # it governs checkout, not what a script writes.
+    with open(path, "w", encoding="utf-8", newline="\n") as f:
         for r in rows:
             f.write(json.dumps(r, ensure_ascii=False) + "\n")
 
@@ -190,7 +195,8 @@ def main():
     os.makedirs(os.path.join(args.out, "data"), exist_ok=True)
     write_jsonl(os.path.join(args.out, "data", "documents.jsonl"), docs)
     write_jsonl(os.path.join(args.out, "data", "provisions.jsonl"), provs)
-    open(os.path.join(args.out, "README.md"), "w", encoding="utf-8").write(card(docs, provs, args.push or args.repo_id))
+    with open(os.path.join(args.out, "README.md"), "w", encoding="utf-8", newline="\n") as f:
+        f.write(card(docs, provs, args.push or args.repo_id))
     print("Exported %d documents, %d provisions -> %s" % (len(docs), len(provs), args.out))
     print("Publish:  huggingface-cli upload %s %s . --repo-type dataset" % (args.repo_id, args.out))
 
