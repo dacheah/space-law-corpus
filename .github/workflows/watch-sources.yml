@@ -26,18 +26,29 @@ jobs:
           git add monitoring/
           git commit -m "monitoring: update source baseline [skip ci]" || echo "no baseline changes"
           git push || echo "nothing to push"
-      - name: Open review issue on change
+      - name: Open review issue on change or breakage
+        # `changes` now also goes true when a source could not be checked. Until monitor v3.5 the
+        # flag omitted both error terms, so a run in which every source errored went green and
+        # opened nothing. Staging is already `git add monitoring/`, so snapshots are covered here.
         if: steps.watch.outputs.changes == 'true'
         uses: actions/github-script@v9
+        env:
+          BROKEN: ${{ steps.watch.outputs.broken }}
         with:
           script: |
             const fs = require('fs');
-            const body = fs.readFileSync('monitoring/last_report.md', 'utf8');
+            const report = fs.readFileSync('monitoring/last_report.md', 'utf8');
+            const broken = process.env.BROKEN === 'true';
             const today = new Date().toISOString().slice(0, 10);
+            const foot = broken
+              ? '\n\n_An error means the monitor DID NOT LOOK. It does not mean nothing changed._'
+              : '\n\n_Automation only watches and queues. Nothing is ingested automatically._';
             await github.rest.issues.create({
               owner: context.repo.owner,
               repo: context.repo.repo,
-              title: `Source change detected — ${today}`,
-              body,
-              labels: ['monitoring', 'needs-review']
+              title: broken
+                ? `MONITOR BROKEN — source(s) not checked — ${today}`
+                : `Source change detected — ${today}`,
+              body: report + foot,
+              labels: broken ? ['monitoring', 'monitor-broken'] : ['monitoring', 'needs-review']
             });
