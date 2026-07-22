@@ -76,8 +76,9 @@ def keyword_tags(units):
 
 index = {c: [] for c in VOCAB}
 records = []
-for root, _, files in os.walk(AUTH):
-    if "metadata.yaml" not in files: continue
+# Deterministic order: sort record roots so the concept-index accumulated in this loop is
+# reproducible rather than following os.walk filesystem order (which varies by machine).
+for root in sorted(r for r, _, fs in os.walk(AUTH) if "metadata.yaml" in fs):
     meta = yaml.safe_load(open(os.path.join(root, "metadata.yaml"), encoding="utf-8"))
     tpath = os.path.join(root, "text.txt")
     if not os.path.exists(tpath): continue
