@@ -1,0 +1,7 @@
+{
+  "_comment": "Reproducibility gate policy for scripts/repro_gate.py. Declares this corpus's adapter and its reproducibility ratchet. See repro_gate.py for the verdict vocabulary.",
+  "adapter": "space",
+  "uncovered_ceiling": 0,
+  "_criterion_note": "The 'space' adapter measures >= threshold contiguous token overlap against a fresh extraction, not byte equality, because each text.txt is the official text re-cut and re-wrapped (see extract.py). The stored bytes are separately hash-pinned. Moving this corpus to byte equality is tracked separately; until then 'reproduced' here is a weaker claim than in the other four corpora, honestly recorded per record as overlap_pct.",
+  "declared_exclusions": {}
+}
