@@ -1,0 +1,25 @@
+{
+  "_comment": "Declared derivation for this record: text.txt == extract -> slice -> reflow -> mechanical -> corrections, byte-exact against text_sha256. Verified by scripts/derive_text.py. Every human repair of an extraction defect is recorded here with a reason, so nothing about the derivation lives only in the stored bytes.",
+  "corpus_id": "nat/usa/space-resources-2015",
+  "version_id": "2015-11-25",
+
+  "extractor": {
+    "tool": "passthrough",
+    "_reason": "The stored original is the govinfo plain-text rendering of 51 U.S.C. ch. 513, so no PDF extraction is involved."
+  },
+
+  "slice": {
+    "drop_leading_lines": 2,
+    "_reason": "govinfo prefixes the text with its own provenance banner ('Source: U.S. Government Publishing Office, United States Code, 2015 Edition, ...') followed by a blank line. That banner is govinfo's description OF the document, not part of the enacted text, so it is cut. Recorded here because the extraction recipe previously said slice:null, which was factually wrong."
+  },
+
+  "reflow": "none",
+  "mechanical": [],
+  "corrections": [],
+
+  "_verified": {
+    "date": "2026-07-22",
+    "result": "byte-exact against the recorded text_sha256",
+    "note": "No human repairs were needed for this record — the only difference between the stored original and text.txt is the sliced govinfo banner. It is the simplest record in the corpus and was used to prove the pipeline."
+  }
+}
