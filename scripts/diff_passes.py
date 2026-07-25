@@ -55,8 +55,8 @@ print(f"units compared: {total}  agreements: {agree}  disagreements: {len(queue)
       f"agreement rate: {agree/max(total,1):.1%}")
 json.dump({"provenance": {"pass_a": provA, "pass_b": provB},
            "units_compared": total, "agreements": agree, "queue": queue},
-          open(os.path.join(ROOT, "reviews", "concept-review-queue.json"), "w"), indent=1)
-with open(os.path.join(ROOT, "reviews", "concept-review-queue.md"), "w", encoding="utf-8") as f:
+          open(os.path.join(ROOT, "reviews", "concept-review-queue.json"), "w", newline="\n"), indent=1)
+with open(os.path.join(ROOT, "reviews", "concept-review-queue.md"), "w", encoding="utf-8", newline="\n") as f:
     f.write("# Concept-tag adjudication queue (dual-pass)\n\n")
     f.write(f"Units compared: {total} — agreement {agree} ({agree/max(total,1):.1%}). ")
     f.write("Each row below is a disagreement between two independent model passes; a human "

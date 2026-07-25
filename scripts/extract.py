@@ -88,7 +88,7 @@ def calibrate(cid,ver,d):
          "overlap_unit":unit,"overlap_pct":round(pct,2),"threshold":THRESHOLD,
          "note":"text.txt content re-derives from original via this extractor+slice; exact bytes hash-pinned by text_sha256."}
     os.makedirs(os.path.dirname(rpath(cid,ver)),exist_ok=True)
-    json.dump(rec,open(rpath(cid,ver),"w",encoding="utf-8"),ensure_ascii=False,indent=1)
+    json.dump(rec,open(rpath(cid,ver),"w",encoding="utf-8", newline="\n"),ensure_ascii=False,indent=1)
     return pct,unit
 
 def records():
