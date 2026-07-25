@@ -167,6 +167,9 @@ clean source) and resolution 1884 (XVIII) (no clean authentic text reachable; on
 recorded as documented decisions rather than silent omissions. Corpus now holds **24 authoritative records**;
 validation green; reproducibility 24/24. The three ODS record copies were added to the source monitor.
 
+
+**Post-release correction (2026-07-25).** The 1721 (XVI) record's `provenance_note` still ended with a sentence written at ingestion time saying the text was `extracted_unverified` pending verification, which contradicted the record's own (later, same-day) `extracted_verified` flag and verification record once published. The sentence was replaced with the actual verification result. Metadata only; text and hashes untouched.
+
 ### Open follow-ons (tracked, not blocking)
 - Resolution 1884 (XVIII) and resolution 1721 (XVI) Parts C-E: ingest if a clean authentic text becomes available (a maintainer-proofread transcript of the ODS scan would suffice) or record a final scope decision.
 - Include `un/ga/res-1721-XVI` in the next concept-tagging review round; its tags are currently the keyword fallback (`rule_based`, `unreviewed`), not dual-pass adjudicated.
