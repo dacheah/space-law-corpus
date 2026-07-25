@@ -148,6 +148,12 @@
         "unit": "Art. 1er"
       },
       {
+        "corpus_id": "un/ga/res-1721-XVI",
+        "short_title": "Resolution 1721 (XVI) A and B",
+        "version_id": "1961-12-20",
+        "unit": "Paragraph 1"
+      },
+      {
         "corpus_id": "un/ga/res-1962-XVIII",
         "short_title": "Declaration of Legal Principles",
         "version_id": "1963-12-13",
@@ -700,6 +706,18 @@
         "short_title": "French Space Operations Act (2008, consolidated)",
         "version_id": "2023-08-03",
         "unit": "Art. 12"
+      },
+      {
+        "corpus_id": "un/ga/res-1721-XVI",
+        "short_title": "Resolution 1721 (XVI) A and B",
+        "version_id": "1961-12-20",
+        "unit": "Paragraph 1"
+      },
+      {
+        "corpus_id": "un/ga/res-1721-XVI",
+        "short_title": "Resolution 1721 (XVI) A and B",
+        "version_id": "1961-12-20",
+        "unit": "Paragraph 2"
       },
       {
         "corpus_id": "un/ga/res-41-65",

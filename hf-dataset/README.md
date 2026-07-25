@@ -38,7 +38,7 @@ A neutral, **provenance-first**, machine-readable record of international and na
 - **Source of truth / build history:** https://github.com/dacheah/space-law-corpus
 - **Archived & citable:** concept DOI [10.5281/zenodo.21185483](https://doi.org/10.5281/zenodo.21185483) (resolves to the latest Zenodo-archived GitHub release)
 - **Human-browsable site:** https://dacheah.github.io/space-law-corpus/
-- **23** instruments (23 verified against official sources) · **310** provisions · **451** neutral concept tags
+- **24** instruments (24 verified against official sources) · **317** provisions · **457** neutral concept tags
 
 ## Why this dataset is different
 
@@ -63,26 +63,27 @@ prov = load_dataset("dacheah/space-law-corpus", "provisions")
 | French Space Operations Act (2008, consolidated) | FRA | 2008-06-03 | `extracted_verified` |
 | Luxembourg Space Resources Law (2017) | LUX | 2017-07-20 | `extracted_verified` |
 | US Space Resource Act (51 U.S.C. ch. 513) | USA | 2015-11-25 | `extracted_verified` |
-| Declaration of Legal Principles | international/UN | 1963-12-13 | `extracted_verified` |
-| Direct Broadcasting Principles | international/UN | 1982-12-10 | `extracted_verified` |
-| Remote Sensing Principles | international/UN | 1986-12-03 | `extracted_verified` |
-| Nuclear Power Sources Principles | international/UN | 1992-12-14 | `extracted_verified` |
-| Benefits Declaration | international/UN | 1996-12-13 | `extracted_verified` |
-| COPUOS Space Debris Mitigation Guidelines | international/UN | 2007-06-15 | `extracted_verified` |
-| LTS Guidelines | international/UN | 2019-06-21 | `extracted_verified` |
-| Liability Convention | international/UN | 1971-11-29 | `extracted_verified` |
-| Convention sur la responsabilité (Liability Convention, French authentic text) | international/UN | 1971-11-29 | `extracted_verified` |
-| Moon Agreement | international/UN | 1979-12-05 | `extracted_verified` |
-| Accord sur la Lune (Moon Agreement, French authentic text) | international/UN | 1979-12-05 | `extracted_verified` |
-| Outer Space Treaty | international/UN | 1966-12-19 | `extracted_verified` |
-| Tratado sobre el espacio ultraterrestre (OST, Spanish authentic text) | international/UN | 1966-12-19 | `extracted_verified` |
-| Traité sur l'espace extra-atmosphérique (OST, French authentic text) | international/UN | 1966-12-19 | `extracted_verified` |
-| Договор по космосу (OST, Russian authentic text) | international/UN | 1966-12-19 | `extracted_verified` |
-| 外层空间条约 (OST, Chinese authentic text) | international/UN | 1966-12-19 | `extracted_verified` |
-| Registration Convention | international/UN | 1974-11-12 | `extracted_verified` |
-| Convention sur l'immatriculation (Registration Convention, French authentic text) | international/UN | 1974-11-12 | `extracted_verified` |
-| Rescue Agreement | international/UN | 1967-12-19 | `extracted_verified` |
-| Accord sur le sauvetage (Rescue Agreement, French authentic text) | international/UN | 1967-12-19 | `extracted_verified` |
+| Resolution 1721 (XVI) A and B | international/UN | 1961-12-20 | `extracted_verified` |
+| Declaration of Legal Principles | international | 1963-12-13 | `extracted_verified` |
+| Direct Broadcasting Principles | international | 1982-12-10 | `extracted_verified` |
+| Remote Sensing Principles | international | 1986-12-03 | `extracted_verified` |
+| Nuclear Power Sources Principles | international | 1992-12-14 | `extracted_verified` |
+| Benefits Declaration | international | 1996-12-13 | `extracted_verified` |
+| COPUOS Space Debris Mitigation Guidelines | international | 2007-06-15 | `extracted_verified` |
+| LTS Guidelines | international | 2019-06-21 | `extracted_verified` |
+| Liability Convention | international | 1971-11-29 | `extracted_verified` |
+| Convention sur la responsabilité (Liability Convention, French authentic text) | international | 1971-11-29 | `extracted_verified` |
+| Moon Agreement | international | 1979-12-05 | `extracted_verified` |
+| Accord sur la Lune (Moon Agreement, French authentic text) | international | 1979-12-05 | `extracted_verified` |
+| Outer Space Treaty | international | 1966-12-19 | `extracted_verified` |
+| Tratado sobre el espacio ultraterrestre (OST, Spanish authentic text) | international | 1966-12-19 | `extracted_verified` |
+| Traité sur l'espace extra-atmosphérique (OST, French authentic text) | international | 1966-12-19 | `extracted_verified` |
+| Договор по космосу (OST, Russian authentic text) | international | 1966-12-19 | `extracted_verified` |
+| 外层空间条约 (OST, Chinese authentic text) | international | 1966-12-19 | `extracted_verified` |
+| Registration Convention | international | 1974-11-12 | `extracted_verified` |
+| Convention sur l'immatriculation (Registration Convention, French authentic text) | international | 1974-11-12 | `extracted_verified` |
+| Rescue Agreement | international | 1967-12-19 | `extracted_verified` |
+| Accord sur le sauvetage (Rescue Agreement, French authentic text) | international | 1967-12-19 | `extracted_verified` |
 
 ## Licensing
 
@@ -98,4 +99,4 @@ This is a **reference record, not legal advice**. The authoritative text of each
 Space Law Corpus (Daniel Cheah). https://github.com/dacheah/space-law-corpus
 ```
 
-_Dataset generated from the repository by `scripts/export_hf_dataset.py` on 2026-07-11 — do not edit by hand._
+_Dataset generated from the repository by `scripts/export_hf_dataset.py` on 2026-07-25 — do not edit by hand._

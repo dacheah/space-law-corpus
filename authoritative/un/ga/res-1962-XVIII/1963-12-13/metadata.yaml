@@ -46,7 +46,10 @@ capture_history:
     against text.txt.
 supersedes: null
 superseded_by: null
-related_documents: []
+related_documents:
+- un/ga/res-1721-XVI (recited in the preamble as adopted unanimously)
+- un/treaty/ost-1967 (Principle 8 codified verbatim as Art. VII; Principle 5 -> Art. VI; Principle 7 ->
+  Art. VIII)
 provenance_note: 'English text of the Declaration of Legal Principles Governing the Activities of States
   in the Exploration and Use of Outer Space, adopted by UN General Assembly resolution 1962 (XVIII) of
   13 December 1963. SOURCE: UNOOSA consolidated official publication ''International Space Law: United
@@ -79,5 +82,23 @@ corrections:
   reference: 'UNOOSA ST/SPACE/61/Rev.3 (International Space Law: United Nations Instruments, 2025); byte-exact
     PDF stored'
 binding_force: non_binding
-issuing_authority: "United Nations General Assembly"
+issuing_authority: United Nations General Assembly
 administering_authority: null
+session: Eighteenth session (XVIII)
+adoption_mode: Adopted without a vote at the 1280th plenary meeting, 13 December 1963, and recorded as
+  adopted unanimously. The plenary meeting and date are printed in the ODS record copy, which shows no
+  recorded vote, consistent with adoption without a vote; the consensus adoption is material to the resolution's
+  customary-law significance.
+agenda_item: International co-operation in the peaceful uses of outer space (eighteenth session)
+corroborating_sources:
+- symbol: A/RES/1962(XVIII)
+  url: https://documents.un.org/api/symbol/access?s=A/RES/1962(XVIII)&l=en&t=pdf
+  sha256: sha256:9d854a48244ce28611e40f1dc37f6fa3cc01a2dd6fae78ab29efb7075e8d78d5
+  retrieved: '2026-07-25'
+  role: record_copy
+  note: 'UN Official Document System record copy, 2 pages, 205312 bytes. Scanned page images (JBIG2) with
+    a low-quality OCR text layer, so it is pinned by hash and cited as the record copy but is NOT of authoritative
+    text quality; it was consulted to confirm the 1280th plenary meeting adoption note. This partially
+    answers the record''s standing follow-on for independent, non-compilation corroboration: the existence
+    and identity of the ODS record copy are now pinned, but a character-level corroboration of the text
+    against it is not achievable from this artefact.'

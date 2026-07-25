@@ -132,7 +132,45 @@ hash-pinned (`text_sha256`). Result: **23/23 re-derive** under poppler 22.02.0. 
 attests *content provenance*, not byte-for-byte regeneration of the cosmetic line-wrapping chosen during
 cleaning (which the official source never dictated); reproducibility holds under the recorded toolchain.
 
+### Pre-OST resolutions — 1721 (XVI) ingested, 1962 (XVIII) enriched, citation anchors added (2026-07-25)
+Extended the corpus to serve external systems citing pre-treaty instruments. **Resolution 1721 (XVI) Parts A
+and B** ingested as `un/ga/res-1721-XVI` (version 1961-12-20), `extracted_verified` — text taken from the
+byte-exact UNOOSA compilation already held (ST/SPACE/61/Rev.3, Part three §A), verified at 99.2% word overlap
+with the only divergences being three documented end-of-line hyphenation rejoins. **Resolution 1962 (XVIII)**
+was already in the corpus and was **not duplicated**; it was enriched in place (metadata only, text and hashes
+untouched) with session, adoption mode and the hash-pinned ODS record copy.
+
+**Sourcing finding.** The UN Official Document System copies of A/RES/1721(XVI), A/RES/1962(XVIII) and
+A/RES/1884(XVIII) are scanned page images (JBIG2) carrying a corrupt OCR layer (e.g. "General Assembly-S 1
+:stteenth Session", "neecf" for "need"). They are therefore cited and **hash-pinned as record copies** in a new
+`corroborating_sources` field — pinning an official artefact by hash without storing it or trusting its OCR —
+but they are not used as text sources. Schema gained optional `session`, `adoption_mode`, `agenda_item` and
+`corroborating_sources`; `ingest.py` passes them through.
+
+**Citation anchors.** New `scripts/build_anchors.py` emits `derived/anchors.json` (+ `.md`): 11 stable anchors at
+Part/Principle granularity, including `1721(XVI)#part-B` and `1962(XVIII)#principle-8`. Each carries a
+`span_sha256` so a citing system can verify byte-exactly that what it cited is unchanged — **without the index
+reproducing any provision text**. The generated site now emits matching `id` attributes, so the anchors resolve
+as deep links. New `derived/cross-references.json` records relationships only (no text), each with measured
+evidence from the corpus's own verified texts.
+
+**Two corrections to commonly-stated cross-references, both verified against the authoritative texts.** (1) The
+Registration Convention's preamble does **not** expressly recall resolution 1721 B; it recalls the Outer Space
+Treaty, the Rescue Agreement and the Liability Convention. The express recall of 1721 B is in GA resolution
+62/101 (2007). (2) Principle 8 is **not** verbatim OST Article VII: measured whole-provision word similarity is
+78.6%, and the treaty article confines duty-bearers and beneficiaries to States Parties whereas the resolution
+speaks of States generally — a difference that matters precisely for pre-1967 launches.
+
+**Deliberately not ingested.** Resolution 1721 (XVI) Parts C–E (meteorology/WMO and satellite
+communications/ITU — outside the scope boundary in `docs/design/05`, and reproduced by neither UNOOSA nor any
+clean source) and resolution 1884 (XVIII) (no clean authentic text reachable; only the corrupt ODS scan). Both
+recorded as documented decisions rather than silent omissions. Corpus now holds **24 authoritative records**;
+validation green; reproducibility 24/24. The three ODS record copies were added to the source monitor.
+
 ### Open follow-ons (tracked, not blocking)
+- Resolution 1884 (XVIII) and resolution 1721 (XVI) Parts C-E: ingest if a clean authentic text becomes available (a maintainer-proofread transcript of the ODS scan would suffice) or record a final scope decision.
+- Include `un/ga/res-1721-XVI` in the next concept-tagging review round; its tags are currently the keyword fallback (`rule_based`, `unreviewed`), not dual-pass adjudicated.
+- The GA principle records list Arabic among `authentic_languages`; Arabic became an official GA language in 1973, so for 1961-63 instruments the authentic languages are Chinese, English, French, Russian and Spanish (as recorded for res. 1721). Worth reconciling.
 - Independent (non-compilation) corroboration of the five GA principles.
 - ~~Human review of the model concept tags~~ — done 2026-07-04 via the dual-pass method; open refinement: a cross-vendor third pass.
 - (Optional) Give the remaining six text-anchored records (five UN treaties + the US statute) byte-exact PDF anchors — the five GA principles were upgraded 2026-07-04; the treaties' UNTS depositary-volume anchors are queued (`queue/candidates.md`).

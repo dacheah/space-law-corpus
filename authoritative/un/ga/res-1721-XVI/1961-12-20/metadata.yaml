@@ -1,0 +1,103 @@
+corpus_id: un/ga/res-1721-XVI
+version_id: '1961-12-20'
+title: International cooperation in the peaceful uses of outer space
+short_title: Resolution 1721 (XVI) A and B
+jurisdiction: international/UN
+document_type: ga_resolution
+official_citation: UNGA Res 1721 (XVI) A and B of 20 December 1961; ODS symbol A/RES/1721(XVI); Official
+  Records of the General Assembly, Sixteenth Session, Supplement No. 17 (A/5100); Parts A and B reproduced
+  in ST/SPACE/61/Rev.3
+authentic_languages:
+- zh
+- en
+- fr
+- ru
+- es
+adoption_date: '1961-12-20'
+source_url: https://www.unoosa.org/res/oosadoc/data/documents/2025/stspace/stspace61rev_3_0_html/st_space_61rev03E.pdf
+source_publisher: 'UNOOSA - ST/SPACE/61/Rev.3, ''International Space Law: United Nations Instruments''
+  (2025)'
+source_is_official: true
+retrieval_date: '2026-07-25'
+retrieved_by: 'text sourced from the byte-exact official UNOOSA compilation PDF already held in the corpus;
+  ODS record copy independently retrieved and hash-pinned via Claude in Chrome; operator: maintainer +
+  Claude'
+original_format: pdf
+original_filename: original.pdf
+content_hash: sha256:165174055094c5d918ea0983b96ad559a865c0b6ae0cff1550f2a5923b1f56a3
+original_sha256: sha256:5bacb8b48ec5372f507afcc0a185e68c4e2b4fe6ef644587733c18dfb0a5721c
+text_sha256: sha256:165174055094c5d918ea0983b96ad559a865c0b6ae0cff1550f2a5923b1f56a3
+text_fidelity: extracted_verified
+language: en
+authoritative_status: authentic_text
+license: UN-materials-terms
+rights_note: UN General Assembly resolution; official UN document, freely reproducible with attribution.
+  Reproduced from the UNOOSA ST/SPACE/61 compilation.
+capture_history:
+- date: '2026-07-25'
+  source_url: https://www.unoosa.org/res/oosadoc/data/documents/2025/stspace/stspace61rev_3_0_html/st_space_61rev03E.pdf
+  original_sha256: sha256:5bacb8b48ec5372f507afcc0a185e68c4e2b4fe6ef644587733c18dfb0a5721c
+  note: Initial capture.
+supersedes: null
+superseded_by: null
+related_documents:
+- un/treaty/ost-1967 (Art. I-II restate the Part A principles; Art. VIII/registration practice builds
+  on Part B)
+- un/treaty/registration-1975 (preamble expressly recalls resolution 1721 B (XVI))
+- un/ga/res-1962-XVIII (recites resolution 1721 (XVI) as adopted unanimously)
+- A/AC.105/INF series (the voluntary UN launch registry established by Part B; series cited, documents
+  not ingested)
+provenance_note: 'English text of Parts A and B of General Assembly resolution 1721 (XVI), ''International
+  co-operation in the peaceful uses of outer space'', adopted unanimously at the 1085th plenary meeting
+  on 20 December 1961. SCOPE OF THIS RECORD: Parts A and B only. Resolution 1721 (XVI) was adopted in
+  five parts (A-E) at the same meeting; Part C concerns meteorological science and technology (WMO) and
+  Part D concerns communication by means of satellites (ITU), which fall outside this corpus''s declared
+  scope boundary (docs/design/05), and Part E likewise concerns those adjacent matters. UNOOSA''s own
+  official compilation reproduces only Parts A and B as the space-law-relevant parts, and that editorial
+  line is followed here; Parts C-E are recorded as a deliberate, documented scope decision rather than
+  silently omitted. SOURCE: the text is taken from UNOOSA''s consolidated official publication ''International
+  Space Law: United Nations Instruments'' (ST/SPACE/61/Rev.3, 2025), Part three, section A, which is held
+  in this corpus byte-exact as original.pdf - the same official artefact and the same standard used for
+  the five GA principle instruments. RECORD COPY: the UN Official Document System copy (A/RES/1721(XVI))
+  was independently retrieved on 2026-07-25 and is hash-pinned in corroborating_sources, but is a scan
+  whose OCR layer is corrupt and therefore unusable as an authoritative text; it was used only to confirm
+  metadata (title spelling, Part A-E structure, plenary meeting). TITLE: the 1961 record copy prints the
+  title with the hyphenated ''co-operation''; ST/SPACE/61/Rev.3 modernises it to ''cooperation''. The
+  stored text follows the source used (ST/SPACE/61), and the original spelling is preserved in the official_citation
+  and here. FIDELITY: ''Requests The Secretary-General'' in Part B paragraph 2 carries a capital ''The''
+  in the source; it is reproduced faithfully rather than silently corrected. text.txt is cleaned (page
+  numbers removed, end-of-line hyphenation rejoined, paragraphs reflowed). extracted_unverified pending
+  the verification pass.'
+binding_force: non_binding
+issuing_authority: United Nations General Assembly
+administering_authority: null
+session: Sixteenth session (XVI)
+adoption_mode: Adopted unanimously, without vote, at the 1085th plenary meeting, 20 December 1961. The
+  plenary meeting and date are printed in the ODS record copy; unanimity is corroborated by the recital
+  in resolution 1962 (XVIII) describing resolutions 1721 (XVI) and 1802 (XVII) as 'adopted unanimously
+  by the States Members of the United Nations'.
+agenda_item: International co-operation in the peaceful uses of outer space (sixteenth session)
+corroborating_sources:
+- symbol: A/RES/1721(XVI)
+  url: https://documents.un.org/api/symbol/access?s=A/RES/1721(XVI)&l=en&t=pdf
+  sha256: sha256:b137390b89f321f3f2f322a9e2d8bdad96f4d5a6e0aa1ecd2886e00de42bbfe2
+  retrieved: '2026-07-25'
+  role: record_copy
+  note: UN Official Document System record copy of the full resolution (Parts A-E), 2 pages, 181516 bytes.
+    Scanned page images (JBIG2) carrying a low-quality OCR text layer (e.g. 'General Assembly-S 1 :stteenth
+    Session', 'neecf' for 'need', 'B<Jlieving' for 'Believing'). Pinned by hash and cited as the record
+    copy; NOT used as the text source because the OCR is not of authoritative quality. Consulted to confirm
+    the official title spelling, the Part A-E structure, and the 1085th plenary meeting adoption note.
+verification:
+  status: verified
+  method: Token-for-token comparison of text.txt against a pdftotext -layout extraction of the byte-exact
+    official compilation PDF stored as original.pdf (ST/SPACE/61/Rev.3, Part three section A). Cleaning
+    was limited to page-number removal, end-of-line hyphenation rejoining and paragraph reflow; no wording
+    was altered.
+  reference: 'UNOOSA ST/SPACE/61/Rev.3 (International Space Law: United Nations Instruments, 2025), byte-exact
+    PDF stored as original.pdf; UN ODS record copy A/RES/1721(XVI) hash-pinned in corroborating_sources'
+  verified_by: maintainer + Claude
+  verified_date: '2026-07-25'
+  note: Scope of verification is Parts A and B, the parts reproduced in the source compilation. Independent
+    corroboration against the ODS record copy is limited to metadata (title, part structure, plenary meeting)
+    because that artefact is a scan whose OCR layer is corrupt.

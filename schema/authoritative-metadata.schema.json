@@ -286,6 +286,73 @@
           }
         }
       }
+    },
+    "session": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "description": "Issuing body's session, e.g. 'Sixteenth session (XVI)'."
+    },
+    "adoption_mode": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "description": "How the instrument was adopted (e.g. 'adopted unanimously, 1085th plenary meeting'). Material to customary-law significance."
+    },
+    "agenda_item": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "description": "Agenda item under which it was adopted."
+    },
+    "corroborating_sources": {
+      "type": "array",
+      "description": "Independent record copies pinned by hash WITHOUT being stored (e.g. an ODS scan whose OCR is unusable as text).",
+      "items": {
+        "type": "object",
+        "properties": {
+          "symbol": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "url": {
+            "type": "string"
+          },
+          "sha256": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "retrieved": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "role": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "note": {
+            "type": [
+              "string",
+              "null"
+            ]
+          }
+        },
+        "required": [
+          "url"
+        ],
+        "additionalProperties": false
+      }
     }
   },
   "allOf": [

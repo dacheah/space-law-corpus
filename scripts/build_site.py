@@ -10,6 +10,10 @@ import yaml
 REPO = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 AUTH = os.path.join(REPO, "authoritative"); DER = os.path.join(REPO, "derived")
 SITE = os.path.join(REPO, "site"); os.makedirs(SITE, exist_ok=True)
+_ap = os.path.join(DER, "anchors.json")
+_anchors = json.load(open(_ap, encoding="utf-8"))["anchors"] if os.path.exists(_ap) else []
+ANCHORS = {}
+for _a in _anchors: ANCHORS.setdefault(_a["corpus_id"], []).append(_a)
 _ci = json.load(open(os.path.join(DER, "concept-index.json"), encoding="utf-8"))
 VOCAB, CINDEX = _ci["vocabulary"], _ci["index"]
 
@@ -34,15 +38,24 @@ def page(title, body, active=""):
             "repository by <code>scripts/build_site.py</code> — do not edit by hand. Our own contributions "
             "are CC&nbsp;BY&nbsp;4.0; source texts keep their own terms.</p></footer></body></html>")
 
-def render_text(txt):
-    out = []
+def render_text(txt, anchors=None):
+    """Render the authoritative text. Where a citation anchor opens, emit its id so external
+    systems can deep-link to a specific Part/Principle (e.g. #part-B, #principle-8)."""
+    starts = {a["char_start"]: a for a in (anchors or [])}
+    out, pos = [], 0
     for para in txt.split("\n\n"):
         p = para.strip()
-        if not p: continue
-        if len(p) < 90 and re.match(r"^(Article|Principle|Guideline)\b|^[IVX]+\.|^[A-D]\.\s|^\d+\.\s+[A-Z][a-z]+", p):
-            out.append("<h3>" + esc(p) + "</h3>")
+        if not p:
+            pos += len(para) + 2; continue
+        start = txt.index(para, pos); pos = start + len(para)
+        a = starts.get(start)
+        idattr = ' id="' + esc(a["fragment"]) + '"' if a else ""
+        cite = (' <a class="anch" href="#' + esc(a["fragment"]) + '" title="Citation anchor '
+                + esc(a["anchor_id"]) + '">&#182;</a>') if a else ""
+        if len(p) < 90 and re.match(r"^(Article|Principle|Guideline)\b|^[IVX]+\.|^[A-D]\.\s|^\d+\.\s+[A-Z][a-z]+", p) or (a and len(p) < 4):
+            out.append("<h3" + idattr + ">" + esc(p) + cite + "</h3>")
         else:
-            out.append("<p>" + esc(p) + "</p>")
+            out.append("<p" + idattr + ">" + esc(p) + cite + "</p>")
     return "\n".join(out)
 
 insts = []
@@ -87,7 +100,7 @@ for meta in insts:
             "<h1>" + esc(meta["title"]) + "</h1>"
             '<p class="sub">' + esc(meta.get("document_type")) + " &middot; adopted " + esc(meta.get("adoption_date") or "n/a")
             + eif + " &middot; <code>" + esc(cid) + "</code></p>" + prov
-            + '<section class="auth"><h2>Authoritative text</h2>' + render_text(meta["_text"]) + "</section>" + concepts_html + "</article>")
+            + '<section class="auth"><h2>Authoritative text</h2>' + render_text(meta["_text"], ANCHORS.get(cid)) + "</section>" + concepts_html + "</article>")
     open(os.path.join(SITE, sl(cid)), "w", encoding="utf-8").write(page(meta.get("short_title", cid), body))
 
 GROUPS = [("treaty", "The five UN treaties"), ("ga_resolution", "UN General Assembly principles"),

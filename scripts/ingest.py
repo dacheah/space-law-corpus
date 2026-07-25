@@ -57,6 +57,8 @@ _KEY_ORDER = [
     # They were added to the schema and backfilled into existing records, but this ingester was
     # not updated at the time — so any NEW record would have failed validation on write.
     "binding_force", "issuing_authority", "administering_authority",
+    # Resolution metadata (2026-07-25): session/adoption mode/agenda item + hash-pinned record copies.
+    "session", "adoption_mode", "agenda_item", "corroborating_sources",
 ]
 
 
@@ -150,6 +152,7 @@ def ingest_document(manifest: dict, repo_root: Path = REPO_ROOT) -> Path:
         meta["text_sha256"] = text_sha256
         meta["text_fidelity"] = manifest["text_fidelity"]
     for opt in ("short_title", "adoption_date", "entry_into_force_date",
+                "session", "adoption_mode", "agenda_item", "corroborating_sources",
                 "effective_date", "rights_note"):
         if manifest.get(opt) is not None:
             meta[opt] = manifest[opt]
