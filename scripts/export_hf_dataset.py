@@ -223,6 +223,15 @@ def copy_license(out):
     if not os.path.exists(src):
         print("WARNING: no LICENSE at the repo root — the dataset would ship without one.")
         return False
+    body = open(src, encoding="utf-8", errors="replace").read(4000).upper()
+    if "ALL RIGHTS RESERVED" in body or "PROPRIETARY" in body:
+        # Publishing an all-rights-reserved licence beside an openly-published dataset is almost
+        # always a mistake - it usually means the build engine's own licence has been picked up
+        # instead of the corpus's. Refuse rather than ship a contradiction.
+        print("REFUSING to copy LICENSE: it looks PROPRIETARY / all-rights-reserved, which "
+              "contradicts publishing an open dataset. Point the corpus root at its own licence "
+              "(the terms covering YOUR contributions), or remove the file deliberately.")
+        return False
     shutil.copyfile(src, os.path.join(out, "LICENSE"))
     return True
 
