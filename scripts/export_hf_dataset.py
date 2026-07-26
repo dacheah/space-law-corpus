@@ -13,7 +13,7 @@ Or pass --push dacheah/space-law-corpus to this script to upload directly.
 
 Reads only the OPEN layers (authoritative text + derived tags). Nothing proprietary is exported.
 """
-import os, sys, json, glob, yaml, argparse, datetime, re
+import os, sys, json, glob, shutil, yaml, argparse, datetime, re
 
 REPO = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 AUTH = os.path.join(REPO, "authoritative")
@@ -206,6 +206,27 @@ def missing_structures(metas):
     return miss
 
 
+def copy_license(out):
+    """Ship the repo LICENSE alongside the dataset.
+
+    The Hub renders a LICENSE file next to the card, and an empty or absent one quietly undercuts the
+    card's licensing section. The repo LICENSE is the right file to ship: it opens with a scope preamble
+    stating it governs ONLY this corpus's own contributions (derived layer, schema, scripts, docs) and
+    expressly does NOT relicense any source text. Copying it on every export stops the published dataset
+    and the repository drifting apart.
+
+    This deliberately does NOT touch the card's `license: other` / `license_name: mixed-provenance`
+    frontmatter. The dataset genuinely is mixed, and asserting CC BY over UN and government source texts
+    would claim rights we do not hold. The file and the frontmatter say different, complementary things.
+    """
+    src = os.path.join(REPO, "LICENSE")
+    if not os.path.exists(src):
+        print("WARNING: no LICENSE at the repo root — the dataset would ship without one.")
+        return False
+    shutil.copyfile(src, os.path.join(out, "LICENSE"))
+    return True
+
+
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--out", default=os.path.join(REPO, "hf-dataset"))
@@ -235,7 +256,9 @@ def main():
     write_jsonl(os.path.join(args.out, "data", "provisions.jsonl"), provs)
     with open(os.path.join(args.out, "README.md"), "w", encoding="utf-8", newline="\n") as f:
         f.write(card(docs, provs, args.push or args.repo_id))
-    print("Exported %d documents, %d provisions -> %s" % (len(docs), len(provs), args.out))
+    lic = copy_license(args.out)
+    print("Exported %d documents, %d provisions%s -> %s"
+          % (len(docs), len(provs), " + LICENSE" if lic else " (NO LICENSE)", args.out))
     # HF renamed the CLI: the command is `hf` (huggingface-cli is deprecated).
     print("Publish:  hf upload %s %s . --repo-type dataset" % (args.repo_id, args.out))
 
