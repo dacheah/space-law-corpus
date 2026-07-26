@@ -24,7 +24,7 @@ For each neutral legal concept, the provisions across the corpus that address it
 *Outer space and celestial bodies not subject to national appropriation by sovereignty, use, occupation or other means.*
 
 - **Luxembourg Space Resources Law (2017)** (`nat/lux/ressources-espace-2017`): Art. 1er
-- **Resolution 1721 (XVI) A and B** (`un/ga/res-1721-XVI`): Paragraph 1
+- **Resolution 1721 (XVI) A and B** (`un/ga/res-1721-XVI`): Part A, paragraph 1
 - **Declaration of Legal Principles** (`un/ga/res-1962-XVIII`): Paragraph 3
 - **Moon Agreement** (`un/treaty/moon-1979`): Article 11
 - **Accord sur la Lune (Moon Agreement, French authentic text)** (`un/treaty/moon-1979`): Article 11
@@ -87,7 +87,7 @@ For each neutral legal concept, the provisions across the corpus that address it
 *Registration of space objects in national and UN registries; furnishing of identifying information.*
 
 - **French Space Operations Act (2008, consolidated)** (`nat/fra/loi-operations-spatiales-2008`): Art. 12
-- **Resolution 1721 (XVI) A and B** (`un/ga/res-1721-XVI`): Paragraph 1; Paragraph 2
+- **Resolution 1721 (XVI) A and B** (`un/ga/res-1721-XVI`): Part B, paragraph 1; Part B, paragraph 2
 - **Remote Sensing Principles** (`un/ga/res-41-65`): Principle IX
 - **LTS Guidelines** (`un/softlaw/lts-guidelines-2019`): Guideline A.5
 - **Registration Convention** (`un/treaty/registration-1975`): Article I; Article II; Article III; Article IV; Article V; Article VI; Article VII

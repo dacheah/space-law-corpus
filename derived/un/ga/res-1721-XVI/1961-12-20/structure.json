@@ -7,41 +7,54 @@
   "document_type": "ga_resolution",
   "adoption_date": "1961-12-20",
   "unit_type": "paragraph",
-  "unit_count": 7,
+  "unit_count": 8,
   "units": [
     {
       "number": null,
-      "label": "preamble/chapeau",
-      "text": "A\n\nThe General Assembly,\n\nRecognizing the common interest of mankind in furthering the peaceful uses of outer space and the urgent need to strengthen international cooperation in this important field,\n\nBelieving that the exploration and use of outer space should be only for the betterment of mankind and to the benefit of States irrespective of the stage of their economic or scientific development,"
+      "label": "Part A, chapeau",
+      "part": "A",
+      "text": "The General Assembly,\n\nRecognizing the common interest of mankind in furthering the peaceful uses of outer space and the urgent need to strengthen international cooperation in this important field,\n\nBelieving that the exploration and use of outer space should be only for the betterment of mankind and to the benefit of States irrespective of the stage of their economic or scientific development,"
     },
     {
       "number": "1",
-      "label": "Paragraph 1",
+      "label": "Part A, paragraph 1",
+      "part": "A",
       "text": "1. Commends to States for their guidance in the exploration and use of outer space the following principles:\n\n(a) International law, including the Charter of the United Nations, applies to outer space and celestial bodies;\n\n(b) Outer space and celestial bodies are free for exploration and use by all States in conformity with international law and are not subject to national appropriation;"
     },
     {
       "number": "2",
-      "label": "Paragraph 2",
-      "text": "2. Invites the Committee on the Peaceful Uses of Outer Space to study and report on the legal problems which may arise from the exploration and use of outer space.\n\nB\n\nThe General Assembly,\n\nBelieving that the United Nations should provide a focal point for international cooperation in the peaceful exploration and use of outer space."
+      "label": "Part A, paragraph 2",
+      "part": "A",
+      "text": "2. Invites the Committee on the Peaceful Uses of Outer Space to study and report on the legal problems which may arise from the exploration and use of outer space."
+    },
+    {
+      "number": null,
+      "label": "Part B, chapeau",
+      "part": "B",
+      "text": "The General Assembly,\n\nBelieving that the United Nations should provide a focal point for international cooperation in the peaceful exploration and use of outer space."
     },
     {
       "number": "1",
-      "label": "Paragraph 1",
+      "label": "Part B, paragraph 1",
+      "part": "B",
       "text": "1. Calls upon States launching objects into orbit or beyond to furnish information promptly to the Committee on the Peaceful Uses of Outer Space, through the Secretary-General, for the registration of launchings;"
     },
     {
       "number": "2",
-      "label": "Paragraph 2",
+      "label": "Part B, paragraph 2",
+      "part": "B",
       "text": "2. Requests The Secretary-General to maintain a public registry of the information furnished in accordance with paragraph 1 above;"
     },
     {
       "number": "3",
-      "label": "Paragraph 3",
+      "label": "Part B, paragraph 3",
+      "part": "B",
       "text": "3. Requests the Committee on the Peaceful Uses of Outer Space, in cooperation with the Secretary-General and making full use of the functions and resources of the Secretariat:\n\n(a) To maintain close contact with governmental and non-governmental organizations concerned with outer space matters;\n\n(b) To provide for the exchange of such information relating to outer space activities as Governments may supply on a voluntary basis, supplementing but not duplicating existing technical and scientific exchanges;\n\n(c) To assist in the study of measures for the promotion of international cooperation in outer space activities;"
     },
     {
       "number": "4",
-      "label": "Paragraph 4",
+      "label": "Part B, paragraph 4",
+      "part": "B",
       "text": "4. Further requests the Committee on the Peaceful Uses of Outer Space to report to the General Assembly on the arrangements undertaken for the performance of those functions and on such developments relating to the peaceful uses of outer space as it considers significant."
     }
   ],

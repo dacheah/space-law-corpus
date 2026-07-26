@@ -40,23 +40,53 @@ KW = {
 }
 hdr_re = re.compile(r"^(Article|Principle|Guideline)\s+([IVXLCDM]+|[A-D]\.\d+|\d+)\b")
 num_re = re.compile(r"^(\d+)\.\s")
+# A bare capital letter on its own line opens a lettered PART (e.g. GA res. 1721 (XVI) A and B).
+# Such instruments restart their paragraph numbering in each part, so an unqualified "Paragraph 1"
+# is ambiguous - two different provisions would carry the same label and the same citation.
+part_re = re.compile(r"^([A-E])$")
 
 def split_units(body):
     paras = [p.strip() for p in body.split("\n\n") if p.strip()]
     n_hdr = sum(1 for p in paras if hdr_re.match(p)); n_num = sum(1 for p in paras if num_re.match(p))
+    # Require TWO or more bare letters before treating them as part boundaries. A single stray
+    # capital letter (an initial, a list marker) must never silently restructure an instrument.
+    parts_mode = sum(1 for p in paras if part_re.match(p)) >= 2
     if n_hdr >= 2: mode, starter = "header", hdr_re
     elif n_num >= 2: mode, starter = "numbered", num_re
     else: return "document", [{"number": None, "label": "(whole text)", "text": "\n\n".join(paras)}]
     units, cur, pre = [], None, []
+    part, part_pre = None, []
+
+    def flush_chapeau():
+        # The words between a part letter and its first numbered paragraph are that part's chapeau
+        # ("The General Assembly, ... Believing ..."). Without this they were absorbed into the
+        # PREVIOUS part's last paragraph, misattributing one part's preamble to another.
+        if part_pre:
+            units.append({"number": None, "label": "Part %s, chapeau" % part,
+                          "part": part, "text": "\n\n".join(part_pre)})
+            del part_pre[:]
+
     for p in paras:
+        if parts_mode and part_re.match(p):
+            if cur: units.append(cur); cur = None
+            flush_chapeau()
+            part = p.strip()
+            continue
         m = starter.match(p)
         if m:
-            if cur: units.append(cur)
-            label = p.split("\n")[0].strip() if mode == "header" else "Paragraph " + m.group(1)
-            cur = {"number": m.group(m.lastindex), "label": label, "text": p}
+            if cur: units.append(cur); cur = None
+            flush_chapeau()
+            base = p.split("\n")[0].strip() if mode == "header" else "Paragraph " + m.group(1)
+            if part:
+                label = "Part %s, %s" % (part, base[0].lower() + base[1:])
+                cur = {"number": m.group(m.lastindex), "label": label, "part": part, "text": p}
+            else:
+                cur = {"number": m.group(m.lastindex), "label": base, "text": p}
         elif cur: cur["text"] += "\n\n" + p
+        elif part is not None: part_pre.append(p)
         else: pre.append(p)
     if cur: units.append(cur)
+    flush_chapeau()
     if pre: units.insert(0, {"number": None, "label": "preamble/chapeau", "text": "\n\n".join(pre)})
     utype = "guideline" if mode == "header" and "Guideline" in paras[0][:12] + (units[1]["label"] if len(units) > 1 else "") \
         else ("article" if mode == "header" and "Article" in (units[1]["label"] if len(units) > 1 else "") else

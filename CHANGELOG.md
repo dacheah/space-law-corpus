@@ -173,7 +173,32 @@ validation green; reproducibility 24/24. The three ODS record copies were added 
 
 **Design-document correction — authentic languages are per-treaty (2026-07-25).** An audit of `authentic_languages` across all records found three treaties declaring five authentic languages and two declaring six. Checked against the final clause in each stored authentic text, **every record is correct**: the OST (1967), Rescue (1968) and Liability (1972) final clauses declare five languages, while the Registration (1975) and Moon (1979) final clauses expressly declare *Arabic*, Chinese, English, French, Russian and Spanish equally authentic. The error was in `docs/source-coverage.md`, which asserted a blanket five-language rule and that Arabic is never authentic for these treaties — contradicted by two of the five primary texts. The report has been corrected to state the per-treaty position with the evidence. No record metadata changed; the records were faithful to their sources all along.
 
+### Structure extraction — lettered parts (2026-07-25)
+Instruments adopted in lettered parts restart their paragraph numbering in each part, which the unit
+splitter did not model. On `un/ga/res-1721-XVI` this produced two provisions both labelled
+**"Paragraph 1"** and two labelled "Paragraph 2" — the same label, and therefore the same citation, for
+different provisions — and, worse, silently absorbed **Part B's chapeau into Part A's last paragraph**,
+misattributing one part's opening words to another part.
+
+`split_units()` in `build_derived.py` is now part-aware: a bare capital letter on its own line opens a
+part, each part's chapeau becomes its own unit, and units are labelled `Part B, paragraph 1`. Activation
+is deliberately conservative — **two or more** bare letters are required, so a stray capital can never
+silently restructure an instrument.
+
+Measured, not assumed: unit labels were snapshotted across all 24 records before and after. **Exactly one
+record changed** (1721, from 7 units to 8, all now uniquely labelled); the other 23 are byte-identical.
+Tag coverage is unchanged at 290 tagged units, with all **101 human-adjudicated** and **186
+model-consensus** statuses preserved — the dual-pass review work was not disturbed. 1721's keyword tags
+now attribute correctly (`Part A, paragraph 1` → non-appropriation; `Part B, paragraphs 1-2` →
+registration).
+
+**Citation anchors were unaffected.** `build_anchors.py` reads the authoritative text directly rather
+than the derived structure, so `1721(XVI)#part-A`, `#part-B` and the nine `1962(XVIII)` principle anchors
+keep identical `span_sha256` values. Citations already issued against v2026.08.0 remain valid — which is
+precisely the property the span-hash design exists to provide.
+
 ### Open follow-ons (tracked, not blocking)
+- Include `un/ga/res-1721-XVI` in the next concept-tagging review round; its tags remain the keyword fallback (`rule_based`, `unreviewed`) rather than dual-pass adjudicated.
 - ⚖️ **Open judgement call — `authentic_languages` for pre-1973 GA resolutions.** `un/ga/res-1962-XVIII` (1963) lists Arabic; the newly ingested `un/ga/res-1721-XVI` (1961) does not. Unlike treaties, GA resolutions carry no final clause declaring authentic languages, and Arabic became an official UN language only in 1973 — yet ODS today serves Arabic versions of both. The two records are therefore inconsistent with each other and the field's meaning for resolutions needs a recorded decision (official-language versions as they now exist, versus the official languages at the time of adoption).
 - Resolution 1884 (XVIII) and resolution 1721 (XVI) Parts C-E: ingest if a clean authentic text becomes available (a maintainer-proofread transcript of the ODS scan would suffice) or record a final scope decision.
 - Include `un/ga/res-1721-XVI` in the next concept-tagging review round; its tags are currently the keyword fallback (`rule_based`, `unreviewed`), not dual-pass adjudicated.
