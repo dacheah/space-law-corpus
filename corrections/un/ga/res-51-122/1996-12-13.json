@@ -1,0 +1,68 @@
+{
+  "_comment": "Declared derivation: text.txt == extract -> slice -> drop_lines -> pre -> reflow -> mechanical -> corrections, byte-exact against text_sha256. Verified by scripts/derive_text.py.",
+  "corpus_id": "un/ga/res-51-122",
+  "version_id": "1996-12-13",
+  "extractor": {
+    "tool": "pdftotext",
+    "args": [
+      "-layout"
+    ],
+    "toolchain": "poppler 22.02.0",
+    "_reason": "Matches the pinned extractor in extraction/un/ga/res-51-122/1996-12-13.json."
+  },
+  "slice": {
+    "start_contains": "E.\t\u0007Declaration on International",
+    "end_contains": "and use of outer space.",
+    "_reason": "Section E of Part two of the shared compendium ST/SPACE/61/Rev.3 (English), lines 2451-2570 of 5,175. The end anchor is only 23 characters for a reason: 'end_contains' is matched against the RAW extraction, and the fuller phrase 'participation in the exploration and use of outer space.' spans a line break in the PDF, so it never matches and the slice silently runs on into Part three — 722 lines instead of 50. Short anchors that sit inside one printed line are the rule for this volume. 'and use of outer space.' with the full stop occurs exactly once after the slice start; without the full stop it occurs five times."
+  },
+  "drop_lines": [
+    {
+      "pattern": "^\\s*\\d{1,3}\\s*$",
+      "_reason": "Running page numbers, alone on a line."
+    },
+    {
+      "pattern": "^\\s*\\d{1,2}[A-Z]",
+      "_reason": "Footnote lines, marker digits glued to a capital ('15Official Records of the General Assembly...'). A numbered paragraph cannot match: it has a full stop and space after the digits."
+    }
+  ],
+  "pre": [
+    "strip_form_feeds",
+    "strip_typesetting_controls",
+    "strip_soft_hyphens",
+    "join_hyphenated_breaks",
+    "split_lettered_items",
+    "split_numbered_paragraphs"
+  ],
+  "_pre_reason": "strip_soft_hyphens matters here in particular: this record contains 'United Nations P     \\u00ad rogramme', where -layout has padded before the soft hyphen. Removing only the U+00AD yields 'P rogramme'. The two split rules restore the paragraph breaks the volume runs together — numbered paragraphs 1-8, and the lettered sub-items (a)-(c) inside paragraph 5.",
+  "reflow": "paragraphs_tight",
+  "_reflow_reason": "Undo column wrapping; 'tight' collapses blank runs left by removed page furniture.",
+  "mechanical": [
+    "collapse_spaces"
+  ],
+  "_mechanical_reason": "-layout pads with space runs to reproduce the printed column.",
+  "corrections": [
+    {
+      "op": "replace",
+      "from": "E.\tDeclaration on International",
+      "to": "Declaration on International",
+      "count": 1,
+      "_reason": "Removes the compendium's section label 'E.', which belongs to the volume's ordering of instruments, not to the Declaration's title.",
+      "_reviewer": "Dan",
+      "_date": "2026-08-05"
+    },
+    {
+      "op": "replace",
+      "from": "Needs of Developing Countries14",
+      "to": "Needs of Developing Countries",
+      "count": 1,
+      "_reason": "Removes the footnote reference marker '14' printed immediately after the title, as with the sibling records in this volume. The footnote it points to is removed by the drop_lines rule above.",
+      "_reviewer": "Dan",
+      "_date": "2026-08-05"
+    }
+  ],
+  "_verified": {
+    "date": "2026-08-05",
+    "result": "byte-exact against the recorded text_sha256",
+    "note": "Fourth record cut from the shared English compendium. Two corrections, both stripping the volume's own apparatus from the title."
+  }
+}

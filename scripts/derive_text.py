@@ -243,6 +243,39 @@ PRE = {"join_hyphenated_breaks": join_hyphenated_breaks, "strip_soft_hyphens": s
        "split_principle_headings": split_principle_headings}
 
 
+def split_before(text: str, prefixes) -> str:
+    """Insert a paragraph break before any line starting with one of the declared literal prefixes.
+
+    THE ESCAPE HATCH, AND WHY IT IS NARROW. The other split rules key off a structural signal the
+    typesetter left behind — a number, a letter, a heading on its own line. Occasionally there is no
+    signal at all: resolution 47/68 runs 'Such design and use shall also ensure…' straight on from
+    the previous sentence with no blank line, no indent and no marker, yet the stored text sets it as
+    its own paragraph. No general rule can see that, and inventing one that fires on sentence shape
+    would corrupt other records.
+
+    So the break is declared literally, per record, with a reason — visible in the recipe rather than
+    hidden in a regex that happens to work. Each prefix must match EXACTLY ONE line, and this raises
+    otherwise: a prefix that stops matching means the source changed, and a prefix that matches twice
+    means it is not the anchor its author thought it was.
+    """
+    if not prefixes:
+        return text
+    lines = text.split("\n")
+    for p in prefixes:
+        hits = [i for i, ln in enumerate(lines) if ln.lstrip().startswith(p)]
+        if len(hits) != 1:
+            raise ValueError(
+                f"split_before prefix {p!r} matched {len(hits)} lines, expected exactly 1 — "
+                f"re-review before editing; the stored original may have changed"
+            )
+    out = []
+    for line in lines:
+        if any(line.lstrip().startswith(p) for p in prefixes) and out and out[-1].strip():
+            out.append("")
+        out.append(line)
+    return "\n".join(out)
+
+
 def apply_pre(text: str, rules) -> str:
     for name in (rules or []):
         if name not in PRE:
@@ -388,6 +421,7 @@ def derive(spec: dict, orig_path: str, report=None) -> bytes:
     if report is not None:
         report["dropped"] = counts
     t = apply_pre(t, spec.get("pre"))
+    t = split_before(t, spec.get("split_before"))
     t = reflow(t, spec.get("reflow"))
     t = apply_mechanical(t, spec.get("mechanical"))
     t = apply_corrections(t, spec.get("corrections"))
@@ -455,6 +489,15 @@ def selftest() -> int:
     assert split_lettered_items("see (a) inline") == "see (a) inline", \
         "a mid-sentence marker must not open a paragraph"
     assert split_principle_headings("Principle I\ntext") == "Principle I\n\ntext"
+    assert split_before("a\nSuch design and use x", ["Such design"]) == "a\n\nSuch design and use x"
+    assert split_before("a\nb", None) == "a\nb"
+    for bad in (["nope"], ["a"]):
+        try:
+            split_before("a\nSuch design\na", bad)
+        except ValueError:
+            pass
+        else:
+            raise AssertionError(f"split_before must raise when a prefix matches != 1 line: {bad}")
     assert split_principle_headings("Principle 1. Applicability of law and more") \
         == "Principle 1. Applicability of law and more", \
         "a heading with substantive text on the same line must not be split"
