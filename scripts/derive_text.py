@@ -139,6 +139,25 @@ def join_hyphenated_breaks(t: str) -> str:
     return re.sub(r"(\w)-\n(\w)", r"\1\2", t)
 
 
+def join_breaks_keep_hyphen(t: str) -> str:
+    """'extra-\\natmosphérique' -> 'extra-atmosphérique'. Joins the lines, KEEPS the hyphen.
+
+    The third member of the hyphen family, and the reason all three are separate opt-in rules rather
+    than one clever heuristic:
+
+        join_hyphenated_breaks   'propa-\\nganda'          -> 'propaganda'         hyphen dropped
+        join_breaks_keep_hyphen  'extra-\\natmosphérique'  -> 'extra-atmosphérique' hyphen kept
+        dehyphenate              'non- governmental'      -> 'non-governmental'   space removed
+
+    The first two are IDENTICAL in shape — 'X-\\nY' — and differ only in whether the hyphen belongs
+    to the word. Nothing in the bytes can tell them apart: 'propaganda' is one word broken by the
+    typesetter, 'extra-atmosphérique' is a genuine French compound that happened to break at its own
+    hyphen. Only someone reading the language knows. So the choice is declared per record, and
+    picking wrongly is visible immediately as a failed byte comparison rather than as quiet damage.
+    """
+    return re.sub(r"(\w-)\n(\w)", r"\1\2", t)
+
+
 def strip_soft_hyphens(t: str) -> str:
     """Remove U+00AD SOFT HYPHEN together with any whitespace it introduced.
 
@@ -154,6 +173,17 @@ def strip_soft_hyphens(t: str) -> str:
     # ('United Nations \xad Conference'). Absorbing the single space fuses them into
     # 'NationsConference', which reads as a typo in the corpus rather than as our bug.
     return re.sub("(?:[ \t]{2,})?­[ \t]*\n?[ \t]*", "", t)
+
+
+def strip_leading_spaces(t: str) -> str:
+    """Remove leading whitespace from every line.
+
+    -layout reproduces the printed left margin as literal spaces. Where the stored text keeps the
+    document's own line wrapping (rather than reflowing it), that margin is the only difference and
+    stripping it is the whole transformation. Trailing whitespace is left alone: normalize_text_bytes
+    settles that at the end of the pipeline.
+    """
+    return "\n".join(ln.lstrip(" \t") for ln in t.split("\n"))
 
 
 def strip_form_feeds(t: str) -> str:
@@ -235,9 +265,11 @@ def split_principle_headings(t: str) -> str:
     return "\n".join(out)
 
 
-PRE = {"join_hyphenated_breaks": join_hyphenated_breaks, "strip_soft_hyphens": strip_soft_hyphens,
+PRE = {"join_hyphenated_breaks": join_hyphenated_breaks,
+       "join_breaks_keep_hyphen": join_breaks_keep_hyphen, "strip_soft_hyphens": strip_soft_hyphens,
        "strip_form_feeds": strip_form_feeds,
        "strip_typesetting_controls": strip_typesetting_controls,
+       "strip_leading_spaces": strip_leading_spaces,
        "split_numbered_paragraphs": split_numbered_paragraphs,
        "split_lettered_items": split_lettered_items,
        "split_principle_headings": split_principle_headings}
@@ -294,6 +326,20 @@ def reflow(text: str, mode) -> str:
     """
     if not mode or mode == "none":
         return text
+    if mode == "tight":
+        # Collapse runs of blank lines WITHOUT joining anything. For sources whose stored text keeps
+        # the document's own line wrapping — the Légifrance consolidated PDF is set as a single
+        # column and its wrapping IS the text's shape — so joining would destroy it, but removing
+        # page furniture still leaves blank runs behind.
+        out, blank = [], False
+        for line in text.split("\n"):
+            if line.strip() == "":
+                if not blank:
+                    out.append("")
+                blank = True
+            else:
+                out.append(line); blank = False
+        return "\n".join(out)
     if mode not in ("paragraphs", "paragraphs_tight"):
         raise ValueError(f"unknown reflow mode: {mode}")
     out, buf = [], []
@@ -385,6 +431,34 @@ def apply_mechanical(text: str, rules) -> str:
     return text
 
 
+# ---- stage 4b: declared regex substitutions ---------------------------------------------------
+def apply_substitutions(text: str, subs):
+    """Declared regex substitutions, each with an expected match count.
+
+    WHEN TO USE THIS RATHER THAN `corrections`. A correction repairs ONE place and names it
+    literally, which is right for a human judgement about a specific defect. Some publisher
+    apparatus is repetitive instead: Légifrance appends '(Article 1)', '(Articles 2 à 5)' to every
+    heading and stamps 'VERSION EN VIGUEUR DEPUIS LE 03/08/2023' throughout. Recording 150 literal
+    corrections would bury the handful of real judgements among them.
+
+    THE GUARD IS WHAT KEEPS THIS FROM BECOMING REGEX SOUP. Every substitution declares how many
+    matches it expects, and a mismatch RAISES. A pattern that silently starts matching more (or
+    less) of the document is the exact failure this module exists to prevent, and a regex is far
+    easier to get subtly wrong than a literal string.
+    """
+    for s in (subs or []):
+        rx = re.compile(s["pattern"], re.M)
+        n = len(rx.findall(text))
+        want = s.get("count")
+        if want is not None and n != want:
+            raise ValueError(
+                f"substitution {s['pattern']!r} expected {want} match(es), found {n} — the stored "
+                f"original may have changed; re-review before editing"
+            )
+        text = rx.sub(s.get("replacement", ""), text)
+    return text
+
+
 # ---- stage 5: recorded corrections -----------------------------------------------------------
 def apply_corrections(text: str, corrections) -> str:
     """Apply each declared human repair, asserting the expected occurrence count.
@@ -424,6 +498,7 @@ def derive(spec: dict, orig_path: str, report=None) -> bytes:
     t = split_before(t, spec.get("split_before"))
     t = reflow(t, spec.get("reflow"))
     t = apply_mechanical(t, spec.get("mechanical"))
+    t = apply_substitutions(t, spec.get("substitutions"))
     t = apply_corrections(t, spec.get("corrections"))
     return normalize_text_bytes(t)
 
@@ -460,6 +535,18 @@ def selftest() -> int:
     assert reflow("one\ntwo\n\nthree\n", "paragraphs") == "one two\n\nthree\n"
     assert reflow("one\ntwo\n\nthree", "paragraphs") == "one two\n\nthree"
     assert reflow("keep\nas is", None) == "keep\nas is"
+    assert reflow("a\n\n\n\nb", "tight") == "a\n\nb"
+    assert reflow("one\ntwo\n\nthree", "tight") == "one\ntwo\n\nthree", \
+        "'tight' collapses blank runs but must NOT join wrapped lines"
+    assert strip_leading_spaces("   a\n  b") == "a\nb"
+    assert apply_substitutions("A (Article 1)\nB (Articles 2 à 5)",
+                               [{"pattern": r" \(Articles? [^)]*\)$", "replacement": "", "count": 2}]) == "A\nB"
+    try:
+        apply_substitutions("x", [{"pattern": "zzz", "replacement": "", "count": 1}])
+    except ValueError:
+        pass
+    else:
+        raise AssertionError("a substitution whose count is wrong must raise, not pass silently")
     assert do_slice("a\nb\nc", {"drop_leading_lines": 1}) == "b\nc"
     # drop_lines: removes whole lines and REPORTS how many, so a pattern that starts eating real
     # text shows up as a changed count rather than as silently missing words
@@ -471,6 +558,9 @@ def selftest() -> int:
     # the two hyphen rules are opposites and must not be confused
     assert join_hyphenated_breaks("propa-\nganda") == "propaganda"
     assert join_hyphenated_breaks("non-\ngovernmental") == "nongovernmental"
+    assert join_breaks_keep_hyphen("extra-\natmosphérique") == "extra-atmosphérique"
+    assert join_breaks_keep_hyphen("propa-\nganda") == "propa-ganda", \
+        "same shape as join_hyphenated_breaks — only a reader of the language can choose between them"
     assert dehyphenate("non- governmental") == "non-governmental", \
         "a hyphen kept across a SPACE is a real compound; across a NEWLINE it is typesetting"
     assert strip_soft_hyphens("afore­mentioned") == "aforementioned"
