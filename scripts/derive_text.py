@@ -200,10 +200,47 @@ def split_numbered_paragraphs(t: str) -> str:
     return "\n".join(out)
 
 
+def split_lettered_items(t: str) -> str:
+    """Insert a paragraph break before a lettered sub-item ('(a) ', '(b) ' …).
+
+    Companion to split_numbered_paragraphs, for instruments that enumerate with letters rather than
+    numbers — resolution 41/65 defines its terms as '(a) The term "remote sensing" means…'. The
+    volume runs them together; the stored text gives each its own paragraph.
+
+    Requires the parenthesis to open the line, so a mid-sentence '(a)' inside a cross-reference does
+    not match.
+    """
+    out = []
+    for line in t.split("\n"):
+        if re.match(r"^\s*\([a-z]\)\s", line) and out and out[-1].strip():
+            out.append("")
+        out.append(line)
+    return "\n".join(out)
+
+
+def split_principle_headings(t: str) -> str:
+    """Put a paragraph break after a line that is ONLY a principle heading ('Principle I').
+
+    Some instruments in the volume set the heading on its own line with the text running straight on
+    beneath it, and the stored text keeps the heading as a standalone paragraph. Fires only when the
+    whole line is the heading — resolution 47/68 writes 'Principle 1. Applicability of international
+    law' with substantive text on the SAME line and must not be split, which is why this is opt-in
+    per record rather than always on.
+    """
+    out = []
+    for line in t.split("\n"):
+        out.append(line)
+        if re.match(r"^\s*Principle\s+[IVXLCDM0-9]+\.?\s*$", line):
+            out.append("")
+    return "\n".join(out)
+
+
 PRE = {"join_hyphenated_breaks": join_hyphenated_breaks, "strip_soft_hyphens": strip_soft_hyphens,
        "strip_form_feeds": strip_form_feeds,
        "strip_typesetting_controls": strip_typesetting_controls,
-       "split_numbered_paragraphs": split_numbered_paragraphs}
+       "split_numbered_paragraphs": split_numbered_paragraphs,
+       "split_lettered_items": split_lettered_items,
+       "split_principle_headings": split_principle_headings}
 
 
 def apply_pre(text: str, rules) -> str:
@@ -414,6 +451,13 @@ def selftest() -> int:
     assert strip_typesetting_controls("A.\t\x07Declaration") == "A.\tDeclaration"
     assert strip_typesetting_controls("Annex.\u2003\x07Principles") == "Annex. Principles", \
         "the EM SPACE is doing a space's work and must not simply vanish"
+    assert split_lettered_items("intro\n(a) first\n(b) second") == "intro\n\n(a) first\n\n(b) second"
+    assert split_lettered_items("see (a) inline") == "see (a) inline", \
+        "a mid-sentence marker must not open a paragraph"
+    assert split_principle_headings("Principle I\ntext") == "Principle I\n\ntext"
+    assert split_principle_headings("Principle 1. Applicability of law and more") \
+        == "Principle 1. Applicability of law and more", \
+        "a heading with substantive text on the same line must not be split"
     try:
         apply_pre("x", ["no_such_rule"])
     except ValueError:

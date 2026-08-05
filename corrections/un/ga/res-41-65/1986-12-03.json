@@ -1,0 +1,96 @@
+{
+  "_comment": "Declared derivation: text.txt == extract -> slice -> drop_lines -> pre -> reflow -> mechanical -> corrections, byte-exact against text_sha256. Verified by scripts/derive_text.py.",
+  "corpus_id": "un/ga/res-41-65",
+  "version_id": "1986-12-03",
+  "extractor": {
+    "tool": "pdftotext",
+    "args": [
+      "-layout"
+    ],
+    "toolchain": "poppler 22.02.0",
+    "_reason": "Matches the pinned extractor in extraction/un/ga/res-41-65/1986-12-03.json."
+  },
+  "slice": {
+    "start_contains": "C.\t\u0007Principles Relating to Remote",
+    "end_contains": "procedures for the peaceful settlement of disputes.",
+    "_reason": "Section C of Part two of the shared compendium ST/SPACE/61/Rev.3 (English), lines 1941-2121 of 5,175. The end anchor is short enough to sit inside one raw line: 'end_contains' matches the RAW extraction, so a longer phrase spans a line break and never fires, which silently runs the slice on into the next instrument."
+  },
+  "drop_lines": [
+    {
+      "pattern": "^\\s*\\d{1,3}\\s*$",
+      "_reason": "Running page numbers, alone on a line."
+    },
+    {
+      "pattern": "^\\s*\\d{1,2}[A-Z]",
+      "_reason": "Footnote lines, whose marker digits are glued to a capital ('10Official Records of the General Assembly...'). NOTE: this removes only the FIRST line of a footnote. The stored text retains the orphaned continuation 'and Corr.1).' as its own paragraph, so this recipe reproduces that faithfully rather than tidying it away — the stored bytes are what must be reproduced, defects included."
+    }
+  ],
+  "pre": [
+    "strip_form_feeds",
+    "strip_typesetting_controls",
+    "strip_soft_hyphens",
+    "join_hyphenated_breaks",
+    "split_principle_headings",
+    "split_lettered_items",
+    "split_numbered_paragraphs"
+  ],
+  "_pre_reason": "This instrument uses three enumeration conventions the volume runs together but the stored text separates: a bare 'Principle I' heading on its own line, lettered definitions '(a)'-'(e)', and numbered paragraphs. split_principle_headings is safe here precisely because the headings carry no text on the same line — resolution 47/68 writes 'Principle 1. Applicability of international law' with substantive text following on the same line and must NOT use this rule.",
+  "reflow": "paragraphs_tight",
+  "_reflow_reason": "Undo column wrapping; 'tight' collapses the blank runs left where page furniture was removed.",
+  "mechanical": [
+    "collapse_spaces"
+  ],
+  "_mechanical_reason": "-layout pads with space runs to reproduce the printed column.",
+  "corrections": [
+    {
+      "op": "replace",
+      "from": "C.\tPrinciples Relating to Remote Sensing of the Earth from Outer Space9",
+      "to": "Principles Relating to Remote Sensing of the Earth from Outer Space",
+      "count": 1,
+      "_reason": "Removes the compendium's section label 'C.' and the trailing footnote reference marker '9'. Both belong to the volume's apparatus, not to the resolution's title.",
+      "_reviewer": "Dan",
+      "_date": "2026-08-05"
+    },
+    {
+      "op": "replace",
+      "from": "35/14 of 3 November 1980",
+      "to": "35/14 of 3 November 1980",
+      "count": 1,
+      "_reason": "NO-BREAK SPACE between day and month in this citation.",
+      "_reviewer": "Dan",
+      "_date": "2026-08-05"
+    },
+    {
+      "op": "replace",
+      "from": "40/162 of 16 December 1985",
+      "to": "40/162 of 16 December 1985",
+      "count": 1,
+      "_reason": "NO-BREAK SPACE between day and month in this citation.",
+      "_reviewer": "Dan",
+      "_date": "2026-08-05"
+    },
+    {
+      "op": "replace",
+      "from": "the Earth’s surface from space",
+      "to": "the Earth’s surface from space",
+      "count": 1,
+      "_reason": "NO-BREAK SPACE in Principle I(a), where the PDF soft-hyphenates 'surface' across a line break.",
+      "_reviewer": "Dan",
+      "_date": "2026-08-05"
+    },
+    {
+      "op": "replace",
+      "from": "the protection of the environment;",
+      "to": "the protection of the environment;",
+      "count": 1,
+      "_reason": "NO-BREAK SPACE in Principle I(a), same line-break artefact.",
+      "_reviewer": "Dan",
+      "_date": "2026-08-05"
+    }
+  ],
+  "_verified": {
+    "date": "2026-08-05",
+    "result": "byte-exact against the recorded text_sha256",
+    "note": "Third record cut from the shared English compendium. FOUR of the five corrections are NO-BREAK SPACE differences (U+00A0 where the extraction yields U+0020) that no reader would ever see. They cluster at points where the PDF broke a word or a date across a line, so they are artefacts of how the stored text was assembled rather than typographic choices. Enumerated exhaustively — the stored text contains exactly four U+00A0 characters and each is accounted for here — because a byte-equality claim is worth nothing if the remaining bytes are unexplained."
+  }
+}
