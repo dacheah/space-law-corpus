@@ -148,7 +148,12 @@ def strip_soft_hyphens(t: str) -> str:
     leaves 'S atellites' — a word split by a space, which is worse than the original defect because
     it looks like real text. So the character and the whitespace that followed it go together.
     """
-    return re.sub("­[ \t]*\n?[ \t]*", "", t)
+    # The optional leading group requires TWO OR MORE spaces. That distinction is load-bearing:
+    # -layout pads a justified line with runs of spaces ('Nations P     \xad rogramme' — padding, must
+    # go), but a single space before the soft hyphen is a real space between two words
+    # ('United Nations \xad Conference'). Absorbing the single space fuses them into
+    # 'NationsConference', which reads as a typo in the corpus rather than as our bug.
+    return re.sub("(?:[ \t]{2,})?­[ \t]*\n?[ \t]*", "", t)
 
 
 def strip_form_feeds(t: str) -> str:
@@ -161,6 +166,18 @@ def strip_form_feeds(t: str) -> str:
     drop_lines; the form feed itself is a character, so it is removed as one.
     """
     return t.replace("\x0c", "")
+
+
+def strip_typesetting_controls(t: str) -> str:
+    """Remove U+0007 BEL and normalise U+2002/2003 EN/EM SPACE to an ordinary space.
+
+    The UNOOSA compendia carry both as layout instructions the extractor faithfully preserves:
+    'A.\\t\\x07Declaration of Legal Principles' and 'Annex.\\u2003\\x07Principles Governing…'. Neither is
+    a character of the instrument. BEL is deleted outright; the wide spaces become one ordinary
+    space, because they ARE doing the work of a space between words and deleting them would fuse
+    'Annex.' onto the title.
+    """
+    return re.sub("[  ]", " ", t.replace("\x07", ""))
 
 
 def split_numbered_paragraphs(t: str) -> str:
@@ -185,6 +202,7 @@ def split_numbered_paragraphs(t: str) -> str:
 
 PRE = {"join_hyphenated_breaks": join_hyphenated_breaks, "strip_soft_hyphens": strip_soft_hyphens,
        "strip_form_feeds": strip_form_feeds,
+       "strip_typesetting_controls": strip_typesetting_controls,
        "split_numbered_paragraphs": split_numbered_paragraphs}
 
 
@@ -388,7 +406,14 @@ def selftest() -> int:
     assert strip_soft_hyphens("Earth S­ atellites") == "Earth Satellites", \
         "removing only the U+00AD would leave 'S atellites' — a word split by a space"
     assert strip_soft_hyphens("inter­\nnational") == "international"
+    assert strip_soft_hyphens("Nations P     ­ rogramme") == "Nations Programme", \
+        "-layout pads BEFORE the soft hyphen too; leaving that padding yields 'P rogramme'"
+    assert strip_soft_hyphens("United Nations ­ Conference") == "United Nations Conference", \
+        "a SINGLE space before the soft hyphen is a real word space and must survive"
     assert apply_pre("a-\nb", ["join_hyphenated_breaks"]) == "ab"
+    assert strip_typesetting_controls("A.\t\x07Declaration") == "A.\tDeclaration"
+    assert strip_typesetting_controls("Annex.\u2003\x07Principles") == "Annex. Principles", \
+        "the EM SPACE is doing a space's work and must not simply vanish"
     try:
         apply_pre("x", ["no_such_rule"])
     except ValueError:

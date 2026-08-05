@@ -27,11 +27,12 @@
   ],
   "pre": [
     "strip_form_feeds",
+    "strip_typesetting_controls",
     "strip_soft_hyphens",
     "join_hyphenated_breaks",
     "split_numbered_paragraphs"
   ],
-  "_pre_reason": "strip_form_feeds removes the page-break character WITHOUT deleting its line — pdftotext prepends it to the first line of each page, and here that line is the resolution's own title. strip_soft_hyphens removes U+00AD, an invisible typesetting hint that survives extraction ('afore­mentioned'). join_hyphenated_breaks rejoins words the typesetter split across lines ('propa-/ganda'), dropping the hyphen — the opposite of the dehyphenate rule, which keeps it. split_numbered_paragraphs restores the paragraph break before each numbered principle: the volume sets the nine principles as one continuous block, while the stored text treats each as its own paragraph.",
+  "_pre_reason": "strip_form_feeds removes the page-break character WITHOUT deleting its line — pdftotext prepends it to the first line of each page, and here that line is the resolution's own title. strip_typesetting_controls removes the BEL the volume uses as a layout marker and turns its EN/EM spaces into ordinary ones. strip_soft_hyphens removes U+00AD together with the whitespace it introduced. join_hyphenated_breaks rejoins words the typesetter split across lines ('propa-/ganda'), dropping the hyphen — the opposite of dehyphenate, which keeps it. split_numbered_paragraphs restores the paragraph break before each numbered principle: the volume sets the nine principles as one continuous block, while the stored text treats each as its own paragraph.",
   "reflow": "paragraphs_tight",
   "_reflow_reason": "Undo the column wrapping. 'tight' because removing the page-number lines leaves runs of blank lines where the page break was.",
   "mechanical": [
@@ -41,7 +42,7 @@
   "corrections": [
     {
       "op": "replace",
-      "from": "A.\t\u0007Declaration of Legal",
+      "from": "A.\tDeclaration of Legal",
       "to": "Declaration of Legal",
       "count": 1,
       "_reason": "Removes the volume's section label 'A.' and the stray BEL control character left by the typesetting, both of which belong to the compendium's own numbering of principles-instruments, not to the resolution's title.",

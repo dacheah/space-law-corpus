@@ -1,0 +1,76 @@
+{
+  "_comment": "Declared derivation: text.txt == extract -> slice -> drop_lines -> pre -> reflow -> mechanical -> corrections, byte-exact against text_sha256. Verified by scripts/derive_text.py.",
+  "corpus_id": "un/ga/res-37-92",
+  "version_id": "1982-12-10",
+  "extractor": {
+    "tool": "pdftotext",
+    "args": [
+      "-layout"
+    ],
+    "toolchain": "poppler 22.02.0",
+    "_reason": "Matches the pinned extractor in extraction/un/ga/res-37-92/1982-12-10.json."
+  },
+  "slice": {
+    "start_contains": "B.\t\u0007Principles Governing the Use by",
+    "end_contains": "shall be exclusively applicable.",
+    "_reason": "Cut from the shared compendium ST/SPACE/61/Rev.3 (English), where this resolution is section B of Part two, lines 1775-1935 of 5,175. The start anchor carries the section letter and the BEL the typesetting leaves behind, because the bare title also appears in the table of contents. The end anchor is deliberately SHORT: the stored text is reflowed, so a longer phrase spans a line break in the PDF and would never match — 'end_contains' is compared against the raw extraction, not the finished text."
+  },
+  "drop_lines": [
+    {
+      "pattern": "^\\s*\\d{1,3}\\s*$",
+      "_reason": "Running page numbers, alone on a line."
+    },
+    {
+      "pattern": "^\\s*\\d{1,2}[A-Z]",
+      "_reason": "The volume's footnotes, which print at the foot of a page and therefore land between paragraphs. A footnote line begins with its marker digits glued straight to a capital ('8Official Records of the General Assembly...'). A numbered principle cannot match, because it has a full stop and a space after the digits ('9. When international...')."
+    }
+  ],
+  "pre": [
+    "strip_form_feeds",
+    "strip_typesetting_controls",
+    "strip_soft_hyphens",
+    "join_hyphenated_breaks",
+    "split_numbered_paragraphs"
+  ],
+  "_pre_reason": "strip_form_feeds removes the page-break character without deleting its line (which here is the title). strip_typesetting_controls drops the BEL layout marker and normalises EN/EM spaces. strip_soft_hyphens removes U+00AD with the padding it introduced — this record contains 'Earth S\\u00ad atellites', which would otherwise read 'S atellites'. join_hyphenated_breaks rejoins words the typesetter split across lines. split_numbered_paragraphs restores the break before each numbered principle, which the volume sets as one block.",
+  "reflow": "paragraphs_tight",
+  "_reflow_reason": "Undo column wrapping; 'tight' because removing page-number lines leaves runs of blanks.",
+  "mechanical": [
+    "collapse_spaces"
+  ],
+  "_mechanical_reason": "-layout pads with space runs to reproduce the printed column.",
+  "corrections": [
+    {
+      "op": "replace",
+      "from": "B.\tPrinciples Governing",
+      "to": "Principles Governing",
+      "count": 1,
+      "_reason": "Removes the compendium's section label 'B.', which belongs to the volume's ordering of instruments, not to the resolution's title.",
+      "_reviewer": "Dan",
+      "_date": "2026-08-05"
+    },
+    {
+      "op": "replace",
+      "from": "Direct Television Broadcasting8",
+      "to": "Direct Television Broadcasting",
+      "count": 1,
+      "_reason": "Removes the footnote reference marker '8' printed immediately after the title. The footnote it points to is removed by the drop_lines rule above.",
+      "_reviewer": "Dan",
+      "_date": "2026-08-05"
+    },
+    {
+      "op": "replace",
+      "from": "referred to in paragraph 8 above",
+      "to": "referred to in paragraph 8 above",
+      "count": 1,
+      "_reason": "The stored text uses a NO-BREAK SPACE (U+00A0) between 'paragraph' and '8' in Principle 9, where the extraction yields an ordinary space. Keeping a cross-reference from being split across a line is normal typographic practice and the stored text preserves it. Recorded because it is a real byte difference between the extraction and the stored text, invisible on screen and therefore exactly the kind of edit that must not live only in the bytes.",
+      "_reviewer": "Dan",
+      "_date": "2026-08-05"
+    }
+  ],
+  "_verified": {
+    "date": "2026-08-05",
+    "result": "byte-exact against the recorded text_sha256",
+    "note": "Second record cut from the shared English compendium (original sha256 5bacb8b48ec5...), which is the stored original for all six GA resolution records."
+  }
+}
