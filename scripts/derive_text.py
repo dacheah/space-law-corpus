@@ -248,6 +248,28 @@ def split_lettered_items(t: str) -> str:
     return "\n".join(out)
 
 
+def split_short_markers(t: str) -> str:
+    """Give a line that is ONLY a subsection marker ('A', 'B', 'I') its own paragraph.
+
+    Resolution 1721 (XVI) is really two resolutions, 1721 A and 1721 B, and the volume marks the
+    division with a single centred capital on its own line. With no blank line around it, reflow
+    swallows the marker into the surrounding text — 'of outer space A The General Assembly,' — which
+    reads as a typo and loses the division between two distinct resolutions.
+
+    Narrow by construction: the ENTIRE line must be one to three capitals or roman numerals. It
+    cannot fire on a sentence, and it cannot fire on 'A. Declaration…' because of the full stop.
+    """
+    out = []
+    for line in t.split("\n"):
+        solo = re.match(r"^\s*([A-Z]{1,3})\s*$", line)
+        if solo and out and out[-1].strip():
+            out.append("")
+        out.append(line)
+        if solo:
+            out.append("")
+    return "\n".join(out)
+
+
 def split_principle_headings(t: str) -> str:
     """Put a paragraph break after a line that is ONLY a principle heading ('Principle I').
 
@@ -272,6 +294,7 @@ PRE = {"join_hyphenated_breaks": join_hyphenated_breaks,
        "strip_leading_spaces": strip_leading_spaces,
        "split_numbered_paragraphs": split_numbered_paragraphs,
        "split_lettered_items": split_lettered_items,
+       "split_short_markers": split_short_markers,
        "split_principle_headings": split_principle_headings}
 
 
@@ -579,6 +602,11 @@ def selftest() -> int:
     assert split_lettered_items("see (a) inline") == "see (a) inline", \
         "a mid-sentence marker must not open a paragraph"
     assert split_principle_headings("Principle I\ntext") == "Principle I\n\ntext"
+    assert split_short_markers("of outer space\n   A\nThe General Assembly,") \
+        == "of outer space\n\n   A\n\nThe General Assembly,"
+    assert split_short_markers("A. Declaration of Legal") == "A. Declaration of Legal", \
+        "a section label with a full stop is not a bare marker"
+    assert split_short_markers("A sentence starting with A") == "A sentence starting with A"
     assert split_before("a\nSuch design and use x", ["Such design"]) == "a\n\nSuch design and use x"
     assert split_before("a\nb", None) == "a\nb"
     for bad in (["nope"], ["a"]):

@@ -1,0 +1,13 @@
+{
+  "_comment": "Declares that this record's stored text CANNOT be honestly re-derived from its stored original. Checked and falsification-tested by scripts/derive_text.py.",
+  "corpus_id": "un/treaty/ost-1967",
+  "version_id": "1967-01-27-fr",
+  "derivable": false,
+  "not_derivable_basis": "would_be_a_transcript",
+  "not_derivable_reason": "The record's own `retrieved_by` says the text was 'extracted and CLEANED by operator' from the byte-exact official ST/SPACE/61/Rev.3 French edition. The cleaning is the obstacle. This volume separates paragraphs by FIRST-LINE INDENTATION rather than blank lines, and the indent values are not consistent — measured across section A of the French edition they run 13, 14, 18, 19, 20, 22, 23 and 24 columns, with article bodies and preambular paragraphs on different bases and ragged justification moving them by a column either way. No indent threshold separates a paragraph start from a wrapped continuation across the whole document, so the paragraph structure in the stored text reflects an operator's reading, not a rule. Reproducing it would mean declaring a literal anchor for most paragraphs in the instrument — a recipe that restates its own answer and proves nothing about the original. Refused deliberately.\n\nNote this is a statement about the LAYOUT, not the text: the French text itself is authentic and hash-pinned, and extract.py measures its token overlap against the official PDF on every run.",
+  "_remedy": "If the paragraph convention is ever identified as a rule rather than a series of readings, this becomes derivable and the declaration should be deleted.",
+  "_declared": {
+    "date": "2026-08-05",
+    "reviewer": "Dan"
+  }
+}

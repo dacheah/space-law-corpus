@@ -1,0 +1,50 @@
+{
+  "_comment": "Declared derivation: text.txt == extract -> slice -> drop_lines -> pre -> reflow -> mechanical -> corrections, byte-exact against text_sha256. Verified by scripts/derive_text.py.",
+  "corpus_id": "un/ga/res-1721-XVI",
+  "version_id": "1961-12-20",
+  "extractor": {
+    "tool": "pdftotext",
+    "args": [
+      "-layout"
+    ],
+    "toolchain": "poppler 22.02.0",
+    "_reason": "Matches the pinned extractor in extraction/un/ga/res-1721-XVI/1961-12-20.json."
+  },
+  "slice": {
+    "start_contains": "International cooperation in the peaceful uses",
+    "end_contains": "considers significant.",
+    "_reason": "Section A of Part three ('Related resolutions') of the shared compendium ST/SPACE/61/Rev.3 (English), lines 2582-2635 of 5,175. The end anchor is two words long because 'end_contains' matches the RAW extraction: the stored sentence ends '...as it considers significant.' but the PDF breaks it across lines after 'as it', so any longer anchor never fires and the slice runs on into section B."
+  },
+  "drop_lines": [
+    {
+      "pattern": "^\\s*\\d{1,3}\\s*$",
+      "_reason": "Running page numbers, alone on a line."
+    },
+    {
+      "pattern": "^\\s*\\d{1,2}[A-Z]",
+      "_reason": "Footnote lines, marker digits glued to a capital."
+    }
+  ],
+  "pre": [
+    "strip_form_feeds",
+    "strip_typesetting_controls",
+    "strip_soft_hyphens",
+    "join_hyphenated_breaks",
+    "split_short_markers",
+    "split_lettered_items",
+    "split_numbered_paragraphs"
+  ],
+  "_pre_reason": "split_short_markers is the one that matters here. Resolution 1721 (XVI) is really TWO resolutions, 1721 A and 1721 B, and the volume divides them with a single centred capital on its own line with no blank line around it. Without the rule, reflow swallows the marker into the surrounding text as 'of outer space A The General Assembly,' — which reads as a typo and destroys the division between two distinct resolutions.",
+  "reflow": "paragraphs_tight",
+  "_reflow_reason": "Undo column wrapping; 'tight' collapses the blank runs left by removed page furniture.",
+  "mechanical": [
+    "collapse_spaces"
+  ],
+  "_mechanical_reason": "-layout pads with space runs to reproduce the printed column.",
+  "corrections": [],
+  "_verified": {
+    "date": "2026-08-05",
+    "result": "byte-exact against the recorded text_sha256",
+    "note": "Zero corrections — no human repair was needed. Fifth and final record cut from the shared English compendium (original sha256 5bacb8b48ec5...)."
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "_comment": "Declares that this record's stored text CANNOT be re-derived from its stored original. Checked and falsification-tested by scripts/derive_text.py.",
+  "corpus_id": "un/ga/res-47-68",
+  "version_id": "1992-12-14",
+  "derivable": false,
+  "not_derivable_basis": "different_source_artefact",
+  "not_derivable_reason": "capture_history records two artefacts: the text was first 'Extracted from the UNOOSA ST/SPACE/61/Rev.3 consolidated PDF via web-fetch text extraction' (original_sha256 989209079da4...), and the official publication PDF (5bacb8b48ec5...) was stored afterwards, 'upgrading the integrity anchor'. The stored text therefore came from a web-fetch rendering of the volume, not from the volume as pdftotext reads it. That explains what a derivation attempt could not: the stored text carries paragraph breaks MID-SENTENCE (one paragraph begins 'and impact region; (v) General function of spacecraft;'), which no rule over the stored PDF can predict because they were never in it.",
+  "_remedy": "Re-deriving would require storing the ORIGINAL capture artefact alongside the upgraded anchor. That is an ingest decision, not a recipe problem.",
+  "_declared": {
+    "date": "2026-08-05",
+    "reviewer": "Dan"
+  }
+}

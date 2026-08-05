@@ -1,0 +1,13 @@
+{
+  "_comment": "Declares that this record's stored text CANNOT be re-derived from its stored original. Checked and falsification-tested by scripts/derive_text.py.",
+  "corpus_id": "un/treaty/rescue-1968",
+  "version_id": "1968-04-22",
+  "derivable": false,
+  "not_derivable_basis": "different_source_artefact",
+  "not_derivable_reason": "The strongest case in the corpus. capture_history shows the text was captured from the AUSTRALIAN TREATY SERIES via AustLII (08a6441aaae8...) 'because UNOOSA/UN sources for this treaty were repeatedly unavailable', and only later 'Re-sourced from UNOOSA ST/SPACE/61/Rev.3 compilation, replacing the Australian Treaty Series interim source' (63147c6dc696...). The stored text is a DIFFERENT PUBLISHER'S rendering of the same treaty. This accounts for the interleaved footnote blocks ('2United Nations, Treaty Series, vol. 672, No. 9574.') sitting mid-document, which belong to the AustLII typesetting and not to the UNOOSA volume now stored as the original.",
+  "_remedy": "Re-deriving would require storing the ORIGINAL capture artefact alongside the upgraded anchor. That is an ingest decision, not a recipe problem.",
+  "_declared": {
+    "date": "2026-08-05",
+    "reviewer": "Dan"
+  }
+}

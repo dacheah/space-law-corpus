@@ -1,0 +1,13 @@
+{
+  "_comment": "Declares that this record's stored text CANNOT be re-derived from its stored original. Checked and falsification-tested by scripts/derive_text.py.",
+  "corpus_id": "un/softlaw/lts-guidelines-2019",
+  "version_id": "2019-06-21",
+  "derivable": false,
+  "not_derivable_basis": "different_source_artefact",
+  "not_derivable_reason": "capture_history records the text as 'Extracted from the UNOOSA 2021 publication of the Guidelines (reproducing A/74/20 annex II) via web-fetch PDF text extraction' (a6ff1dea13fa...), with the official publication PDF (9dbdf01acc33...) stored afterwards as a byte-exact anchor upgrade. Same pattern as the Luxembourg record: the anchor was strengthened, which is right, and the consequence is that the text is no longer derivable from what is stored beside it.",
+  "_remedy": "Re-deriving would require storing the ORIGINAL capture artefact alongside the upgraded anchor. That is an ingest decision, not a recipe problem.",
+  "_declared": {
+    "date": "2026-08-05",
+    "reviewer": "Dan"
+  }
+}
