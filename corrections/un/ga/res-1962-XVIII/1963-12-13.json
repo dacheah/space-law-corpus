@@ -1,0 +1,66 @@
+{
+  "_comment": "Declared derivation for this record: text.txt == extract -> slice -> drop_lines -> pre -> reflow -> mechanical -> corrections, byte-exact against text_sha256. Verified by scripts/derive_text.py.",
+  "corpus_id": "un/ga/res-1962-XVIII",
+  "version_id": "1963-12-13",
+  "extractor": {
+    "tool": "pdftotext",
+    "args": [
+      "-layout"
+    ],
+    "toolchain": "poppler 22.02.0",
+    "_reason": "Matches the pinned extractor already recorded in extraction/un/ga/res-1962-XVIII/1963-12-13.json. -layout preserves the column structure this volume depends on."
+  },
+  "slice": {
+    "start_contains": "A.\t\u0007Declaration of Legal Principles",
+    "end_contains": "returned to the State of registry of their space vehicle.",
+    "_reason": "The stored original is the whole UNOOSA compendium ST/SPACE/61/Rev.3 (English) — 5,175 extracted lines carrying every instrument in the volume. This resolution occupies lines 1683-1769. The start anchor includes the section marker 'A.' and the BEL character the typesetting leaves behind, because the plain title also appears in the table of contents (line 131) and in a cross-reference inside another instrument (line 194); a bare title anchor would slice from the contents page. Recorded here because the extraction recipe said slice:null, which was factually wrong for every record cut from this volume."
+  },
+  "drop_lines": [
+    {
+      "pattern": "^\\s*\\d{1,3}\\s*$",
+      "_reason": "Running page numbers, which sit alone on a line (42 and 44 fall inside this resolution). They are the volume's pagination, not the resolution's text."
+    },
+    {
+      "pattern": "^\\s*\\d+Adopted by the General Assembly",
+      "_reason": "The volume's footnote crediting adoption ('7Adopted by the General Assembly in its resolution 1962 (XVIII) of 13 December 1963.'), printed at the foot of the page and therefore landing BETWEEN two preambular paragraphs. It is the editor's citation of the resolution, not part of it."
+    }
+  ],
+  "pre": [
+    "strip_form_feeds",
+    "strip_soft_hyphens",
+    "join_hyphenated_breaks",
+    "split_numbered_paragraphs"
+  ],
+  "_pre_reason": "strip_form_feeds removes the page-break character WITHOUT deleting its line — pdftotext prepends it to the first line of each page, and here that line is the resolution's own title. strip_soft_hyphens removes U+00AD, an invisible typesetting hint that survives extraction ('afore­mentioned'). join_hyphenated_breaks rejoins words the typesetter split across lines ('propa-/ganda'), dropping the hyphen — the opposite of the dehyphenate rule, which keeps it. split_numbered_paragraphs restores the paragraph break before each numbered principle: the volume sets the nine principles as one continuous block, while the stored text treats each as its own paragraph.",
+  "reflow": "paragraphs_tight",
+  "_reflow_reason": "Undo the column wrapping. 'tight' because removing the page-number lines leaves runs of blank lines where the page break was.",
+  "mechanical": [
+    "collapse_spaces"
+  ],
+  "_mechanical_reason": "-layout pads with runs of spaces to reproduce the printed column; the stored text uses single spaces.",
+  "corrections": [
+    {
+      "op": "replace",
+      "from": "A.\t\u0007Declaration of Legal",
+      "to": "Declaration of Legal",
+      "count": 1,
+      "_reason": "Removes the volume's section label 'A.' and the stray BEL control character left by the typesetting, both of which belong to the compendium's own numbering of principles-instruments, not to the resolution's title.",
+      "_reviewer": "Dan",
+      "_date": "2026-08-05"
+    },
+    {
+      "op": "replace",
+      "from": "Use of Outer Space7",
+      "to": "Use of Outer Space",
+      "count": 1,
+      "_reason": "Removes the footnote reference marker '7' printed immediately after the title. The footnote it points to is dropped by the drop_lines rule above; the marker is the volume's apparatus, not part of the resolution's title.",
+      "_reviewer": "Dan",
+      "_date": "2026-08-05"
+    }
+  ],
+  "_verified": {
+    "date": "2026-08-05",
+    "result": "byte-exact against the recorded text_sha256",
+    "note": "First record cut from a shared multi-instrument compendium. The same original.pdf (sha256 5bacb8b48ec5...) is the stored original for all six GA resolution records, so each needs its own slice out of the identical document."
+  }
+}

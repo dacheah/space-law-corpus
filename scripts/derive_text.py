@@ -16,10 +16,23 @@ Those repairs are correct and must be kept. But while they live only in the stor
 INVISIBLE: nothing records that a human changed anything, or why. This module makes the derivation
 explicit and auditable, so byte equality and honesty are the same act:
 
-    text.txt  ==  extract -> slice -> reflow -> mechanical rules -> recorded corrections
+    text.txt  ==  extract -> slice -> drop_lines -> pre -> reflow -> mechanical -> corrections
 
 Every stage is deterministic and declared per record in corrections/<corpus_id>/<version_id>.json.
 Nothing is hidden in a person's memory; every human edit carries a reason, a reviewer and a date.
+
+    extract      the pinned extractor (pdftotext with recorded args, or passthrough)
+    slice        cut ONE contiguous instrument out of a larger document
+    drop_lines   delete interleaved page furniture slicing cannot reach (page numbers, footnotes)
+    pre          line surgery that must happen BEFORE paragraphs are joined (form feeds, soft
+                 hyphens, words broken across lines, restoring breaks before numbered items)
+    reflow       undo the source's hard wrapping
+    mechanical   named, general text rules (markdown artefacts, spacing)
+    corrections  declared human repairs, each with a reason, reviewer, date and a count guard
+
+The order is load-bearing. `pre` runs before `reflow` because joining paragraphs first would make a
+word broken across lines indistinguishable from two words; `corrections` runs last so a repair is
+written against the text a reader would actually see.
 
     python3 scripts/derive_text.py            # verify every record with a corrections file
     python3 scripts/derive_text.py --selftest # offline checks of the pure transforms
@@ -82,6 +95,104 @@ def do_slice(text: str, sl) -> str:
         j = text.find(sl["end_contains"])
         if j >= 0:
             text = text[:j + len(sl["end_contains"])]
+    return text
+
+
+# ---- stage 2b: drop page furniture ------------------------------------------------------------
+def drop_lines(text: str, rules) -> tuple:
+    """Delete whole lines matching declared patterns. Returns (text, counts).
+
+    WHY SLICING IS NOT ENOUGH. The UNOOSA compendia (ST/SPACE/61/Rev.3) print several instruments
+    in one volume, and the page furniture is INTERLEAVED with the text — a page number on its own
+    line, a form feed, a footnote line such as '7Adopted by the General Assembly in its resolution
+    1962 (XVIII) of 13 December 1963.' sitting between two preambular paragraphs. `slice` cuts one
+    contiguous range and cannot remove something from the middle.
+
+    Every pattern carries a `_reason` in the recipe, and the count of lines each one removed is
+    reported back, so a pattern that silently starts matching real text is visible rather than
+    invisible. Patterns are anchored by the recipe author, not guessed here.
+    """
+    if not rules:
+        return text, {}
+    compiled = [(r["pattern"], re.compile(r["pattern"])) for r in rules]
+    counts = {p: 0 for p, _ in compiled}
+    out = []
+    for line in text.split("\n"):
+        for pat, rx in compiled:
+            if rx.search(line):
+                counts[pat] += 1
+                break
+        else:
+            out.append(line)
+    return "\n".join(out), counts
+
+
+# ---- stage 2c: pre-reflow line surgery --------------------------------------------------------
+def join_hyphenated_breaks(t: str) -> str:
+    """'propa-\\nganda' -> 'propaganda'.
+
+    Distinct from `dehyphenate`, and the difference matters. A typeset PDF breaks a word across
+    lines with a hyphen that is NOT part of the word, so the hyphen must go. `dehyphenate` handles
+    the opposite case — a real hyphen in a compound ('non- governmental') that a line break merely
+    separated — and keeps it. Applying the wrong one turns 'propaganda' into 'propa-ganda'.
+    """
+    return re.sub(r"(\w)-\n(\w)", r"\1\2", t)
+
+
+def strip_soft_hyphens(t: str) -> str:
+    """Remove U+00AD SOFT HYPHEN together with any whitespace it introduced.
+
+    The soft hyphen is an invisible typesetting hint marking where a word MAY break. It survives PDF
+    extraction where the rendered hyphen does not, and -layout output often carries the break's
+    whitespace with it: 'Earth S\\xad atellites' and 'inter\\xad national'. Removing only the U+00AD
+    leaves 'S atellites' — a word split by a space, which is worse than the original defect because
+    it looks like real text. So the character and the whitespace that followed it go together.
+    """
+    return re.sub("­[ \t]*\n?[ \t]*", "", t)
+
+
+def strip_form_feeds(t: str) -> str:
+    """Remove U+000C FORM FEED characters without deleting their line.
+
+    pdftotext marks a page break with a form feed PREPENDED to the first line of the next page, so
+    '\\x0cA.\\tDeclaration of Legal Principles' is both a page boundary AND the instrument's title.
+    A drop_lines rule matching the form feed would delete the title with it — which is exactly the
+    mistake this rule exists to prevent. Page NUMBERS sit on their own lines and are handled by
+    drop_lines; the form feed itself is a character, so it is removed as one.
+    """
+    return t.replace("\x0c", "")
+
+
+def split_numbered_paragraphs(t: str) -> str:
+    """Insert a paragraph break before a line that begins a numbered principle ('1. ', '2. ' …).
+
+    Typeset UN volumes set an enumerated list as one continuous block with no blank line between
+    items, while the stored texts treat each numbered principle as its own paragraph. Without this,
+    reflow collapses all nine principles of resolution 1962 (XVIII) onto a single line.
+
+    Deliberately NARROW: it fires only on a line whose first non-space characters are digits then a
+    full stop then a space, and only when the previous line is not already blank. A wrapped line
+    that happens to start with a year or a quantity does not match, because those are not followed
+    by '. '. It is opt-in per record, so a document where numbering runs inline is unaffected.
+    """
+    out = []
+    for line in t.split("\n"):
+        if re.match(r"^\s*\d+\.\s", line) and out and out[-1].strip():
+            out.append("")
+        out.append(line)
+    return "\n".join(out)
+
+
+PRE = {"join_hyphenated_breaks": join_hyphenated_breaks, "strip_soft_hyphens": strip_soft_hyphens,
+       "strip_form_feeds": strip_form_feeds,
+       "split_numbered_paragraphs": split_numbered_paragraphs}
+
+
+def apply_pre(text: str, rules) -> str:
+    for name in (rules or []):
+        if name not in PRE:
+            raise ValueError(f"unknown pre rule: {name}")
+        text = PRE[name](text)
     return text
 
 
@@ -215,9 +326,13 @@ def apply_corrections(text: str, corrections) -> str:
 
 
 # ---- pipeline --------------------------------------------------------------------------------
-def derive(spec: dict, orig_path: str) -> bytes:
+def derive(spec: dict, orig_path: str, report=None) -> bytes:
     t = extract(orig_path, spec["extractor"])
     t = do_slice(t, spec.get("slice"))
+    t, counts = drop_lines(t, spec.get("drop_lines"))
+    if report is not None:
+        report["dropped"] = counts
+    t = apply_pre(t, spec.get("pre"))
     t = reflow(t, spec.get("reflow"))
     t = apply_mechanical(t, spec.get("mechanical"))
     t = apply_corrections(t, spec.get("corrections"))
@@ -257,6 +372,29 @@ def selftest() -> int:
     assert reflow("one\ntwo\n\nthree", "paragraphs") == "one two\n\nthree"
     assert reflow("keep\nas is", None) == "keep\nas is"
     assert do_slice("a\nb\nc", {"drop_leading_lines": 1}) == "b\nc"
+    # drop_lines: removes whole lines and REPORTS how many, so a pattern that starts eating real
+    # text shows up as a changed count rather than as silently missing words
+    txt, counts = drop_lines("keep\n   42\nalso\n\x0cpage\n", [{"pattern": r"^\s*\d{1,3}\s*$"},
+                                                              {"pattern": "\x0c"}])
+    assert txt == "keep\nalso\n", txt
+    assert counts == {r"^\s*\d{1,3}\s*$": 1, "\x0c": 1}, counts
+    assert drop_lines("a\nb", None)[0] == "a\nb"
+    # the two hyphen rules are opposites and must not be confused
+    assert join_hyphenated_breaks("propa-\nganda") == "propaganda"
+    assert join_hyphenated_breaks("non-\ngovernmental") == "nongovernmental"
+    assert dehyphenate("non- governmental") == "non-governmental", \
+        "a hyphen kept across a SPACE is a real compound; across a NEWLINE it is typesetting"
+    assert strip_soft_hyphens("afore­mentioned") == "aforementioned"
+    assert strip_soft_hyphens("Earth S­ atellites") == "Earth Satellites", \
+        "removing only the U+00AD would leave 'S atellites' — a word split by a space"
+    assert strip_soft_hyphens("inter­\nnational") == "international"
+    assert apply_pre("a-\nb", ["join_hyphenated_breaks"]) == "ab"
+    try:
+        apply_pre("x", ["no_such_rule"])
+    except ValueError:
+        pass
+    else:
+        raise AssertionError("an unknown pre rule must raise, not pass silently")
     assert do_slice("xxSTARTyy", {"start_contains": "START"}) == "STARTyy"
     # corrections: count guard must FAIL LOUDLY rather than silently produce different text
     assert apply_corrections("a b a", [{"from": "a", "to": "z", "count": 2}]) == "z b z"
