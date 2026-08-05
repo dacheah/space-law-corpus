@@ -89,3 +89,7 @@ corrections:
 binding_force: binding
 issuing_authority: "Parliament of France"
 administering_authority: "Minister responsible for space activities (France)"
+akn_expression_uri: /akn/fr/act/2023-08-03/loi-operations-spatiales-2008/fra
+akn_uri: /akn/fr/act/2023-08-03/loi-operations-spatiales-2008
+akn_uri_basis: iso3166
+akn_uri_note: ''

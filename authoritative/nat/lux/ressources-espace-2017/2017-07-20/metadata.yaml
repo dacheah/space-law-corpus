@@ -71,3 +71,7 @@ verification:
 binding_force: binding
 issuing_authority: "Chamber of Deputies of Luxembourg"
 administering_authority: "Ministry of the Economy (Luxembourg)"
+akn_expression_uri: /akn/lu/act/2017-07-20/ressources-espace-2017/fra
+akn_uri: /akn/lu/act/2017-07-20/ressources-espace-2017
+akn_uri_basis: iso3166
+akn_uri_note: ''

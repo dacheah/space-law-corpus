@@ -79,3 +79,7 @@ verification:
 binding_force: binding
 issuing_authority: "United Nations General Assembly"
 administering_authority: null
+akn_expression_uri: /akn/un/doc/treaty/un-ga/1979-12-18/moon-1979/eng
+akn_uri: /akn/un/doc/treaty/un-ga/1979-12-18/moon-1979
+akn_uri_basis: akn4un
+akn_uri_note: ''

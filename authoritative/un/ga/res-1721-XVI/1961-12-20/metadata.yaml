@@ -102,3 +102,7 @@ verification:
   note: Scope of verification is Parts A and B, the parts reproduced in the source compilation. Independent
     corroboration against the ODS record copy is limited to metadata (title, part structure, plenary meeting)
     because that artefact is a scan whose OCR layer is corrupt.
+akn_expression_uri: /akn/un/statement/resolution/un-ga/1961-12-20/res-1721-XVI/eng
+akn_uri: /akn/un/statement/resolution/un-ga/1961-12-20/res-1721-XVI
+akn_uri_basis: akn4un
+akn_uri_note: ''
