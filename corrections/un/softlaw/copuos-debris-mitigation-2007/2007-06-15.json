@@ -1,0 +1,91 @@
+{
+  "_comment": "Declared derivation: text.txt == extract -> slice -> drop_lines -> pre -> reflow -> mechanical -> corrections, byte-exact against text_sha256. Verified by scripts/derive_text.py.",
+  "corpus_id": "un/softlaw/copuos-debris-mitigation-2007",
+  "version_id": "2007-06-15",
+  "extractor": {
+    "tool": "pdftotext",
+    "args": [
+      "-layout"
+    ],
+    "toolchain": "poppler 22.02.0",
+    "_reason": "Matches the pinned extractor in extraction/un/softlaw/copuos-debris-mitigation-2007/2007-06-15.json."
+  },
+  "slice": {
+    "start_contains": "Space Debris Mitigation Guidelines of the\nCommittee",
+    "end_contains": "online.org).",
+    "_reason": "The stored original is the UNOOSA booklet (ST/SPACE/49), which wraps the Guidelines in front matter and a back cover. The start anchor spans a line break deliberately: the plain title also appears in the cover, the contents and an introductory sentence, and only the running head at the top of the Guidelines proper breaks after 'of the'. The slice ends at the IADC website reference; everything after is the publisher's colophon ('United Nations publication / Printed in Austria / V.09-88517')."
+  },
+  "drop_lines": [
+    {
+      "pattern": "^\\s*\\d{1,2}\\s*$",
+      "_reason": "Running page numbers, alone on a line."
+    },
+    {
+      "pattern": "^\\s*SPACE DEBRIS MITIGATION GUIDELINES OF THE",
+      "_reason": "The running header repeated at the top of each page of the Guidelines."
+    },
+    {
+      "pattern": "^\\s*United Nations publication, Sales No\\.",
+      "_reason": "Footnote 1, citing the Committee's 1999 Technical Report on Space Debris. Printed at the foot of the page and therefore landing INSIDE a paragraph — see the fourth correction, which repairs the split it leaves behind."
+    },
+    {
+      "pattern": "^\\s*_{5,}\\s*$",
+      "_reason": "The rule separating footnotes from body text."
+    }
+  ],
+  "pre": [
+    "strip_form_feeds",
+    "strip_soft_hyphens",
+    "join_hyphenated_breaks"
+  ],
+  "_pre_reason": "NOTE the deliberate ABSENCE of strip_typesetting_controls, which every sibling record in this corpus uses. This stored text KEEPS the BEL and EM SPACE in its guideline headings ('Guideline 6:\\u2003\\u0007Limit the long-term presence...'), so here those characters are content, not apparatus. The same bytes are furniture in one document and text in another, which is exactly why each rule is opt-in per record rather than applied globally.",
+  "reflow": "paragraphs_tight",
+  "_reflow_reason": "Undo column wrapping; 'tight' collapses the blank runs left where page furniture was removed.",
+  "mechanical": [
+    "collapse_spaces"
+  ],
+  "_mechanical_reason": "-layout pads with space runs to reproduce the printed column.",
+  "corrections": [
+    {
+      "op": "replace",
+      "from": "www.iadc‑online.org",
+      "to": "www.iadc-online.org",
+      "count": 1,
+      "_reason": "The booklet sets the URL with a NON-BREAKING HYPHEN (U+2011) so it will not split across a line; the stored text uses an ordinary hyphen-minus, which is what the address actually is. Invisible on screen, a real byte difference.",
+      "_reviewer": "Dan",
+      "_date": "2026-08-05"
+    },
+    {
+      "op": "replace",
+      "from": "Space Debris in 1999,1 it has",
+      "to": "Space Debris in 1999, it has",
+      "count": 1,
+      "_reason": "Removes footnote reference marker '1', which the extraction glues to the preceding comma. The footnote it points to is removed by the drop_lines rule above.",
+      "_reviewer": "Dan",
+      "_date": "2026-08-05"
+    },
+    {
+      "op": "replace",
+      "from": "A/AC.105/ C.1/L.260.",
+      "to": "A/AC.105/C.1/L.260.",
+      "count": 1,
+      "_reason": "The document symbol is broken across a line after the solidus, and -layout leaves a space at the join. A UN document symbol contains no spaces; the stored text closes it up.",
+      "_reviewer": "Dan",
+      "_date": "2026-08-05"
+    },
+    {
+      "op": "replace",
+      "from": "Peaceful Uses of Outer\n\nSpace acknowledges",
+      "to": "Peaceful Uses of Outer Space acknowledges",
+      "count": 1,
+      "_reason": "Rejoins a sentence split by footnote removal. Footnote 1 is printed at the foot of a page that falls MID-PARAGRAPH, so dropping its line leaves '...the Committee on the Peaceful Uses of Outer' and 'Space acknowledges...' as two paragraphs. The stored text has them as one sentence, which is what the document says. This is the general hazard with drop_lines: removing interleaved furniture can leave a paragraph in halves, and the repair has to be declared rather than assumed.",
+      "_reviewer": "Dan",
+      "_date": "2026-08-05"
+    }
+  ],
+  "_verified": {
+    "date": "2026-08-05",
+    "result": "byte-exact against the recorded text_sha256",
+    "note": "The last of the 24 records to be resolved. Also the record that exposed a real bug in join_hyphenated_breaks: the rule required the hyphen to sit immediately before the newline, but pdftotext -layout pads every line to the column width, so the break is 'or-      \\n   bit'. The narrow pattern matched nothing and left 'or- bit' in the text looking like a genuine word break. Fixed and pinned by a selftest; all ten previously byte-exact records re-verified after the change."
+  }
+}

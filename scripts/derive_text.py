@@ -136,7 +136,11 @@ def join_hyphenated_breaks(t: str) -> str:
     the opposite case — a real hyphen in a compound ('non- governmental') that a line break merely
     separated — and keeps it. Applying the wrong one turns 'propaganda' into 'propa-ganda'.
     """
-    return re.sub(r"(\w)-\n(\w)", r"\1\2", t)
+    # Trailing whitespace before the newline is NOT optional to handle: pdftotext -layout pads every
+    # line out to the printed column width, so the break is 'or-      \n   bit', never 'or-\nbit'.
+    # The narrower pattern matched nothing on -layout output and left 'or- bit' sitting in the text
+    # looking like a real word break.
+    return re.sub(r"(\w)-[ \t]*\n[ \t]*(\w)", r"\1\2", t)
 
 
 def join_breaks_keep_hyphen(t: str) -> str:
@@ -155,7 +159,7 @@ def join_breaks_keep_hyphen(t: str) -> str:
     hyphen. Only someone reading the language knows. So the choice is declared per record, and
     picking wrongly is visible immediately as a failed byte comparison rather than as quiet damage.
     """
-    return re.sub(r"(\w-)\n(\w)", r"\1\2", t)
+    return re.sub(r"(\w-)[ \t]*\n[ \t]*(\w)", r"\1\2", t)
 
 
 def strip_soft_hyphens(t: str) -> str:
@@ -580,8 +584,11 @@ def selftest() -> int:
     assert drop_lines("a\nb", None)[0] == "a\nb"
     # the two hyphen rules are opposites and must not be confused
     assert join_hyphenated_breaks("propa-\nganda") == "propaganda"
+    assert join_hyphenated_breaks("Earth or-     \n   bit") == "Earth orbit", \
+        "-layout pads the line end; without tolerating that, the rule silently does nothing"
     assert join_hyphenated_breaks("non-\ngovernmental") == "nongovernmental"
     assert join_breaks_keep_hyphen("extra-\natmosphérique") == "extra-atmosphérique"
+    assert join_breaks_keep_hyphen("extra-   \n  atmosphérique") == "extra-atmosphérique"
     assert join_breaks_keep_hyphen("propa-\nganda") == "propa-ganda", \
         "same shape as join_hyphenated_breaks — only a reader of the language can choose between them"
     assert dehyphenate("non- governmental") == "non-governmental", \
