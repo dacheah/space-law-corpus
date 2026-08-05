@@ -1,0 +1,28 @@
+# Build-engine manifest — SHA-256 of every REPRODUCIBILITY-ENGINE file in the Project Origin
+# corpus toolkit (the code that PRODUCES the published corpus). Non-producing tooling is
+# excluded — see ENGINE_EXCLUDE in verify_engine.py — so routine monitoring changes do not move
+# it. Scope covers scripts/ AND schema/: the schemas and the AKN registry determine what the
+# engine emits, so a change there MUST move the fingerprint. Paths are repo-relative.
+# Regenerate with:  python3 verify_engine.py --generate
+# Verify with:      python3 verify_engine.py
+a10d6b6944ec8873d5c5d3f70e7eb94e0c5824a749a9e6c297aac6a5d3160d7f  schema/akn-registry.json
+9c92c9b7689bfddfd1ae2fef1cab054d5e5188c6eddf1290e34245b9cbb79e7e  schema/authoritative-metadata.schema.json
+74a91a88a346222faeb1b6e9c53850e04d85c01089e43c5ca9ec742eb5ab3e48  schema/derived-metadata.schema.json
+45a4ec01fb4d3e87b7ad0bc26b510bce86f7fbe9ab1f6ac2ce444a4cfc14137b  scripts/akn.py
+6d297dc7a2a6af791a170f4df6bfe41c74e1436873307dbc2b738b90fa196797  scripts/build_anchors.py
+c84e5d49118c50938952ff754321b41d43832b35e45544bd3f4ce601d1915d3c  scripts/build_derived.py
+33d80a6aaaf1822be6a7f32cbb286dcf93bfd8868fe8fc207ec9865ce8a2b5ae  scripts/build_site.py
+4efbfffa17681a66faec5fb419aae688e523627afe6d6309834e2706cd39d592  scripts/concept_tags.py
+736ca751bfed3d8244075eb8710476d25bda3755459635f77beb229ddef5b88d  scripts/derive_text.py
+83001aa7ada58e3ec1ef5b5d047ce6066931012fa20a470f90a2b83416ff73fe  scripts/diff_passes.py
+259478165b30128e7708e4d0258906aa9170bdb803969db5bab4f581629e55b2  scripts/export_hf_dataset.py
+95dc8d2223b55b38e35cd9b1a5acd180830e04790f2cd60b88aa2fba025661c0  scripts/extract.py
+5b81ac3e2f7767d82bb8aa89da774d997f77b7e5aee793ab295f0424b5f22014  scripts/hashing.py
+a24baf479c74cc8d5ece73ad61f9d3eb46bbd9737da12332374beb0d70a54c3d  scripts/ingest.py
+eada4958361739371954655567f81c8bd4baf237a2e5692c4daf38241de4d07c  scripts/migrate_akn.py
+3f18cac8fe567ca59eb59700357d2f48e76183421aa64bf56dfb90243805b1d3  scripts/migrate_metadata_layer.py
+e4b795508e307b1a2d535f5663a59fee0c1e7e419796a575773c4a4f00247bc4  scripts/repro-policy.json
+7d167fafd3d3ee63405933c816c8f5febd43a03155420835a7faba800dc85e62  scripts/repro_gate.py
+28be99135f82aca29d987ffd50594d7eef948c949f0a515db27a01f278207458  scripts/requirements.txt
+99ca66ac89451953225a96541eff9527d890e9ffa9cb53ac9d304c24ff08fff3  scripts/validate_corpus.py
+22ac9ce52f01a198b12c27fed21b7193ac79e7fd05bc896f0b5f4b684885d058  scripts/verify_engine.py
