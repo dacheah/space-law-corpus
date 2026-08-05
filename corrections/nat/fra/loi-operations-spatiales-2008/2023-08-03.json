@@ -1,0 +1,57 @@
+{
+  "_comment": "This record declares that its stored text CANNOT be honestly re-derived from its stored original, with the reason. Checked by scripts/derive_text.py, which also tries to falsify the claim.",
+  "corpus_id": "nat/fra/loi-operations-spatiales-2008",
+  "version_id": "2023-08-03",
+  "derivable": false,
+  "not_derivable_basis": "would_be_a_transcript",
+  "not_derivable_reason": "A best-effort pipeline reaches 0.9234 line similarity and then plateaus. Everything structural is already handled and declared below: Legifrance's volatile 'EN VIGUEUR AU' and 'Derniere mise a jour' banners, its per-article 'VERSION EN VIGUEUR DEPUIS' stamps, the '(Article N)' suffixes it appends to every heading, the printed left margin, and French compounds broken at their own hyphen ('extra-/atmospherique', which must keep the hyphen where a typeset break must lose it). What remains is roughly a hundred differences in BLANK-LINE PLACEMENT, with no structural signal in the PDF to key on. Closing them would mean declaring about a hundred literal line anchors, at which point the recipe restates the stored output rather than describing a transformation of the source — and a recipe that encodes its own answer proves nothing about the original. Refused deliberately. The best-effort pipeline is recorded below so the claim can be re-tested and so the next person does not repeat the work to reach the same wall.",
+  "attempted": {
+    "extractor": {
+      "tool": "pdftotext",
+      "args": [
+        "-layout"
+      ],
+      "toolchain": "poppler 22.02.0"
+    },
+    "slice": {
+      "start_contains": "LOI n° 2008-518",
+      "end_contains": "Discussion et adoption le 22 mai 2008 (TA n° 97)."
+    },
+    "drop_lines": [
+      {
+        "pattern": "^\\s*EN VIGUEUR AU"
+      },
+      {
+        "pattern": "^\\s*Dernière mise à jour"
+      },
+      {
+        "pattern": "^\\s*VERSION EN VIGUEUR"
+      },
+      {
+        "pattern": "^\\s*Modifié par"
+      },
+      {
+        "pattern": "^\\s*Création "
+      }
+    ],
+    "pre": [
+      "strip_form_feeds",
+      "strip_leading_spaces",
+      "join_breaks_keep_hyphen"
+    ],
+    "reflow": "tight",
+    "mechanical": [],
+    "substitutions": [
+      {
+        "pattern": " \\(Articles? [^)]*\\)$",
+        "replacement": ""
+      }
+    ],
+    "corrections": []
+  },
+  "_remedy": "If the wrapping convention behind those blank lines is ever identified as a rule rather than a series of choices, this becomes derivable and the declaration should be deleted.",
+  "_declared": {
+    "date": "2026-08-05",
+    "reviewer": "Dan"
+  }
+}

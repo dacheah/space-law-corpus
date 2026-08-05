@@ -605,8 +605,91 @@ def selftest() -> int:
         raise AssertionError("a wrong occurrence count MUST raise")
     except ValueError:
         pass
+    # ---- derivable:false declarations must be well formed AND falsifiable -------------------
+    import tempfile
+    with tempfile.TemporaryDirectory() as td:
+        open(os.path.join(td, "original.txt"), "w", newline="\n").write("hello\n")
+        open(os.path.join(td, "text.txt"), "w", newline="\n").write("hello\n")
+        o = os.path.join(td, "original.txt")
+        real = "sha256:" + hashlib.sha256(b"hello\n").hexdigest()
+
+        # a bad basis is rejected
+        st, _ = check_not_derivable({"not_derivable_basis": "because-i-said-so",
+                                     "not_derivable_reason": "x"}, {"text_sha256": real}, o)
+        assert st == "error", "an undeclared basis must not pass"
+        # an empty reason is rejected
+        st, _ = check_not_derivable({"not_derivable_basis": "would_be_a_transcript",
+                                     "not_derivable_reason": "  "}, {"text_sha256": real}, o)
+        assert st == "error", "a 'cannot' with no reason is indistinguishable from 'did not try'"
+        # a well-formed declaration with no attempted pipeline is accepted
+        st, d = check_not_derivable({"not_derivable_basis": "different_source_artefact",
+                                     "not_derivable_reason": "text predates this artefact"},
+                                    {"text_sha256": real}, o)
+        assert st == "declared", d
+        # THE KEY ONE: if the recorded best effort actually reproduces the text, the claim is stale
+        st, d = check_not_derivable(
+            {"not_derivable_basis": "would_be_a_transcript", "not_derivable_reason": "r",
+             "attempted": {"extractor": {"tool": "passthrough"}}},
+            {"text_sha256": real}, o)
+        assert st == "error" and "stale" in d, \
+            "a not-derivable claim whose own pipeline succeeds must be reported, not believed"
+
     print("derive_text selftest: OK")
     return 0
+
+
+NOT_DERIVABLE_BASES = {
+    "different_source_artefact":
+        "The stored text was produced from something other than the stored original — typically an "
+        "earlier capture that a byte-exact artefact later replaced as the integrity anchor. No "
+        "pipeline over the stored original can reproduce it, however it is written.",
+    "would_be_a_transcript":
+        "Reproducible in principle, but only by declaring so many literal anchors that the recipe "
+        "would restate the stored output instead of describing a transformation of the source. Such "
+        "a recipe proves nothing about the original, so it is refused rather than written.",
+}
+
+
+def check_not_derivable(spec: dict, meta: dict, orig: str):
+    """Validate a `derivable: false` declaration and try to FALSIFY it.
+
+    A record that cannot be re-derived is a legitimate outcome, and saying so plainly is better than
+    an absent recipe (which is indistinguishable from work not yet done) or a forced one. But an
+    unfalsifiable claim is not worth much either, so:
+
+      * the reason must be non-empty and its `basis` must be one of the declared kinds;
+      * if the recipe still carries a best-effort `attempted` pipeline, it is RUN. If that pipeline
+        turns out to reproduce the stored text byte-for-byte, the declaration is WRONG and this
+        reports an error — a stale "cannot be done" is exactly the kind of comfortable claim that
+        outlives its evidence.
+
+    Returns (status, detail) where status is 'declared' or 'error'.
+    """
+    reason = (spec.get("not_derivable_reason") or "").strip()
+    basis = spec.get("not_derivable_basis")
+    if basis not in NOT_DERIVABLE_BASES:
+        return "error", (f"not_derivable_basis {basis!r} is not one of "
+                         f"{sorted(NOT_DERIVABLE_BASES)}")
+    if not reason:
+        return "error", ("derivable is false but not_derivable_reason is empty — an undocumented "
+                         "'cannot' is indistinguishable from 'did not try'")
+    attempted = spec.get("attempted")
+    if not attempted:
+        return "declared", f"{basis}; no best-effort pipeline recorded"
+    try:
+        got = derive(attempted, orig)
+    except Exception as e:                                            # noqa: BLE001
+        return "declared", f"{basis}; best-effort pipeline raises ({type(e).__name__})"
+    if "sha256:" + hashlib.sha256(got).hexdigest() == meta.get("text_sha256"):
+        return "error", ("declared NOT derivable, but the recorded best-effort pipeline reproduces "
+                         "the stored text byte-for-byte — the declaration is stale, delete it and "
+                         "promote the pipeline")
+    import difflib
+    ratio = difflib.SequenceMatcher(
+        None, got.decode("utf-8", "replace").split("\n"),
+        open(os.path.join(os.path.dirname(orig), "text.txt"), encoding="utf-8").read().split("\n")
+    ).ratio()
+    return "declared", f"{basis}; best effort reaches {ratio:.4f}, not 1.0"
 
 
 def main() -> int:
@@ -621,13 +704,22 @@ def main() -> int:
         print(f"No corrections files under {os.path.relpath(CORR, REPO)}/ yet.")
         print("Each record reaching byte equality declares one; see scripts/derive_text.py.")
         return 0
-    ok = fail = 0
+    ok = fail = declared = 0
     for sp in specs:
         spec = json.load(open(sp, encoding="utf-8"))
         cid, ver = spec["corpus_id"], spec["version_id"]
         vd = os.path.join(AUTH, cid, ver)
         meta = yaml.safe_load(open(os.path.join(vd, "metadata.yaml"), encoding="utf-8"))
         orig = os.path.join(vd, meta["original_filename"])
+        if spec.get("derivable") is False:
+            status, detail = check_not_derivable(spec, meta, orig)
+            if status == "declared":
+                print(f"  NOT DERIVABLE (declared) {cid}/{ver}\n     {detail}")
+                declared += 1
+            else:
+                print(f"  ERROR      {cid}/{ver}: {detail}")
+                fail += 1
+            continue
         try:
             got = derive(spec, orig)
             h = "sha256:" + hashlib.sha256(got).hexdigest()
@@ -642,6 +734,12 @@ def main() -> int:
             print(f"  MISMATCH   {cid}/{ver}\n     recorded {meta.get('text_sha256')}\n     derived  {h}")
             fail += 1
     print(f"\n{ok}/{ok + fail} record(s) re-derive BYTE-EXACT from their stored original.")
+    if declared:
+        print(f"{declared} further record(s) are DECLARED NOT DERIVABLE, each with a recorded "
+              f"reason. Those texts remain hash-pinned by text_sha256 — tamper-evident, but not "
+              f"reproducible from the stored original. The distinction is the point: a corpus that "
+              f"says which of its texts can be rebuilt, and which can only be checked, is making a "
+              f"claim it can defend.")
     if fail:
         print("A mismatch means the declared pipeline no longer reproduces the stored text — "
               "investigate before changing either.")

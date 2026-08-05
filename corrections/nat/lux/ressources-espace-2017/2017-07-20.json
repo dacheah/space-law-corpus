@@ -1,0 +1,13 @@
+{
+  "_comment": "This record declares that its stored text CANNOT be re-derived from its stored original, with the reason. Checked by scripts/derive_text.py, which also tries to falsify the claim.",
+  "corpus_id": "nat/lux/ressources-espace-2017",
+  "version_id": "2017-07-20",
+  "derivable": false,
+  "not_derivable_basis": "different_source_artefact",
+  "not_derivable_reason": "text.txt predates original.pdf and came from a different artefact. The record's own capture_history says so in two entries dated 2026-07-03: the first captured the Legilux HTML page (original_sha256 8a3877a1...), the second stored the official Journal officiel PDF (Memorial A no. 674, 48dd000b...) 'byte-for-byte as original.pdf, upgrading the integrity anchor from the initial HTML text capture'. The stored text is therefore an HTML-derived rendering — one paragraph per line, longest line 817 characters — while pdftotext over the PDF yields the printed column with its own wrapping. No pipeline over the stored original can reproduce it, because the original is not what it was made from. This is not a defect: substituting the official PDF strengthened the integrity anchor, and the capture history records the substitution honestly. It does mean the reproducibility claim for this record is 'hash-pinned and token-verified', not 'byte-derivable', and saying which is the whole reason this file exists.",
+  "_remedy": "Re-deriving would require the original HTML capture as a stored artefact alongside the PDF. That is an ingest decision, not a recipe problem.",
+  "_declared": {
+    "date": "2026-08-05",
+    "reviewer": "Dan"
+  }
+}
