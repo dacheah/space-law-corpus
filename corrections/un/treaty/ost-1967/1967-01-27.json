@@ -1,0 +1,40 @@
+{
+  "_comment": "Declared derivation for this record: text.txt == extract -> slice -> reflow -> mechanical -> corrections, byte-exact against text_sha256. Verified by scripts/derive_text.py. Every human repair of an extraction defect is recorded here with a reason, so nothing about the derivation lives only in the stored bytes.",
+  "corpus_id": "un/treaty/ost-1967",
+  "version_id": "1967-01-27",
+
+  "extractor": {
+    "tool": "passthrough",
+    "_reason": "The stored original is the UNOOSA treaty page captured as markdown, so no PDF extraction is involved."
+  },
+
+  "slice": {
+    "start_contains": "### Treaty on Principles Governing the Activities of States",
+    "end_contains": "one thousand nine hundred and sixty-seven.",
+    "_reason": "The UNOOSA page reproduces the adopting instrument — General Assembly resolution 2222 (XXI) — with the Treaty as its ANNEX, beneath ~380 lines of site navigation. The slice starts at the annex heading. The anchor deliberately stops at 'States' rather than continuing into 'in the Exploration': the heading in the capture reads 'States  in' with a DOUBLE space, so a longer anchor would not match. It ends at the close of the testimonium; what follows is the page's own note apparatus."
+  },
+
+  "reflow": "paragraphs_tight",
+  "_reflow_reason": "The capture hard-wraps at the page column width and pads between paragraphs with a line holding a single NO-BREAK SPACE (U+00A0) — 15 of them in this record. Python reads U+00A0 as whitespace, so plain 'paragraphs' emits three blank lines where the stored text has one. 'paragraphs_tight' collapses the run.",
+
+  "mechanical": ["strip_heading_markers", "strip_links", "strip_emphasis", "collapse_spaces"],
+  "_mechanical_reason": "Artefacts of an HTML page rendered to markdown, none of them the Treaty's words: ATX article headings ('### Article I'), cross-references rendered as markdown links (the link TEXT is kept, the navigation target dropped), preambular verbs as emphasis ('*Recalling*'), and the double space inside the annex heading. Order matters — headings and links are unwrapped before emphasis, and spaces are collapsed last, after the earlier rules have removed the markup that created some of the doubling.",
+
+  "corrections": [
+    {
+      "op": "replace",
+      "from": "Space\",which",
+      "to": "Space\", which",
+      "count": 1,
+      "_reason": "The captured page reads '...Exploration and Use of Outer Space\",which was adopted unanimously...' with NO space after the comma. The stored text inserts one. This is a human repair of a defect in the capture, not a change to the Treaty: the missing space is a rendering artefact, and every printed text of resolution 1962 (XVIII) as cited in the OST preamble carries the space. Recorded here rather than left in the bytes so that the edit, its reason and its extent are all visible.",
+      "_reviewer": "Dan",
+      "_date": "2026-08-05"
+    }
+  ],
+
+  "_verified": {
+    "date": "2026-08-05",
+    "result": "byte-exact against the recorded text_sha256",
+    "note": "One human repair, declared above. The count guard means that if the UNOOSA capture is ever refreshed and the missing space is fixed at source, this correction will FAIL rather than silently produce different text — which is the intended behaviour."
+  }
+}

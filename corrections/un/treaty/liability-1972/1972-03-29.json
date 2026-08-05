@@ -1,0 +1,58 @@
+{
+  "_comment": "Declared derivation for this record: text.txt == extract -> slice -> reflow -> mechanical -> corrections, byte-exact against text_sha256. Verified by scripts/derive_text.py. Every human repair of an extraction defect is recorded here with a reason, so nothing about the derivation lives only in the stored bytes.",
+  "corpus_id": "un/treaty/liability-1972",
+  "version_id": "1972-03-29",
+
+  "extractor": {
+    "tool": "passthrough",
+    "_reason": "The stored original is the UNOOSA treaty page captured as markdown, so no PDF extraction is involved."
+  },
+
+  "slice": {
+    "start_contains": "### Convention on International Liability for Damage",
+    "end_contains": "one thousand nine hundred and seventy-two.",
+    "_reason": "The UNOOSA page reproduces the adopting instrument — General Assembly resolution 2777 (XXVI) — with the Convention as its ANNEX, beneath the site navigation. The slice starts at the annex heading; the anchor stops at 'Damage' because the heading in the capture reads 'Damage  Caused' with a double space. It ends at the close of the testimonium, before the page's own note apparatus."
+  },
+
+  "reflow": "paragraphs_tight",
+  "_reflow_reason": "The capture hard-wraps at the page column width and pads between paragraphs with lines holding a single NO-BREAK SPACE (U+00A0) — 28 in this record. Python reads U+00A0 as whitespace, so plain 'paragraphs' would emit three blank lines where the stored text has one.",
+
+  "mechanical": ["strip_heading_markers", "strip_links", "strip_emphasis", "collapse_spaces"],
+  "_mechanical_reason": "Artefacts of an HTML page rendered to markdown, none of them the Convention's words: ATX article headings, cross-references rendered as markdown links (link text kept, navigation target dropped), preambular verbs as emphasis, and the double space inside the annex heading.",
+
+  "corrections": [
+    {
+      "op": "replace",
+      "from": "or to aircraft flight.",
+      "to": "or to aircraft in flight.",
+      "count": 1,
+      "_reason": "The capture drops the word 'in' from Article II. The authentic Convention reads 'damage caused by its space object on the surface of the earth or to aircraft in flight'. This is the most substantive repair in this record — a missing word in operative treaty text — and is recorded here precisely because an edit of that weight must never live only in the stored bytes.",
+      "_reviewer": "Dan",
+      "_date": "2026-08-05"
+    },
+    {
+      "op": "replace",
+      "from": "administrative mattters.",
+      "to": "administrative matters.",
+      "count": 1,
+      "_reason": "Typographical defect in the capture: 'mattters' with three t's, in Article XVI(4). Self-evidently not the Convention's spelling.",
+      "_reviewer": "Dan",
+      "_date": "2026-08-05"
+    },
+    {
+      "op": "replace",
+      "from": "Articles XXIV to Articles XXVII",
+      "to": "Articles XXIV to XXVII",
+      "count": 1,
+      "_reason": "The capture duplicates the word 'Articles' in Article XXII(1). The authentic text reads 'with the exception of Articles XXIV to XXVII'.",
+      "_reviewer": "Dan",
+      "_date": "2026-08-05"
+    }
+  ],
+
+  "_verified": {
+    "date": "2026-08-05",
+    "result": "byte-exact against the recorded text_sha256",
+    "note": "Three human repairs, each declared. All three make the stored text MORE faithful to the authentic Convention than the capture is — which was the finding that motivated this whole module. Each carries a count guard, so if UNOOSA refreshes the page and fixes a defect at source, the derivation FAILS loudly rather than silently producing different text."
+  }
+}

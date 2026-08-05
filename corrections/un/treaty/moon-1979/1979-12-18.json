@@ -1,0 +1,49 @@
+{
+  "_comment": "Declared derivation for this record: text.txt == extract -> slice -> reflow -> mechanical -> corrections, byte-exact against text_sha256. Verified by scripts/derive_text.py. Every human repair of an extraction defect is recorded here with a reason, so nothing about the derivation lives only in the stored bytes.",
+  "corpus_id": "un/treaty/moon-1979",
+  "version_id": "1979-12-18",
+
+  "extractor": {
+    "tool": "passthrough",
+    "_reason": "The stored original is the UNOOSA treaty page captured as markdown, so no PDF extraction is involved."
+  },
+
+  "slice": {
+    "start_contains": "### Agreement Governing the Activities of States",
+    "end_contains": "New York on 18 December 1979.",
+    "_reason": "The UNOOSA page reproduces the adopting instrument — General Assembly resolution 34/68 — with the Agreement as its ANNEX. The slice starts at the annex heading (line 388 of the capture), not the resolution title at line 357 which contains the same words; the anchor stops at 'States' because the heading reads 'States  on' with a double space."
+  },
+
+  "reflow": "paragraphs_tight",
+  "_reflow_reason": "Hard wrapping plus 25 NO-BREAK SPACE padding lines, as with the other UNOOSA captures.",
+
+  "mechanical": ["strip_heading_markers", "strip_links", "strip_emphasis", "dehyphenate", "collapse_spaces"],
+  "_mechanical_reason": "As with the sibling treaty pages, plus dehyphenate: this capture breaks compound words across lines and leaves the hyphen with a trailing space ('man- made', 'non- governmental' twice). A hyphen followed by a space between two word characters is a line-break artefact, not punctuation the Agreement contains.",
+
+  "corrections": [
+    {
+      "op": "replace",
+      "from": "military man uvres",
+      "to": "military manoeuvres",
+      "count": 1,
+      "_reason": "Article 3(4). The capture lost the 'oeu' ligature from 'manoeuvres', leaving 'man uvres' with a space where the glyph failed to render. The same class of defect as the broken glyph recorded in nat/lux. Restored to the authentic spelling used in the Agreement.",
+      "_reviewer": "Dan",
+      "_date": "2026-08-05"
+    },
+    {
+      "op": "replace",
+      "from": "as depository,",
+      "to": "as depositary,",
+      "count": 1,
+      "_reason": "Article 18. The capture reads 'as depository'; the authentic Agreement reads 'as depositary'. These are different words in treaty practice — a depositary is the office that holds the instrument and receives ratifications — so this is a substantive restoration, not a spelling preference.",
+      "_reviewer": "Dan",
+      "_date": "2026-08-05"
+    }
+  ],
+
+  "_verified": {
+    "date": "2026-08-05",
+    "result": "byte-exact against the recorded text_sha256",
+    "note": "Two human repairs, both declared with the article they sit in. Count guards apply."
+  }
+}

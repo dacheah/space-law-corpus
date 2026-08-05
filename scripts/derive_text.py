@@ -95,7 +95,7 @@ def reflow(text: str, mode) -> str:
     """
     if not mode or mode == "none":
         return text
-    if mode != "paragraphs":
+    if mode not in ("paragraphs", "paragraphs_tight"):
         raise ValueError(f"unknown reflow mode: {mode}")
     out, buf = [], []
     for line in text.split("\n"):
@@ -107,6 +107,28 @@ def reflow(text: str, mode) -> str:
             out.append("")
     if buf:
         out.append(" ".join(buf))
+
+    if mode == "paragraphs_tight":
+        # Collapse runs of blank lines to one.
+        #
+        # WHY THIS IS A SEPARATE MODE. The UNOOSA HTML captures pad between paragraphs with a line
+        # containing a single NO-BREAK SPACE (U+00A0). Python treats U+00A0 as whitespace, so
+        # `line.strip()` already reads it as blank — which is why the sequence "", "\xa0", "" emits
+        # THREE blank lines where the stored text has one. The padding is the page's layout, not the
+        # instrument's structure.
+        #
+        # It is opt-in rather than folded into "paragraphs" because collapsing blank lines is a real
+        # change to a document's shape, and the record already verified under "paragraphs"
+        # (registration-1975) must keep deriving from the mode it was verified under.
+        tight, blank = [], False
+        for line in out:
+            if line == "":
+                if not blank:
+                    tight.append(line)
+                blank = True
+            else:
+                tight.append(line); blank = False
+        out = tight
     return "\n".join(out)
 
 
@@ -127,8 +149,33 @@ def collapse_spaces(t: str) -> str:
     return re.sub(r"[ \t]{2,}", " ", t)
 
 
+def strip_heading_markers(t: str) -> str:
+    """'### Article I' -> 'Article I'.
+
+    The UNOOSA treaty pages were captured as HTML and rendered to markdown, so the article headings
+    arrived as ATX headings. The '#' characters are the CAPTURE's markup, not the instrument's text —
+    the treaty says "Article I", not "### Article I". Anchored to line start so a '#' inside a
+    sentence (e.g. a document symbol) is untouched.
+    """
+    return re.sub(r"(?m)^#{1,6}[ \t]+", "", t)
+
+
+def strip_links(t: str) -> str:
+    """'[Treaty on Principles](https://…)' -> 'Treaty on Principles'.
+
+    The captures render cross-references as markdown links. The link TARGET is UNOOSA's navigation,
+    not the instrument's words; the link TEXT is the instrument's words and is kept verbatim. Only
+    inline links are matched — a bare '[1]' footnote marker carries no target and is left alone,
+    because deciding whether a footnote marker belongs in the text is a judgement, not a mechanical
+    rule, and belongs in `corrections` where it needs a reason.
+    """
+    return re.sub(r"\[([^\]\n]*)\]\((?:[^()\n]|\([^()\n]*\))*\)", r"\1", t)
+
+
 MECHANICAL = {"dehyphenate": dehyphenate, "strip_emphasis": strip_emphasis,
-              "collapse_spaces": collapse_spaces}
+              "collapse_spaces": collapse_spaces,
+              "strip_heading_markers": strip_heading_markers,
+              "strip_links": strip_links}
 
 
 def apply_mechanical(text: str, rules) -> str:
@@ -188,6 +235,20 @@ def selftest() -> int:
     assert dehyphenate("well-known") == "well-known"
     assert strip_emphasis("*Reaffirming* the treaty") == "Reaffirming the treaty"
     assert strip_emphasis("2 * 3 = 6") == "2 * 3 = 6", "a lone asterisk is not emphasis"
+    assert strip_heading_markers("### Article I\ntext") == "Article I\ntext"
+    assert strip_heading_markers("#### Article II") == "Article II"
+    assert strip_heading_markers("A/RES/51/122 #3") == "A/RES/51/122 #3", \
+        "a '#' inside a line is not a heading marker"
+    assert strip_heading_markers("#no-space") == "#no-space", "ATX headings require a space"
+    assert strip_links("see [the Treaty](https://un.org/x) now") == "see the Treaty now"
+    assert strip_links("[a](b) and [c](d)") == "a and c"
+    assert strip_links("footnote [1] stays") == "footnote [1] stays", \
+        "a bare marker has no target and is not a link"
+    assert strip_links("[t](https://x.org/a_(b))") == "t", "one nested paren pair is handled"
+    # nbsp padding: U+00A0 is whitespace to str.strip(), so a padded gap yields THREE blank lines
+    assert reflow("a\n\n\xa0\n\nb", "paragraphs") == "a\n\n\n\nb"
+    assert reflow("a\n\n\xa0\n\nb", "paragraphs_tight") == "a\n\nb"
+    assert reflow("one\ntwo\n\nthree", "paragraphs_tight") == "one two\n\nthree"
     assert collapse_spaces("a    b") == "a b"
     assert collapse_spaces("a\n\nb") == "a\n\nb", "newlines must survive"
     # a trailing newline in the input yields a trailing blank line; normalize_text_bytes settles

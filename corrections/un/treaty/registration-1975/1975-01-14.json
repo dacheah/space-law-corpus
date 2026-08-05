@@ -1,0 +1,30 @@
+{
+  "_comment": "Declared derivation for this record: text.txt == extract -> slice -> reflow -> mechanical -> corrections, byte-exact against text_sha256. Verified by scripts/derive_text.py. Every human repair of an extraction defect is recorded here with a reason, so nothing about the derivation lives only in the stored bytes.",
+  "corpus_id": "un/treaty/registration-1975",
+  "version_id": "1975-01-14",
+
+  "extractor": {
+    "tool": "passthrough",
+    "_reason": "The stored original is the UNOOSA treaty page captured as markdown, so no PDF extraction is involved."
+  },
+
+  "slice": {
+    "start_contains": "### Convention on Registration of Objects Launched into Outer Space",
+    "end_contains": "one thousand nine hundred and seventy-five.",
+    "_reason": "The UNOOSA page reproduces the ADOPTING instrument — General Assembly resolution 3235 (XXIX) — with the Convention itself as its ANNEX. Only the Convention is the treaty text, so the slice starts at the annex heading, not at the resolution title above it (which contains the same words and would otherwise match first). It ends at the close of the IN WITNESS WHEREOF clause; everything after is the page's own editorial apparatus (a horizontal rule, a 'Note' block and four footnotes citing other GA resolutions), which is UNOOSA's commentary ON the treaty, not part of it."
+  },
+
+  "reflow": "paragraphs",
+  "_reflow_reason": "The capture hard-wraps at the page column width; the stored text joins each paragraph onto a single line. Blank lines delimit paragraphs, so the join is deterministic.",
+
+  "mechanical": ["strip_heading_markers", "strip_emphasis"],
+  "_mechanical_reason": "The page was captured as HTML and rendered to markdown, so article headings arrived as ATX headings ('### Article I') and the preambular verbs as emphasis ('*Recognizing*'). Both are the CAPTURE's markup, not the Convention's text — the treaty says 'Article I' and 'Recognizing'. Order matters: heading markers are stripped before emphasis so a heading containing emphasis is handled once.",
+
+  "corrections": [],
+
+  "_verified": {
+    "date": "2026-08-05",
+    "result": "byte-exact against the recorded text_sha256",
+    "note": "No human repairs were needed. The whole difference between the stored original and text.txt is the annex slice, the paragraph reflow, and removal of the two markdown artefacts — all declared above, none of it a judgement about the text itself."
+  }
+}
