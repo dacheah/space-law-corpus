@@ -5,63 +5,63 @@
       "name": "UN treaty status",
       "url": "https://www.unoosa.org/oosa/en/ourwork/spacelaw/treaties/status/index.html",
       "last_sha256": "sha256:eb1fcbab8137ec970c6c0fcba995ad1c84a52101f1ff00c72aca03841a955fba",
-      "last_checked": "2026-08-01T08:31:07Z",
+      "last_checked": "2026-09-01T11:31:44Z",
       "expect_contains": "Status of Treaties"
     },
     {
       "name": "UNOOSA treaties & principles index",
       "url": "https://www.unoosa.org/oosa/en/ourwork/spacelaw/treaties.html",
       "last_sha256": "sha256:0d09da6c5c09c962c9ae8bffeafff5c977aafce3ec2eaac1d1e7f6ea440970ba",
-      "last_checked": "2026-08-01T08:31:07Z",
+      "last_checked": "2026-09-01T11:31:44Z",
       "expect_contains": "Treaties and Principles"
     },
     {
       "name": "UNOOSA space law resolutions",
       "url": "https://www.unoosa.org/oosa/en/ourwork/spacelaw/resolutions.html",
       "last_sha256": "sha256:6b96ee976e9f67e2b28d0abcadb9d7603fee756f05df4aaca9b3dd8c79fd9187",
-      "last_checked": "2026-08-01T08:31:07Z",
+      "last_checked": "2026-09-01T11:31:44Z",
       "expect_contains": "Resolutions"
     },
     {
       "name": "UNOOSA national space law",
       "url": "https://www.unoosa.org/oosa/en/ourwork/spacelaw/nationalspacelaw.html",
       "last_sha256": "sha256:69fa7dc489afd1ac4ae109bdf9e2e35b9a6b4fcd113e924d1b79a8470661788c",
-      "last_checked": "2026-08-01T08:31:07Z",
+      "last_checked": "2026-09-01T11:31:44Z",
       "expect_contains": "National Space Law"
     },
     {
       "name": "ASTRO database",
       "url": "https://astro.unoosa.org/",
       "last_sha256": "sha256:5078b2b79b81b5203e21371a2362f1d42e1632ae3571d64766d7fb3aaedb3cf1",
-      "last_checked": "2026-08-01T08:31:07Z",
+      "last_checked": "2026-09-01T11:31:44Z",
       "expect_contains": "ASTRO"
     },
     {
       "name": "UNOOSA non-binding instruments compendium",
       "url": "https://www.unoosa.org/oosa/en/ourwork/spacelaw/nlbcompendium.html",
       "last_sha256": "sha256:a0af65075918f91fc2a44638d64f9ad9f8cfa5af7fe80ddc210a168dc5692bc8",
-      "last_checked": "2026-08-01T08:31:07Z",
+      "last_checked": "2026-09-01T11:31:44Z",
       "expect_contains": "non-legally binding"
     },
     {
       "name": "ODS record copy - A/RES/1721(XVI)",
       "url": "https://documents.un.org/api/symbol/access?s=A/RES/1721(XVI)&l=en&t=pdf",
       "last_sha256": "sha256:b137390b89f321f3f2f322a9e2d8bdad96f4d5a6e0aa1ecd2886e00de42bbfe2",
-      "last_checked": "2026-08-01T08:31:07Z",
+      "last_checked": "2026-09-01T11:31:44Z",
       "note": "Record copy for un/ga/res-1721-XVI. Scanned PDF; watched for artefact replacement, not for text change."
     },
     {
       "name": "ODS record copy - A/RES/1962(XVIII)",
       "url": "https://documents.un.org/api/symbol/access?s=A/RES/1962(XVIII)&l=en&t=pdf",
       "last_sha256": "sha256:9d854a48244ce28611e40f1dc37f6fa3cc01a2dd6fae78ab29efb7075e8d78d5",
-      "last_checked": "2026-08-01T08:31:07Z",
+      "last_checked": "2026-09-01T11:31:44Z",
       "note": "Record copy for un/ga/res-1962-XVIII."
     },
     {
       "name": "ODS record copy - A/RES/1884(XVIII)",
       "url": "https://documents.un.org/api/symbol/access?s=A/RES/1884(XVIII)&l=en&t=pdf",
       "last_sha256": "sha256:4e3967c7774c04f5b5276e121f26fe3d194e874c62e526de793a1d97780317ea",
-      "last_checked": "2026-08-01T08:31:07Z",
+      "last_checked": "2026-09-01T11:31:44Z",
       "note": "Pre-OST trio; not yet ingested (no clean authentic text reachable - see CHANGELOG 2026-07-25)."
     }
   ]
