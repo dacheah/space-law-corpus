@@ -197,6 +197,56 @@ than the derived structure, so `1721(XVI)#part-A`, `#part-B` and the nine `1962(
 keep identical `span_sha256` values. Citations already issued against v2026.08.0 remain valid — which is
 precisely the property the span-hash design exists to provide.
 
+### Monitor false-alarm fix — digest comparison, not string comparison (2026-09-14)
+
+**What was wrong.** The whole-page branch of `watch_sources.py` compared hashes as raw strings
+(`elif h != s["last_sha256"]`). `content_hash()` always returns `sha256:`-prefixed hex, so a baseline
+entry stored without the prefix compares *unequal* to the identical digest. On **2026-08-01** the
+monitor flagged three ODS record copies as 🔶 CHANGED and the report read:
+
+```
+- **ODS record copy - A/RES/1721(XVI)**
+    - was `b137390b89f321f3f2f322a9e2d8bdad96f4d5a6e0aa1ecd2886e00de42bbfe2`
+    - now `sha256:b137390b89f321f3f2f322a9e2d8bdad96f4d5a6e0aa1ecd2886e00de42bbfe2`
+```
+
+**Identical digests.** Nothing changed at the three sources — they are byte-hashed PDFs and were
+untouched. The cause was upstream of the comparison: those three sources were added by hand on
+2026-07-25 (`515bfa1`) with un-prefixed `last_sha256` values and a date-only `last_checked`, so the
+baseline itself was non-canonical. The resulting issue (**#1, "Source change detected — 2026-08-01"**)
+has sat open, labelled `needs-review`, for six weeks. The 2026-09-01 sweep reported 0 changed because
+the monitor rewrote the baseline with the prefix on the intervening run.
+
+**Why it matters more here than elsewhere.** A false alarm in a corpus whose product is *proving that a
+text has not changed* costs the most valuable thing the corpus has — the maintainer's willingness to
+believe an alert. It is the same failure the AML corpus froze over: alerts nobody can trust are worse
+than no alerts, because they train you to skim.
+
+**Fix (`watch_sources.py` v3.9).**
+- New `norm_digest()` — canonical comparable form (bare lowercase hex), so the comparison is on
+  content, not spelling.
+- New `classify()` state **`reformatted`**: same digest, non-canonical stored form. It renders as its
+  own report section (`🔧 BASELINE REFORMATTED — same digest, non-canonical stored form (no source
+  change; baseline rewritten)`), is excluded from the alert path by construction, and **self-heals** —
+  the canonical form is written back on the same run, so it clears itself.
+- Decision extracted to `advances_baseline(state)`. The first version of this fix omitted
+  `reformatted` from the baseline-advance set, which would have re-reported the note on *every* run
+  forever; the self-heal test caught it, and the decision is now a pure function with assertions —
+  the same reasoning that produced `triage_flags()` in v3.5.
+
+**Verified.** `--selftest` green (including: bare hex vs same digest → `reformatted`, not `changed`;
+a genuinely different digest from a bare-hex baseline → still `changed`; `reformatted` absent from
+`triage_flags`; `reformatted` present in `advances_baseline`). End-to-end against the live corpus: the
+2026-08-01 condition was re-injected, run 1 reported `0 changed` plus one reformat note and rewrote the
+baseline canonically, run 2 was entirely clean. `validate_corpus.py` OK (24 records);
+`verify_engine.py` OK (21 files — `watch_sources.py` is deliberately excluded from the engine manifest,
+so the fingerprint correctly does not move).
+
+**Scope.** `watch_sources.py` is byte-identical (`c0666f0d…`) across all four monitored corpora, so this
+is a shared-code defect and the fix belongs in all four. Space law takes it first; the others follow in
+the same commit-sized change to avoid creating the exact cross-repo drift the version marker exists to
+prevent.
+
 ### Open follow-ons (tracked, not blocking)
 - Include `un/ga/res-1721-XVI` in the next concept-tagging review round; its tags remain the keyword fallback (`rule_based`, `unreviewed`) rather than dual-pass adjudicated.
 - ⚖️ **Open judgement call — `authentic_languages` for pre-1973 GA resolutions.** `un/ga/res-1962-XVIII` (1963) lists Arabic; the newly ingested `un/ga/res-1721-XVI` (1961) does not. Unlike treaties, GA resolutions carry no final clause declaring authentic languages, and Arabic became an official UN language only in 1973 — yet ODS today serves Arabic versions of both. The two records are therefore inconsistent with each other and the field's meaning for resolutions needs a recorded decision (official-language versions as they now exist, versus the official languages at the time of adoption).
