@@ -1,6 +1,6 @@
-# Source monitor report — 2026-09-01T11:31:44Z
+# Source monitor report — 2026-09-14T23:29:36Z
 
-_monitor v3.8 · schema mode off (whole-page fallback)_
+_monitor v3.10 · schema mode off (whole-page fallback)_
 
 0 changed · 0 suspect · 0 schema-suspect · 0 manual-review · 0 error · 9 total
 
