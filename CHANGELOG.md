@@ -247,6 +247,63 @@ is a shared-code defect and the fix belongs in all four. Space law takes it firs
 the same commit-sized change to avoid creating the exact cross-repo drift the version marker exists to
 prevent.
 
+### Monitor v3.10 — entities must not move a hash, and a typo must not run a sweep (2026-09-14)
+
+Two defects, the same shape: something that could not do its job quietly did a *different* job instead.
+
+**Defect 1 — `to_text()` left HTML entities as literal text.** Tag-stripping removed `<p>` but not
+`&nbsp;`, so a page that renders identically while encoding a space differently produced a different
+digest. Measured on three variants of one visible ISA sentence: `sha256:5786915bf0e64bea…` clean,
+`sha256:74e240ddb021cb54…` with one `&nbsp;` before the paragraph, `sha256:df725c0baa0719a2…` with one
+after. `ISA — The Council` flagged on exactly this — word similarity 0.9997 against the archived
+capture, one entity different. Latent in **every** source of **every** corpus, not just the ISA pages it
+surfaced on.
+
+**Fix.** `to_text()` now unescapes entities before collapsing whitespace, and **after** tag removal —
+unescaping first would turn escaped markup carried in a page body into markup the tag regex then
+deletes. `&nbsp;` becomes U+00A0, which `\s+` matches, so it collapses to the same single space as a
+plain one.
+
+**Defect 2 — there was no `--help`, and any unrecognised argument fell through to a live sweep.**
+`--selftest` and `--tally` were the only recognised flags; everything else ran a full sweep, which
+**writes state**: it advanced every source's baseline and rewrote the report, silently discarding that
+run's change signals and reporting the result as a normal success. This was not hypothetical — running
+`--help` on 2026-09-14 advanced all 20 baselines of the deep-seabed corpus before it was noticed.
+
+**Fix.** New pure `parse_args()` classifies argv as `help` / `selftest` / `tally` / `sweep` / `error`.
+`--help` and `-h` print usage and exit 0; an unrecognised argument prints usage to stderr and exits **2
+without fetching anything**. Extracted as a pure function so the behaviour is testable without running a
+sweep — the same reasoning that produced `triage_flags()` (v3.5) and `advances_baseline()` (v3.9).
+
+**The deliberate re-baseline, and why it is lossless.** Unescaping entities changes the comparable text
+of every HTML source, so every source would report CHANGED on the first run after this version — a wall
+of noise that would bury whatever genuine change was pending and teach the reader to skim the report
+(the failure this corpus cites when explaining why the AML corpus froze). So the baselines were
+re-derived in the same change, using a rule that cannot swallow a real signal: for each source, the hash
+of the **live** page was computed under *both* normalisations — v3.9 rules recovered from git (the old
+code itself, not a re-typing of it) and v3.10 rules — and compared with the stored baseline.
+
+- old = stored → the page has not moved since its baseline, so only the normalisation differs.
+  Re-baselining is lossless. **5 sources.**
+- old ≠ stored → the page genuinely differs from its baseline: a **real** pending signal. Left alone,
+  reported for triage. **0 sources in this corpus.**
+
+Record-mode sources (CSS `schema`, `json_extract`) needed nothing: their alert decision runs on the
+*record* hash, records are extracted from the DOM where entities are already resolved, so the change
+cannot make them report changed — their page hash simply refreshes on the next sweep. Space law has no
+record-mode sources, so all 9 were settled by the whole-page rule.
+
+**Verified.** `--selftest` green, now covering the new behaviour directly: three entity variants of one
+sentence hash equal; `&amp;` = `&` and `&#39;` = `'`; escaped markup in a body survives as text;
+genuine text changes still move the hash; and `--dry-run`, `--hepl`, `--update`, `--verbose`, `sweep`
+and `--help-x` are each refused as errors rather than sweeping. End-to-end: `--help` exits 0, `--dry-run`
+exits 2, and neither writes any state.
+
+**Scope.** `watch_sources.py` is shared code, byte-identical across the monitored corpora. v3.10 goes to
+space law, deep-seabed and BBNJ in one commit-sized change (`330d3c8e…`). **AML is deliberately held at
+v3.9**: it is frozen, 13 of its sources could not be fetched for a re-baseline, and its monitor is already
+recorded as broken — re-baselining it would be a guess, and a frozen corpus is the wrong place to take one.
+
 ### Open follow-ons (tracked, not blocking)
 - Include `un/ga/res-1721-XVI` in the next concept-tagging review round; its tags remain the keyword fallback (`rule_based`, `unreviewed`) rather than dual-pass adjudicated.
 - ⚖️ **Open judgement call — `authentic_languages` for pre-1973 GA resolutions.** `un/ga/res-1962-XVIII` (1963) lists Arabic; the newly ingested `un/ga/res-1721-XVI` (1961) does not. Unlike treaties, GA resolutions carry no final clause declaring authentic languages, and Arabic became an official UN language only in 1973 — yet ODS today serves Arabic versions of both. The two records are therefore inconsistent with each other and the field's meaning for resolutions needs a recorded decision (official-language versions as they now exist, versus the official languages at the time of adoption).

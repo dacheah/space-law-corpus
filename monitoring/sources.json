@@ -4,28 +4,28 @@
     {
       "name": "UN treaty status",
       "url": "https://www.unoosa.org/oosa/en/ourwork/spacelaw/treaties/status/index.html",
-      "last_sha256": "sha256:eb1fcbab8137ec970c6c0fcba995ad1c84a52101f1ff00c72aca03841a955fba",
+      "last_sha256": "sha256:f431e205ded473e22b2c7684bb8ce2d7534628f37b41607d8e09099e24a8d661",
       "last_checked": "2026-09-01T11:31:44Z",
       "expect_contains": "Status of Treaties"
     },
     {
       "name": "UNOOSA treaties & principles index",
       "url": "https://www.unoosa.org/oosa/en/ourwork/spacelaw/treaties.html",
-      "last_sha256": "sha256:0d09da6c5c09c962c9ae8bffeafff5c977aafce3ec2eaac1d1e7f6ea440970ba",
+      "last_sha256": "sha256:8cec5d9a59e678e615af0a961f140b3559973628aa748fd1e92b730d4d9ac53f",
       "last_checked": "2026-09-01T11:31:44Z",
       "expect_contains": "Treaties and Principles"
     },
     {
       "name": "UNOOSA space law resolutions",
       "url": "https://www.unoosa.org/oosa/en/ourwork/spacelaw/resolutions.html",
-      "last_sha256": "sha256:6b96ee976e9f67e2b28d0abcadb9d7603fee756f05df4aaca9b3dd8c79fd9187",
+      "last_sha256": "sha256:d78be8bbd1aacc1682a1b69095b84f6bdf57b72d686174aef981c624006f18c7",
       "last_checked": "2026-09-01T11:31:44Z",
       "expect_contains": "Resolutions"
     },
     {
       "name": "UNOOSA national space law",
       "url": "https://www.unoosa.org/oosa/en/ourwork/spacelaw/nationalspacelaw.html",
-      "last_sha256": "sha256:69fa7dc489afd1ac4ae109bdf9e2e35b9a6b4fcd113e924d1b79a8470661788c",
+      "last_sha256": "sha256:8b5c22cc4ec43461c330c005cba9eaa4a7d3746e6234823e5193faa707f92fac",
       "last_checked": "2026-09-01T11:31:44Z",
       "expect_contains": "National Space Law"
     },
@@ -39,7 +39,7 @@
     {
       "name": "UNOOSA non-binding instruments compendium",
       "url": "https://www.unoosa.org/oosa/en/ourwork/spacelaw/nlbcompendium.html",
-      "last_sha256": "sha256:a0af65075918f91fc2a44638d64f9ad9f8cfa5af7fe80ddc210a168dc5692bc8",
+      "last_sha256": "sha256:87a20729043352bfb89b57bba451e92d073507f4ac7011f38791ea85cd9e93e2",
       "last_checked": "2026-09-01T11:31:44Z",
       "expect_contains": "non-legally binding"
     },
