@@ -304,6 +304,26 @@ space law, deep-seabed and BBNJ in one commit-sized change (`330d3c8e…`). **AM
 v3.9**: it is frozen, 13 of its sources could not be fetched for a re-baseline, and its monitor is already
 recorded as broken — re-baselining it would be a guess, and a frozen corpus is the wrong place to take one.
 
+**The migration tool is kept as a record:** `scripts/migrations/rebaseline_entities.py`. It reads the
+PRE-change monitor out of git (`--from-ref`, refusing a ref that already normalises the same way) rather
+than carrying a copy, so the comparison is against the old *code*, not a re-typing of it. It sits one
+level below `scripts/` because the engine manifest globs `scripts/*.py` and this tool produces no corpus
+artefact — it only moves monitoring state, like `watch_sources.py` itself.
+
+**Two things went wrong in that tool, both recorded in its docstring because both generalise:**
+
+1. **It read `capture_type` as "this source is a binary document".** That field describes how the crawl
+   layer captures the documents a page *links*, not the watched page. Deep-seabed's nine ISA page
+   sources are `capture_type: "pdf"` while being HTML, so the tool skipped all nine as "binary —
+   unaffected", left their baselines alone, and the first v3.10 CI sweep flagged every one. A tool that
+   mutates a monitor's state must use **the monitor's own predicate** (`is_binary_doc`, which sniffs
+   content), never its own reading of a shared field. Re-run against the exact failing state, the
+   corrected tool finds the same nine as lossless and no genuine changes; against a true pre-migration
+   tree it finds 13 lossless and zero genuine — i.e. it would have produced no flood at all.
+2. **"0 genuine pending changes" is a claim about the page-text world, and must be verified with a real
+   sweep.** Space law and BBNJ matched their actual sweeps exactly. Deep-seabed did not, and only
+   dispatching CI exposed that — which is why the claim was checked rather than trusted.
+
 ### Open follow-ons (tracked, not blocking)
 - Include `un/ga/res-1721-XVI` in the next concept-tagging review round; its tags remain the keyword fallback (`rule_based`, `unreviewed`) rather than dual-pass adjudicated.
 - ⚖️ **Open judgement call — `authentic_languages` for pre-1973 GA resolutions.** `un/ga/res-1962-XVIII` (1963) lists Arabic; the newly ingested `un/ga/res-1721-XVI` (1961) does not. Unlike treaties, GA resolutions carry no final clause declaring authentic languages, and Arabic became an official UN language only in 1973 — yet ODS today serves Arabic versions of both. The two records are therefore inconsistent with each other and the field's meaning for resolutions needs a recorded decision (official-language versions as they now exist, versus the official languages at the time of adoption).
