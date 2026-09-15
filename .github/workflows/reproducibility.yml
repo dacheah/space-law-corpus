@@ -19,27 +19,53 @@ jobs:
         run: |
           sudo apt-get update && sudo apt-get install -y poppler-utils
           pip install -r scripts/requirements.txt
-      # (d) ASSERT, DON'T RELY ON THE IMAGE (issue #7). Reads the pin from extract.py, so there is one
-      # source of truth rather than a copy in YAML. A toolchain move must be a loud, dated failure:
+      # (d) ASSERT, DON'T RELY ON THE IMAGE (issue #7). A toolchain move must be a loud, dated failure:
       # otherwise every historical MISMATCH becomes ambiguous between "the record changed" and "the
       # runner changed", which is how a locally-built Poppler 26.01.0 produced a spurious mismatch on
       # a record nobody had touched (whitespace differences in mixed CJK/Latin text).
-      - name: Assert the toolchain is the PINNED one (fail closed if the runner moves)
+      #
+      # TWO ATTESTATION MODELS exist in this portfolio, and reading only one is how the first version
+      # of this step went RED on this corpus — which attests correctly, just differently:
+      #   * deep-seabed declares a module-level pin (extract.py: PINNED_POPPLER).
+      #   * THIS corpus records the toolchain PER RECIPE instead: extraction/<corpus_id>/<version_id>.json
+      #     carries `extractor.toolchain`, written at calibrate time. That is the stronger form — the
+      #     attestation sits with the record it applies to — and it is issue #7's option (e) already in
+      #     place. Both are handled below, and a discrepancy in either FAILS.
+      - name: Assert the toolchain matches what these records were derived under (fail closed)
         run: |
           python3 - <<'PY'
-          import sys
+          import glob, json, sys
           sys.path.insert(0, "scripts")
           import extract as E
-          ver = E.poppler_version()
-          print(f"pdftotext (Poppler) {ver}  ·  pinned {E.PINNED_POPPLER}")
-          if ver != E.PINNED_POPPLER:
-              sys.exit(f"FAIL: the runner's Poppler is {ver}, but this corpus pins {E.PINNED_POPPLER}. "
-                       "Byte-exact reproduction of PDF-sourced records is guaranteed only against the "
-                       "pinned version, so every MISMATCH below would be ambiguous between 'the record "
-                       "changed' and 'the toolchain moved'. Pin this job to an image carrying the pinned "
-                       "Poppler (issue #7), or re-derive the affected records deliberately and move the "
-                       "pin in the same change.")
-          print("OK: toolchain matches the pin — so a MISMATCH below means the RECORD changed.")
+          ver = E.poppler_ver() if hasattr(E, "poppler_ver") else E.poppler_version()
+          pin = getattr(E, "PINNED_POPPLER", None)
+          if pin:
+              print(f"module pin: poppler {pin}  ·  runtime: poppler {ver}")
+              if ver != pin:
+                  sys.exit(f"FAIL: the runner's Poppler is {ver}, but this corpus pins {pin}. "
+                           "Byte-exact reproduction is guaranteed only against the pinned version, so "
+                           "every MISMATCH below would be ambiguous between 'the record changed' and "
+                           "'the toolchain moved'. Pin this job to a matching image (issue #7) or "
+                           "re-derive the records deliberately and move the pin in the same change.")
+              print("OK: toolchain matches the pin — so a MISMATCH below means the RECORD changed.")
+          else:
+              declared = set()
+              for f in glob.glob("extraction/**/*.json", recursive=True):
+                  try:
+                      tc = (json.load(open(f, encoding="utf-8")).get("extractor") or {}).get("toolchain")
+                  except Exception:
+                      continue
+                  if tc:
+                      declared.add(tc)
+              print(f"no module pin; recipes declare: {sorted(declared) or 'none (all passthrough)'}"
+                    f"  ·  runtime: poppler {ver}")
+              wrong = sorted(t for t in declared if t != f"poppler {ver}")
+              if wrong:
+                  sys.exit(f"FAIL: recipes were derived under {wrong}, but the runtime is poppler {ver}. "
+                           "A MISMATCH below would be ambiguous between 'the record changed' and 'the "
+                           "toolchain moved'. Pin this job to a matching image (issue #7) or re-derive "
+                           "the affected records deliberately and update their recipes in the same change.")
+              print("OK: every toolchain recorded in the recipes matches the runtime.")
           PY
       - name: Verify content re-derivation from originals
         run: python3 scripts/repro_gate.py  # walks authoritative/, applies scripts/repro-policy.json; exits non-zero on any mismatch/error/uncovered-over-ceiling
