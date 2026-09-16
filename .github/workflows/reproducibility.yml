@@ -19,6 +19,12 @@ jobs:
         run: |
           sudo apt-get update && sudo apt-get install -y poppler-utils
           pip install -r scripts/requirements.txt
+      # (e) ENGINE IDENTITY (issue #7). scripts/verify_engine.py existed in this repo but NO workflow
+      # referenced it, so scripts/extract.py — the sole version-pinned extractor — could have changed
+      # with no gate noticing. Engine files are hashed; a deliberate change means regenerating
+      # scripts/MANIFEST.sha256 in the same commit.
+      - name: Engine identity (no engine file added, modified or removed)
+        run: python3 scripts/verify_engine.py
       # (d) ASSERT, DON'T RELY ON THE IMAGE (issue #7). A toolchain move must be a loud, dated failure:
       # otherwise every historical MISMATCH becomes ambiguous between "the record changed" and "the
       # runner changed", which is how a locally-built Poppler 26.01.0 produced a spurious mismatch on
