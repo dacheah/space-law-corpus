@@ -4,64 +4,99 @@
     {
       "name": "UN treaty status",
       "url": "https://www.unoosa.org/oosa/en/ourwork/spacelaw/treaties/status/index.html",
-      "last_sha256": "sha256:de126553ad349a383d96210734cbb12db4b2e9e60ce3adcc683da9cd67991003",
-      "last_checked": "2026-10-01T12:58:34Z",
-      "expect_contains": "Status of Treaties"
+      "last_sha256": "sha256:2ef128e0c91df0456b209e95b5a4fdb0740f33fdc2fb7ae757c556ed09eae0e1",
+      "last_checked": "2026-10-13T13:47:00Z",
+      "expect_contains": "Treaty Status",
+      "ignore_patterns": [
+        "Latest 20\\d{2}-\\d{2}-\\d{2} .*?(?=Links VIC Online|United Nations Home|Copyright ©)",
+        "\\b20\\d{2}-\\d{2}-\\d{2} \\d{2}:\\d{2}:\\d{2}\\.\\d\\b",
+        "Links VIC Online .*?Copyright © 20\\d{2} UNOOSA, All Rights Reserved",
+        "United Nations Home Contacts Terms of Use"
+      ],
+      "_note": "[2026-10-14, issue #2 triage: UNOOSA re-skinned the site over the 1 October sweep - nav rewritten ('Secretariat of COPUOS' -> 'COPUOS Secretariat', 'STSC 2026 Session' -> 'STSC 2026'), page titles shortened, and the per-page 'Latest <ISO> News' widget plus the 'Links VIC Online ... Copyright (c)' footer replaced. ignore_patterns now cover the only RECURRING chrome: the news-widget block, its ISO timestamps, and both footer forms. Deliberately NOT ignored: the page heading and its document/compilation lists - those are the signal. Re-baselined in the same change. If UNOOSA renames the footer anchor again the widget pattern stops matching and the source re-flags: a false alarm, never a hidden change.] Heading changed 'Status of Treaties' -> 'Treaty Status', so expect_contains moved with it. NOTE: the 2026 compilation row (A/AC.105/C.2/2026/CRP.9/Rev.1, status as at 1 January 2026) was on the page in the 2026-09-08 capture and is gone from the live page; the newest compilation listed is now the 2025 edition. UNOOSA dropping a record, not corpus drift, and no file in the corpus cites it."
     },
     {
       "name": "UNOOSA treaties & principles index",
       "url": "https://www.unoosa.org/oosa/en/ourwork/spacelaw/treaties.html",
-      "last_sha256": "sha256:ab2e1639d61def04387c2228ec01e04e8c12337857196818869798e4d1e4ca64",
-      "last_checked": "2026-10-01T12:58:34Z",
-      "expect_contains": "Treaties and Principles"
+      "last_sha256": "sha256:98a405561de3ef83702586f7d1b2cfcb8ad253aa6fbd852650dd016453f7bb79",
+      "last_checked": "2026-10-13T13:47:00Z",
+      "expect_contains": "Treaties and Principles",
+      "ignore_patterns": [
+        "Latest 20\\d{2}-\\d{2}-\\d{2} .*?(?=Links VIC Online|United Nations Home|Copyright ©)",
+        "\\b20\\d{2}-\\d{2}-\\d{2} \\d{2}:\\d{2}:\\d{2}\\.\\d\\b",
+        "Links VIC Online .*?Copyright © 20\\d{2} UNOOSA, All Rights Reserved",
+        "United Nations Home Contacts Terms of Use"
+      ],
+      "_note": "[2026-10-14, issue #2 triage: UNOOSA re-skinned the site over the 1 October sweep - nav rewritten ('Secretariat of COPUOS' -> 'COPUOS Secretariat', 'STSC 2026 Session' -> 'STSC 2026'), page titles shortened, and the per-page 'Latest <ISO> News' widget plus the 'Links VIC Online ... Copyright (c)' footer replaced. ignore_patterns now cover the only RECURRING chrome: the news-widget block, its ISO timestamps, and both footer forms. Deliberately NOT ignored: the page heading and its document/compilation lists - those are the signal. Re-baselined in the same change. If UNOOSA renames the footer anchor again the widget pattern stops matching and the source re-flags: a false alarm, never a hidden change.]"
     },
     {
       "name": "UNOOSA space law resolutions",
       "url": "https://www.unoosa.org/oosa/en/ourwork/spacelaw/resolutions.html",
-      "last_sha256": "sha256:7e1a6c7ff4a897d6e8511ea3af733eb3e591267030297c62344a720fc9c7a8ba",
-      "last_checked": "2026-10-01T12:58:34Z",
-      "expect_contains": "Resolutions"
+      "last_sha256": "sha256:d66c08977d0d391a8389e2caae3c29ee3b042101f61291961408260b4f0b4de7",
+      "last_checked": "2026-10-13T13:47:00Z",
+      "expect_contains": "Resolutions",
+      "ignore_patterns": [
+        "Latest 20\\d{2}-\\d{2}-\\d{2} .*?(?=Links VIC Online|United Nations Home|Copyright ©)",
+        "\\b20\\d{2}-\\d{2}-\\d{2} \\d{2}:\\d{2}:\\d{2}\\.\\d\\b",
+        "Links VIC Online .*?Copyright © 20\\d{2} UNOOSA, All Rights Reserved",
+        "United Nations Home Contacts Terms of Use"
+      ],
+      "_note": "[2026-10-14, issue #2 triage: UNOOSA re-skinned the site over the 1 October sweep - nav rewritten ('Secretariat of COPUOS' -> 'COPUOS Secretariat', 'STSC 2026 Session' -> 'STSC 2026'), page titles shortened, and the per-page 'Latest <ISO> News' widget plus the 'Links VIC Online ... Copyright (c)' footer replaced. ignore_patterns now cover the only RECURRING chrome: the news-widget block, its ISO timestamps, and both footer forms. Deliberately NOT ignored: the page heading and its document/compilation lists - those are the signal. Re-baselined in the same change. If UNOOSA renames the footer anchor again the widget pattern stops matching and the source re-flags: a false alarm, never a hidden change.]"
     },
     {
       "name": "UNOOSA national space law",
       "url": "https://www.unoosa.org/oosa/en/ourwork/spacelaw/nationalspacelaw.html",
-      "last_sha256": "sha256:b6f5afa8fd2bd17c901c7afe82147d1a1c6f287261bc1fbc9e58081cfd17c70a",
-      "last_checked": "2026-10-01T12:58:34Z",
-      "expect_contains": "National Space Law"
+      "last_sha256": "sha256:030e5e9a8749555cba2dbf65c4f8bbbf8d89bc45dbd546b1d50212226fe6643b",
+      "last_checked": "2026-10-13T13:47:00Z",
+      "expect_contains": "National Space Law",
+      "ignore_patterns": [
+        "Latest 20\\d{2}-\\d{2}-\\d{2} .*?(?=Links VIC Online|United Nations Home|Copyright ©)",
+        "\\b20\\d{2}-\\d{2}-\\d{2} \\d{2}:\\d{2}:\\d{2}\\.\\d\\b",
+        "Links VIC Online .*?Copyright © 20\\d{2} UNOOSA, All Rights Reserved",
+        "United Nations Home Contacts Terms of Use"
+      ],
+      "_note": "[2026-10-14, issue #2 triage: UNOOSA re-skinned the site over the 1 October sweep - nav rewritten ('Secretariat of COPUOS' -> 'COPUOS Secretariat', 'STSC 2026 Session' -> 'STSC 2026'), page titles shortened, and the per-page 'Latest <ISO> News' widget plus the 'Links VIC Online ... Copyright (c)' footer replaced. ignore_patterns now cover the only RECURRING chrome: the news-widget block, its ISO timestamps, and both footer forms. Deliberately NOT ignored: the page heading and its document/compilation lists - those are the signal. Re-baselined in the same change. If UNOOSA renames the footer anchor again the widget pattern stops matching and the source re-flags: a false alarm, never a hidden change.]"
     },
     {
       "name": "ASTRO database",
       "url": "https://astro.unoosa.org/",
       "last_sha256": "sha256:5078b2b79b81b5203e21371a2362f1d42e1632ae3571d64766d7fb3aaedb3cf1",
-      "last_checked": "2026-10-01T12:58:34Z",
+      "last_checked": "2026-10-13T13:47:00Z",
       "expect_contains": "ASTRO"
     },
     {
       "name": "UNOOSA non-binding instruments compendium",
       "url": "https://www.unoosa.org/oosa/en/ourwork/spacelaw/nlbcompendium.html",
-      "last_sha256": "sha256:0e2268646a1a1389aa005235c120554cb6ccaf85ae2d0dd2a387c4cfbfc8285c",
-      "last_checked": "2026-10-01T12:58:34Z",
-      "expect_contains": "non-legally binding"
+      "last_sha256": "sha256:ac484afeadeb1fed3512adc523f5ef46289bf257a71dfd5cc478296931a94cfc",
+      "last_checked": "2026-10-13T13:47:00Z",
+      "expect_contains": "non-legally binding",
+      "ignore_patterns": [
+        "Latest 20\\d{2}-\\d{2}-\\d{2} .*?(?=Links VIC Online|United Nations Home|Copyright ©)",
+        "\\b20\\d{2}-\\d{2}-\\d{2} \\d{2}:\\d{2}:\\d{2}\\.\\d\\b",
+        "Links VIC Online .*?Copyright © 20\\d{2} UNOOSA, All Rights Reserved",
+        "United Nations Home Contacts Terms of Use"
+      ],
+      "_note": "[2026-10-14, issue #2 triage: UNOOSA re-skinned the site over the 1 October sweep - nav rewritten ('Secretariat of COPUOS' -> 'COPUOS Secretariat', 'STSC 2026 Session' -> 'STSC 2026'), page titles shortened, and the per-page 'Latest <ISO> News' widget plus the 'Links VIC Online ... Copyright (c)' footer replaced. ignore_patterns now cover the only RECURRING chrome: the news-widget block, its ISO timestamps, and both footer forms. Deliberately NOT ignored: the page heading and its document/compilation lists - those are the signal. Re-baselined in the same change. If UNOOSA renames the footer anchor again the widget pattern stops matching and the source re-flags: a false alarm, never a hidden change.] This page still serves the OLD template - it kept both the widget and the footer - so it is where these patterns bite today."
     },
     {
       "name": "ODS record copy - A/RES/1721(XVI)",
       "url": "https://documents.un.org/api/symbol/access?s=A/RES/1721(XVI)&l=en&t=pdf",
       "last_sha256": "sha256:b137390b89f321f3f2f322a9e2d8bdad96f4d5a6e0aa1ecd2886e00de42bbfe2",
-      "last_checked": "2026-10-01T12:58:34Z",
+      "last_checked": "2026-10-13T13:47:00Z",
       "note": "Record copy for un/ga/res-1721-XVI. Scanned PDF; watched for artefact replacement, not for text change."
     },
     {
       "name": "ODS record copy - A/RES/1962(XVIII)",
       "url": "https://documents.un.org/api/symbol/access?s=A/RES/1962(XVIII)&l=en&t=pdf",
       "last_sha256": "sha256:9d854a48244ce28611e40f1dc37f6fa3cc01a2dd6fae78ab29efb7075e8d78d5",
-      "last_checked": "2026-10-01T12:58:34Z",
+      "last_checked": "2026-10-13T13:47:00Z",
       "note": "Record copy for un/ga/res-1962-XVIII."
     },
     {
       "name": "ODS record copy - A/RES/1884(XVIII)",
       "url": "https://documents.un.org/api/symbol/access?s=A/RES/1884(XVIII)&l=en&t=pdf",
       "last_sha256": "sha256:4e3967c7774c04f5b5276e121f26fe3d194e874c62e526de793a1d97780317ea",
-      "last_checked": "2026-10-01T12:58:34Z",
+      "last_checked": "2026-10-13T13:47:00Z",
       "note": "Pre-OST trio; not yet ingested (no clean authentic text reachable - see CHANGELOG 2026-07-25)."
     }
   ]
