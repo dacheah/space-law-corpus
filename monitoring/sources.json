@@ -5,7 +5,7 @@
       "name": "UN treaty status",
       "url": "https://www.unoosa.org/oosa/en/ourwork/spacelaw/treaties/status/index.html",
       "last_sha256": "sha256:2ef128e0c91df0456b209e95b5a4fdb0740f33fdc2fb7ae757c556ed09eae0e1",
-      "last_checked": "2026-10-14T13:13:18Z",
+      "last_checked": "2026-10-14T13:46:18Z",
       "expect_contains": "Treaty Status",
       "ignore_patterns": [
         "Latest 20\\d{2}-\\d{2}-\\d{2} .*?(?=Links VIC Online|United Nations Home|Copyright ©)",
@@ -19,7 +19,7 @@
       "name": "UNOOSA treaties & principles index",
       "url": "https://www.unoosa.org/oosa/en/ourwork/spacelaw/treaties.html",
       "last_sha256": "sha256:98a405561de3ef83702586f7d1b2cfcb8ad253aa6fbd852650dd016453f7bb79",
-      "last_checked": "2026-10-14T13:13:18Z",
+      "last_checked": "2026-10-14T13:46:18Z",
       "expect_contains": "Treaties and Principles",
       "ignore_patterns": [
         "Latest 20\\d{2}-\\d{2}-\\d{2} .*?(?=Links VIC Online|United Nations Home|Copyright ©)",
@@ -33,7 +33,7 @@
       "name": "UNOOSA space law resolutions",
       "url": "https://www.unoosa.org/oosa/en/ourwork/spacelaw/resolutions.html",
       "last_sha256": "sha256:d66c08977d0d391a8389e2caae3c29ee3b042101f61291961408260b4f0b4de7",
-      "last_checked": "2026-10-14T13:13:18Z",
+      "last_checked": "2026-10-14T13:46:18Z",
       "expect_contains": "Resolutions",
       "ignore_patterns": [
         "Latest 20\\d{2}-\\d{2}-\\d{2} .*?(?=Links VIC Online|United Nations Home|Copyright ©)",
@@ -47,7 +47,7 @@
       "name": "UNOOSA national space law",
       "url": "https://www.unoosa.org/oosa/en/ourwork/spacelaw/nationalspacelaw.html",
       "last_sha256": "sha256:030e5e9a8749555cba2dbf65c4f8bbbf8d89bc45dbd546b1d50212226fe6643b",
-      "last_checked": "2026-10-14T13:13:18Z",
+      "last_checked": "2026-10-14T13:46:18Z",
       "expect_contains": "National Space Law",
       "ignore_patterns": [
         "Latest 20\\d{2}-\\d{2}-\\d{2} .*?(?=Links VIC Online|United Nations Home|Copyright ©)",
@@ -62,7 +62,7 @@
       "url": "https://astro.unoosa.org/",
       "render": "spa",
       "last_sha256": "sha256:5078b2b79b81b5203e21371a2362f1d42e1632ae3571d64766d7fb3aaedb3cf1",
-      "last_checked": "2026-10-14T13:13:18Z",
+      "last_checked": "2026-10-14T13:46:18Z",
       "expect_contains": "ASTRO",
       "_note": [
         "2026-10-14, issue #2 follow-up: ASTRO is an Angular app, not a page. A stdlib GET returns a 7,495-byte shell - 192 words of site chrome, six <script> tags, <noscript> and ng- markers - so the stored hash covers the shell and nothing else. Any change inside the ASTRO database, which is the only reason to watch it, cannot move the digest, and the 2026-10-13 sweep duly reported it unchanged. Declared render:'spa' so the monitor reports it MANUAL instead of claiming coverage it does not have. expect_contains 'ASTRO' passes on the shell; it is kept for a renderer-backed fetch, since the declaration is also what a crawl layer reads if one ever lands in CI. Until then this source is a pointer, not a comparator."
@@ -72,7 +72,7 @@
       "name": "UNOOSA non-binding instruments compendium",
       "url": "https://www.unoosa.org/oosa/en/ourwork/spacelaw/nlbcompendium.html",
       "last_sha256": "sha256:ac484afeadeb1fed3512adc523f5ef46289bf257a71dfd5cc478296931a94cfc",
-      "last_checked": "2026-10-14T13:13:18Z",
+      "last_checked": "2026-10-14T13:46:18Z",
       "expect_contains": "non-legally binding",
       "ignore_patterns": [
         "Latest 20\\d{2}-\\d{2}-\\d{2} .*?(?=Links VIC Online|United Nations Home|Copyright ©)",
@@ -86,21 +86,21 @@
       "name": "ODS record copy - A/RES/1721(XVI)",
       "url": "https://documents.un.org/api/symbol/access?s=A/RES/1721(XVI)&l=en&t=pdf",
       "last_sha256": "sha256:b137390b89f321f3f2f322a9e2d8bdad96f4d5a6e0aa1ecd2886e00de42bbfe2",
-      "last_checked": "2026-10-14T13:13:18Z",
+      "last_checked": "2026-10-14T13:46:18Z",
       "note": "Record copy for un/ga/res-1721-XVI. Scanned PDF; watched for artefact replacement, not for text change."
     },
     {
       "name": "ODS record copy - A/RES/1962(XVIII)",
       "url": "https://documents.un.org/api/symbol/access?s=A/RES/1962(XVIII)&l=en&t=pdf",
       "last_sha256": "sha256:9d854a48244ce28611e40f1dc37f6fa3cc01a2dd6fae78ab29efb7075e8d78d5",
-      "last_checked": "2026-10-14T13:13:18Z",
+      "last_checked": "2026-10-14T13:46:18Z",
       "note": "Record copy for un/ga/res-1962-XVIII."
     },
     {
       "name": "ODS record copy - A/RES/1884(XVIII)",
       "url": "https://documents.un.org/api/symbol/access?s=A/RES/1884(XVIII)&l=en&t=pdf",
       "last_sha256": "sha256:4e3967c7774c04f5b5276e121f26fe3d194e874c62e526de793a1d97780317ea",
-      "last_checked": "2026-10-14T13:13:18Z",
+      "last_checked": "2026-10-14T13:46:18Z",
       "note": "Pre-OST trio; not yet ingested (no clean authentic text reachable - see CHANGELOG 2026-07-25)."
     }
   ]
