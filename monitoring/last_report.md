@@ -1,15 +1,17 @@
-# Source monitor report — 2026-10-13T13:47:00Z
+# Source monitor report — 2026-10-14T13:13:18Z
 
 _monitor v3.10 · schema mode off (whole-page fallback)_
 
-0 changed · 0 suspect · 0 schema-suspect · 0 manual-review · 0 error · 9 total
+0 changed · 0 suspect · 0 schema-suspect · 1 manual-review · 0 error · 9 total
 
-## ✅ unchanged (9)
+## 🟠 MANUAL — JS-rendered source, auto-monitor cannot see the law (1)
+- **ASTRO database**
+
+## ✅ unchanged (8)
 - **UN treaty status**
 - **UNOOSA treaties & principles index**
 - **UNOOSA space law resolutions**
 - **UNOOSA national space law**
-- **ASTRO database**
 - **UNOOSA non-binding instruments compendium**
 - **ODS record copy - A/RES/1721(XVI)**
 - **ODS record copy - A/RES/1962(XVIII)**
